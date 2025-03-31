@@ -1,7 +1,7 @@
 ![cover](https://raw.githubusercontent.com/zkreations/icons/main/.github/cover.png)
 
 <p align="center">
-  <a href="https://icons.zkreations.com/"><strong> Demo en vivo &rarr;</strong></a>
+  <a href="https://meteoricons.com/"><strong> Demo en vivo &rarr;</strong></a>
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ You can set the size and thickness with CSS variables:
 
 ## Inline SVG
 
-Choose any icon from the [demo page](https://icons.zkreations.com/), copy its code, and paste it into your project.
+Choose any icon from the [demo page](https://meteoricons.com/), copy its code, and paste it into your project.
 
 ## SVG Sprite
 
@@ -58,7 +58,7 @@ Add the [svg-sprite.svg](https://github.com/zkreations/icons/blob/main/variants/
 </svg>
 ```
 
-> Replace **"github"** with the name of an icon from the [demo page](https://icons.zkreations.com/).
+> Replace **"github"** with the name of an icon from the [demo page](https://meteoricons.com/).
 
 ## Blogger
 
@@ -78,7 +78,7 @@ After including it, you can call any icon anywhere in the template using a `b:in
 <b:include name='@meteor' data='{ icon: "github" }'/>
 ```
 
-> Replace **"github"** with the name of an icon from the [demo page](https://icons.zkreations.com/).
+> Replace **"github"** with the name of an icon from the [demo page](https://meteoricons.com/).
 
 The inclusion has some parameters that allow you to customize the resulting SVG tag. The available parameters are:
 
