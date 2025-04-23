@@ -52,8 +52,8 @@ async function generateIconsFiles () {
     const jsonContent = JSON.stringify(iconMap)
     const jsContent = await formatWithESLint(`export default ${jsonContent};`)
 
-    await fs.writeFile(`${config.outputDir}/${config.jsonFilename}`, jsonContent, 'utf8')
-    await fs.writeFile(`${config.outputDir}/${config.jsFilename}`, jsContent, 'utf8')
+    await fs.writeFile(path.join(config.outputDir, config.jsonFilename), jsonContent, 'utf8')
+    await fs.writeFile(path.join(config.outputDir, config.jsFilename), jsContent, 'utf8')
 
     console.log('SVG files processed, icons.json and icons.js generated')
   } catch (error) {
