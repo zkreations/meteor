@@ -1,10 +1,10 @@
-import { optimize } from 'svgo'
-import svgoConfig from './svgo.config.js'
 import fs from 'fs/promises'
 import path from 'path'
 import * as cheerio from 'cheerio'
 import { ESLint } from 'eslint'
+import { optimize } from 'svgo'
 import config from './icons.config.js'
+import svgoConfig from './svgo.config.js'
 
 async function processFile (filePath) {
   const fileName = path.basename(filePath)
@@ -12,6 +12,7 @@ async function processFile (filePath) {
   const rawSvg = await fs.readFile(filePath, 'utf8')
 
   const optimizedSvg = optimize(rawSvg, svgoConfig)
+
   const $ = cheerio.load(optimizedSvg.data, { xmlMode: true })
   const originalContent = $('svg').contents().toString()
 

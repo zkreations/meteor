@@ -6,10 +6,16 @@ export default {
     indent: 2
   },
   plugins: [
-    'mergePaths',
-    'cleanupListOfValues',
-    'removeDimensions',
-    'removeUnusedNS',
-    'removeXMLNS'
+    {
+      name: 'preset-default',
+      params: {
+        overrides: {
+          collapseGroups: true,
+          convertPathData: {
+            noSpaceAfterFlags: true
+          }
+        }
+      }
+    }
   ]
 }
