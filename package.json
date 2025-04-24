@@ -4,10 +4,10 @@
   "description": "Handcrafted line by line, for as little code as possible",
   "type": "module",
   "scripts": {
-    "build": "npm-run-all --sequential build:*",
-    "build:svg": "node ./build/svg.js",
-    "build:sprite": "node ./build/sprite.js",
-    "build:blogger": "node ./build/blogger.js"
+    "build": "run-s build:*",
+    "build:svg": "node ./build/generate-svg.js",
+    "build:sprite": "node ./build/generate-sprite.js",
+    "build:includable": "node ./build/generate-includable.js"
   },
   "files": [
     "icons",
