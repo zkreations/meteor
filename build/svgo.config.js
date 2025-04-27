@@ -12,7 +12,8 @@ export default {
         overrides: {
           collapseGroups: true,
           convertPathData: {
-            noSpaceAfterFlags: true
+            noSpaceAfterFlags: true,
+            removeUseless: false
           }
         }
       }
