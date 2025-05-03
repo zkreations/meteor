@@ -1,3 +1,3 @@
 <svg class="i i-backward-step" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M6 5v14M18 4v16L8 12Z"/>
+  <path d="M5 5v14m14 1V4L9 12z"/>
 </svg>
