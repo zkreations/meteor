@@ -3,6 +3,8 @@ node_modules
 package-lock.json
 dist
 implements
+*.html
+*.txt
 
 # jekyll
 _site
