@@ -1,5 +1,5 @@
 <svg class="i i-cart-shopping" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M1 2h4l3 12.4a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.6L23 6H6"/>
-  <circle cx="9" cy="21" r="1"/>
-  <circle cx="20" cy="21" r="1"/>
+  <path d="M2 2h2l2.7 12.5A2 2 0 008.6 16h9.8a2 2 0 002-1.5L22 7H5.1"/>
+  <circle cx="8" cy="21" r="1"/>
+  <circle cx="19" cy="21" r="1"/>
 </svg>
