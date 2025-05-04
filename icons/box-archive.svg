@@ -1,3 +1,3 @@
 <svg class="i i-box-archive" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M21 8v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8M1 8V5a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v3Zm9 4h4"/>
+  <path d="M21 8v10a3 3 0 01-3 3H6a3 3 0 01-3-3V8M1 8V3h22v5Zm9 4h4"/>
 </svg>
