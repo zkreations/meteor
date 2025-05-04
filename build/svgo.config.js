@@ -7,6 +7,12 @@ export default {
   },
   plugins: [
     {
+      name: 'removeAttrs',
+      params: {
+        attrs: 'xmlns'
+      }
+    },
+    {
       name: 'preset-default',
       params: {
         overrides: {
