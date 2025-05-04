@@ -1,5 +1,5 @@
 <svg class="i i-chrome" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <circle cx="12" cy="12" r="11"/>
   <circle cx="12" cy="12" r="4"/>
-  <path d="m15.5 14-5.2 8.8M8.5 14 3.4 5.2M12 8h10.2"/>
+  <path d="M22.24 8H12M3.42 5.13 8.54 14m1.8 8.87L15.46 14"/>
 </svg>
