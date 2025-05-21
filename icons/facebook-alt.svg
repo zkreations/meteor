@@ -1,4 +1,4 @@
 <svg class="i i-facebook-alt" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <circle cx="12" cy="12" r="11"/>
-  <path d="M12 23V9.5A2.5 2.5 0 0 1 15 7m-5 6h4.5"/>
+  <path d="M12 23V10a2.5 2.5 0 013-2.5M10 13h4.5"/>
 </svg>
