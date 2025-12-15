@@ -1,0 +1,6 @@
+<svg class="i i-git-pull-draft" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="6" cy="5" r="3"/>
+  <circle cx="6" cy="19" r="3"/>
+  <circle cx="18" cy="19" r="3"/>
+  <path d="M6 8v8m12-6v1m0-7v1"/>
+</svg>
