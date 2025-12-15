@@ -1,0 +1,5 @@
+<svg class="i i-git-compare" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="6" cy="5" r="3"/>
+  <circle cx="18" cy="19" r="3"/>
+  <path d="M6 8v8a2 2 0 002 2h3m2-12h3a2 2 0 012 2v8"/>
+</svg>
