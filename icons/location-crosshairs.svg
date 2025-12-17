@@ -1,5 +1,5 @@
 <svg class="i i-location-crosshairs" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M23 12h-3M4 12H1m11-8V1m0 22v-3"/>
-  <circle cx="12" cy="12" r="8"/>
+  <path d="M12 19v3m0-20v3M2 12h3m14 0h3"/>
+  <circle cx="12" cy="12" r="7"/>
   <circle cx="12" cy="12" r="3"/>
 </svg>
