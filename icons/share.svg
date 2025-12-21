@@ -2,5 +2,5 @@
   <circle cx="18" cy="5" r="3"/>
   <circle cx="6" cy="12" r="3"/>
   <circle cx="18" cy="19" r="3"/>
-  <path d="m8.5 13.5 7 4m0-11-7 4"/>
+  <path d="m8.6 10.5 6.8-4m0 11-6.8-4"/>
 </svg>
