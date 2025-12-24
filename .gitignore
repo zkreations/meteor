@@ -3,6 +3,7 @@ node_modules
 package-lock.json
 dist
 implements
+lab
 *.html
 *.txt
 
