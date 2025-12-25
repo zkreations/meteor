@@ -1,10 +1,9 @@
-// src/generateIncludable.js
 import fs from 'fs/promises'
 import path from 'path'
-import { globSync } from 'glob'
 import * as cheerio from 'cheerio'
 
 import config from './icons.config.js'
+import { readIcons } from './utils.js'
 
 async function processSvgFile (filePath) {
   const fileName = path.basename(filePath)
@@ -19,7 +18,7 @@ async function processSvgFile (filePath) {
 
 async function generateSvgIncludableFile () {
   try {
-    const files = globSync('*.svg', { cwd: config.iconsDir, absolute: true })
+    const files = await readIcons(config.iconsDir)
     const items = await Promise.all(files.map(processSvgFile))
 
     const includable = `<b:includable id='@meteor'>

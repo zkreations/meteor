@@ -1,10 +1,33 @@
 import fs from 'fs/promises'
 import path from 'path'
 import * as cheerio from 'cheerio'
-import { ESLint } from 'eslint'
 import { optimize } from 'svgo'
+
 import config from './icons.config.js'
 import svgoConfig from './svgo.config.js'
+import { readIcons } from './utils.js'
+
+function serializeNode (el) {
+  return {
+    tag: el.tagName,
+    attrs: Object.fromEntries(
+      Object.entries(el.attribs || {}).map(([k, v]) => {
+        const num = Number(v)
+        return [k, Number.isNaN(num) ? v : num]
+      })
+    ),
+    ...(el.children?.length
+      ? { children: el.children.filter(c => c.type === 'tag').map(serializeNode) }
+      : {})
+  }
+}
+
+function extractNodes ($svg) {
+  return $svg.children()
+    .toArray()
+    .filter(el => el.type === 'tag')
+    .map(serializeNode)
+}
 
 async function processFile (filePath) {
   const fileName = path.basename(filePath)
@@ -25,38 +48,28 @@ async function processFile (filePath) {
   $newSvg.append(originalContent)
 
   const finalSvg = $newSvg.toString()
-  const contentOnly = $newSvg.children().toString()
 
   if (finalSvg !== rawSvg) {
     await fs.writeFile(filePath, finalSvg, 'utf8')
   }
 
-  return { [iconName]: contentOnly }
-}
+  const nodes = extractNodes($newSvg)
 
-async function formatWithESLint (code) {
-  const eslint = new ESLint({ fix: true })
-  const results = await eslint.lintText(code)
-  return results[0]?.output || code
+  return {
+    [iconName]: { nodes }
+  }
 }
 
 async function generateIconsFiles () {
   try {
-    const files = await fs.readdir(config.iconsDir)
-    const filePaths = files
-      .filter(file => file.endsWith('.svg'))
-      .map(file => path.join(config.iconsDir, file))
-
-    const iconData = await Promise.all(filePaths.map(processFile))
-
+    const files = await readIcons(config.iconsDir)
+    const iconData = await Promise.all(files.map(processFile))
     const iconMap = Object.assign({}, ...iconData)
     const jsonContent = JSON.stringify(iconMap)
-    const jsContent = await formatWithESLint(`export default ${jsonContent};`)
 
     await fs.writeFile(path.join(config.outputDir, config.jsonFilename), jsonContent, 'utf8')
-    await fs.writeFile(path.join(config.outputDir, config.jsFilename), jsContent, 'utf8')
 
-    console.log('SVG files processed, icons.json and icons.js generated')
+    console.log('SVG files processed and icons.json generated')
   } catch (error) {
     console.error('Error:', error.message)
     process.exit(1)

@@ -1,11 +1,8 @@
 import SVGSpriter from 'svg-sprite'
 import path from 'path'
 import fs from 'fs'
-import { globSync } from 'glob'
 import config from './icons.config.js'
-
-const cwd = config.iconsDir
-const files = globSync('*.svg', { cwd })
+import { readIcons } from './utils.js'
 
 const outputConfig = {
   symbol: {
@@ -28,33 +25,42 @@ const spriter = new SVGSpriter({
   }
 })
 
-function addIconsToSpriter (spriter, cwd, files) {
-  files.forEach((file) => {
-    const filePath = path.join(cwd, file)
+function addIconsToSpriter (spriter, filePaths) {
+  filePaths.forEach((filePath) => {
+    const fileName = path.basename(filePath)
     const svgContent = fs.readFileSync(filePath, 'utf-8')
-    spriter.add(filePath, file, svgContent)
+
+    // filePath absoluto + nombre estable
+    spriter.add(filePath, fileName, svgContent)
   })
+
   return spriter
 }
 
 function writeSprites (sprites) {
-  Object.entries(sprites.symbol).forEach(([_, sprite]) => {
-    const spritePath = sprite.path
-    fs.mkdirSync(path.dirname(spritePath), { recursive: true })
-    fs.writeFileSync(spritePath, sprite.contents)
+  Object.values(sprites.symbol).forEach((sprite) => {
+    fs.mkdirSync(path.dirname(sprite.path), { recursive: true })
+    fs.writeFileSync(sprite.path, sprite.contents)
   })
 }
 
-function generateSprites () {
-  addIconsToSpriter(spriter, cwd, files).compile(outputConfig, (error, result) => {
-    if (error) {
-      console.error('Error generating sprites:', error.message)
-      process.exit(1)
-    }
+async function generateSprites () {
+  try {
+    const filePaths = await readIcons(config.iconsDir)
 
-    writeSprites(result)
-    console.log('Sprites file generated successfully.')
-  })
+    addIconsToSpriter(spriter, filePaths).compile(outputConfig, (error, result) => {
+      if (error) {
+        console.error('Error generating sprites:', error.message)
+        process.exit(1)
+      }
+
+      writeSprites(result)
+      console.log('Sprites file generated successfully.')
+    })
+  } catch (error) {
+    console.error('Error:', error.message)
+    process.exit(1)
+  }
 }
 
 generateSprites()
