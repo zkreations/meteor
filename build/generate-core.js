@@ -9,6 +9,7 @@ const DIST_ICONS = config.coreIconsDir
 function resetDir (dir) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
+  fs.writeFileSync(path.join(dir, '.gitkeep'), '')
 }
 
 function copyDir (src, dest) {

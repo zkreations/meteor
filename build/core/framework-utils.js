@@ -12,6 +12,7 @@ export function toPascalCase (value) {
 export async function resetDir (dirUrl) {
   await fs.rm(dirUrl, { recursive: true, force: true })
   await fs.mkdir(dirUrl, { recursive: true })
+  await fs.writeFile(new URL('./.gitkeep', dirUrl), '')
 }
 
 export async function readIconMap (iconsJsonUrl = DEFAULT_ICONS_JSON) {

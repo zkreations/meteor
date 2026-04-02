@@ -1,0 +1,29 @@
+{
+  "name": "@meteor-icons/astro",
+  "version": "4.0.0",
+  "private": false,
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./icons/*": {
+      "types": "./src/icons/*.d.ts",
+      "default": "./src/icons/*.astro"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "prepack": "npm --prefix ../.. run build"
+  },
+  "peerDependencies": {
+    "astro": ">=4"
+  }
+}

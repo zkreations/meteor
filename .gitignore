@@ -14,4 +14,12 @@ _site
 .jekyll-metadata
 vendor
 docs/
-packages/
+# Keep package scaffolding tracked, but ignore generated framework outputs.
+packages/*/src/*
+!packages/*/src/icons/
+packages/*/src/icons/*
+!packages/*/src/icons/.gitkeep
+packages/core/exports/*
+!packages/core/exports/.gitkeep
+packages/core/icons/*
+!packages/core/icons/.gitkeep
