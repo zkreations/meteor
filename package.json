@@ -11,7 +11,11 @@
     "build:includable": "node ./build/generate-includable.js",
     "build:core": "node ./build/generate-core.js",
     "build:react": "node ./build/generate-react.js",
-    "build:preact": "node ./build/generate-preact.js"
+    "build:preact": "node ./build/generate-preact.js",
+    "build:vue": "node ./build/generate-vue.js",
+    "build:solid": "node ./build/generate-solid.js",
+    "build:svelte": "node ./build/generate-svelte.js",
+    "build:astro": "node ./build/generate-astro.js"
   },
   "files": [
     "icons",
