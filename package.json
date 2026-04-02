@@ -1,13 +1,16 @@
 {
   "name": "meteor-icons",
-  "version": "3.7.1",
+  "private": true,
+  "version": "4.0.0",
   "description": "Handcrafted line by line, for as little code as possible",
   "type": "module",
   "scripts": {
     "prebuild": "node ./build/generate-svg.js",
-    "build": "run-p build:sprite build:includable",
+    "build": "run-p build:*",
     "build:sprite": "node ./build/generate-sprite.js",
-    "build:includable": "node ./build/generate-includable.js"
+    "build:includable": "node ./build/generate-includable.js",
+    "build:core": "node ./build/generate-core.js",
+    "build:react": "node ./build/generate-react.js"
   },
   "files": [
     "icons",
