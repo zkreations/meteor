@@ -1,31 +1,16 @@
 import { describe, expect, it } from 'vitest'
-import { execSync } from 'node:child_process'
 import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { dirname, join, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { join, resolve } from 'node:path'
+import {
+  getInstalledPackageVersion,
+  getWorkspaceRoot,
+  npmBuild,
+  npmInstall,
+  toPosixPath
+} from '../smoke-utils.js'
 
-const thisFile = fileURLToPath(import.meta.url)
-const thisDir = dirname(thisFile)
-const workspaceRoot = resolve(thisDir, '../..')
-
-function toPosixPath (value) {
-  return value.replace(/\\/g, '/')
-}
-
-function npmInstall (cwd) {
-  execSync('npm install --no-audit --no-fund', {
-    cwd,
-    stdio: 'pipe'
-  })
-}
-
-function npmBuild (cwd) {
-  execSync('npm run build', {
-    cwd,
-    stdio: 'pipe'
-  })
-}
+const workspaceRoot = getWorkspaceRoot(import.meta.url)
 
 describe('preact package consumer smoke', () => {
   it('installs and builds in a real Preact consumer app', { timeout: 180000 }, () => {
@@ -37,6 +22,7 @@ describe('preact package consumer smoke', () => {
 
       const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorPreactPath = toPosixPath(resolve(workspaceRoot, 'packages/preact'))
+      const installedPreactVersion = getInstalledPackageVersion(workspaceRoot, 'preact')
 
       const packageJson = {
         name: 'meteoricons-preact-consumer-smoke',
@@ -48,7 +34,7 @@ describe('preact package consumer smoke', () => {
         },
         dependencies: {
           '@meteor-icons/preact': `file:${meteorPreactPath}`,
-          preact: '^10.27.2'
+          preact: installedPreactVersion
         },
         devDependencies: {
           vite: `file:${vitePath}`

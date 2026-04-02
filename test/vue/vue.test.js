@@ -16,7 +16,7 @@ afterEach(() => {
 })
 
 describe('vue icons', () => {
-  it('renders non-brand icons with default svg attributes', () => {
+  it('render icons with default svg attributes', () => {
     const cases = [
       {
         Icon: AlarmClock,

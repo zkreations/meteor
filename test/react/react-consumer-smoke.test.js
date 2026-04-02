@@ -1,31 +1,16 @@
 import { describe, expect, it } from 'vitest'
-import { execSync } from 'node:child_process'
 import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
-import { dirname, join, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { join, resolve } from 'node:path'
+import {
+  getInstalledPackageVersion,
+  getWorkspaceRoot,
+  npmBuild,
+  npmInstall,
+  toPosixPath
+} from '../smoke-utils.js'
 
-const thisFile = fileURLToPath(import.meta.url)
-const thisDir = dirname(thisFile)
-const workspaceRoot = resolve(thisDir, '../..')
-
-function toPosixPath (value) {
-  return value.replace(/\\/g, '/')
-}
-
-function npmInstall (cwd) {
-  execSync('npm install --no-audit --no-fund', {
-    cwd,
-    stdio: 'pipe'
-  })
-}
-
-function npmBuild (cwd) {
-  execSync('npm run build', {
-    cwd,
-    stdio: 'pipe'
-  })
-}
+const workspaceRoot = getWorkspaceRoot(import.meta.url)
 
 describe('react package consumer smoke', () => {
   it('installs and builds in a real React consumer app', { timeout: 180000 }, () => {
@@ -35,10 +20,10 @@ describe('react package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const reactPath = toPosixPath(resolve(workspaceRoot, 'node_modules/react'))
-      const reactDomPath = toPosixPath(resolve(workspaceRoot, 'node_modules/react-dom'))
       const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorReactPath = toPosixPath(resolve(workspaceRoot, 'packages/react'))
+      const installedReactVersion = getInstalledPackageVersion(workspaceRoot, 'react')
+      const installedReactDomVersion = getInstalledPackageVersion(workspaceRoot, 'react-dom')
 
       const packageJson = {
         name: 'meteoricons-react-consumer-smoke',
@@ -50,8 +35,8 @@ describe('react package consumer smoke', () => {
         },
         dependencies: {
           '@meteor-icons/react': `file:${meteorReactPath}`,
-          react: `file:${reactPath}`,
-          'react-dom': `file:${reactDomPath}`
+          react: installedReactVersion,
+          'react-dom': installedReactDomVersion
         },
         devDependencies: {
           vite: `file:${vitePath}`
