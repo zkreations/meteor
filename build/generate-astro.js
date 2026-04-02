@@ -1,48 +1,17 @@
 import fs from 'fs/promises'
 import path from 'path'
+import {
+  buildNamedExportsIndex,
+  getSortedIconNames,
+  nodeToMarkup,
+  readIconMap,
+  resetDir,
+  toPascalCase
+} from './core/framework-utils.js'
 
 const ROOT_DIR = new URL('..', import.meta.url)
-const ICONS_JSON = new URL('../packages/core/exports/icons.json', import.meta.url)
 const ASTRO_DIR = new URL('../packages/astro/src/', import.meta.url)
 const ASTRO_ICONS_DIR = new URL('../packages/astro/src/icons/', import.meta.url)
-
-function toPascalCase (value) {
-  return value
-    .split('-')
-    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
-    .join('')
-}
-
-async function resetDir (dirUrl) {
-  await fs.rm(dirUrl, { recursive: true, force: true })
-  await fs.mkdir(dirUrl, { recursive: true })
-}
-
-async function readIconMap () {
-  const raw = await fs.readFile(ICONS_JSON, 'utf8')
-  return JSON.parse(raw)
-}
-
-function escapeXmlAttr (value) {
-  return String(value)
-    .replaceAll('&', '&amp;')
-    .replaceAll('"', '&quot;')
-}
-
-function nodeToMarkup (node) {
-  const attrs = Object.entries(node.attrs || {})
-    .map(([key, value]) => `${key}="${escapeXmlAttr(value)}"`)
-    .join(' ')
-
-  const openTag = attrs.length ? `<${node.tag} ${attrs}>` : `<${node.tag}>`
-
-  if (!node.children || node.children.length === 0) {
-    return `${openTag}</${node.tag}>`
-  }
-
-  const children = node.children.map(nodeToMarkup).join('')
-  return `${openTag}${children}</${node.tag}>`
-}
 
 function buildIconAstroSource (iconName, nodes) {
   const markup = nodes.map(nodeToMarkup).join('\n  ')
@@ -102,18 +71,9 @@ export default ${componentName}
 `
 }
 
-function buildIndexSource (iconNames) {
-  const exports = iconNames.map((name) => {
-    const componentName = toPascalCase(name)
-    return `export { default as ${componentName} } from './icons/${name}.astro'`
-  })
-
-  return exports.join('\n') + '\n'
-}
-
 async function generateAstroPackage () {
   const icons = await readIconMap()
-  const iconNames = Object.keys(icons).sort((a, b) => a.localeCompare(b))
+  const iconNames = getSortedIconNames(icons)
 
   await resetDir(ASTRO_ICONS_DIR)
   await fs.mkdir(ASTRO_DIR, { recursive: true })
@@ -134,8 +94,9 @@ async function generateAstroPackage () {
     )
   }
 
-  await fs.writeFile(new URL('./index.js', ASTRO_DIR), buildIndexSource(iconNames), 'utf8')
-  await fs.writeFile(new URL('./index.d.ts', ASTRO_DIR), buildIndexSource(iconNames), 'utf8')
+  const indexSource = buildNamedExportsIndex(iconNames, 'astro')
+  await fs.writeFile(new URL('./index.js', ASTRO_DIR), indexSource, 'utf8')
+  await fs.writeFile(new URL('./index.d.ts', ASTRO_DIR), indexSource, 'utf8')
 
   const rootPath = path.normalize(ROOT_DIR.pathname)
   console.log(`Astro package generated (${iconNames.length} icons) at ${rootPath}`)

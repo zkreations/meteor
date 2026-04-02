@@ -3,7 +3,7 @@ import path from 'path'
 import * as cheerio from 'cheerio'
 import { optimize } from 'svgo'
 
-import { readIcons } from '../utils.js'
+import { readIconFiles } from './icon-file-utils.js'
 
 function serializeNode (el) {
   return {
@@ -84,6 +84,6 @@ export async function processAllIcons (options) {
     ...rest
   } = options
 
-  const files = await readIcons(iconsDir)
+  const files = await readIconFiles(iconsDir)
   return Promise.all(files.map(filePath => processIconFile(filePath, rest)))
 }

@@ -1,51 +1,17 @@
 import fs from 'fs/promises'
 import path from 'path'
+import {
+  buildNamedExportsIndex,
+  getSortedIconNames,
+  jsLiteral,
+  readIconMap,
+  resetDir,
+  toPascalCase
+} from './core/framework-utils.js'
 
 const ROOT_DIR = new URL('..', import.meta.url)
-const ICONS_JSON = new URL('../packages/core/exports/icons.json', import.meta.url)
 const VUE_DIR = new URL('../packages/vue/src/', import.meta.url)
 const VUE_ICONS_DIR = new URL('../packages/vue/src/icons/', import.meta.url)
-
-function toPascalCase (value) {
-  return value
-    .split('-')
-    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
-    .join('')
-}
-
-async function resetDir (dirUrl) {
-  await fs.rm(dirUrl, { recursive: true, force: true })
-  await fs.mkdir(dirUrl, { recursive: true })
-}
-
-async function readIconMap () {
-  const raw = await fs.readFile(ICONS_JSON, 'utf8')
-  return JSON.parse(raw)
-}
-
-function jsLiteral (value) {
-  if (typeof value === 'string') {
-    return JSON.stringify(value)
-  }
-
-  if (typeof value === 'number' || typeof value === 'boolean') {
-    return String(value)
-  }
-
-  if (Array.isArray(value)) {
-    return `[${value.map(jsLiteral).join(', ')}]`
-  }
-
-  if (value && typeof value === 'object') {
-    const entries = Object.entries(value)
-      .map(([key, nested]) => `${JSON.stringify(key)}: ${jsLiteral(nested)}`)
-      .join(', ')
-
-    return `{ ${entries} }`
-  }
-
-  return 'null'
-}
 
 function buildCreateIconSource () {
   return `import { defineComponent, h } from 'vue'
@@ -151,18 +117,9 @@ export default ${componentName}
 `
 }
 
-function buildIndexSource (iconNames) {
-  const exports = iconNames.map((name) => {
-    const componentName = toPascalCase(name)
-    return `export { default as ${componentName} } from './icons/${name}.js'`
-  })
-
-  return exports.join('\n') + '\n'
-}
-
 async function generateVuePackage () {
   const icons = await readIconMap()
-  const iconNames = Object.keys(icons).sort((a, b) => a.localeCompare(b))
+  const iconNames = getSortedIconNames(icons)
 
   await resetDir(VUE_ICONS_DIR)
   await fs.mkdir(VUE_DIR, { recursive: true })
@@ -185,8 +142,9 @@ async function generateVuePackage () {
     )
   }
 
-  await fs.writeFile(new URL('./index.js', VUE_DIR), buildIndexSource(iconNames), 'utf8')
-  await fs.writeFile(new URL('./index.d.ts', VUE_DIR), buildIndexSource(iconNames), 'utf8')
+  const indexSource = buildNamedExportsIndex(iconNames, 'js')
+  await fs.writeFile(new URL('./index.js', VUE_DIR), indexSource, 'utf8')
+  await fs.writeFile(new URL('./index.d.ts', VUE_DIR), indexSource, 'utf8')
 
   const rootPath = path.normalize(ROOT_DIR.pathname)
   console.log(`Vue package generated (${iconNames.length} icons) at ${rootPath}`)
