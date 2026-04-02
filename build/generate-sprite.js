@@ -2,7 +2,8 @@ import SVGSpriter from 'svg-sprite'
 import path from 'path'
 import fs from 'fs'
 import config from './icons.config.js'
-import { readIcons } from './utils.js'
+import svgoConfig from './svgo.config.js'
+import { processAllIcons } from './core/icons-pipeline.js'
 
 const outputConfig = {
   symbol: {
@@ -25,13 +26,10 @@ const spriter = new SVGSpriter({
   }
 })
 
-function addIconsToSpriter (spriter, filePaths) {
-  filePaths.forEach((filePath) => {
+function addIconsToSpriter (spriter, icons) {
+  icons.forEach(({ filePath, finalSvg }) => {
     const fileName = path.basename(filePath)
-    const svgContent = fs.readFileSync(filePath, 'utf-8')
-
-    // filePath absoluto + nombre estable
-    spriter.add(filePath, fileName, svgContent)
+    spriter.add(filePath, fileName, finalSvg)
   })
 
   return spriter
@@ -46,9 +44,14 @@ function writeSprites (sprites) {
 
 async function generateSprites () {
   try {
-    const filePaths = await readIcons(config.iconsDir)
+    const icons = await processAllIcons({
+      iconsDir: config.iconsDir,
+      writeNormalized: false,
+      svgoConfig,
+      defaultSvgAttributes: config.defaultSvgAttributes
+    })
 
-    addIconsToSpriter(spriter, filePaths).compile(outputConfig, (error, result) => {
+    addIconsToSpriter(spriter, icons).compile(outputConfig, (error, result) => {
       if (error) {
         console.error('Error generating sprites:', error.message)
         process.exit(1)
