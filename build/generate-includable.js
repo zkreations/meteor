@@ -1,25 +1,22 @@
 import fs from 'fs/promises'
 import path from 'path'
-import * as cheerio from 'cheerio'
 
 import config from './icons.config.js'
-import { readIcons } from './utils.js'
-
-async function processSvgFile (filePath) {
-  const fileName = path.basename(filePath)
-  const iconName = path.parse(fileName).name
-  const svg = await fs.readFile(filePath, 'utf8')
-
-  const $ = cheerio.load(svg, { xml: { xmlMode: true } })
-  const svgContent = $('svg').children().toString()
-
-  return `\n      <b:case value='${iconName}'/>${svgContent}`
-}
+import svgoConfig from './svgo.config.js'
+import { processAllIcons } from './core/icons-pipeline.js'
 
 async function generateSvgIncludableFile () {
   try {
-    const files = await readIcons(config.iconsDir)
-    const items = await Promise.all(files.map(processSvgFile))
+    const processed = await processAllIcons({
+      iconsDir: config.iconsDir,
+      writeNormalized: false,
+      svgoConfig,
+      defaultSvgAttributes: config.defaultSvgAttributes
+    })
+
+    const items = processed.map(({ iconName, innerContent }) => {
+      return `\n      <b:case value='${iconName}'/>${innerContent}`
+    })
 
     const includable = `<b:includable id='@meteor'>
   <svg expr:class='"i i-" + data:icon' viewBox='0 0 24 24'>

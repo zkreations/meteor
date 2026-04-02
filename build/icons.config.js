@@ -6,7 +6,9 @@ const __dirname = path.dirname(__filename)
 
 export default {
   iconsDir: path.join(__dirname, '../icons/'),
-  outputDir: path.join(__dirname, '../exports/'),
+  outputDir: path.join(__dirname, '../packages/core/exports/'),
+
+  coreIconsDir: path.join(__dirname, '../packages/core/icons/'),
 
   spriteFilename: 'icons.svg',
   includableFilename: 'icons.xml',
