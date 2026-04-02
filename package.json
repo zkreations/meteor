@@ -10,7 +10,8 @@
     "build:sprite": "node ./build/generate-sprite.js",
     "build:includable": "node ./build/generate-includable.js",
     "build:core": "node ./build/generate-core.js",
-    "build:react": "node ./build/generate-react.js"
+    "build:react": "node ./build/generate-react.js",
+    "build:preact": "node ./build/generate-preact.js"
   },
   "files": [
     "icons",
