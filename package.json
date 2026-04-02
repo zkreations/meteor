@@ -7,6 +7,9 @@
   "scripts": {
     "prebuild": "node ./build/generate-svg.js",
     "build": "run-p build:*",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:react": "vitest run test/react --environment jsdom",
     "build:sprite": "node ./build/generate-sprite.js",
     "build:includable": "node ./build/generate-includable.js",
     "build:core": "node ./build/generate-core.js",
@@ -33,10 +36,15 @@
   },
   "homepage": "https://github.com/zkreations/icons#readme",
   "devDependencies": {
+    "@testing-library/react": "^16.3.0",
     "cheerio": "^1.2.0",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
+    "jsdom": "^29.0.1",
     "npm-run-all": "^4.1.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vitest": "^4.1.2",
     "svg-sprite": "^2.0.4",
     "svgo": "^4.0.1"
   }
