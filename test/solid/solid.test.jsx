@@ -16,7 +16,7 @@ afterEach(() => {
 })
 
 describe('solid icons', () => {
-  it('renders non-brand icons with default svg attributes', () => {
+  it('renders icons with default svg attributes', () => {
     const cases = [
       {
         Icon: AlarmClock,

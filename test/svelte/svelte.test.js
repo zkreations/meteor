@@ -14,7 +14,7 @@ afterEach(() => {
 })
 
 describe('svelte icons', () => {
-  it('renders non-brand icons with default svg attributes', () => {
+  it('renders icons with default svg attributes', () => {
     const cases = [
       {
         Component: AlarmClock,
