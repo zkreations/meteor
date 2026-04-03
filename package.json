@@ -15,6 +15,7 @@
     "test:astro": "vitest run test/astro --environment jsdom",
     "build:svg": "node ./build/generate-svg.js",
     "build:core": "node ./build/generate-core.js",
+    "build:vanilla": "node ./build/generate-vanilla.js",
     "build:sprite": "node ./build/generate-sprite.js",
     "build:includable": "node ./build/generate-includable.js",
     "build:react": "node ./build/generate-react.js",

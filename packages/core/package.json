@@ -1,9 +1,29 @@
 {
   "name": "meteor-icons",
   "version": "4.0.0",
+  "type": "module",
+  "main": "src/esm/index.js",
+  "module": "src/esm/index.js",
+  "exports": {
+    ".": {
+      "default": "./src/esm/index.js"
+    },
+    "./icons": {
+      "default": "./src/esm/icons.js"
+    },
+    "./icons/*": {
+      "default": "./src/esm/icons/*.js"
+    },
+    "./browser": {
+      "default": "./exports/icons.js"
+    },
+    "./exports/*": "./exports/*"
+  },
+  "sideEffects": false,
   "files": [
     "icons",
-    "exports"
+    "exports",
+    "src"
   ],
   "scripts": {
     "prepack": "npm --prefix ../.. run build"

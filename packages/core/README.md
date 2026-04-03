@@ -23,6 +23,45 @@ This package is not a framework wrapper. Instead, it provides base assets and ge
 - `exports/icons.json`: canonical icon map
 - `exports/icons.svg`: sprite output
 - `exports/icons.xml`: Blogger inclusion output
+- `exports/icons.js`: browser-ready vanilla runtime (minified)
+- `src/esm/*`: ESM runtime and per-icon modules
+
+### Vanilla JS (Browser)
+
+Use the browser build via a CDN. After including the script, call `createIcons()` to automatically replace elements that use the `data-i` attribute.
+
+```html
+<i data-i="star"></i>
+<i data-i="code"></i>
+
+<script src="https://unpkg.com/meteor-icons@latest/browser"></script>
+<script>
+  meteorIcons.createIcons()
+</script>
+```
+
+### Vanilla JS (ESM)
+
+Import all icons:
+
+```js
+import { createIcons, icons } from 'meteor-icons'
+
+createIcons({ icons })
+```
+
+Or import only the icons you actually use (recommended to reduce bundle size)
+
+```js
+import { createIcons, Star, Code } from 'meteor-icons'
+
+createIcons({
+  icons: {
+    Star,
+    Code
+  }
+})
+```
 
 ### CSS Base
 
