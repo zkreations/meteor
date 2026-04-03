@@ -1,8 +1,5 @@
 {
-  "name": "meteor-icons",
   "private": true,
-  "version": "4.0.0",
-  "description": "Handcrafted line by line, for as little code as possible",
   "type": "module",
   "scripts": {
     "prebuild": "node ./build/generate-svg.js",
@@ -24,10 +21,6 @@
     "build:svelte": "node ./build/generate-svelte.js",
     "build:astro": "node ./build/generate-astro.js"
   },
-  "files": [
-    "icons",
-    "exports"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zkreations/icons.git"
