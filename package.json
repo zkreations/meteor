@@ -12,6 +12,7 @@
     "test:solid": "vitest run test/solid --environment jsdom",
     "test:svelte": "vitest run test/svelte --environment jsdom",
     "test:astro": "vitest run test/astro --environment jsdom",
+    "test:core": "vitest run test/core --environment jsdom",
     "build:sprite": "node ./build/generate-sprite.js",
     "build:includable": "node ./build/generate-includable.js",
     "build:core": "node ./build/generate-core.js",
