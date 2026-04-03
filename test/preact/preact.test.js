@@ -81,9 +81,10 @@ describe('preact icons', () => {
     const ref = createRef()
     const { container } = render(h(AlarmClock, { ref }))
     const svg = container.querySelector('svg')
+    const refTarget = ref.current && ref.current.base ? ref.current.base : ref.current
 
-    expect(ref.current).toBe(svg)
-    expect(ref.current.tagName.toLowerCase()).toBe('svg')
+    expect(refTarget).toBe(svg)
+    expect(refTarget.tagName.toLowerCase()).toBe('svg')
   })
 
   it('normalizes node attributes and renders nested children with createIcon', () => {
