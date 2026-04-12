@@ -13,7 +13,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-docs/
 # Keep package scaffolding tracked, but ignore generated framework outputs.
 packages/*/src/*
 !packages/*/src/icons/
