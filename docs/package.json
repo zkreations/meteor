@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@meteor-icons/astro": "workspace:*",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.5",
     "tailwindcss": "^4.2.2"
