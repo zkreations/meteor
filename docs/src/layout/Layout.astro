@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 import "../styles/global.css";
 
 interface Props {
@@ -20,7 +23,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -39,6 +41,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
     <meta content={description} name='twitter:description'/>
 	</head>
 	<body>
+		<Header />
 		<slot />
+    <Footer />
 	</body>
 </html>

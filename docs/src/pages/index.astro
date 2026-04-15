@@ -1,8 +1,12 @@
 ---
 import Layout from '../layout/Layout.astro';
+import IconGrid from '../components/IconGrid.astro';
+import Hero from '../components/Hero.astro';
+
+const docsVersion = 'v4.0.0';
 ---
 
 <Layout title="Meteor Icons" description="Open source icon library for MeteorJS.">
-  <h1 class="text-3xl font-bold underline">Meteor Icons</h1>
-  <p>Open source icon library for MeteorJS.</p>
+  <Hero />
+  <IconGrid />
 </Layout>

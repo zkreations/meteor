@@ -1,0 +1,33 @@
+---
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js'
+import { Download, Image, Copy } from '@meteor-icons/astro'
+
+interface Props {
+  name: string
+  IconComponent: AstroComponentFactory
+}
+
+const { name, IconComponent } = Astro.props
+---
+
+<article
+  data-name={name}
+  data-category={name.split('-')[0]}
+  class="group"
+>
+  <div class="flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300">
+    <IconComponent size={24} />
+    <p class="text-slate-500 hover:text-teal-500 transition duration-300 cursor-text">{name}</p>
+  </div>
+  <div class="inset-[3px] flex gap-[3px] group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 *:bg-slate-100 *:cursor-pointer *:flex *:gap-1 *:hover:bg-slate-200 *:items-center *:justify-center *:py-3 *:rounded *:text-slate-700 *:w-full absolute group-hover:pointer-events-auto icon-actions pointer-events-none top-auto *:transition *:duration-300">
+    <button class="action-copy-svg" title="Copy SVG">
+      <Copy size={16} />
+    </button>
+    <button class="action-download-png" title="Download PNG">
+      <Image size={16} />
+    </button>
+    <button class="action-download-svg" title="Download SVG">
+      <Download size={16} />
+    </button>
+  </div>
+</article>

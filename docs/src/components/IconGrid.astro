@@ -1,0 +1,28 @@
+---
+import * as MeteorIcons from '@meteor-icons/astro'
+import { getIconList } from '../utils/icons'
+import IconFilters from './IconFilters.astro'
+import IconCard from './IconCard.astro'
+
+const icons = getIconList(MeteorIcons)
+const categories = ['all', ...new Set(icons.map(({ name }) => name.split('-')[0]))]
+
+const gridClasses = 'grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'
+const cardClasses = '*:flex *:flex-col *:items-center *:justify-center *:gap-2 *:rounded-lg *:border *:border-slate-200 *:text-center *:aspect-square *:transition *:hover:border-teal-500 *:cursor-pointer *:relative'
+---
+
+<section class="py-10 wrapper">
+  <IconFilters total={icons.length} categories={categories} />
+
+  <p id="icon-counter" class="mb-4 text-sm text-slate-500">Showing {icons.length} icons</p>
+
+  <div id="icon-grid" class=`${gridClasses} ${cardClasses}`>
+    {icons.map((icon) => <IconCard {...icon} />)}
+  </div>
+
+  <p id="icon-empty" class="hidden py-10 text-center text-slate-500">No icons found with your filters.</p>
+</section>
+
+<script>
+  import '../scripts/iconGrid.js'
+</script>
