@@ -2,6 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "docs:dev": "pnpm --filter @meteor-icons/docs dev",
+    "docs:build": "pnpm --filter @meteor-icons/docs build",
+    "docs:preview": "pnpm --filter @meteor-icons/docs preview",
     "prebuild": "run-s build:svg build:core",
     "build": "run-p build:*",
     "test": "vitest run",
@@ -37,14 +40,14 @@
   },
   "homepage": "https://github.com/zkreations/icons#readme",
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "@solidjs/testing-library": "^0.8.10",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "@testing-library/preact": "^3.2.4",
     "@testing-library/react": "^16.3.2",
     "@testing-library/svelte": "^5.3.1",
     "@testing-library/vue": "^8.1.0",
-    "cheerio": "^1.2.0",
     "astro": "^6.1.5",
+    "cheerio": "^1.2.0",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
     "jsdom": "^29.0.2",
@@ -54,10 +57,10 @@
     "react-dom": "^19.2.5",
     "solid-js": "^1.9.12",
     "svelte": "^5.55.3",
-    "vue": "^3.5.32",
+    "svg-sprite": "^2.0.4",
+    "svgo": "^4.0.1",
     "vite-plugin-solid": "^2.11.12",
     "vitest": "^4.1.4",
-    "svg-sprite": "^2.0.4",
-    "svgo": "^4.0.1"
+    "vue": "^3.5.32"
   }
 }
