@@ -1,37 +1,37 @@
 ---
+import { Search, AngleDown } from '@meteor-icons/astro'
+
 interface Props {
   total: number
-  categories: string[]
 }
 
-const { total, categories } = Astro.props
+const { total } = Astro.props
 ---
 
-<div class="mb-4 flex flex-col gap-3 md:flex-row">
-  <label class="relative block flex-1">
-    <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.3-4.3"></path>
-      </svg>
-    </span>
-    <input
-      id="icon-search"
-      type="search"
-      placeholder={`Search ${total} icons`}
-      class="h-11 w-full rounded-xl border border-slate-200 bg-white pl-10 pr-4 text-sm text-slate-700 outline-none transition focus:border-slate-300"
-    />
-  </label>
-
-  <label class="relative block md:w-48">
-    <select
-      id="icon-category"
-      class="h-11 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 pr-10 text-sm capitalize text-slate-700 outline-none transition focus:border-slate-300"
-    >
-      {categories.map((category) => (
-        <option value={category}>{category === 'all' ? 'Category' : category}</option>
-      ))}
-    </select>
-    <span class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-slate-400">▾</span>
-  </label>
+<div class="mb-4 flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-md sticky top-4 z-10">
+  <!-- dropdown of categories -->
+  <div class="relative">
+    <button class="flex items-center justify-between gap-1 rounded-md bg-slate-100 px-3 py-2 text-slate-700 w-40">
+      All
+      <AngleDown size={20} />
+    </button>
+    <!-- dropdown menu -->
+    <div class="absolute left-0 top-full mt-1 hidden w-full rounded-md border border-slate-200 bg-white shadow-lg">
+      <ul class="py-1 text-sm text-slate-700">
+        <li><button data-category="all" class="block w-full px-4 py-2 text-left hover:bg-slate-100">All Categories</button></li>
+      </ul>
+    </div>
+  </div>
+  <input
+    id="icon-search"
+    type="search"
+    placeholder={`Search ${total} icons`}
+    class="w-full bg-white text-slate-700 outline-none bg-transparent"
+    aria-label="Search icons"
+    autocomplete="off"
+    spellcheck="false"
+  />
+  <span class="pointer-events-none text-slate-400">
+    <Search />
+  </span>
 </div>
