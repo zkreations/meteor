@@ -1,11 +1,18 @@
 ---
+import IconSkeleton from './IconSkeleton.astro';
+
 const heroTitle = 'Meteor icons'
-const heroDescription = 'Meteor is an open-source icon pack, handcrafted at the code level, to achieve the highest possible optimization.'
+const heroDescription = 'Meteor is an open-source icon set, designed at the code level through intelligent, human reasoning that surpasses automated optimization, ensuring clean and very lightweight code.'
 ---
 
 <section class="pt-10 md:pt-18 wrapper">
-  <h1 class="text-4xl font-semibold tracking-tight text-slate-900">{heroTitle}</h1>
-  <p class="mt-4 max-w-xl text-base leading-7 text-slate-600 text-balance">
-    {heroDescription}
-  </p>
+  <div class="flex justify-between lg:flex-row flex-col items-center gap-10">
+    <div class="flex flex-col lg:text-left text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">{heroTitle}</h1>
+      <p class="mt-4 leading-7 text-slate-600 text-balance md:text-lg">
+        {heroDescription}
+      </p>
+    </div>
+    <IconSkeleton customClass="max-w-lg flex-shrink-0" randomSelector=".svg-preview" />
+  </div>
 </section>

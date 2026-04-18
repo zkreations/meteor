@@ -16,10 +16,10 @@ const { name, IconComponent } = Astro.props
   class="group"
 >
   <div class="flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300">
-    <IconComponent size={24} />
+    <IconComponent size={24} class="svg-preview" />
     <p class="text-slate-500 hover:text-teal-500 transition duration-300 cursor-text">{name}</p>
   </div>
-  <div class="inset-[3px] flex gap-[3px] group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 *:bg-slate-100 *:cursor-pointer *:flex *:gap-1 *:hover:bg-slate-200 *:items-center *:justify-center *:py-3 *:rounded *:text-slate-700 *:w-full absolute group-hover:pointer-events-auto icon-actions pointer-events-none top-auto *:transition *:duration-300">
+  <div class="inset-0.75 flex gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 *:bg-slate-100 *:cursor-pointer *:flex *:gap-1 *:hover:bg-slate-200 *:items-center *:justify-center *:py-3 *:rounded *:text-slate-700 *:w-full absolute group-hover:pointer-events-auto icon-actions pointer-events-none top-auto *:transition *:duration-300">
     <button class="action-copy-svg" title="Copy SVG">
       <Copy size={16} />
     </button>
