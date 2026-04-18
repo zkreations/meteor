@@ -1,8 +1,31 @@
 {
   "name": "algolia",
   "title": "Algolia",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "development",
+    "software"
+  ],
+  "tags": [
+    "search",
+    "api",
+    "hosting",
+    "cloud",
+    "saas"
+  ],
+  "aliases": [
+    "algolia search",
+    "algolia logo",
+    "search platform"
+  ],
+  "keywords": [
+    "instant search",
+    "site search",
+    "autocomplete",
+    "developer tools",
+    "search engine",
+    "frontend search",
+    "backend search",
+    "hosted search"
+  ]
 }

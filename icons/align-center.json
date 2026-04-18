@@ -1,8 +1,31 @@
 {
   "name": "align-center",
   "title": "Align Center",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "text",
+    "editor",
+    "ui"
+  ],
+  "tags": [
+    "alignment",
+    "formatting",
+    "typography",
+    "paragraph",
+    "layout"
+  ],
+  "aliases": [
+    "center text",
+    "text center",
+    "center align"
+  ],
+  "keywords": [
+    "paragraph center",
+    "text formatting",
+    "editor toolbar",
+    "horizontal center",
+    "content alignment",
+    "word processor",
+    "middle align",
+    "rich text"
+  ]
 }

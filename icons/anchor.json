@@ -1,8 +1,31 @@
 {
   "name": "anchor",
   "title": "Anchor",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "travel",
+    "marine",
+    "objects"
+  ],
+  "tags": [
+    "boat",
+    "ship",
+    "nautical",
+    "harbor",
+    "sea"
+  ],
+  "aliases": [
+    "ship anchor",
+    "boat anchor",
+    "nautical anchor"
+  ],
+  "keywords": [
+    "maritime",
+    "dock",
+    "ocean",
+    "sailing",
+    "stability",
+    "navigation",
+    "harbor equipment",
+    "sea transport"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "alarm-plus",
   "title": "Alarm Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "time",
+    "ui",
+    "actions"
+  ],
+  "tags": [
+    "alarm",
+    "add",
+    "create",
+    "clock",
+    "schedule"
+  ],
+  "aliases": [
+    "add alarm",
+    "new alarm",
+    "create alarm"
+  ],
+  "keywords": [
+    "set alarm",
+    "add reminder",
+    "new notification",
+    "clock plus",
+    "schedule alert",
+    "create reminder",
+    "alarm setup",
+    "manage alarms"
+  ]
 }

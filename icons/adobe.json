@@ -1,8 +1,28 @@
 {
   "name": "adobe",
   "title": "Adobe",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "design",
+    "software"
+  ],
+  "tags": [
+    "creative",
+    "graphics",
+    "editing",
+    "media"
+  ],
+  "aliases": [
+    "creative cloud"
+  ],
+  "keywords": [
+    "photoshop",
+    "illustrator",
+    "premiere",
+    "pdf",
+    "acrobat",
+    "lightroom",
+    "after effects",
+    "indesign"
+  ]
 }

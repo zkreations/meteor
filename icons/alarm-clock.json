@@ -1,8 +1,31 @@
 {
   "name": "alarm-clock",
   "title": "Alarm Clock",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "time",
+    "devices",
+    "ui"
+  ],
+  "tags": [
+    "clock",
+    "alarm",
+    "schedule",
+    "timer",
+    "reminder"
+  ],
+  "aliases": [
+    "alarm",
+    "clock alarm",
+    "wake alarm"
+  ],
+  "keywords": [
+    "wake up",
+    "morning alarm",
+    "notification",
+    "bedside clock",
+    "time alert",
+    "set alarm",
+    "ring bell",
+    "appointment reminder"
+  ]
 }

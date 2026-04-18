@@ -1,8 +1,31 @@
 {
   "name": "album",
   "title": "Album",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "music",
+    "files"
+  ],
+  "tags": [
+    "album",
+    "audio",
+    "songs",
+    "collection",
+    "playlist"
+  ],
+  "aliases": [
+    "music album",
+    "record album",
+    "song collection"
+  ],
+  "keywords": [
+    "tracks",
+    "discography",
+    "artist release",
+    "audio library",
+    "lp",
+    "vinyl",
+    "record",
+    "music collection"
+  ]
 }

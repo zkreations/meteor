@@ -1,8 +1,31 @@
 {
   "name": "align-justify",
   "title": "Align Justify",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "text",
+    "editor",
+    "ui"
+  ],
+  "tags": [
+    "alignment",
+    "formatting",
+    "typography",
+    "paragraph",
+    "layout"
+  ],
+  "aliases": [
+    "justify text",
+    "text justify",
+    "full justify"
+  ],
+  "keywords": [
+    "paragraph justify",
+    "text formatting",
+    "editor toolbar",
+    "equal margins",
+    "word processor",
+    "rich text",
+    "block text",
+    "content alignment"
+  ]
 }

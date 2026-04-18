@@ -1,8 +1,31 @@
 {
   "name": "alarm-snooze",
   "title": "Alarm Snooze",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "time",
+    "ui",
+    "actions"
+  ],
+  "tags": [
+    "alarm",
+    "snooze",
+    "sleep",
+    "clock",
+    "delay"
+  ],
+  "aliases": [
+    "snooze alarm",
+    "delay alarm",
+    "sleep alarm"
+  ],
+  "keywords": [
+    "postpone alarm",
+    "sleep more",
+    "remind later",
+    "clock snooze",
+    "morning delay",
+    "temporary mute",
+    "wake later",
+    "alarm pause"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "amazon",
   "title": "Amazon",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "shopping",
+    "technology"
+  ],
+  "tags": [
+    "ecommerce",
+    "retail",
+    "marketplace",
+    "cloud",
+    "delivery"
+  ],
+  "aliases": [
+    "amazon logo",
+    "aws",
+    "amazon web services"
+  ],
+  "keywords": [
+    "online shopping",
+    "prime",
+    "marketplace",
+    "seller platform",
+    "cloud computing",
+    "aws cloud",
+    "retail store",
+    "delivery service"
+  ]
 }

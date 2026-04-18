@@ -1,8 +1,31 @@
 {
   "name": "airplay",
   "title": "Airplay",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "media",
+    "connectivity"
+  ],
+  "tags": [
+    "streaming",
+    "wireless",
+    "display",
+    "casting",
+    "screen"
+  ],
+  "aliases": [
+    "screen mirroring",
+    "apple airplay",
+    "cast screen"
+  ],
+  "keywords": [
+    "tv",
+    "apple tv",
+    "audio streaming",
+    "video streaming",
+    "wireless display",
+    "mirror iphone",
+    "mac display",
+    "speaker connection"
+  ]
 }

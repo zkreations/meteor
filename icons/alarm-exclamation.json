@@ -1,8 +1,31 @@
 {
   "name": "alarm-exclamation",
   "title": "Alarm Exclamation",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "time",
+    "alerts",
+    "ui"
+  ],
+  "tags": [
+    "alarm",
+    "warning",
+    "notification",
+    "clock",
+    "urgent"
+  ],
+  "aliases": [
+    "alarm warning",
+    "clock alert",
+    "alarm notification"
+  ],
+  "keywords": [
+    "missed alarm",
+    "important reminder",
+    "time warning",
+    "urgent alert",
+    "schedule issue",
+    "deadline warning",
+    "attention clock",
+    "reminder exclamation"
+  ]
 }
