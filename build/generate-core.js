@@ -2,6 +2,9 @@ import fs from 'fs'
 import path from 'path'
 
 import config from './icons.config.js'
+import { generateCoreVanilla } from './core/generate-core-vanilla.js'
+import { generateCoreSprite } from './core/create-core-sprite.js'
+import { generateCoreIncludable } from './core/create-core-includable.js'
 
 const SRC_ICONS = config.iconsDir
 const DIST_ICONS = config.coreIconsDir
@@ -21,15 +24,26 @@ function copyDir (src, dest) {
 
     if (fs.statSync(srcPath).isDirectory()) {
       copyDir(srcPath, destPath)
-    } else {
+    } else if (path.extname(entry).toLowerCase() === '.svg') {
       fs.copyFileSync(srcPath, destPath)
     }
   }
 }
 
-console.log('Building meteor-icons core package')
+async function generateCorePackage () {
+  console.log('Building meteor-icons core package')
 
-resetDir(DIST_ICONS)
-copyDir(SRC_ICONS, DIST_ICONS)
+  resetDir(DIST_ICONS)
+  copyDir(SRC_ICONS, DIST_ICONS)
 
-console.log('Core package ready')
+  await generateCoreVanilla()
+  await generateCoreSprite()
+  await generateCoreIncludable()
+
+  console.log('Core package ready')
+}
+
+generateCorePackage().catch((error) => {
+  console.error('Error generating core package:', error.message)
+  process.exit(1)
+})
