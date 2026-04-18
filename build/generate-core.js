@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 import config from './icons.config.js'
-import { generateCoreVanilla } from './core/generate-core-vanilla.js'
+import { generateCoreVanilla } from './core/create-core-vanilla.js'
 import { generateCoreSprite } from './core/create-core-sprite.js'
 import { generateCoreIncludable } from './core/create-core-includable.js'
 
