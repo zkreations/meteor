@@ -1,8 +1,31 @@
 {
   "name": "filter",
   "title": "Filter",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "tools",
+    "data"
+  ],
+  "tags": [
+    "filter",
+    "sort",
+    "refine",
+    "search",
+    "options"
+  ],
+  "aliases": [
+    "data filter",
+    "refine results",
+    "filter tool"
+  ],
+  "keywords": [
+    "narrow results",
+    "apply criteria",
+    "search filter",
+    "sort options",
+    "data selection",
+    "refine list",
+    "filter settings",
+    "content filtering"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "app-gallery",
   "title": "App Gallery",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "apps",
+    "media",
+    "ui"
+  ],
+  "tags": [
+    "gallery",
+    "grid",
+    "applications",
+    "launcher",
+    "collection"
+  ],
+  "aliases": [
+    "apps grid",
+    "app drawer",
+    "application gallery"
+  ],
+  "keywords": [
+    "home screen",
+    "icon grid",
+    "mobile apps",
+    "app list",
+    "launcher menu",
+    "application browser",
+    "installed apps",
+    "tiles layout"
+  ]
 }

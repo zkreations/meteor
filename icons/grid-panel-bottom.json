@@ -1,8 +1,31 @@
 {
   "name": "grid-panel-bottom",
   "title": "Grid Panel Bottom",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "panel",
+    "bottom",
+    "layout",
+    "interface"
+  ],
+  "aliases": [
+    "bottom panel grid",
+    "grid bottom section",
+    "lower panel layout"
+  ],
+  "keywords": [
+    "ui layout bottom panel",
+    "dashboard footer panel",
+    "grid interface section",
+    "split layout bottom",
+    "content panel bottom",
+    "layout region",
+    "interface structure",
+    "panel positioning"
+  ]
 }

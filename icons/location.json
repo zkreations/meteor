@@ -1,8 +1,31 @@
 {
   "name": "location",
   "title": "Location",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "navigation",
+    "maps",
+    "ui"
+  ],
+  "tags": [
+    "location",
+    "map",
+    "place",
+    "pin",
+    "gps"
+  ],
+  "aliases": [
+    "map location",
+    "place",
+    "geo location"
+  ],
+  "keywords": [
+    "address",
+    "geolocation",
+    "navigation",
+    "current place",
+    "destination",
+    "coordinates",
+    "map marker",
+    "find place"
+  ]
 }

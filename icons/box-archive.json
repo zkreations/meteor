@@ -1,8 +1,31 @@
 {
   "name": "box-archive",
   "title": "Box Archive",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "storage",
+    "ui"
+  ],
+  "tags": [
+    "archive",
+    "box",
+    "package",
+    "backup",
+    "container"
+  ],
+  "aliases": [
+    "archive box",
+    "storage box",
+    "boxed archive"
+  ],
+  "keywords": [
+    "compressed files",
+    "backup storage",
+    "saved package",
+    "document archive",
+    "warehouse box",
+    "data storage",
+    "packed files",
+    "record keeping"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "move-up",
   "title": "Move Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "navigation"
+  ],
+  "tags": [
+    "move",
+    "up",
+    "arrow",
+    "direction",
+    "reorder"
+  ],
+  "aliases": [
+    "up arrow",
+    "shift up",
+    "move higher"
+  ],
+  "keywords": [
+    "move item up",
+    "reorder list",
+    "increase position",
+    "sort ascending",
+    "drag up",
+    "raise element",
+    "upward action",
+    "UI navigation up"
+  ]
 }

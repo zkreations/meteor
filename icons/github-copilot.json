@@ -1,8 +1,31 @@
 {
   "name": "github-copilot",
-  "title": "Github Copilot",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "GitHub Copilot",
+  "categories": [
+    "brands",
+    "development",
+    "ai"
+  ],
+  "tags": [
+    "ai",
+    "coding",
+    "assistant",
+    "developer",
+    "automation"
+  ],
+  "aliases": [
+    "copilot",
+    "github copilot ai",
+    "code copilot"
+  ],
+  "keywords": [
+    "ai code assistant",
+    "code completion",
+    "pair programmer",
+    "developer tool",
+    "smart suggestions",
+    "coding automation",
+    "github tool",
+    "software development ai"
+  ]
 }

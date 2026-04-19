@@ -1,8 +1,31 @@
 {
   "name": "gear-alt",
   "title": "Gear Alt",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "settings",
+    "tools"
+  ],
+  "tags": [
+    "settings",
+    "gear",
+    "options",
+    "config",
+    "preferences"
+  ],
+  "aliases": [
+    "settings gear",
+    "configuration icon",
+    "options gear"
+  ],
+  "keywords": [
+    "app settings",
+    "system configuration",
+    "preferences menu",
+    "setup options",
+    "adjust settings",
+    "control panel",
+    "configuration tool",
+    "settings menu"
+  ]
 }

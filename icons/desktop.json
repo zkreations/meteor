@@ -1,8 +1,31 @@
 {
   "name": "desktop",
   "title": "Desktop",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "technology",
+    "computers"
+  ],
+  "tags": [
+    "computer",
+    "pc",
+    "monitor",
+    "workstation",
+    "hardware"
+  ],
+  "aliases": [
+    "desktop computer",
+    "pc",
+    "workstation"
+  ],
+  "keywords": [
+    "personal computer",
+    "home computer",
+    "office setup",
+    "monitor and tower",
+    "computer system",
+    "windows pc",
+    "mac desktop",
+    "work setup"
+  ]
 }

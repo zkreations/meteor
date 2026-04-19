@@ -1,8 +1,31 @@
 {
   "name": "carrot",
   "title": "Carrot",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "food",
+    "vegetables",
+    "health"
+  ],
+  "tags": [
+    "carrot",
+    "vegetable",
+    "nutrition",
+    "fresh",
+    "organic"
+  ],
+  "aliases": [
+    "orange carrot",
+    "root vegetable",
+    "fresh carrot"
+  ],
+  "keywords": [
+    "healthy food",
+    "vegan",
+    "salad ingredient",
+    "garden produce",
+    "vitamins",
+    "natural food",
+    "diet",
+    "farm vegetable"
+  ]
 }

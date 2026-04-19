@@ -1,8 +1,31 @@
 {
   "name": "plug",
   "title": "Plug",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "objects",
+    "technology",
+    "electronics"
+  ],
+  "tags": [
+    "plug",
+    "power",
+    "electricity",
+    "connector",
+    "socket"
+  ],
+  "aliases": [
+    "power plug",
+    "electrical plug",
+    "charger plug"
+  ],
+  "keywords": [
+    "power connection",
+    "electrical outlet",
+    "device charging",
+    "power supply",
+    "wall socket",
+    "electric connector",
+    "energy connection",
+    "appliance plug"
+  ]
 }

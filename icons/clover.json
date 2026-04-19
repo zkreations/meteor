@@ -1,8 +1,31 @@
 {
   "name": "clover",
   "title": "Clover",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "symbols",
+    "plants"
+  ],
+  "tags": [
+    "clover",
+    "luck",
+    "leaf",
+    "fortune",
+    "green"
+  ],
+  "aliases": [
+    "four leaf clover",
+    "lucky clover",
+    "shamrock"
+  ],
+  "keywords": [
+    "good luck",
+    "irish symbol",
+    "lucky charm",
+    "plant icon",
+    "fortune symbol",
+    "st patrick",
+    "green leaf",
+    "nature symbol"
+  ]
 }

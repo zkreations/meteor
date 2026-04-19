@@ -1,8 +1,31 @@
 {
   "name": "grid",
   "title": "Grid",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "layout",
+    "tiles",
+    "structure",
+    "columns"
+  ],
+  "aliases": [
+    "grid layout",
+    "tile grid",
+    "matrix layout"
+  ],
+  "keywords": [
+    "dashboard layout",
+    "app grid",
+    "icon grid",
+    "responsive design",
+    "content layout",
+    "UI structure",
+    "grid system",
+    "organized tiles"
+  ]
 }

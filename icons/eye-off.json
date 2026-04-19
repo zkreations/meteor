@@ -1,8 +1,31 @@
 {
   "name": "eye-off",
   "title": "Eye Off",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "privacy",
+    "visibility"
+  ],
+  "tags": [
+    "hidden",
+    "invisible",
+    "privacy",
+    "mask",
+    "conceal"
+  ],
+  "aliases": [
+    "hide",
+    "hidden eye",
+    "visibility off"
+  ],
+  "keywords": [
+    "toggle visibility",
+    "hide content",
+    "private mode",
+    "concealed data",
+    "mask password",
+    "disable view",
+    "secret info",
+    "hidden icon"
+  ]
 }

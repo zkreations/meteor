@@ -1,8 +1,31 @@
 {
   "name": "folder-search",
   "title": "Folder Search",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "folder",
+    "search",
+    "find",
+    "directory",
+    "lookup"
+  ],
+  "aliases": [
+    "search folder",
+    "find directory",
+    "folder lookup"
+  ],
+  "keywords": [
+    "locate folder",
+    "search directory",
+    "file organization",
+    "folder finder",
+    "directory search",
+    "file management",
+    "search action",
+    "lookup folder"
+  ]
 }

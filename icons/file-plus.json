@@ -1,8 +1,31 @@
 {
   "name": "file-plus",
   "title": "File Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "file",
+    "add",
+    "create",
+    "plus",
+    "document"
+  ],
+  "aliases": [
+    "add file",
+    "create file",
+    "new document"
+  ],
+  "keywords": [
+    "new document",
+    "create file",
+    "add item",
+    "file creation",
+    "document add",
+    "file management",
+    "plus action",
+    "file control"
+  ]
 }

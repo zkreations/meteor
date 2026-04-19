@@ -1,8 +1,31 @@
 {
   "name": "grip-horizontal",
   "title": "Grip Horizontal",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "controls",
+    "layout"
+  ],
+  "tags": [
+    "grip",
+    "drag",
+    "handle",
+    "move",
+    "horizontal"
+  ],
+  "aliases": [
+    "drag handle horizontal",
+    "horizontal grip",
+    "move handle"
+  ],
+  "keywords": [
+    "reorder items",
+    "drag and drop",
+    "sortable list",
+    "move row",
+    "resize handle",
+    "UI handle",
+    "drag control",
+    "layout adjustment"
+  ]
 }

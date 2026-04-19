@@ -1,8 +1,31 @@
 {
   "name": "message-dots",
   "title": "Message Dots",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "ui",
+    "messaging"
+  ],
+  "tags": [
+    "message",
+    "chat",
+    "typing",
+    "dots",
+    "conversation"
+  ],
+  "aliases": [
+    "typing indicator",
+    "chat dots",
+    "message typing"
+  ],
+  "keywords": [
+    "user is typing",
+    "live chat",
+    "messaging app",
+    "conversation status",
+    "reply indicator",
+    "chat feedback",
+    "typing animation",
+    "communication UI"
+  ]
 }

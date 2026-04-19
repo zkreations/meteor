@@ -1,8 +1,31 @@
 {
   "name": "pinterest",
   "title": "Pinterest",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "media"
+  ],
+  "tags": [
+    "social media",
+    "images",
+    "inspiration",
+    "boards",
+    "sharing"
+  ],
+  "aliases": [
+    "pinterest logo",
+    "pin board",
+    "pinterest app"
+  ],
+  "keywords": [
+    "visual discovery",
+    "idea boards",
+    "image sharing platform",
+    "design inspiration",
+    "home ideas",
+    "fashion inspiration",
+    "creative content",
+    "online pinboard"
+  ]
 }

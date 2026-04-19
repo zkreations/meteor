@@ -1,8 +1,31 @@
 {
   "name": "dollar",
   "title": "Dollar",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "finance",
+    "currency",
+    "symbols"
+  ],
+  "tags": [
+    "money",
+    "usd",
+    "currency",
+    "payment",
+    "price"
+  ],
+  "aliases": [
+    "dollar sign",
+    "usd symbol",
+    "currency dollar"
+  ],
+  "keywords": [
+    "$",
+    "us dollar",
+    "cost",
+    "pricing",
+    "financial value",
+    "payment amount",
+    "monetary symbol",
+    "budget"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "microsoft",
   "title": "Microsoft",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "technology",
+    "software"
+  ],
+  "tags": [
+    "software",
+    "windows",
+    "office",
+    "cloud",
+    "enterprise"
+  ],
+  "aliases": [
+    "ms",
+    "microsoft corp",
+    "microsoft logo"
+  ],
+  "keywords": [
+    "windows operating system",
+    "microsoft office",
+    "azure cloud",
+    "excel word powerpoint",
+    "software company",
+    "enterprise solutions",
+    "pc software",
+    "technology corporation"
+  ]
 }

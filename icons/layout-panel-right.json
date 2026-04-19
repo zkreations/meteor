@@ -1,8 +1,31 @@
 {
   "name": "layout-panel-right",
   "title": "Layout Panel Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "panel",
+    "right",
+    "sidebar",
+    "layout",
+    "settings"
+  ],
+  "aliases": [
+    "right panel",
+    "sidebar right",
+    "right dock"
+  ],
+  "keywords": [
+    "settings panel",
+    "info sidebar",
+    "layout split",
+    "dashboard panel",
+    "ui layout",
+    "right dock panel",
+    "workspace sidebar",
+    "side panel"
+  ]
 }

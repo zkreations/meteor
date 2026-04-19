@@ -1,8 +1,31 @@
 {
   "name": "compress",
   "title": "Compress",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "files",
+    "ui"
+  ],
+  "tags": [
+    "compress",
+    "zip",
+    "reduce",
+    "archive",
+    "file"
+  ],
+  "aliases": [
+    "zip",
+    "shrink",
+    "pack"
+  ],
+  "keywords": [
+    "file compression",
+    "reduce size",
+    "archive files",
+    "zip folder",
+    "data optimization",
+    "storage saving",
+    "bundle files",
+    "compressed folder"
+  ]
 }

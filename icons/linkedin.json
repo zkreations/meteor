@@ -1,8 +1,31 @@
 {
   "name": "linkedin",
-  "title": "Linkedin",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "LinkedIn",
+  "categories": [
+    "brands",
+    "social",
+    "professional"
+  ],
+  "tags": [
+    "network",
+    "jobs",
+    "career",
+    "business",
+    "profile"
+  ],
+  "aliases": [
+    "linkedin logo",
+    "linkedin social",
+    "in"
+  ],
+  "keywords": [
+    "professional network",
+    "job search",
+    "recruitment platform",
+    "resume profile",
+    "business connections",
+    "career networking",
+    "hiring platform",
+    "online CV"
+  ]
 }

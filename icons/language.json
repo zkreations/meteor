@@ -1,8 +1,31 @@
 {
   "name": "language",
   "title": "Language",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "education",
+    "ui"
+  ],
+  "tags": [
+    "language",
+    "translation",
+    "text",
+    "communication",
+    "globe"
+  ],
+  "aliases": [
+    "languages",
+    "language selector",
+    "translate language"
+  ],
+  "keywords": [
+    "multilingual",
+    "translation tool",
+    "spoken language",
+    "written language",
+    "locale settings",
+    "communication system",
+    "linguistics",
+    "language switch"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "bilibili",
   "title": "Bilibili",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "media",
+    "social"
+  ],
+  "tags": [
+    "video",
+    "streaming",
+    "anime",
+    "community",
+    "entertainment"
+  ],
+  "aliases": [
+    "bilibili logo",
+    "b站",
+    "bili bili"
+  ],
+  "keywords": [
+    "china video platform",
+    "anime videos",
+    "gaming content",
+    "livestream",
+    "creator platform",
+    "video sharing",
+    "asian media app",
+    "community platform"
+  ]
 }

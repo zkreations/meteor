@@ -1,8 +1,31 @@
 {
   "name": "badge-check",
   "title": "Badge Check",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "status",
+    "ui"
+  ],
+  "tags": [
+    "verified",
+    "approved",
+    "success",
+    "trust",
+    "certified"
+  ],
+  "aliases": [
+    "verified badge",
+    "check badge",
+    "approval badge"
+  ],
+  "keywords": [
+    "account verified",
+    "trusted profile",
+    "official mark",
+    "confirmation icon",
+    "quality seal",
+    "validated status",
+    "checkmark badge",
+    "authentication"
+  ]
 }

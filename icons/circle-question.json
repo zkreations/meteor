@@ -1,8 +1,31 @@
 {
   "name": "circle-question",
   "title": "Circle Question",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "support",
+    "communication"
+  ],
+  "tags": [
+    "help",
+    "question",
+    "faq",
+    "assistance",
+    "info"
+  ],
+  "aliases": [
+    "question circle",
+    "help circle",
+    "faq icon"
+  ],
+  "keywords": [
+    "need help",
+    "support center",
+    "common questions",
+    "tooltip help",
+    "learn more",
+    "assistance symbol",
+    "question mark",
+    "guidance icon"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "chain",
   "title": "Chain",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "objects",
+    "security",
+    "ui"
+  ],
+  "tags": [
+    "link",
+    "chain",
+    "connected",
+    "lock",
+    "binding"
+  ],
+  "aliases": [
+    "linked chain",
+    "chain link",
+    "connection chain"
+  ],
+  "keywords": [
+    "hyperlink",
+    "attachment",
+    "secure link",
+    "joined objects",
+    "metal chain",
+    "connect items",
+    "relationship",
+    "linked symbol"
+  ]
 }

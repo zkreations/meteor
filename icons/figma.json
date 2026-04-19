@@ -1,8 +1,31 @@
 {
   "name": "figma",
   "title": "Figma",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "design",
+    "tools"
+  ],
+  "tags": [
+    "ui",
+    "ux",
+    "design",
+    "prototype",
+    "collaboration"
+  ],
+  "aliases": [
+    "figma app",
+    "figma design",
+    "figma tool"
+  ],
+  "keywords": [
+    "interface design",
+    "collaborative design",
+    "prototyping tool",
+    "web design",
+    "product design",
+    "design system",
+    "ui ux platform",
+    "design software"
+  ]
 }

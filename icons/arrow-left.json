@@ -1,8 +1,31 @@
 {
   "name": "arrow-left",
   "title": "Arrow Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "left",
+    "direction",
+    "back",
+    "previous",
+    "horizontal"
+  ],
+  "aliases": [
+    "left arrow",
+    "back arrow",
+    "west arrow"
+  ],
+  "keywords": [
+    "go back",
+    "previous page",
+    "navigate left",
+    "return action",
+    "move left",
+    "horizontal navigation",
+    "back button",
+    "left direction"
+  ]
 }

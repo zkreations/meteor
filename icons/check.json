@@ -1,8 +1,31 @@
 {
   "name": "check",
   "title": "Check",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "status",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "check",
+    "success",
+    "done",
+    "confirm",
+    "approved"
+  ],
+  "aliases": [
+    "checkmark",
+    "tick",
+    "confirm mark"
+  ],
+  "keywords": [
+    "completed task",
+    "accepted action",
+    "validation success",
+    "approve item",
+    "correct result",
+    "done status",
+    "confirmation icon",
+    "success mark"
+  ]
 }

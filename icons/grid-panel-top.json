@@ -1,8 +1,31 @@
 {
   "name": "grid-panel-top",
   "title": "Grid Panel Top",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "panel",
+    "top",
+    "layout",
+    "header"
+  ],
+  "aliases": [
+    "top panel grid",
+    "grid top section",
+    "header layout"
+  ],
+  "keywords": [
+    "ui top panel",
+    "dashboard header",
+    "split screen top",
+    "content panel top",
+    "layout region",
+    "interface structure",
+    "panel positioning",
+    "header section"
+  ]
 }

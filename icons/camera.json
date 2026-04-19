@@ -1,8 +1,31 @@
 {
   "name": "camera",
   "title": "Camera",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "devices",
+    "photography"
+  ],
+  "tags": [
+    "photo",
+    "camera",
+    "picture",
+    "lens",
+    "capture"
+  ],
+  "aliases": [
+    "photo camera",
+    "take picture",
+    "camera device"
+  ],
+  "keywords": [
+    "photography tool",
+    "take photo",
+    "image capture",
+    "snapshot",
+    "digital camera",
+    "record memory",
+    "lens device",
+    "gallery photo"
+  ]
 }

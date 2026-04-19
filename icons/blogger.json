@@ -1,8 +1,31 @@
 {
   "name": "blogger",
   "title": "Blogger",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "content",
+    "social"
+  ],
+  "tags": [
+    "blog",
+    "writing",
+    "publishing",
+    "google",
+    "website"
+  ],
+  "aliases": [
+    "blogger logo",
+    "google blogger",
+    "blog platform"
+  ],
+  "keywords": [
+    "create blog",
+    "blog posts",
+    "website publishing",
+    "content creator",
+    "personal blog",
+    "google service",
+    "online writing",
+    "blog hosting"
+  ]
 }

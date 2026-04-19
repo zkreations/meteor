@@ -1,8 +1,31 @@
 {
   "name": "arrow-up-right",
   "title": "Arrow Up Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "up",
+    "right",
+    "diagonal",
+    "direction",
+    "corner"
+  ],
+  "aliases": [
+    "up right arrow",
+    "northeast arrow",
+    "diagonal right up"
+  ],
+  "keywords": [
+    "move top right",
+    "resize corner",
+    "navigate diagonal",
+    "north east direction",
+    "corner pointer",
+    "arrow northeast",
+    "upward right icon",
+    "diagonal navigation"
+  ]
 }

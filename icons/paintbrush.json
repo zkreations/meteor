@@ -1,8 +1,31 @@
 {
   "name": "paintbrush",
   "title": "Paintbrush",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "tools",
+    "art",
+    "design"
+  ],
+  "tags": [
+    "paintbrush",
+    "brush",
+    "art",
+    "painting",
+    "color"
+  ],
+  "aliases": [
+    "brush",
+    "art brush",
+    "painting brush"
+  ],
+  "keywords": [
+    "painting tool",
+    "art supplies",
+    "canvas painting",
+    "drawing brush",
+    "creative art",
+    "illustration tool",
+    "design tool",
+    "color application"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "google-gemini",
   "title": "Google Gemini",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "ai",
+    "technology"
+  ],
+  "tags": [
+    "ai",
+    "assistant",
+    "chatbot",
+    "machine-learning",
+    "google"
+  ],
+  "aliases": [
+    "gemini",
+    "google ai",
+    "gemini ai"
+  ],
+  "keywords": [
+    "large language model",
+    "generative ai",
+    "ai assistant",
+    "conversational ai",
+    "google ai platform",
+    "intelligent assistant",
+    "text generation",
+    "multimodal ai"
+  ]
 }

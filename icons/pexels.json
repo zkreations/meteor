@@ -1,8 +1,31 @@
 {
   "name": "pexels",
   "title": "Pexels",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "media",
+    "photography"
+  ],
+  "tags": [
+    "photos",
+    "videos",
+    "stock",
+    "images",
+    "free"
+  ],
+  "aliases": [
+    "pexels stock",
+    "pexels photos",
+    "pexels platform"
+  ],
+  "keywords": [
+    "free stock photos",
+    "stock videos",
+    "royalty free images",
+    "creative assets",
+    "photography library",
+    "download images",
+    "media library",
+    "visual content platform"
+  ]
 }

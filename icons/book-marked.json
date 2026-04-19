@@ -1,8 +1,31 @@
 {
   "name": "book-marked",
   "title": "Book Marked",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "education",
+    "reading",
+    "ui"
+  ],
+  "tags": [
+    "book",
+    "bookmark",
+    "saved",
+    "library",
+    "study"
+  ],
+  "aliases": [
+    "book bookmarked",
+    "saved book",
+    "marked book"
+  ],
+  "keywords": [
+    "reading list",
+    "favorite book",
+    "saved reference",
+    "study material",
+    "library item",
+    "bookmark page",
+    "reading progress",
+    "education resource"
+  ]
 }

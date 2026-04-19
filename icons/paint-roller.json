@@ -1,8 +1,31 @@
 {
   "name": "paint-roller",
   "title": "Paint Roller",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "tools",
+    "design",
+    "objects"
+  ],
+  "tags": [
+    "paint",
+    "roller",
+    "brush",
+    "color",
+    "wall"
+  ],
+  "aliases": [
+    "roller brush",
+    "paint roller brush",
+    "wall roller"
+  ],
+  "keywords": [
+    "home painting",
+    "wall painting tool",
+    "surface coating",
+    "decorating",
+    "interior design",
+    "paint application",
+    "renovation tool",
+    "construction tool"
+  ]
 }

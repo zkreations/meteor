@@ -1,8 +1,31 @@
 {
   "name": "heart",
   "title": "Heart",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "symbols",
+    "emotions",
+    "ui"
+  ],
+  "tags": [
+    "love",
+    "like",
+    "favorite",
+    "emotion",
+    "health"
+  ],
+  "aliases": [
+    "love heart",
+    "heart icon",
+    "heart symbol"
+  ],
+  "keywords": [
+    "affection",
+    "romance",
+    "favorite button",
+    "like reaction",
+    "support",
+    "care",
+    "emotional icon",
+    "health organ"
+  ]
 }

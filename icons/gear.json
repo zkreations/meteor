@@ -1,8 +1,31 @@
 {
   "name": "gear",
   "title": "Gear",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "settings",
+    "mechanical"
+  ],
+  "tags": [
+    "gear",
+    "settings",
+    "cog",
+    "configuration",
+    "mechanism"
+  ],
+  "aliases": [
+    "cogwheel",
+    "settings icon",
+    "gear icon"
+  ],
+  "keywords": [
+    "system settings",
+    "mechanical gear",
+    "configuration options",
+    "preferences",
+    "machine part",
+    "adjust settings",
+    "control settings",
+    "cog symbol"
+  ]
 }

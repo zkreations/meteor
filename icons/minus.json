@@ -1,8 +1,31 @@
 {
   "name": "minus",
   "title": "Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "math"
+  ],
+  "tags": [
+    "minus",
+    "remove",
+    "subtract",
+    "decrease",
+    "delete"
+  ],
+  "aliases": [
+    "subtract",
+    "dash",
+    "negative"
+  ],
+  "keywords": [
+    "reduce value",
+    "remove item",
+    "decrease quantity",
+    "math subtraction",
+    "negative sign",
+    "collapse section",
+    "delete action",
+    "less operation"
+  ]
 }

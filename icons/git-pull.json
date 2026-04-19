@@ -1,8 +1,31 @@
 {
   "name": "git-pull",
   "title": "Git Pull",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "pull",
+    "sync",
+    "repository",
+    "code"
+  ],
+  "aliases": [
+    "pull changes",
+    "git update",
+    "repository sync"
+  ],
+  "keywords": [
+    "fetch updates",
+    "download changes",
+    "sync repository",
+    "update codebase",
+    "git workflow",
+    "version control update",
+    "pull from remote",
+    "get latest changes"
+  ]
 }

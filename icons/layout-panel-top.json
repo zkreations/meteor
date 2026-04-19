@@ -1,8 +1,31 @@
 {
   "name": "layout-panel-top",
   "title": "Layout Panel Top",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "panel",
+    "top",
+    "header",
+    "layout",
+    "toolbar"
+  ],
+  "aliases": [
+    "top panel",
+    "header panel",
+    "top dock"
+  ],
+  "keywords": [
+    "top navigation bar",
+    "app header",
+    "toolbar layout",
+    "layout split",
+    "dashboard header",
+    "ui layout",
+    "workspace top panel",
+    "menu bar"
+  ]
 }

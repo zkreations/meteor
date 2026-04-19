@@ -1,8 +1,31 @@
 {
   "name": "headphones",
   "title": "Headphones",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "audio",
+    "technology"
+  ],
+  "tags": [
+    "audio",
+    "music",
+    "sound",
+    "listening",
+    "wireless"
+  ],
+  "aliases": [
+    "headset",
+    "earphones",
+    "over-ear headphones"
+  ],
+  "keywords": [
+    "music listening",
+    "audio device",
+    "wireless headphones",
+    "noise canceling",
+    "sound equipment",
+    "podcast listening",
+    "gaming headset",
+    "portable audio"
+  ]
 }

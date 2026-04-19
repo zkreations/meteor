@@ -1,8 +1,31 @@
 {
   "name": "folder-minus",
   "title": "Folder Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "folder",
+    "remove",
+    "minus",
+    "delete",
+    "directory"
+  ],
+  "aliases": [
+    "remove folder",
+    "folder delete",
+    "subtract folder"
+  ],
+  "keywords": [
+    "delete directory",
+    "remove folder",
+    "file management",
+    "folder action",
+    "reduce items",
+    "directory removal",
+    "minus action",
+    "folder control"
+  ]
 }

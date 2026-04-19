@@ -1,8 +1,31 @@
 {
   "name": "face-meh-blank",
   "title": "Face Meh Blank",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "emotions",
+    "ui",
+    "people"
+  ],
+  "tags": [
+    "neutral",
+    "meh",
+    "blank",
+    "indifferent",
+    "emotion"
+  ],
+  "aliases": [
+    "neutral face",
+    "meh face",
+    "blank expression"
+  ],
+  "keywords": [
+    "no emotion",
+    "indifferent mood",
+    "unimpressed reaction",
+    "emotionless face",
+    "neutral expression",
+    "apathetic",
+    "plain face",
+    "emotion icon"
+  ]
 }

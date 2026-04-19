@@ -1,8 +1,31 @@
 {
   "name": "nextjs",
-  "title": "Nextjs",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "Next.js",
+  "categories": [
+    "brands",
+    "development",
+    "frameworks"
+  ],
+  "tags": [
+    "react",
+    "framework",
+    "web",
+    "ssr",
+    "frontend"
+  ],
+  "aliases": [
+    "next js",
+    "next.js framework",
+    "nextjs logo"
+  ],
+  "keywords": [
+    "react framework",
+    "server side rendering",
+    "static site generation",
+    "web applications",
+    "full stack react",
+    "routing system",
+    "frontend development",
+    "vercel framework"
+  ]
 }

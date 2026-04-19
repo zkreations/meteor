@@ -1,8 +1,31 @@
 {
   "name": "image",
   "title": "Image",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "design",
+    "ui"
+  ],
+  "tags": [
+    "image",
+    "photo",
+    "picture",
+    "media",
+    "visual"
+  ],
+  "aliases": [
+    "picture",
+    "photo",
+    "graphic"
+  ],
+  "keywords": [
+    "visual content",
+    "digital image",
+    "illustration",
+    "gallery",
+    "media file",
+    "thumbnail",
+    "artwork",
+    "visual asset"
+  ]
 }

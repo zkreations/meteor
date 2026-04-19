@@ -1,8 +1,31 @@
 {
   "name": "angles-down",
   "title": "Angles Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "down",
+    "double chevron",
+    "expand",
+    "fast",
+    "direction"
+  ],
+  "aliases": [
+    "double down",
+    "chevrons down",
+    "expand all"
+  ],
+  "keywords": [
+    "scroll down",
+    "jump lower",
+    "more content",
+    "open section",
+    "downward navigation",
+    "move down fast",
+    "next area",
+    "collapse lower"
+  ]
 }

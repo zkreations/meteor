@@ -1,8 +1,31 @@
 {
   "name": "face-angry",
   "title": "Face Angry",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "emotions",
+    "ui",
+    "people"
+  ],
+  "tags": [
+    "angry",
+    "mad",
+    "rage",
+    "frustration",
+    "emotion"
+  ],
+  "aliases": [
+    "angry face",
+    "mad face",
+    "rage face"
+  ],
+  "keywords": [
+    "anger expression",
+    "frustrated mood",
+    "upset reaction",
+    "negative emotion",
+    "annoyed face",
+    "irritation",
+    "emotion icon",
+    "angry reaction"
+  ]
 }

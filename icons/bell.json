@@ -1,8 +1,31 @@
 {
   "name": "bell",
   "title": "Bell",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "notifications",
+    "ui",
+    "communication"
+  ],
+  "tags": [
+    "alert",
+    "reminder",
+    "ring",
+    "message",
+    "alarm"
+  ],
+  "aliases": [
+    "notification bell",
+    "alert bell",
+    "ring bell"
+  ],
+  "keywords": [
+    "new notification",
+    "unread alerts",
+    "system alerts",
+    "push message",
+    "reminder icon",
+    "announcement",
+    "warning bell",
+    "updates"
+  ]
 }

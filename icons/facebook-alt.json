@@ -1,8 +1,31 @@
 {
   "name": "facebook-alt",
   "title": "Facebook Alt",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication"
+  ],
+  "tags": [
+    "facebook",
+    "social media",
+    "network",
+    "sharing",
+    "community"
+  ],
+  "aliases": [
+    "facebook logo",
+    "fb",
+    "facebook icon"
+  ],
+  "keywords": [
+    "social platform",
+    "online community",
+    "share posts",
+    "connect friends",
+    "meta facebook",
+    "social network app",
+    "profile platform",
+    "social media site"
+  ]
 }

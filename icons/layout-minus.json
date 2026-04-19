@@ -1,8 +1,31 @@
 {
   "name": "layout-minus",
   "title": "Layout Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "actions"
+  ],
+  "tags": [
+    "layout",
+    "remove",
+    "minus",
+    "delete",
+    "structure"
+  ],
+  "aliases": [
+    "remove layout",
+    "layout delete",
+    "layout subtract"
+  ],
+  "keywords": [
+    "remove section",
+    "delete layout block",
+    "reduce layout",
+    "hide panel",
+    "layout editing",
+    "UI structure change",
+    "minus layout item",
+    "decrease columns"
+  ]
 }

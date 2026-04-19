@@ -1,8 +1,31 @@
 {
   "name": "hexagon",
   "title": "Hexagon",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shapes",
+    "geometry",
+    "design"
+  ],
+  "tags": [
+    "hexagon",
+    "shape",
+    "polygon",
+    "six-sided",
+    "geometry"
+  ],
+  "aliases": [
+    "six-sided shape",
+    "hex shape",
+    "hexagonal"
+  ],
+  "keywords": [
+    "geometric shape",
+    "six sides",
+    "honeycomb pattern",
+    "tessellation",
+    "design element",
+    "math shape",
+    "polygon figure",
+    "UI badge shape"
+  ]
 }

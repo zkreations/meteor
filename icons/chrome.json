@@ -1,8 +1,31 @@
 {
   "name": "chrome",
   "title": "Chrome",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "technology",
+    "browsers"
+  ],
+  "tags": [
+    "google",
+    "browser",
+    "web",
+    "internet",
+    "navigation"
+  ],
+  "aliases": [
+    "google chrome",
+    "chrome browser",
+    "chrome logo"
+  ],
+  "keywords": [
+    "web browser",
+    "internet browser",
+    "google browser",
+    "browse websites",
+    "chromium",
+    "tabs browser",
+    "desktop browser",
+    "mobile browser"
+  ]
 }

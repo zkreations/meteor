@@ -1,8 +1,31 @@
 {
   "name": "apple",
   "title": "Apple",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "technology",
+    "mobile"
+  ],
+  "tags": [
+    "iphone",
+    "mac",
+    "ios",
+    "hardware",
+    "software"
+  ],
+  "aliases": [
+    "apple logo",
+    "apple inc",
+    "cupertino"
+  ],
+  "keywords": [
+    "macbook",
+    "ipad",
+    "app store",
+    "watch",
+    "airpods",
+    "macos",
+    "technology company",
+    "consumer electronics"
+  ]
 }

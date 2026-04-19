@@ -1,8 +1,31 @@
 {
   "name": "pin",
   "title": "Pin",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "objects"
+  ],
+  "tags": [
+    "pin",
+    "location",
+    "marker",
+    "map",
+    "save"
+  ],
+  "aliases": [
+    "map pin",
+    "location pin",
+    "push pin"
+  ],
+  "keywords": [
+    "save location",
+    "bookmark place",
+    "map marker",
+    "geolocation",
+    "highlight position",
+    "destination pin",
+    "attach note",
+    "drop pin"
+  ]
 }

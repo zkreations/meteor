@@ -1,8 +1,31 @@
 {
   "name": "bookmark",
   "title": "Bookmark",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "reading",
+    "actions"
+  ],
+  "tags": [
+    "save",
+    "favorite",
+    "marker",
+    "reading",
+    "stored"
+  ],
+  "aliases": [
+    "save bookmark",
+    "favorite mark",
+    "page marker"
+  ],
+  "keywords": [
+    "saved item",
+    "reading list",
+    "favorite page",
+    "store link",
+    "quick access",
+    "saved content",
+    "mark page",
+    "collection item"
+  ]
 }

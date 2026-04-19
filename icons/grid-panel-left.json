@@ -1,8 +1,31 @@
 {
   "name": "grid-panel-left",
   "title": "Grid Panel Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "panel",
+    "left",
+    "layout",
+    "sidebar"
+  ],
+  "aliases": [
+    "left panel grid",
+    "grid left section",
+    "sidebar layout"
+  ],
+  "keywords": [
+    "ui left panel",
+    "sidebar navigation",
+    "dashboard layout",
+    "split screen left",
+    "content panel left",
+    "layout region",
+    "interface structure",
+    "panel positioning"
+  ]
 }

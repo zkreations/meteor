@@ -1,8 +1,31 @@
 {
   "name": "dribbble",
   "title": "Dribbble",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "design",
+    "community"
+  ],
+  "tags": [
+    "design",
+    "ui",
+    "ux",
+    "portfolio",
+    "creative"
+  ],
+  "aliases": [
+    "dribbble logo",
+    "design platform",
+    "dribbble app"
+  ],
+  "keywords": [
+    "design showcase",
+    "creative portfolio",
+    "ui inspiration",
+    "graphic design community",
+    "product design",
+    "visual inspiration",
+    "designer network",
+    "web design"
+  ]
 }

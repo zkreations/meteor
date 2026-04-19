@@ -1,8 +1,31 @@
 {
   "name": "openai",
-  "title": "Openai",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "OpenAI",
+  "categories": [
+    "brands",
+    "technology",
+    "ai"
+  ],
+  "tags": [
+    "ai",
+    "machine learning",
+    "chatbot",
+    "research",
+    "models"
+  ],
+  "aliases": [
+    "open ai",
+    "openai logo",
+    "openai company"
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "large language models",
+    "chatgpt",
+    "ai research lab",
+    "machine learning systems",
+    "generative ai",
+    "developer api",
+    "advanced AI tools"
+  ]
 }

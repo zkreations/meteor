@@ -1,8 +1,31 @@
 {
   "name": "map",
   "title": "Map",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "navigation",
+    "maps",
+    "ui"
+  ],
+  "tags": [
+    "map",
+    "location",
+    "navigation",
+    "gps",
+    "route"
+  ],
+  "aliases": [
+    "world map",
+    "geographic map",
+    "navigation map"
+  ],
+  "keywords": [
+    "directions",
+    "travel routes",
+    "explore places",
+    "geography",
+    "location finder",
+    "street map",
+    "navigation system",
+    "destination planning"
+  ]
 }

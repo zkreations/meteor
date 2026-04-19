@@ -1,8 +1,31 @@
 {
   "name": "comment-dots",
   "title": "Comment Dots",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "ui",
+    "social"
+  ],
+  "tags": [
+    "comment",
+    "chat",
+    "message",
+    "typing",
+    "feedback"
+  ],
+  "aliases": [
+    "typing comment",
+    "chat dots",
+    "message dots"
+  ],
+  "keywords": [
+    "conversation",
+    "reply indicator",
+    "messaging app",
+    "live chat",
+    "discussion",
+    "text bubbles",
+    "user comments",
+    "chat feedback"
+  ]
 }

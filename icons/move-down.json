@@ -1,8 +1,31 @@
 {
   "name": "move-down",
   "title": "Move Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "navigation"
+  ],
+  "tags": [
+    "move",
+    "down",
+    "arrow",
+    "sort",
+    "reorder"
+  ],
+  "aliases": [
+    "down arrow",
+    "move lower",
+    "shift down"
+  ],
+  "keywords": [
+    "move item down",
+    "reorder list",
+    "decrease position",
+    "sort descending",
+    "drag down",
+    "lower element",
+    "downward action",
+    "UI navigation down"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "microchip",
   "title": "Microchip",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "hardware",
+    "electronics"
+  ],
+  "tags": [
+    "chip",
+    "processor",
+    "circuit",
+    "hardware",
+    "semiconductor"
+  ],
+  "aliases": [
+    "chip",
+    "integrated circuit",
+    "cpu chip"
+  ],
+  "keywords": [
+    "computer processor",
+    "silicon chip",
+    "electronic circuit",
+    "embedded system",
+    "hardware component",
+    "microprocessor",
+    "digital electronics",
+    "computing core"
+  ]
 }

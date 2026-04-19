@@ -1,8 +1,31 @@
 {
   "name": "file",
   "title": "File",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "documents",
+    "ui"
+  ],
+  "tags": [
+    "file",
+    "document",
+    "data",
+    "storage",
+    "content"
+  ],
+  "aliases": [
+    "document",
+    "data file",
+    "file item"
+  ],
+  "keywords": [
+    "digital file",
+    "stored data",
+    "document item",
+    "file storage",
+    "content file",
+    "file system",
+    "data document",
+    "file object"
+  ]
 }

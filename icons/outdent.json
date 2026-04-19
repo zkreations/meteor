@@ -1,8 +1,31 @@
 {
   "name": "outdent",
   "title": "Outdent",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "formatting",
+    "ui"
+  ],
+  "tags": [
+    "outdent",
+    "format",
+    "text",
+    "code",
+    "spacing"
+  ],
+  "aliases": [
+    "decrease indent",
+    "unindent",
+    "remove indent"
+  ],
+  "keywords": [
+    "code formatting",
+    "text alignment",
+    "tab removal",
+    "reduce indentation",
+    "outdent text",
+    "editor formatting",
+    "nested structure",
+    "programming style"
+  ]
 }

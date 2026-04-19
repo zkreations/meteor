@@ -1,8 +1,31 @@
 {
   "name": "arrow-up-left",
   "title": "Arrow Up Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "up",
+    "left",
+    "diagonal",
+    "direction",
+    "corner"
+  ],
+  "aliases": [
+    "up left arrow",
+    "northwest arrow",
+    "diagonal left up"
+  ],
+  "keywords": [
+    "move top left",
+    "resize corner",
+    "navigate diagonal",
+    "north west direction",
+    "corner pointer",
+    "arrow northwest",
+    "upward left icon",
+    "diagonal navigation"
+  ]
 }

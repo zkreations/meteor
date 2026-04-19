@@ -1,8 +1,31 @@
 {
   "name": "crab",
   "title": "Crab",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "animals",
+    "nature",
+    "seafood"
+  ],
+  "tags": [
+    "crab",
+    "sea",
+    "marine",
+    "shellfish",
+    "ocean"
+  ],
+  "aliases": [
+    "sea crab",
+    "crustacean",
+    "marine crab"
+  ],
+  "keywords": [
+    "ocean animal",
+    "sea creature",
+    "claws",
+    "shore life",
+    "seafood dish",
+    "beach animal",
+    "marine biology",
+    "shell animal"
+  ]
 }

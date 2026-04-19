@@ -1,8 +1,31 @@
 {
   "name": "angles-up",
   "title": "Angles Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "up",
+    "double chevron",
+    "collapse",
+    "fast",
+    "direction"
+  ],
+  "aliases": [
+    "double up",
+    "chevrons up",
+    "scroll top"
+  ],
+  "keywords": [
+    "move up fast",
+    "back to top",
+    "collapse all",
+    "navigate upward",
+    "jump higher",
+    "upward navigation",
+    "close section",
+    "return top"
+  ]
 }

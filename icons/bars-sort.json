@@ -1,8 +1,31 @@
 {
   "name": "bars-sort",
   "title": "Bars Sort",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "sorting",
+    "controls"
+  ],
+  "tags": [
+    "sort",
+    "bars",
+    "order",
+    "list",
+    "arrange"
+  ],
+  "aliases": [
+    "sort menu",
+    "bars sort",
+    "order list"
+  ],
+  "keywords": [
+    "sort results",
+    "ascending descending",
+    "reorder items",
+    "table sorting",
+    "list organization",
+    "arrange data",
+    "sorting options",
+    "change order"
+  ]
 }

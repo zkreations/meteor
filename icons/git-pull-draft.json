@@ -1,8 +1,31 @@
 {
   "name": "git-pull-draft",
   "title": "Git Pull Draft",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "pull request",
+    "draft",
+    "code",
+    "review"
+  ],
+  "aliases": [
+    "draft pull request",
+    "wip pull request",
+    "pr draft"
+  ],
+  "keywords": [
+    "work in progress",
+    "code review draft",
+    "unfinished pull request",
+    "pre-merge changes",
+    "repository collaboration",
+    "git workflow",
+    "proposed changes",
+    "development draft"
+  ]
 }

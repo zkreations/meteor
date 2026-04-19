@@ -1,8 +1,31 @@
 {
   "name": "face-laugh",
   "title": "Face Laugh",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "emotions",
+    "ui",
+    "people"
+  ],
+  "tags": [
+    "laugh",
+    "happy",
+    "funny",
+    "joy",
+    "smile"
+  ],
+  "aliases": [
+    "laughing face",
+    "happy face",
+    "joy face"
+  ],
+  "keywords": [
+    "laughter expression",
+    "fun reaction",
+    "positive emotion",
+    "smiling mood",
+    "happy reaction",
+    "emotion icon",
+    "cheerful face",
+    "humor"
+  ]
 }

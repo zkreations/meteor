@@ -1,8 +1,31 @@
 {
   "name": "codesandbox",
   "title": "Codesandbox",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "development",
+    "tools"
+  ],
+  "tags": [
+    "coding",
+    "sandbox",
+    "editor",
+    "javascript",
+    "cloud"
+  ],
+  "aliases": [
+    "code sandbox",
+    "codesandbox io",
+    "sandbox editor"
+  ],
+  "keywords": [
+    "online ide",
+    "web development",
+    "react playground",
+    "frontend editor",
+    "share projects",
+    "cloud coding",
+    "live preview",
+    "developer platform"
+  ]
 }

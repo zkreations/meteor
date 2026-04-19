@@ -1,8 +1,31 @@
 {
   "name": "atom",
   "title": "Atom",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "science",
+    "education",
+    "technology"
+  ],
+  "tags": [
+    "physics",
+    "molecule",
+    "nucleus",
+    "energy",
+    "chemistry"
+  ],
+  "aliases": [
+    "atomic",
+    "atom symbol",
+    "science atom"
+  ],
+  "keywords": [
+    "electron",
+    "scientific icon",
+    "nuclear model",
+    "laboratory",
+    "research",
+    "particle",
+    "quantum",
+    "chemistry symbol"
+  ]
 }

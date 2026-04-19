@@ -1,8 +1,31 @@
 {
   "name": "fingerprint",
   "title": "Fingerprint",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "biometrics",
+    "technology"
+  ],
+  "tags": [
+    "fingerprint",
+    "identity",
+    "authentication",
+    "biometric",
+    "security"
+  ],
+  "aliases": [
+    "biometric print",
+    "fingerprint scan",
+    "touch id"
+  ],
+  "keywords": [
+    "identity verification",
+    "biometric security",
+    "finger scan",
+    "authentication method",
+    "secure access",
+    "user identity",
+    "touch authentication",
+    "digital security"
+  ]
 }

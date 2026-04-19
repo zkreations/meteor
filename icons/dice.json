@@ -1,8 +1,31 @@
 {
   "name": "dice",
   "title": "Dice",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "games",
+    "gaming",
+    "objects"
+  ],
+  "tags": [
+    "dice",
+    "random",
+    "roll",
+    "game",
+    "chance"
+  ],
+  "aliases": [
+    "die",
+    "game dice",
+    "rolling dice"
+  ],
+  "keywords": [
+    "random number",
+    "board games",
+    "casino games",
+    "chance system",
+    "roll result",
+    "gaming piece",
+    "probability tool",
+    "lucky roll"
+  ]
 }

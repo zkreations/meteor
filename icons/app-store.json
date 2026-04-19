@@ -1,8 +1,31 @@
 {
   "name": "app-store",
   "title": "App Store",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "apps",
+    "mobile"
+  ],
+  "tags": [
+    "apple",
+    "store",
+    "applications",
+    "ios",
+    "marketplace"
+  ],
+  "aliases": [
+    "apple app store",
+    "ios store",
+    "app marketplace"
+  ],
+  "keywords": [
+    "iphone apps",
+    "ipad apps",
+    "download apps",
+    "apple store",
+    "mobile applications",
+    "ios marketplace",
+    "install apps",
+    "app downloads"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "layout-panel-bottom",
   "title": "Layout Panel Bottom",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "panel",
+    "bottom",
+    "layout",
+    "dock",
+    "footer"
+  ],
+  "aliases": [
+    "bottom panel",
+    "bottom dock",
+    "footer panel"
+  ],
+  "keywords": [
+    "bottom sidebar",
+    "dock panel",
+    "ui footer section",
+    "layout split",
+    "panel layout",
+    "resizable bottom area",
+    "workspace panel",
+    "application layout"
+  ]
 }

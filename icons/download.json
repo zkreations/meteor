@@ -1,8 +1,31 @@
 {
   "name": "download",
   "title": "Download",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "files",
+    "ui"
+  ],
+  "tags": [
+    "download",
+    "save",
+    "file",
+    "transfer",
+    "data"
+  ],
+  "aliases": [
+    "download file",
+    "save file",
+    "get file"
+  ],
+  "keywords": [
+    "download content",
+    "save to device",
+    "file transfer",
+    "retrieve file",
+    "offline access",
+    "internet download",
+    "data transfer",
+    "fetch data"
+  ]
 }

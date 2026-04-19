@@ -1,8 +1,31 @@
 {
   "name": "layout-panel-left",
   "title": "Layout Panel Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "panel",
+    "left",
+    "sidebar",
+    "layout",
+    "navigation"
+  ],
+  "aliases": [
+    "left panel",
+    "sidebar left",
+    "left dock"
+  ],
+  "keywords": [
+    "navigation sidebar",
+    "app sidebar",
+    "layout split",
+    "dashboard panel",
+    "ui layout",
+    "left dock panel",
+    "workspace sidebar",
+    "side navigation"
+  ]
 }

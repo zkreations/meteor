@@ -1,8 +1,31 @@
 {
   "name": "feather",
   "title": "Feather",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "animals",
+    "objects"
+  ],
+  "tags": [
+    "feather",
+    "bird",
+    "light",
+    "soft",
+    "wing"
+  ],
+  "aliases": [
+    "bird feather",
+    "plume",
+    "feather icon"
+  ],
+  "keywords": [
+    "lightweight",
+    "soft texture",
+    "avian feather",
+    "nature symbol",
+    "bird wing",
+    "delicate object",
+    "natural element",
+    "flying bird"
+  ]
 }

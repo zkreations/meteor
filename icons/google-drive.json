@@ -1,8 +1,31 @@
 {
   "name": "google-drive",
   "title": "Google Drive",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "cloud",
+    "storage"
+  ],
+  "tags": [
+    "cloud",
+    "storage",
+    "files",
+    "sync",
+    "drive"
+  ],
+  "aliases": [
+    "drive",
+    "google cloud drive",
+    "gdrive"
+  ],
+  "keywords": [
+    "cloud storage",
+    "file sharing",
+    "online backup",
+    "document storage",
+    "sync files",
+    "collaboration",
+    "google workspace",
+    "digital storage"
+  ]
 }

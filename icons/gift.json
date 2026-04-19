@@ -1,8 +1,31 @@
 {
   "name": "gift",
   "title": "Gift",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "objects",
+    "occasions",
+    "ui"
+  ],
+  "tags": [
+    "gift",
+    "present",
+    "box",
+    "surprise",
+    "celebration"
+  ],
+  "aliases": [
+    "present",
+    "gift box",
+    "surprise box"
+  ],
+  "keywords": [
+    "birthday present",
+    "holiday gift",
+    "wrapped box",
+    "special occasion",
+    "gift giving",
+    "celebration item",
+    "wrapped present",
+    "surprise package"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "arrow-down",
   "title": "Arrow Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "down",
+    "direction",
+    "download",
+    "move",
+    "vertical"
+  ],
+  "aliases": [
+    "down arrow",
+    "arrow bottom",
+    "south arrow"
+  ],
+  "keywords": [
+    "scroll down",
+    "move lower",
+    "download file",
+    "navigate downward",
+    "bottom direction",
+    "expand below",
+    "drop menu",
+    "vertical navigation"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "git-pull-closed",
   "title": "Git Pull Closed",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "pull request",
+    "closed",
+    "merge",
+    "code"
+  ],
+  "aliases": [
+    "closed pull request",
+    "merged pull request closed",
+    "pr closed"
+  ],
+  "keywords": [
+    "pull request closed",
+    "code review finished",
+    "merged or rejected changes",
+    "repository workflow",
+    "version control status",
+    "git collaboration",
+    "development process",
+    "feature request closed"
+  ]
 }

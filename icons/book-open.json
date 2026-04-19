@@ -1,8 +1,31 @@
 {
   "name": "book-open",
   "title": "Book Open",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "education",
+    "reading",
+    "ui"
+  ],
+  "tags": [
+    "book",
+    "open",
+    "study",
+    "learning",
+    "library"
+  ],
+  "aliases": [
+    "open book",
+    "reading book",
+    "study book"
+  ],
+  "keywords": [
+    "read pages",
+    "education material",
+    "knowledge source",
+    "textbook",
+    "learning resource",
+    "library book",
+    "open pages",
+    "study content"
+  ]
 }

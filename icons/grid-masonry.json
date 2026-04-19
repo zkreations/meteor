@@ -1,8 +1,31 @@
 {
   "name": "grid-masonry",
   "title": "Grid Masonry",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "masonry",
+    "layout",
+    "columns",
+    "responsive"
+  ],
+  "aliases": [
+    "masonry grid",
+    "pinterest layout",
+    "waterfall grid"
+  ],
+  "keywords": [
+    "asymmetric layout",
+    "staggered grid",
+    "content blocks",
+    "responsive design",
+    "card layout",
+    "dynamic grid",
+    "web layout",
+    "image grid"
+  ]
 }

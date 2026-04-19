@@ -1,8 +1,31 @@
 {
   "name": "gamepad-modern",
   "title": "Gamepad Modern",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "gaming",
+    "devices",
+    "technology"
+  ],
+  "tags": [
+    "gamepad",
+    "controller",
+    "gaming",
+    "console",
+    "input"
+  ],
+  "aliases": [
+    "modern controller",
+    "gaming controller",
+    "console gamepad"
+  ],
+  "keywords": [
+    "video game controller",
+    "gaming device",
+    "console input",
+    "joystick buttons",
+    "play games",
+    "game controls",
+    "interactive device",
+    "gaming hardware"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "meta",
   "title": "Meta",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "technology",
+    "social"
+  ],
+  "tags": [
+    "meta",
+    "social media",
+    "company",
+    "vr",
+    "platform"
+  ],
+  "aliases": [
+    "meta platforms",
+    "facebook meta",
+    "meta logo"
+  ],
+  "keywords": [
+    "social network company",
+    "facebook parent company",
+    "virtual reality",
+    "metaverse",
+    "social media platform",
+    "tech company",
+    "digital communication",
+    "online platforms"
+  ]
 }

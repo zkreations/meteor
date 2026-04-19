@@ -1,8 +1,31 @@
 {
   "name": "instagram",
   "title": "Instagram",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "media"
+  ],
+  "tags": [
+    "photo",
+    "video",
+    "social media",
+    "sharing",
+    "stories"
+  ],
+  "aliases": [
+    "insta",
+    "ig",
+    "instagram logo"
+  ],
+  "keywords": [
+    "social network",
+    "photo sharing app",
+    "reels",
+    "stories",
+    "influencer platform",
+    "online community",
+    "mobile app",
+    "content creation"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "arrow-down-left",
   "title": "Arrow Down Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "down",
+    "left",
+    "diagonal",
+    "direction",
+    "corner"
+  ],
+  "aliases": [
+    "down left arrow",
+    "southwest arrow",
+    "diagonal left down"
+  ],
+  "keywords": [
+    "move bottom left",
+    "resize corner",
+    "navigate diagonal",
+    "south west direction",
+    "corner pointer",
+    "arrow southwest",
+    "downward left icon",
+    "diagonal navigation"
+  ]
 }

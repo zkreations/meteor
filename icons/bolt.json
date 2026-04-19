@@ -1,8 +1,31 @@
 {
   "name": "bolt",
   "title": "Bolt",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "energy",
+    "weather",
+    "ui"
+  ],
+  "tags": [
+    "lightning",
+    "power",
+    "electricity",
+    "speed",
+    "flash"
+  ],
+  "aliases": [
+    "lightning bolt",
+    "thunderbolt",
+    "electric bolt"
+  ],
+  "keywords": [
+    "fast action",
+    "charging",
+    "high voltage",
+    "storm icon",
+    "energy symbol",
+    "quick power",
+    "electric charge",
+    "speed boost"
+  ]
 }

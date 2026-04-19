@@ -1,8 +1,31 @@
 {
   "name": "hugo",
   "title": "Hugo",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "development",
+    "tools"
+  ],
+  "tags": [
+    "static site",
+    "generator",
+    "markdown",
+    "web",
+    "cms"
+  ],
+  "aliases": [
+    "hugo static site",
+    "hugo framework",
+    "hugo logo"
+  ],
+  "keywords": [
+    "static site generator",
+    "jamstack",
+    "fast websites",
+    "markdown blog",
+    "go language tool",
+    "website builder",
+    "content management",
+    "developer framework"
+  ]
 }

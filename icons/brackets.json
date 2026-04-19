@@ -1,8 +1,31 @@
 {
   "name": "brackets",
   "title": "Brackets",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "symbols",
+    "code"
+  ],
+  "tags": [
+    "square brackets",
+    "array",
+    "syntax",
+    "programming",
+    "notation"
+  ],
+  "aliases": [
+    "square brackets",
+    "array brackets",
+    "code brackets"
+  ],
+  "keywords": [
+    "list syntax",
+    "index access",
+    "javascript array",
+    "coding symbol",
+    "developer icon",
+    "programming characters",
+    "data structure",
+    "square brace notation"
+  ]
 }

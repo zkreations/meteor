@@ -1,8 +1,31 @@
 {
   "name": "file-text",
   "title": "File Text",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "documents",
+    "ui"
+  ],
+  "tags": [
+    "file",
+    "text",
+    "document",
+    "notes",
+    "content"
+  ],
+  "aliases": [
+    "text file",
+    "document file",
+    "note file"
+  ],
+  "keywords": [
+    "written document",
+    "text content",
+    "file document",
+    "notes file",
+    "document editor",
+    "file content",
+    "text document",
+    "writing file"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "incognito",
   "title": "Incognito",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "privacy",
+    "security",
+    "ui"
+  ],
+  "tags": [
+    "private",
+    "anonymous",
+    "hidden",
+    "browser",
+    "privacy"
+  ],
+  "aliases": [
+    "private mode",
+    "incognito mode",
+    "private browsing"
+  ],
+  "keywords": [
+    "anonymous browsing",
+    "no history",
+    "private session",
+    "hidden activity",
+    "secure mode",
+    "privacy protection",
+    "browser privacy",
+    "stealth mode"
+  ]
 }

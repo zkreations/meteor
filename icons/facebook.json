@@ -1,8 +1,31 @@
 {
   "name": "facebook",
   "title": "Facebook",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication"
+  ],
+  "tags": [
+    "facebook",
+    "social media",
+    "network",
+    "sharing",
+    "community"
+  ],
+  "aliases": [
+    "facebook logo",
+    "fb",
+    "meta facebook"
+  ],
+  "keywords": [
+    "social network",
+    "connect friends",
+    "share posts",
+    "online community",
+    "profile platform",
+    "social media app",
+    "messaging",
+    "news feed"
+  ]
 }

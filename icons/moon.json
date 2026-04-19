@@ -1,8 +1,31 @@
 {
   "name": "moon",
   "title": "Moon",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "space",
+    "nature",
+    "astronomy"
+  ],
+  "tags": [
+    "moon",
+    "night",
+    "space",
+    "satellite",
+    "lunar"
+  ],
+  "aliases": [
+    "lunar",
+    "earth moon",
+    "night moon"
+  ],
+  "keywords": [
+    "night sky",
+    "orbit",
+    "tides",
+    "eclipse",
+    "astronomy object",
+    "celestial body",
+    "space satellite",
+    "phases of the moon"
+  ]
 }

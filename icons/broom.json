@@ -1,8 +1,31 @@
 {
   "name": "broom",
   "title": "Broom",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "household",
+    "cleaning",
+    "tools"
+  ],
+  "tags": [
+    "broom",
+    "sweep",
+    "clean",
+    "dust",
+    "sanitize"
+  ],
+  "aliases": [
+    "sweeping broom",
+    "cleaning broom",
+    "sweep tool"
+  ],
+  "keywords": [
+    "house cleaning",
+    "floor cleaner",
+    "remove dirt",
+    "janitor tool",
+    "tidy room",
+    "clean house",
+    "dust removal",
+    "cleanup icon"
+  ]
 }

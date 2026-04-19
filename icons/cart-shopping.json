@@ -1,8 +1,31 @@
 {
   "name": "cart-shopping",
   "title": "Cart Shopping",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shopping",
+    "ecommerce",
+    "ui"
+  ],
+  "tags": [
+    "cart",
+    "store",
+    "purchase",
+    "checkout",
+    "basket"
+  ],
+  "aliases": [
+    "shopping cart",
+    "store cart",
+    "buy cart"
+  ],
+  "keywords": [
+    "online store",
+    "add to cart",
+    "checkout page",
+    "retail purchase",
+    "basket icon",
+    "ecommerce cart",
+    "buy products",
+    "shopping basket"
+  ]
 }

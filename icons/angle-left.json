@@ -1,8 +1,31 @@
 {
   "name": "angle-left",
   "title": "Angle Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "left",
+    "chevron",
+    "back",
+    "previous",
+    "direction"
+  ],
+  "aliases": [
+    "chevron left",
+    "arrow left",
+    "back arrow"
+  ],
+  "keywords": [
+    "go back",
+    "previous page",
+    "navigate left",
+    "sidebar collapse",
+    "carousel previous",
+    "leftward icon",
+    "return action",
+    "menu back"
+  ]
 }

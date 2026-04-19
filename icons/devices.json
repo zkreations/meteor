@@ -1,8 +1,31 @@
 {
   "name": "devices",
   "title": "Devices",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "hardware",
+    "ui"
+  ],
+  "tags": [
+    "devices",
+    "hardware",
+    "electronics",
+    "gadgets",
+    "screens"
+  ],
+  "aliases": [
+    "device set",
+    "tech devices",
+    "hardware devices"
+  ],
+  "keywords": [
+    "computers",
+    "laptop",
+    "tablet",
+    "smartphone",
+    "smart devices",
+    "electronics",
+    "screens",
+    "digital devices"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "check-double",
   "title": "Check Double",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "status",
+    "communication",
+    "ui"
+  ],
+  "tags": [
+    "check",
+    "double",
+    "confirmed",
+    "delivered",
+    "verified"
+  ],
+  "aliases": [
+    "double check",
+    "two checks",
+    "message delivered"
+  ],
+  "keywords": [
+    "read receipt",
+    "sent confirmed",
+    "delivery status",
+    "verified action",
+    "completed twice",
+    "messaging status",
+    "double tick",
+    "confirmation mark"
+  ]
 }

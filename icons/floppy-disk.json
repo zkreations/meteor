@@ -1,8 +1,31 @@
 {
   "name": "floppy-disk",
   "title": "Floppy Disk",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "storage",
+    "retro"
+  ],
+  "tags": [
+    "save",
+    "disk",
+    "storage",
+    "file",
+    "data"
+  ],
+  "aliases": [
+    "save icon",
+    "diskette",
+    "floppy"
+  ],
+  "keywords": [
+    "save file",
+    "data storage",
+    "old storage device",
+    "disk drive",
+    "retro technology",
+    "file saving",
+    "magnetic disk",
+    "backup data"
+  ]
 }

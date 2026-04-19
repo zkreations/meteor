@@ -1,8 +1,31 @@
 {
   "name": "brackets-round",
   "title": "Brackets Round",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "symbols",
+    "code"
+  ],
+  "tags": [
+    "parentheses",
+    "round brackets",
+    "syntax",
+    "math",
+    "programming"
+  ],
+  "aliases": [
+    "parenthesis",
+    "round braces",
+    "code parentheses"
+  ],
+  "keywords": [
+    "function call",
+    "math grouping",
+    "expression syntax",
+    "coding symbol",
+    "equation notation",
+    "developer icon",
+    "formula brackets",
+    "programming characters"
+  ]
 }

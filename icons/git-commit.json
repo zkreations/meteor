@@ -1,8 +1,31 @@
 {
   "name": "git-commit",
   "title": "Git Commit",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "commit",
+    "repository",
+    "code",
+    "versioning"
+  ],
+  "aliases": [
+    "commit",
+    "git save",
+    "repository commit"
+  ],
+  "keywords": [
+    "source control",
+    "save changes",
+    "code snapshot",
+    "version history",
+    "git workflow",
+    "commit message",
+    "repository update",
+    "software development"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "face-smile",
   "title": "Face Smile",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "emotions",
+    "ui",
+    "people"
+  ],
+  "tags": [
+    "smile",
+    "happy",
+    "joy",
+    "positive",
+    "emotion"
+  ],
+  "aliases": [
+    "smiling face",
+    "happy face",
+    "joy face"
+  ],
+  "keywords": [
+    "happy expression",
+    "positive mood",
+    "friendly reaction",
+    "pleasant emotion",
+    "emotion icon",
+    "cheerful face",
+    "smiling mood",
+    "good feeling"
+  ]
 }

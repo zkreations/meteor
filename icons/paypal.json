@@ -1,8 +1,31 @@
 {
   "name": "paypal",
-  "title": "Paypal",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "PayPal",
+  "categories": [
+    "brands",
+    "finance",
+    "payments"
+  ],
+  "tags": [
+    "payment",
+    "money",
+    "transfer",
+    "checkout",
+    "online"
+  ],
+  "aliases": [
+    "paypal logo",
+    "paypal payment",
+    "pp"
+  ],
+  "keywords": [
+    "online payments",
+    "digital wallet",
+    "money transfer",
+    "ecommerce checkout",
+    "send money online",
+    "secure payment system",
+    "peer to peer payments",
+    "online banking alternative"
+  ]
 }

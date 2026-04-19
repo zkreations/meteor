@@ -1,8 +1,31 @@
 {
   "name": "credit-card",
   "title": "Credit Card",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "finance",
+    "payments",
+    "ui"
+  ],
+  "tags": [
+    "payment",
+    "card",
+    "banking",
+    "transaction",
+    "money"
+  ],
+  "aliases": [
+    "debit card",
+    "bank card",
+    "payment card"
+  ],
+  "keywords": [
+    "online payment",
+    "checkout",
+    "purchase",
+    "card number",
+    "billing",
+    "financial transaction",
+    "ecommerce payment",
+    "digital wallet"
+  ]
 }

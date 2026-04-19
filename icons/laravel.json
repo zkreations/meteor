@@ -1,8 +1,31 @@
 {
   "name": "laravel",
   "title": "Laravel",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "development",
+    "frameworks"
+  ],
+  "tags": [
+    "php",
+    "backend",
+    "framework",
+    "web",
+    "api"
+  ],
+  "aliases": [
+    "laravel framework",
+    "laravel php",
+    "laravel logo"
+  ],
+  "keywords": [
+    "php framework",
+    "web development",
+    "mvc framework",
+    "backend api",
+    "artisan cli",
+    "server-side development",
+    "full stack backend",
+    "laravel ecosystem"
+  ]
 }

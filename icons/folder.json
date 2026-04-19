@@ -1,8 +1,31 @@
 {
   "name": "folder",
   "title": "Folder",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "organization",
+    "ui"
+  ],
+  "tags": [
+    "folder",
+    "directory",
+    "files",
+    "storage",
+    "organize"
+  ],
+  "aliases": [
+    "file folder",
+    "directory",
+    "file container"
+  ],
+  "keywords": [
+    "organize files",
+    "file storage",
+    "directory structure",
+    "group files",
+    "file system",
+    "document organization",
+    "storage folder",
+    "file container"
+  ]
 }

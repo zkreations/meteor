@@ -1,8 +1,31 @@
 {
   "name": "cloud",
   "title": "Cloud",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "weather",
+    "ui"
+  ],
+  "tags": [
+    "cloud",
+    "storage",
+    "sync",
+    "sky",
+    "online"
+  ],
+  "aliases": [
+    "cloud storage",
+    "online cloud",
+    "sky cloud"
+  ],
+  "keywords": [
+    "backup files",
+    "cloud computing",
+    "sync data",
+    "internet storage",
+    "weather icon",
+    "remote server",
+    "online services",
+    "digital storage"
+  ]
 }

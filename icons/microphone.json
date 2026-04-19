@@ -1,8 +1,31 @@
 {
   "name": "microphone",
   "title": "Microphone",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "audio",
+    "devices",
+    "technology"
+  ],
+  "tags": [
+    "microphone",
+    "audio",
+    "voice",
+    "recording",
+    "sound"
+  ],
+  "aliases": [
+    "mic",
+    "audio mic",
+    "voice recorder"
+  ],
+  "keywords": [
+    "voice input",
+    "record sound",
+    "speech capture",
+    "podcast microphone",
+    "streaming mic",
+    "audio recording device",
+    "sound input",
+    "voice chat"
+  ]
 }

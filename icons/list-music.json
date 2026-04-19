@@ -1,8 +1,31 @@
 {
   "name": "list-music",
   "title": "List Music",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "music",
+    "ui",
+    "media"
+  ],
+  "tags": [
+    "music",
+    "list",
+    "playlist",
+    "audio",
+    "songs"
+  ],
+  "aliases": [
+    "music list",
+    "playlist",
+    "song list"
+  ],
+  "keywords": [
+    "audio playlist",
+    "track list",
+    "music queue",
+    "song collection",
+    "media library",
+    "music player list",
+    "audio tracks",
+    "playlist view"
+  ]
 }

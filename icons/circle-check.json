@@ -1,8 +1,31 @@
 {
   "name": "circle-check",
   "title": "Circle Check",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "status",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "success",
+    "verified",
+    "approved",
+    "check",
+    "confirmation"
+  ],
+  "aliases": [
+    "check circle",
+    "success circle",
+    "verified badge"
+  ],
+  "keywords": [
+    "completed status",
+    "confirmation mark",
+    "validated action",
+    "accept result",
+    "positive state",
+    "done indicator",
+    "approved icon",
+    "success badge"
+  ]
 }

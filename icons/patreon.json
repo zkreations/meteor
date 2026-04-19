@@ -1,8 +1,31 @@
 {
   "name": "patreon",
   "title": "Patreon",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "finance",
+    "creator-economy"
+  ],
+  "tags": [
+    "subscription",
+    "support",
+    "creators",
+    "membership",
+    "donation"
+  ],
+  "aliases": [
+    "patreon logo",
+    "creator support",
+    "patreon platform"
+  ],
+  "keywords": [
+    "monthly support",
+    "creator funding",
+    "fan subscriptions",
+    "exclusive content",
+    "membership platform",
+    "crowdfunding creators",
+    "digital patronage",
+    "paid content access"
+  ]
 }

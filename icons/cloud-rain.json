@@ -1,8 +1,31 @@
 {
   "name": "cloud-rain",
   "title": "Cloud Rain",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "weather",
+    "nature",
+    "ui"
+  ],
+  "tags": [
+    "cloud",
+    "rain",
+    "storm",
+    "forecast",
+    "sky"
+  ],
+  "aliases": [
+    "rain cloud",
+    "rainy weather",
+    "cloud shower"
+  ],
+  "keywords": [
+    "weather forecast",
+    "wet weather",
+    "rainfall",
+    "showers",
+    "overcast rain",
+    "rainy sky",
+    "precipitation",
+    "stormy weather"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "compact-disc",
   "title": "Compact Disc",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "music",
+    "storage"
+  ],
+  "tags": [
+    "cd",
+    "disc",
+    "audio",
+    "music",
+    "data"
+  ],
+  "aliases": [
+    "cd",
+    "audio cd",
+    "disc"
+  ],
+  "keywords": [
+    "music album",
+    "audio storage",
+    "optical disc",
+    "tracks",
+    "playlist disc",
+    "digital media",
+    "physical media",
+    "recording disc"
+  ]
 }

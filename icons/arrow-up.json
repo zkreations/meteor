@@ -1,8 +1,31 @@
 {
   "name": "arrow-up",
   "title": "Arrow Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "up",
+    "direction",
+    "upload",
+    "move",
+    "vertical"
+  ],
+  "aliases": [
+    "up arrow",
+    "arrow top",
+    "north arrow"
+  ],
+  "keywords": [
+    "scroll up",
+    "move higher",
+    "upload file",
+    "navigate upward",
+    "top direction",
+    "collapse above",
+    "back to top",
+    "vertical navigation"
+  ]
 }

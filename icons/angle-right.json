@@ -1,8 +1,31 @@
 {
   "name": "angle-right",
   "title": "Angle Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "right",
+    "chevron",
+    "next",
+    "forward",
+    "direction"
+  ],
+  "aliases": [
+    "chevron right",
+    "arrow right",
+    "next arrow"
+  ],
+  "keywords": [
+    "go next",
+    "next page",
+    "navigate right",
+    "sidebar expand",
+    "carousel next",
+    "rightward icon",
+    "forward action",
+    "menu next"
+  ]
 }

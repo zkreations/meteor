@@ -1,8 +1,31 @@
 {
   "name": "grip",
   "title": "Grip",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "controls",
+    "layout"
+  ],
+  "tags": [
+    "grip",
+    "drag",
+    "handle",
+    "move",
+    "reorder"
+  ],
+  "aliases": [
+    "drag handle",
+    "move handle",
+    "reorder grip"
+  ],
+  "keywords": [
+    "drag and drop",
+    "sortable items",
+    "rearrange list",
+    "UI handle",
+    "move elements",
+    "layout control",
+    "grab icon",
+    "reorder interface"
+  ]
 }

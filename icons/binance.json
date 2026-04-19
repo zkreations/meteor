@@ -1,8 +1,31 @@
 {
   "name": "binance",
   "title": "Binance",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "finance",
+    "cryptocurrency"
+  ],
+  "tags": [
+    "exchange",
+    "trading",
+    "blockchain",
+    "crypto",
+    "wallet"
+  ],
+  "aliases": [
+    "binance logo",
+    "binance exchange",
+    "bnb"
+  ],
+  "keywords": [
+    "bitcoin trading",
+    "crypto platform",
+    "digital assets",
+    "bnb token",
+    "spot trading",
+    "futures trading",
+    "crypto wallet",
+    "blockchain exchange"
+  ]
 }

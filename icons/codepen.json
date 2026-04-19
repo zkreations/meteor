@@ -1,8 +1,31 @@
 {
   "name": "codepen",
   "title": "Codepen",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "development",
+    "community"
+  ],
+  "tags": [
+    "frontend",
+    "code",
+    "playground",
+    "css",
+    "javascript"
+  ],
+  "aliases": [
+    "codepen io",
+    "codepen logo",
+    "pen"
+  ],
+  "keywords": [
+    "online editor",
+    "frontend sandbox",
+    "html css js",
+    "web experiments",
+    "developer platform",
+    "share demos",
+    "coding playground",
+    "design prototypes"
+  ]
 }

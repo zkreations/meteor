@@ -1,8 +1,31 @@
 {
   "name": "copyright",
   "title": "Copyright",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "legal",
+    "symbols",
+    "ui"
+  ],
+  "tags": [
+    "copyright",
+    "legal",
+    "ownership",
+    "rights",
+    "intellectual property"
+  ],
+  "aliases": [
+    "copyright symbol",
+    "copyright mark",
+    "all rights reserved"
+  ],
+  "keywords": [
+    "intellectual property rights",
+    "content ownership",
+    "legal protection",
+    "protected work",
+    "creator rights",
+    "© symbol",
+    "rights reserved notice",
+    "licensing"
+  ]
 }

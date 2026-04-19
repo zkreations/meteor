@@ -1,8 +1,31 @@
 {
   "name": "mobile",
   "title": "Mobile",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "technology",
+    "communication"
+  ],
+  "tags": [
+    "mobile",
+    "phone",
+    "smartphone",
+    "device",
+    "cellphone"
+  ],
+  "aliases": [
+    "smartphone",
+    "cell phone",
+    "mobile phone"
+  ],
+  "keywords": [
+    "portable device",
+    "calls",
+    "messages",
+    "apps",
+    "touchscreen",
+    "android",
+    "ios",
+    "wireless communication"
+  ]
 }

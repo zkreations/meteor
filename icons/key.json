@@ -1,8 +1,31 @@
 {
   "name": "key",
   "title": "Key",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "objects",
+    "ui"
+  ],
+  "tags": [
+    "key",
+    "access",
+    "unlock",
+    "security",
+    "lock"
+  ],
+  "aliases": [
+    "access key",
+    "door key",
+    "lock key"
+  ],
+  "keywords": [
+    "unlock door",
+    "secure entry",
+    "authentication",
+    "password key",
+    "lock and key",
+    "permissions",
+    "entry control",
+    "safe access"
+  ]
 }

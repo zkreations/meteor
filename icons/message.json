@@ -1,8 +1,31 @@
 {
   "name": "message",
   "title": "Message",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "ui",
+    "messaging"
+  ],
+  "tags": [
+    "message",
+    "chat",
+    "text",
+    "conversation",
+    "communication"
+  ],
+  "aliases": [
+    "chat message",
+    "text message",
+    "sms"
+  ],
+  "keywords": [
+    "send message",
+    "receive message",
+    "conversation thread",
+    "chat app",
+    "direct message",
+    "communication tool",
+    "texting",
+    "messaging system"
+  ]
 }

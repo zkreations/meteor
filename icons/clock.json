@@ -1,8 +1,31 @@
 {
   "name": "clock",
   "title": "Clock",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "time",
+    "productivity",
+    "ui"
+  ],
+  "tags": [
+    "clock",
+    "time",
+    "schedule",
+    "watch",
+    "hour"
+  ],
+  "aliases": [
+    "time clock",
+    "analog clock",
+    "watch icon"
+  ],
+  "keywords": [
+    "current time",
+    "appointment time",
+    "deadline",
+    "time management",
+    "hour minute",
+    "schedule reminder",
+    "timer symbol",
+    "time indicator"
+  ]
 }

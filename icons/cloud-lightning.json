@@ -1,8 +1,31 @@
 {
   "name": "cloud-lightning",
   "title": "Cloud Lightning",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "weather",
+    "nature",
+    "ui"
+  ],
+  "tags": [
+    "storm",
+    "thunder",
+    "lightning",
+    "cloud",
+    "forecast"
+  ],
+  "aliases": [
+    "thunderstorm",
+    "storm cloud",
+    "lightning cloud"
+  ],
+  "keywords": [
+    "severe weather",
+    "electric storm",
+    "rain storm",
+    "weather alert",
+    "thundercloud",
+    "flash storm",
+    "bad weather",
+    "storm forecast"
+  ]
 }

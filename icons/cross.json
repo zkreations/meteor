@@ -1,8 +1,31 @@
 {
   "name": "cross",
   "title": "Cross",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "symbols",
+    "religion",
+    "ui"
+  ],
+  "tags": [
+    "cross",
+    "x",
+    "close",
+    "delete",
+    "christian"
+  ],
+  "aliases": [
+    "x mark",
+    "cross mark",
+    "plus cross"
+  ],
+  "keywords": [
+    "religious symbol",
+    "christian cross",
+    "cancel icon",
+    "remove item",
+    "close button",
+    "error mark",
+    "delete action",
+    "negative sign"
+  ]
 }

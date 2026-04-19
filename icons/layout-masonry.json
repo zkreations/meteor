@@ -1,8 +1,31 @@
 {
   "name": "layout-masonry",
   "title": "Layout Masonry",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "masonry",
+    "grid",
+    "layout",
+    "columns",
+    "responsive"
+  ],
+  "aliases": [
+    "masonry grid",
+    "pinterest layout",
+    "brick layout"
+  ],
+  "keywords": [
+    "dynamic grid",
+    "staggered layout",
+    "image gallery",
+    "responsive masonry",
+    "uneven columns",
+    "tile layout",
+    "portfolio grid",
+    "content arrangement"
+  ]
 }

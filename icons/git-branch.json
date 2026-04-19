@@ -1,8 +1,31 @@
 {
   "name": "git-branch",
   "title": "Git Branch",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "branch",
+    "repository",
+    "code",
+    "versioning"
+  ],
+  "aliases": [
+    "branch",
+    "git branching",
+    "repo branch"
+  ],
+  "keywords": [
+    "source control",
+    "code branch",
+    "development workflow",
+    "feature branch",
+    "git workflow",
+    "version control system",
+    "repository management",
+    "software development"
+  ]
 }

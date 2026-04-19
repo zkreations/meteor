@@ -1,8 +1,31 @@
 {
   "name": "flipboard",
   "title": "Flipboard",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "news",
+    "media"
+  ],
+  "tags": [
+    "news",
+    "magazine",
+    "reader",
+    "content",
+    "curation"
+  ],
+  "aliases": [
+    "flipboard app",
+    "flipboard reader",
+    "news aggregator"
+  ],
+  "keywords": [
+    "news app",
+    "content curation",
+    "digital magazine",
+    "article reader",
+    "personalized news",
+    "feed reader",
+    "media platform",
+    "news aggregator"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "forward-step",
   "title": "Forward Step",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "controls",
+    "ui"
+  ],
+  "tags": [
+    "forward",
+    "next",
+    "skip",
+    "step",
+    "advance"
+  ],
+  "aliases": [
+    "skip forward",
+    "next step",
+    "forward button"
+  ],
+  "keywords": [
+    "skip track",
+    "go next",
+    "advance media",
+    "next item",
+    "fast forward step",
+    "media control",
+    "navigation control",
+    "playback control"
+  ]
 }

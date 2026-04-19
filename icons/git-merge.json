@@ -1,8 +1,31 @@
 {
   "name": "git-merge",
   "title": "Git Merge",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "merge",
+    "branch",
+    "code",
+    "integration"
+  ],
+  "aliases": [
+    "merge branch",
+    "git integration",
+    "combine branches"
+  ],
+  "keywords": [
+    "code merge",
+    "branch integration",
+    "source control",
+    "conflict resolution",
+    "version control system",
+    "combine changes",
+    "development workflow",
+    "repository update"
+  ]
 }

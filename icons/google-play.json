@@ -1,8 +1,31 @@
 {
   "name": "google-play",
   "title": "Google Play",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "mobile",
+    "apps"
+  ],
+  "tags": [
+    "apps",
+    "store",
+    "android",
+    "games",
+    "downloads"
+  ],
+  "aliases": [
+    "play store",
+    "google play store",
+    "android market"
+  ],
+  "keywords": [
+    "app marketplace",
+    "android apps",
+    "game downloads",
+    "mobile apps",
+    "digital content",
+    "app store",
+    "google apps",
+    "software distribution"
+  ]
 }

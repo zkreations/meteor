@@ -1,8 +1,31 @@
 {
   "name": "books",
   "title": "Books",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "education",
+    "reading",
+    "library"
+  ],
+  "tags": [
+    "books",
+    "study",
+    "collection",
+    "knowledge",
+    "learning"
+  ],
+  "aliases": [
+    "book stack",
+    "library books",
+    "stacked books"
+  ],
+  "keywords": [
+    "reading collection",
+    "study materials",
+    "knowledge resources",
+    "school books",
+    "library shelf",
+    "multiple books",
+    "education content",
+    "book set"
+  ]
 }

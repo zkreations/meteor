@@ -1,8 +1,31 @@
 {
   "name": "columns",
   "title": "Columns",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "columns",
+    "layout",
+    "grid",
+    "structure",
+    "responsive"
+  ],
+  "aliases": [
+    "column layout",
+    "multi columns",
+    "grid columns"
+  ],
+  "keywords": [
+    "page layout",
+    "content layout",
+    "dashboard grid",
+    "ui structure",
+    "responsive design",
+    "text columns",
+    "panel layout",
+    "web layout"
+  ]
 }

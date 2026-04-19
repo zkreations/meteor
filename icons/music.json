@@ -1,8 +1,31 @@
 {
   "name": "music",
   "title": "Music",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "music",
+    "media",
+    "entertainment"
+  ],
+  "tags": [
+    "music",
+    "audio",
+    "sound",
+    "songs",
+    "playlist"
+  ],
+  "aliases": [
+    "songs",
+    "audio music",
+    "music library"
+  ],
+  "keywords": [
+    "listen to music",
+    "sound tracks",
+    "audio playback",
+    "music streaming",
+    "playlist songs",
+    "albums",
+    "sound system",
+    "entertainment audio"
+  ]
 }

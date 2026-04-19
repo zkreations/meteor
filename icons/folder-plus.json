@@ -1,8 +1,31 @@
 {
   "name": "folder-plus",
   "title": "Folder Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "files",
+    "actions",
+    "ui"
+  ],
+  "tags": [
+    "folder",
+    "add",
+    "create",
+    "plus",
+    "directory"
+  ],
+  "aliases": [
+    "add folder",
+    "create folder",
+    "new directory"
+  ],
+  "keywords": [
+    "create directory",
+    "add folder",
+    "file management",
+    "folder creation",
+    "organize files",
+    "directory add",
+    "plus action",
+    "folder control"
+  ]
 }

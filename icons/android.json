@@ -1,8 +1,31 @@
 {
   "name": "android",
   "title": "Android",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "technology",
+    "mobile"
+  ],
+  "tags": [
+    "google",
+    "operating system",
+    "smartphone",
+    "robot",
+    "os"
+  ],
+  "aliases": [
+    "android logo",
+    "google android",
+    "android os"
+  ],
+  "keywords": [
+    "mobile platform",
+    "phone system",
+    "apk",
+    "play store",
+    "smart devices",
+    "tablet os",
+    "android app",
+    "open source mobile"
+  ]
 }

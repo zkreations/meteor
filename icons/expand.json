@@ -1,8 +1,31 @@
 {
   "name": "expand",
   "title": "Expand",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "controls"
+  ],
+  "tags": [
+    "expand",
+    "maximize",
+    "fullscreen",
+    "grow",
+    "resize"
+  ],
+  "aliases": [
+    "maximize",
+    "expand view",
+    "fullscreen mode"
+  ],
+  "keywords": [
+    "increase size",
+    "open full view",
+    "maximize window",
+    "expand content",
+    "zoom out container",
+    "resize larger",
+    "show more",
+    "full screen"
+  ]
 }

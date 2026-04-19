@@ -1,8 +1,31 @@
 {
   "name": "face-frown",
   "title": "Face Frown",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "emotions",
+    "ui",
+    "people"
+  ],
+  "tags": [
+    "sad",
+    "frown",
+    "unhappy",
+    "disappointed",
+    "emotion"
+  ],
+  "aliases": [
+    "sad face",
+    "frowning face",
+    "unhappy face"
+  ],
+  "keywords": [
+    "sad expression",
+    "negative mood",
+    "disappointed reaction",
+    "feeling down",
+    "unhappy emotion",
+    "emotion icon",
+    "low mood",
+    "gloomy face"
+  ]
 }

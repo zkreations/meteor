@@ -1,8 +1,31 @@
 {
   "name": "circle-plus",
   "title": "Circle Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "status"
+  ],
+  "tags": [
+    "add",
+    "create",
+    "plus",
+    "new",
+    "increase"
+  ],
+  "aliases": [
+    "plus circle",
+    "add circle",
+    "create button"
+  ],
+  "keywords": [
+    "add item",
+    "new entry",
+    "increase value",
+    "expand section",
+    "positive action",
+    "create option",
+    "more quantity",
+    "plus button"
+  ]
 }

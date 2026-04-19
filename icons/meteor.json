@@ -1,8 +1,31 @@
 {
   "name": "meteor",
   "title": "Meteor",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "space",
+    "nature",
+    "science"
+  ],
+  "tags": [
+    "meteor",
+    "space",
+    "falling star",
+    "astronomy",
+    "comet"
+  ],
+  "aliases": [
+    "shooting star",
+    "falling meteor",
+    "space rock"
+  ],
+  "keywords": [
+    "night sky",
+    "cosmic object",
+    "atmosphere entry",
+    "space debris",
+    "celestial event",
+    "astronomy phenomenon",
+    "burning rock",
+    "sky streak"
+  ]
 }

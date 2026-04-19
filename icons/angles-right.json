@@ -1,8 +1,31 @@
 {
   "name": "angles-right",
   "title": "Angles Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "right",
+    "double chevron",
+    "next",
+    "fast",
+    "direction"
+  ],
+  "aliases": [
+    "double right",
+    "chevrons right",
+    "forward fast"
+  ],
+  "keywords": [
+    "next page",
+    "jump forward",
+    "navigate right",
+    "fast forward",
+    "expand sidebar",
+    "move right fast",
+    "advance action",
+    "rightward navigation"
+  ]
 }

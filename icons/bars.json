@@ -1,8 +1,31 @@
 {
   "name": "bars",
   "title": "Bars",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "menus"
+  ],
+  "tags": [
+    "menu",
+    "hamburger",
+    "navigation",
+    "list",
+    "toggle"
+  ],
+  "aliases": [
+    "hamburger menu",
+    "menu icon",
+    "nav menu"
+  ],
+  "keywords": [
+    "mobile menu",
+    "open sidebar",
+    "toggle navigation",
+    "three lines",
+    "app menu",
+    "drawer trigger",
+    "responsive menu",
+    "menu button"
+  ]
 }

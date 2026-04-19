@@ -1,8 +1,31 @@
 {
   "name": "angles-left",
   "title": "Angles Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "left",
+    "double chevron",
+    "back",
+    "fast",
+    "direction"
+  ],
+  "aliases": [
+    "double left",
+    "chevrons left",
+    "back fast"
+  ],
+  "keywords": [
+    "previous page",
+    "jump back",
+    "navigate left",
+    "rewind",
+    "collapse sidebar",
+    "move left fast",
+    "return action",
+    "leftward navigation"
+  ]
 }

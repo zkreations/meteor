@@ -1,8 +1,31 @@
 {
   "name": "key-skeleton",
   "title": "Key Skeleton",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "objects",
+    "ui"
+  ],
+  "tags": [
+    "key",
+    "access",
+    "security",
+    "lock",
+    "unlock"
+  ],
+  "aliases": [
+    "skeleton key",
+    "master key",
+    "access key"
+  ],
+  "keywords": [
+    "unlock doors",
+    "secure access",
+    "permissions",
+    "entry control",
+    "authentication",
+    "key system",
+    "vault access",
+    "lock bypass"
+  ]
 }

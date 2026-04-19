@@ -1,8 +1,31 @@
 {
   "name": "move-left",
   "title": "Move Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "navigation"
+  ],
+  "tags": [
+    "move",
+    "left",
+    "arrow",
+    "direction",
+    "reorder"
+  ],
+  "aliases": [
+    "left arrow",
+    "shift left",
+    "move previous"
+  ],
+  "keywords": [
+    "move item left",
+    "navigate left",
+    "decrease position",
+    "reorder layout",
+    "horizontal move",
+    "UI navigation",
+    "shift element left",
+    "backward direction"
+  ]
 }

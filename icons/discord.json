@@ -1,8 +1,31 @@
 {
   "name": "discord",
   "title": "Discord",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "communication",
+    "social"
+  ],
+  "tags": [
+    "chat",
+    "voice",
+    "gaming",
+    "community",
+    "messaging"
+  ],
+  "aliases": [
+    "discord app",
+    "discord logo",
+    "discord chat"
+  ],
+  "keywords": [
+    "voice chat",
+    "text channels",
+    "online communities",
+    "gaming chat",
+    "server platform",
+    "group communication",
+    "messaging app",
+    "community platform"
+  ]
 }

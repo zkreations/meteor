@@ -1,8 +1,31 @@
 {
   "name": "boolean",
   "title": "Boolean",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "logic",
+    "technology"
+  ],
+  "tags": [
+    "true",
+    "false",
+    "binary",
+    "condition",
+    "programming"
+  ],
+  "aliases": [
+    "bool",
+    "boolean value",
+    "logic state"
+  ],
+  "keywords": [
+    "true false",
+    "conditional expression",
+    "software logic",
+    "binary choice",
+    "coding datatype",
+    "programming variable",
+    "if statement",
+    "logical operator"
+  ]
 }

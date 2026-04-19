@@ -1,8 +1,31 @@
 {
   "name": "pause",
   "title": "Pause",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "ui",
+    "controls"
+  ],
+  "tags": [
+    "pause",
+    "stop",
+    "media",
+    "playback",
+    "control"
+  ],
+  "aliases": [
+    "pause button",
+    "media pause",
+    "stop playback"
+  ],
+  "keywords": [
+    "pause video",
+    "pause audio",
+    "media control",
+    "playback control",
+    "temporary stop",
+    "halt action",
+    "music player control",
+    "video player control"
+  ]
 }

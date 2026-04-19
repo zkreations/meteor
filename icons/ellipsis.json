@@ -1,8 +1,31 @@
 {
   "name": "ellipsis",
   "title": "Ellipsis",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "text",
+    "symbols"
+  ],
+  "tags": [
+    "dots",
+    "more",
+    "truncation",
+    "menu",
+    "continuation"
+  ],
+  "aliases": [
+    "three dots",
+    "horizontal ellipsis",
+    "more options"
+  ],
+  "keywords": [
+    "...",
+    "text overflow",
+    "continue reading",
+    "hidden content",
+    "menu trigger",
+    "additional options",
+    "truncate text",
+    "loading indicator"
+  ]
 }

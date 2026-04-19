@@ -1,8 +1,31 @@
 {
   "name": "equals",
   "title": "Equals",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "math",
+    "symbols",
+    "ui"
+  ],
+  "tags": [
+    "equals",
+    "equal",
+    "comparison",
+    "math",
+    "balance"
+  ],
+  "aliases": [
+    "equal sign",
+    "equals symbol",
+    "comparison operator"
+  ],
+  "keywords": [
+    "=",
+    "equal value",
+    "comparison result",
+    "math operator",
+    "same value",
+    "equation",
+    "balance symbol",
+    "programming operator"
+  ]
 }

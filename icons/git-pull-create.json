@@ -1,8 +1,31 @@
 {
   "name": "git-pull-create",
   "title": "Git Pull Create",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "pull request",
+    "create",
+    "code",
+    "collaboration"
+  ],
+  "aliases": [
+    "create pull request",
+    "new pull request",
+    "open pr"
+  ],
+  "keywords": [
+    "submit changes",
+    "code review request",
+    "merge request",
+    "feature contribution",
+    "repository collaboration",
+    "git workflow",
+    "propose changes",
+    "development review"
+  ]
 }

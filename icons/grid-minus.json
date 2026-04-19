@@ -1,8 +1,31 @@
 {
   "name": "grid-minus",
   "title": "Grid Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "actions"
+  ],
+  "tags": [
+    "grid",
+    "remove",
+    "minus",
+    "delete",
+    "layout"
+  ],
+  "aliases": [
+    "remove grid item",
+    "grid delete",
+    "grid subtract"
+  ],
+  "keywords": [
+    "remove from grid",
+    "delete tile",
+    "layout edit",
+    "grid management",
+    "reduce items",
+    "grid control",
+    "ui grid action",
+    "grid modification"
+  ]
 }

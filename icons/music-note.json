@@ -1,8 +1,31 @@
 {
   "name": "music-note",
   "title": "Music Note",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "music",
+    "audio",
+    "media"
+  ],
+  "tags": [
+    "music",
+    "note",
+    "sound",
+    "audio",
+    "song"
+  ],
+  "aliases": [
+    "musical note",
+    "note icon",
+    "music symbol"
+  ],
+  "keywords": [
+    "melody",
+    "song",
+    "sound wave",
+    "instrument",
+    "composition",
+    "audio playback",
+    "music player",
+    "harmony"
+  ]
 }

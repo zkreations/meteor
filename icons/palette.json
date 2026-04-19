@@ -1,8 +1,31 @@
 {
   "name": "palette",
   "title": "Palette",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "art",
+    "design",
+    "tools"
+  ],
+  "tags": [
+    "palette",
+    "colors",
+    "paint",
+    "art",
+    "design"
+  ],
+  "aliases": [
+    "color palette",
+    "artist palette",
+    "paint palette"
+  ],
+  "keywords": [
+    "color selection",
+    "painting colors",
+    "art mixing",
+    "design colors",
+    "creative tools",
+    "visual design",
+    "color scheme",
+    "digital palette"
+  ]
 }

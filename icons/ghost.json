@@ -1,8 +1,31 @@
 {
   "name": "ghost",
   "title": "Ghost",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "symbols",
+    "halloween",
+    "fantasy"
+  ],
+  "tags": [
+    "ghost",
+    "spirit",
+    "boo",
+    "halloween",
+    "scary"
+  ],
+  "aliases": [
+    "spirit",
+    "phantom",
+    "specter"
+  ],
+  "keywords": [
+    "haunted",
+    "supernatural",
+    "apparition",
+    "afterlife",
+    "scary figure",
+    "floating ghost",
+    "spooky",
+    "paranormal"
+  ]
 }

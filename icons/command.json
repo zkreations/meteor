@@ -1,8 +1,31 @@
 {
   "name": "command",
   "title": "Command",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "system",
+    "controls"
+  ],
+  "tags": [
+    "command",
+    "control",
+    "input",
+    "shortcut",
+    "action"
+  ],
+  "aliases": [
+    "cmd",
+    "command palette",
+    "control command"
+  ],
+  "keywords": [
+    "keyboard shortcut",
+    "system command",
+    "execute action",
+    "terminal command",
+    "app command",
+    "search command",
+    "quick actions",
+    "developer tool"
+  ]
 }

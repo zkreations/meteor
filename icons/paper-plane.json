@@ -1,8 +1,31 @@
 {
   "name": "paper-plane",
   "title": "Paper Plane",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "ui",
+    "objects"
+  ],
+  "tags": [
+    "send",
+    "paper plane",
+    "message",
+    "email",
+    "air"
+  ],
+  "aliases": [
+    "send icon",
+    "paper airplane",
+    "send message"
+  ],
+  "keywords": [
+    "send message",
+    "email send",
+    "submit form",
+    "outgoing message",
+    "communication",
+    "dispatch",
+    "share content",
+    "flight paper toy"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "coinbase",
   "title": "Coinbase",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "finance",
+    "cryptocurrency"
+  ],
+  "tags": [
+    "crypto",
+    "exchange",
+    "wallet",
+    "trading",
+    "blockchain"
+  ],
+  "aliases": [
+    "coinbase logo",
+    "coinbase exchange",
+    "coinbase wallet"
+  ],
+  "keywords": [
+    "bitcoin trading",
+    "digital assets",
+    "crypto platform",
+    "buy bitcoin",
+    "ethereum exchange",
+    "crypto wallet",
+    "blockchain app",
+    "coin trading"
+  ]
 }

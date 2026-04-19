@@ -1,8 +1,31 @@
 {
   "name": "layout",
   "title": "Layout",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "layout",
+    "structure",
+    "grid",
+    "design",
+    "interface"
+  ],
+  "aliases": [
+    "page layout",
+    "ui layout",
+    "screen layout"
+  ],
+  "keywords": [
+    "page structure",
+    "interface design",
+    "content arrangement",
+    "dashboard layout",
+    "responsive design",
+    "ui composition",
+    "visual structure",
+    "web layout"
+  ]
 }

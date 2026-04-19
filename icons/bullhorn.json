@@ -1,8 +1,31 @@
 {
   "name": "bullhorn",
   "title": "Bullhorn",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "marketing",
+    "ui"
+  ],
+  "tags": [
+    "announcement",
+    "megaphone",
+    "promotion",
+    "alert",
+    "speaker"
+  ],
+  "aliases": [
+    "megaphone",
+    "announcement horn",
+    "promo speaker"
+  ],
+  "keywords": [
+    "public message",
+    "broadcast notice",
+    "advertising campaign",
+    "news alert",
+    "loudspeaker",
+    "marketing icon",
+    "community notice",
+    "promotion tool"
+  ]
 }

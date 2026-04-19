@@ -1,8 +1,31 @@
 {
   "name": "grid-panel-right",
   "title": "Grid Panel Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "grid",
+    "panel",
+    "right",
+    "layout",
+    "sidebar"
+  ],
+  "aliases": [
+    "right panel grid",
+    "grid right section",
+    "right sidebar layout"
+  ],
+  "keywords": [
+    "ui right panel",
+    "dashboard sidebar",
+    "split screen right",
+    "content panel right",
+    "layout region",
+    "interface structure",
+    "panel positioning",
+    "secondary panel"
+  ]
 }

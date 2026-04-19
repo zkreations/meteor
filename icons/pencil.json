@@ -1,8 +1,31 @@
 {
   "name": "pencil",
   "title": "Pencil",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "tools",
+    "education",
+    "objects"
+  ],
+  "tags": [
+    "pencil",
+    "writing",
+    "drawing",
+    "sketch",
+    "school"
+  ],
+  "aliases": [
+    "graphite pencil",
+    "writing pencil",
+    "drawing pencil"
+  ],
+  "keywords": [
+    "write notes",
+    "sketching",
+    "drawing tool",
+    "school supplies",
+    "erasable writing",
+    "design sketch",
+    "art tool",
+    "graphite core"
+  ]
 }

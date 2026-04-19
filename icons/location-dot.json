@@ -1,8 +1,31 @@
 {
   "name": "location-dot",
   "title": "Location Dot",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "navigation",
+    "maps",
+    "ui"
+  ],
+  "tags": [
+    "location",
+    "map",
+    "pin",
+    "gps",
+    "marker"
+  ],
+  "aliases": [
+    "map dot",
+    "location marker",
+    "position dot"
+  ],
+  "keywords": [
+    "current location",
+    "map position",
+    "geolocation marker",
+    "navigation point",
+    "address pin",
+    "tracking point",
+    "map indicator",
+    "place marker"
+  ]
 }

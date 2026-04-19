@@ -1,8 +1,31 @@
 {
   "name": "download-cloud",
   "title": "Download Cloud",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "files",
+    "ui"
+  ],
+  "tags": [
+    "download",
+    "cloud",
+    "storage",
+    "sync",
+    "data"
+  ],
+  "aliases": [
+    "cloud download",
+    "download from cloud",
+    "cloud fetch"
+  ],
+  "keywords": [
+    "download file",
+    "cloud storage",
+    "retrieve data",
+    "sync files",
+    "online storage",
+    "backup download",
+    "internet download",
+    "file transfer"
+  ]
 }

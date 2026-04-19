@@ -1,8 +1,31 @@
 {
   "name": "list",
   "title": "List",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "structure"
+  ],
+  "tags": [
+    "list",
+    "items",
+    "menu",
+    "collection",
+    "text"
+  ],
+  "aliases": [
+    "item list",
+    "menu list",
+    "ordered list"
+  ],
+  "keywords": [
+    "collection of items",
+    "bullet points",
+    "navigation menu",
+    "data list",
+    "ordered items",
+    "unordered list",
+    "content grouping",
+    "structured data"
+  ]
 }

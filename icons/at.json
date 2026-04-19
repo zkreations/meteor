@@ -1,8 +1,31 @@
 {
   "name": "at",
   "title": "At",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "symbols",
+    "text"
+  ],
+  "tags": [
+    "email",
+    "mention",
+    "username",
+    "address",
+    "character"
+  ],
+  "aliases": [
+    "at sign",
+    "email symbol",
+    "mention symbol"
+  ],
+  "keywords": [
+    "@",
+    "mail address",
+    "social mention",
+    "handle",
+    "user tag",
+    "contact email",
+    "internet symbol",
+    "text character"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "gamepad",
   "title": "Gamepad",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "gaming",
+    "devices",
+    "technology"
+  ],
+  "tags": [
+    "gamepad",
+    "controller",
+    "gaming",
+    "console",
+    "input"
+  ],
+  "aliases": [
+    "game controller",
+    "video game controller",
+    "console controller"
+  ],
+  "keywords": [
+    "gaming device",
+    "play games",
+    "controller buttons",
+    "joystick input",
+    "console gaming",
+    "interactive device",
+    "game controls",
+    "gaming hardware"
+  ]
 }

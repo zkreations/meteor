@@ -1,8 +1,31 @@
 {
   "name": "cookie",
   "title": "Cookie",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "food",
+    "web",
+    "technology"
+  ],
+  "tags": [
+    "cookie",
+    "biscuit",
+    "browser",
+    "data",
+    "privacy"
+  ],
+  "aliases": [
+    "browser cookie",
+    "web cookie",
+    "biscuit"
+  ],
+  "keywords": [
+    "tracking data",
+    "session storage",
+    "login persistence",
+    "website data",
+    "user preferences",
+    "digital cookie",
+    "internet storage",
+    "chocolate chip cookie"
+  ]
 }

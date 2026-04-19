@@ -1,8 +1,31 @@
 {
   "name": "disc",
   "title": "Disc",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "objects",
+    "storage"
+  ],
+  "tags": [
+    "disc",
+    "cd",
+    "dvd",
+    "storage",
+    "media"
+  ],
+  "aliases": [
+    "disk",
+    "optical disc",
+    "cd disc"
+  ],
+  "keywords": [
+    "music disc",
+    "data storage",
+    "dvd disc",
+    "blu-ray",
+    "round media",
+    "digital content",
+    "optical storage",
+    "physical media"
+  ]
 }

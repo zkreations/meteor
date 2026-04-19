@@ -1,8 +1,31 @@
 {
   "name": "ellipsis-vertical",
   "title": "Ellipsis Vertical",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "controls"
+  ],
+  "tags": [
+    "menu",
+    "more",
+    "options",
+    "vertical",
+    "dots"
+  ],
+  "aliases": [
+    "vertical ellipsis",
+    "three dots vertical",
+    "more options"
+  ],
+  "keywords": [
+    "overflow menu",
+    "additional actions",
+    "context menu",
+    "settings menu",
+    "options list",
+    "menu trigger",
+    "more actions",
+    "ui control"
+  ]
 }

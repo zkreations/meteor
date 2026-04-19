@@ -1,8 +1,31 @@
 {
   "name": "link",
   "title": "Link",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "web",
+    "navigation"
+  ],
+  "tags": [
+    "link",
+    "url",
+    "chain",
+    "hyperlink",
+    "connection"
+  ],
+  "aliases": [
+    "hyperlink",
+    "url link",
+    "web link"
+  ],
+  "keywords": [
+    "website url",
+    "clickable text",
+    "navigation link",
+    "external link",
+    "page reference",
+    "internet connection",
+    "anchor link",
+    "resource link"
+  ]
 }

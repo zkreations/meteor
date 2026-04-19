@@ -1,8 +1,31 @@
 {
   "name": "circle",
   "title": "Circle",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shapes",
+    "design",
+    "geometry"
+  ],
+  "tags": [
+    "round",
+    "shape",
+    "dot",
+    "outline",
+    "symbol"
+  ],
+  "aliases": [
+    "round shape",
+    "dot circle",
+    "geometric circle"
+  ],
+  "keywords": [
+    "basic shape",
+    "ui indicator",
+    "radio unchecked",
+    "circular form",
+    "design element",
+    "geometry symbol",
+    "round icon",
+    "simple circle"
+  ]
 }

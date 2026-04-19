@@ -1,8 +1,31 @@
 {
   "name": "circle-info",
   "title": "Circle Info",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "status",
+    "communication"
+  ],
+  "tags": [
+    "info",
+    "help",
+    "details",
+    "notice",
+    "support"
+  ],
+  "aliases": [
+    "info circle",
+    "information circle",
+    "help icon"
+  ],
+  "keywords": [
+    "more details",
+    "tooltip icon",
+    "help message",
+    "support notice",
+    "learn more",
+    "information symbol",
+    "guidance",
+    "details indicator"
+  ]
 }

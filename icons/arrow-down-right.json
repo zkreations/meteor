@@ -1,8 +1,31 @@
 {
   "name": "arrow-down-right",
   "title": "Arrow Down Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "down",
+    "right",
+    "diagonal",
+    "direction",
+    "corner"
+  ],
+  "aliases": [
+    "down right arrow",
+    "southeast arrow",
+    "diagonal right down"
+  ],
+  "keywords": [
+    "move bottom right",
+    "resize corner",
+    "navigate diagonal",
+    "south east direction",
+    "corner pointer",
+    "arrow southeast",
+    "downward right icon",
+    "diagonal navigation"
+  ]
 }

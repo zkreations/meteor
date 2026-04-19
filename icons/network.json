@@ -1,8 +1,31 @@
 {
   "name": "network",
   "title": "Network",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "communication",
+    "systems"
+  ],
+  "tags": [
+    "network",
+    "connection",
+    "internet",
+    "nodes",
+    "systems"
+  ],
+  "aliases": [
+    "computer network",
+    "internet network",
+    "data network"
+  ],
+  "keywords": [
+    "data connection",
+    "wifi",
+    "LAN",
+    "communication system",
+    "linked devices",
+    "server network",
+    "information exchange",
+    "digital infrastructure"
+  ]
 }

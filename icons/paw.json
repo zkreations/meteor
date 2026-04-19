@@ -1,8 +1,32 @@
 {
   "name": "paw",
   "title": "Paw",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "animals",
+    "nature",
+    "pets"
+  ],
+  "tags": [
+    "paw",
+    "animal",
+    "footprint",
+    "pet",
+    "dog",
+    "cat"
+  ],
+  "aliases": [
+    "paw print",
+    "animal paw",
+    "pet paw"
+  ],
+  "keywords": [
+    "animal tracks",
+    "pet care",
+    "dog paw",
+    "cat paw",
+    "wildlife trace",
+    "footprint mark",
+    "furry feet",
+    "animal symbol"
+  ]
 }

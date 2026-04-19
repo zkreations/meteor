@@ -1,8 +1,31 @@
 {
   "name": "fish",
   "title": "Fish",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "animals",
+    "nature",
+    "marine"
+  ],
+  "tags": [
+    "fish",
+    "aquatic",
+    "water",
+    "sea",
+    "marine"
+  ],
+  "aliases": [
+    "sea fish",
+    "aquatic animal",
+    "marine fish"
+  ],
+  "keywords": [
+    "underwater animal",
+    "ocean life",
+    "freshwater fish",
+    "aquatic creature",
+    "swimming animal",
+    "marine life",
+    "seafood",
+    "water species"
+  ]
 }

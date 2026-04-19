@@ -1,8 +1,31 @@
 {
   "name": "euro",
   "title": "Euro",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "finance",
+    "currency",
+    "symbols"
+  ],
+  "tags": [
+    "money",
+    "eur",
+    "currency",
+    "payment",
+    "price"
+  ],
+  "aliases": [
+    "euro sign",
+    "eur symbol",
+    "currency euro"
+  ],
+  "keywords": [
+    "€",
+    "euro currency",
+    "cost",
+    "pricing",
+    "financial value",
+    "payment amount",
+    "monetary symbol",
+    "european currency"
+  ]
 }

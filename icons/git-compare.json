@@ -1,8 +1,31 @@
 {
   "name": "git-compare",
   "title": "Git Compare",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "version-control",
+    "tools"
+  ],
+  "tags": [
+    "git",
+    "compare",
+    "diff",
+    "repository",
+    "code"
+  ],
+  "aliases": [
+    "compare changes",
+    "git diff",
+    "branch compare"
+  ],
+  "keywords": [
+    "code comparison",
+    "diff view",
+    "version differences",
+    "source control",
+    "branch comparison",
+    "file changes",
+    "git workflow",
+    "code review"
+  ]
 }

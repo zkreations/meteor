@@ -1,8 +1,31 @@
 {
   "name": "mega",
   "title": "Mega",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "storage",
+    "technology"
+  ],
+  "tags": [
+    "cloud",
+    "storage",
+    "files",
+    "backup",
+    "upload"
+  ],
+  "aliases": [
+    "mega.nz",
+    "mega cloud",
+    "mega storage"
+  ],
+  "keywords": [
+    "cloud storage service",
+    "file hosting",
+    "online backup",
+    "secure storage",
+    "encrypted files",
+    "download files",
+    "file sharing",
+    "data storage platform"
+  ]
 }

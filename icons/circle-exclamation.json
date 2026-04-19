@@ -1,8 +1,31 @@
 {
   "name": "circle-exclamation",
   "title": "Circle Exclamation",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "alerts",
+    "status",
+    "ui"
+  ],
+  "tags": [
+    "warning",
+    "error",
+    "attention",
+    "notice",
+    "important"
+  ],
+  "aliases": [
+    "warning circle",
+    "alert circle",
+    "exclamation circle"
+  ],
+  "keywords": [
+    "important message",
+    "system warning",
+    "needs attention",
+    "error state",
+    "notification alert",
+    "caution icon",
+    "issue indicator",
+    "priority notice"
+  ]
 }

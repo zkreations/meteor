@@ -1,8 +1,31 @@
 {
   "name": "cloud-snow",
   "title": "Cloud Snow",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "weather",
+    "nature",
+    "ui"
+  ],
+  "tags": [
+    "cloud",
+    "snow",
+    "winter",
+    "forecast",
+    "cold"
+  ],
+  "aliases": [
+    "snow cloud",
+    "snowy weather",
+    "winter cloud"
+  ],
+  "keywords": [
+    "snowfall",
+    "weather forecast",
+    "cold weather",
+    "freezing conditions",
+    "snowy sky",
+    "winter storm",
+    "ice weather",
+    "precipitation snow"
+  ]
 }

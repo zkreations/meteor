@@ -1,8 +1,31 @@
 {
   "name": "grip-vertical",
   "title": "Grip Vertical",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "controls",
+    "layout"
+  ],
+  "tags": [
+    "grip",
+    "drag",
+    "handle",
+    "move",
+    "vertical"
+  ],
+  "aliases": [
+    "drag handle vertical",
+    "vertical grip",
+    "move handle"
+  ],
+  "keywords": [
+    "reorder items",
+    "drag and drop",
+    "sortable list",
+    "move column",
+    "resize handle",
+    "UI handle",
+    "drag control",
+    "layout adjustment"
+  ]
 }

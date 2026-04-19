@@ -1,8 +1,31 @@
 {
   "name": "brackets-curly",
   "title": "Brackets Curly",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "symbols",
+    "code"
+  ],
+  "tags": [
+    "braces",
+    "curly brackets",
+    "syntax",
+    "programming",
+    "json"
+  ],
+  "aliases": [
+    "curly braces",
+    "code braces",
+    "json braces"
+  ],
+  "keywords": [
+    "object notation",
+    "programming symbol",
+    "javascript object",
+    "css blocks",
+    "code structure",
+    "developer icon",
+    "syntax characters",
+    "template braces"
+  ]
 }

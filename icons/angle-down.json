@@ -1,8 +1,31 @@
 {
   "name": "angle-down",
   "title": "Angle Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "arrows",
+    "navigation",
+    "ui"
+  ],
+  "tags": [
+    "down",
+    "chevron",
+    "expand",
+    "dropdown",
+    "direction"
+  ],
+  "aliases": [
+    "chevron down",
+    "arrow down",
+    "dropdown arrow"
+  ],
+  "keywords": [
+    "open menu",
+    "collapse section",
+    "select option",
+    "downward icon",
+    "expand list",
+    "accordion",
+    "more options",
+    "scroll down"
+  ]
 }

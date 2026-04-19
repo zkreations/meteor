@@ -1,8 +1,31 @@
 {
   "name": "brush",
   "title": "Brush",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "design",
+    "art",
+    "tools"
+  ],
+  "tags": [
+    "paint",
+    "brush",
+    "drawing",
+    "creative",
+    "editing"
+  ],
+  "aliases": [
+    "paint brush",
+    "art brush",
+    "drawing brush"
+  ],
+  "keywords": [
+    "graphic design",
+    "illustration tool",
+    "digital painting",
+    "artist tool",
+    "creative app",
+    "color tool",
+    "editing brush",
+    "design icon"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "deviantart",
-  "title": "Deviantart",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "DeviantArt",
+  "categories": [
+    "brands",
+    "art",
+    "community"
+  ],
+  "tags": [
+    "art",
+    "portfolio",
+    "illustration",
+    "community",
+    "design"
+  ],
+  "aliases": [
+    "deviantart logo",
+    "da",
+    "deviant art"
+  ],
+  "keywords": [
+    "art sharing platform",
+    "digital art community",
+    "artists portfolio",
+    "fan art",
+    "illustration gallery",
+    "creative network",
+    "online art gallery",
+    "design community"
+  ]
 }

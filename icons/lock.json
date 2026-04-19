@@ -1,8 +1,31 @@
 {
   "name": "lock",
   "title": "Lock",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "objects",
+    "ui"
+  ],
+  "tags": [
+    "lock",
+    "security",
+    "privacy",
+    "access",
+    "protection"
+  ],
+  "aliases": [
+    "padlock",
+    "secure lock",
+    "closed lock"
+  ],
+  "keywords": [
+    "secure access",
+    "password protection",
+    "encryption",
+    "locked state",
+    "restricted access",
+    "authentication",
+    "safe data",
+    "privacy control"
+  ]
 }

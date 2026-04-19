@@ -1,8 +1,31 @@
 {
   "name": "laptop",
   "title": "Laptop",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "technology",
+    "computers"
+  ],
+  "tags": [
+    "laptop",
+    "computer",
+    "portable",
+    "notebook",
+    "device"
+  ],
+  "aliases": [
+    "notebook",
+    "portable computer",
+    "laptop pc"
+  ],
+  "keywords": [
+    "portable computer",
+    "work on the go",
+    "coding device",
+    "school laptop",
+    "business laptop",
+    "screen keyboard",
+    "mobile workstation",
+    "computing device"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "layout-plus",
   "title": "Layout Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "actions"
+  ],
+  "tags": [
+    "layout",
+    "add",
+    "plus",
+    "create",
+    "structure"
+  ],
+  "aliases": [
+    "add layout",
+    "layout add",
+    "new layout"
+  ],
+  "keywords": [
+    "add section",
+    "create layout block",
+    "increase layout",
+    "insert panel",
+    "layout editing",
+    "UI structure change",
+    "plus layout item",
+    "expand layout"
+  ]
 }

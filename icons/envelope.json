@@ -1,8 +1,31 @@
 {
   "name": "envelope",
   "title": "Envelope",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "communication",
+    "ui",
+    "objects"
+  ],
+  "tags": [
+    "email",
+    "mail",
+    "message",
+    "letter",
+    "contact"
+  ],
+  "aliases": [
+    "mail envelope",
+    "email icon",
+    "letter envelope"
+  ],
+  "keywords": [
+    "send message",
+    "inbox",
+    "email notification",
+    "contact mail",
+    "communication icon",
+    "mailbox",
+    "message delivery",
+    "email client"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "code",
   "title": "Code",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "technology",
+    "ui"
+  ],
+  "tags": [
+    "programming",
+    "code",
+    "developer",
+    "syntax",
+    "software"
+  ],
+  "aliases": [
+    "source code",
+    "coding",
+    "developer code"
+  ],
+  "keywords": [
+    "write code",
+    "software development",
+    "programmer tool",
+    "html css js",
+    "coding symbol",
+    "developer icon",
+    "script editing",
+    "programming language"
+  ]
 }

@@ -1,8 +1,31 @@
 {
   "name": "paperclip",
   "title": "Paperclip",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "office",
+    "objects",
+    "ui"
+  ],
+  "tags": [
+    "paperclip",
+    "attachment",
+    "file",
+    "document",
+    "office"
+  ],
+  "aliases": [
+    "clip",
+    "attachment clip",
+    "file clip"
+  ],
+  "keywords": [
+    "attach file",
+    "email attachment",
+    "document binding",
+    "office supplies",
+    "file linking",
+    "add attachment",
+    "paper fastener",
+    "upload file"
+  ]
 }

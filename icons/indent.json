@@ -1,8 +1,31 @@
 {
   "name": "indent",
   "title": "Indent",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "formatting",
+    "ui"
+  ],
+  "tags": [
+    "indent",
+    "format",
+    "text",
+    "code",
+    "spacing"
+  ],
+  "aliases": [
+    "indentation",
+    "indent text",
+    "format indent"
+  ],
+  "keywords": [
+    "code formatting",
+    "text alignment",
+    "tab space",
+    "code editor",
+    "structure code",
+    "readability",
+    "nested blocks",
+    "programming style"
+  ]
 }
