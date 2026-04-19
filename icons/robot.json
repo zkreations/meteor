@@ -1,8 +1,34 @@
 {
   "name": "robot",
   "title": "Robot",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "technology",
+    "ai",
+    "devices",
+    "automation"
+  ],
+  "tags": [
+    "robotics",
+    "ai",
+    "machine",
+    "automation",
+    "android",
+    "bot"
+  ],
+  "aliases": [
+    "android",
+    "bot",
+    "ai assistant",
+    "machine robot"
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "automaton",
+    "mechanical worker",
+    "chatbot",
+    "industrial robot",
+    "service robot",
+    "autonomous system",
+    "machine learning agent"
+  ]
 }

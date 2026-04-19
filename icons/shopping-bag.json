@@ -1,8 +1,35 @@
 {
   "name": "shopping-bag",
   "title": "Shopping Bag",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "commerce",
+    "shopping",
+    "ecommerce",
+    "retail"
+  ],
+  "tags": [
+    "shopping",
+    "bag",
+    "cart",
+    "purchase",
+    "store",
+    "retail"
+  ],
+  "aliases": [
+    "shopping bag",
+    "buy bag",
+    "store bag",
+    "shopping tote"
+  ],
+  "keywords": [
+    "buy items",
+    "online shopping",
+    "checkout",
+    "orders",
+    "products",
+    "ecommerce cart",
+    "retail store",
+    "purchases",
+    "storefront"
+  ]
 }

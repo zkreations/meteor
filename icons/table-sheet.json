@@ -1,8 +1,37 @@
 {
   "name": "table-sheet",
   "title": "Table Sheet",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "spreadsheets",
+    "documents"
+  ],
+  "tags": [
+    "table",
+    "sheet",
+    "spreadsheet",
+    "grid",
+    "data",
+    "rows",
+    "columns"
+  ],
+  "aliases": [
+    "spreadsheet",
+    "table sheet",
+    "data sheet",
+    "grid sheet"
+  ],
+  "keywords": [
+    "excel sheet",
+    "google sheets",
+    "tabular data",
+    "data table",
+    "structured data",
+    "worksheet",
+    "database sheet",
+    "rows and columns",
+    "data grid"
+  ]
 }

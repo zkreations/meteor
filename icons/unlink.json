@@ -1,8 +1,36 @@
 {
   "name": "unlink",
   "title": "Unlink",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "files",
+    "connectivity"
+  ],
+  "tags": [
+    "unlink",
+    "disconnect",
+    "remove",
+    "break",
+    "detach",
+    "link"
+  ],
+  "aliases": [
+    "disconnect",
+    "remove link",
+    "break link",
+    "detach",
+    "unconnect"
+  ],
+  "keywords": [
+    "remove connection",
+    "break association",
+    "unlink account",
+    "disconnect device",
+    "remove relationship",
+    "detach item",
+    "unlink file",
+    "cut link",
+    "separate entities"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "trending-down",
   "title": "Trending Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "analytics",
+    "finance",
+    "charts"
+  ],
+  "tags": [
+    "trend",
+    "down",
+    "decrease",
+    "chart",
+    "analytics",
+    "decline"
+  ],
+  "aliases": [
+    "down trend",
+    "falling chart",
+    "decreasing graph",
+    "negative trend"
+  ],
+  "keywords": [
+    "market drop",
+    "price decrease",
+    "declining performance",
+    "loss trend",
+    "downward graph",
+    "analytics decrease",
+    "statistics drop",
+    "falling metrics",
+    "negative growth"
+  ]
 }

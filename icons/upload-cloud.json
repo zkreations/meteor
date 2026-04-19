@@ -1,8 +1,35 @@
 {
   "name": "upload-cloud",
   "title": "Upload Cloud",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "files",
+    "cloud",
+    "actions"
+  ],
+  "tags": [
+    "upload",
+    "cloud",
+    "file",
+    "sync",
+    "backup",
+    "transfer"
+  ],
+  "aliases": [
+    "cloud upload",
+    "upload file",
+    "send to cloud",
+    "backup upload"
+  ],
+  "keywords": [
+    "file upload",
+    "cloud storage",
+    "backup data",
+    "sync files",
+    "online storage",
+    "transfer files",
+    "upload documents",
+    "save to cloud",
+    "data upload"
+  ]
 }

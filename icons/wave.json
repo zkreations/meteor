@@ -1,8 +1,32 @@
 {
   "name": "wave",
   "title": "Wave",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "design"
+  ],
+  "tags": [
+    "wave",
+    "signal",
+    "fluid",
+    "motion",
+    "sound"
+  ],
+  "aliases": [
+    "waveform",
+    "signal wave",
+    "audio wave",
+    "wave line"
+  ],
+  "keywords": [
+    "sound wave",
+    "water wave",
+    "audio visualization",
+    "frequency",
+    "oscillation",
+    "signal processing",
+    "movement",
+    "flow pattern"
+  ]
 }

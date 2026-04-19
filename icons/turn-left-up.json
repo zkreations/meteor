@@ -1,8 +1,35 @@
 {
   "name": "turn-left-up",
   "title": "Turn Left Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "arrows",
+    "actions"
+  ],
+  "tags": [
+    "arrow",
+    "turn",
+    "direction",
+    "left",
+    "up",
+    "redirect"
+  ],
+  "aliases": [
+    "turn up left",
+    "left bend up",
+    "corner arrow up left",
+    "curved arrow left up"
+  ],
+  "keywords": [
+    "change direction",
+    "navigation arrow",
+    "flow direction",
+    "routing arrow",
+    "ui navigation",
+    "back navigation",
+    "movement path",
+    "turn indicator",
+    "direction change"
+  ]
 }

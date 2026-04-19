@@ -1,8 +1,36 @@
 {
   "name": "power",
   "title": "Power",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "system",
+    "devices",
+    "energy"
+  ],
+  "tags": [
+    "power",
+    "on/off",
+    "toggle",
+    "button",
+    "control",
+    "standby"
+  ],
+  "aliases": [
+    "power button",
+    "on off",
+    "power symbol",
+    "standby button"
+  ],
+  "keywords": [
+    "turn on",
+    "shut down",
+    "restart",
+    "sleep mode",
+    "device control",
+    "electricity",
+    "energy saving",
+    "toggle switch",
+    "boot",
+    "shutdown"
+  ]
 }

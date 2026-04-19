@@ -1,8 +1,35 @@
 {
   "name": "trending-up",
   "title": "Trending Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "analytics",
+    "finance",
+    "charts"
+  ],
+  "tags": [
+    "trend",
+    "up",
+    "increase",
+    "growth",
+    "chart",
+    "analytics"
+  ],
+  "aliases": [
+    "up trend",
+    "rising chart",
+    "increasing graph",
+    "positive trend"
+  ],
+  "keywords": [
+    "market growth",
+    "price increase",
+    "rising performance",
+    "profit trend",
+    "upward graph",
+    "analytics growth",
+    "statistics rise",
+    "positive momentum",
+    "growing metrics"
+  ]
 }

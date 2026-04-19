@@ -1,8 +1,32 @@
 {
   "name": "wave-lines",
   "title": "Wave Lines",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "design",
+    "media",
+    "ui"
+  ],
+  "tags": [
+    "wave",
+    "signal",
+    "audio",
+    "sound",
+    "animation"
+  ],
+  "aliases": [
+    "sound waves",
+    "audio waves",
+    "waveform",
+    "signal lines"
+  ],
+  "keywords": [
+    "audio visualization",
+    "music wave",
+    "sound spectrum",
+    "voice signal",
+    "radio waves",
+    "frequency lines",
+    "oscillation",
+    "wave animation"
+  ]
 }

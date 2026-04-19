@@ -1,8 +1,36 @@
 {
   "name": "share",
   "title": "Share",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "communication",
+    "social"
+  ],
+  "tags": [
+    "share",
+    "send",
+    "export",
+    "forward",
+    "publish",
+    "connect"
+  ],
+  "aliases": [
+    "send",
+    "share content",
+    "forward",
+    "share link",
+    "export"
+  ],
+  "keywords": [
+    "send file",
+    "share link",
+    "social sharing",
+    "copy link",
+    "send to others",
+    "distribute content",
+    "publish post",
+    "external sharing",
+    "collaboration"
+  ]
 }

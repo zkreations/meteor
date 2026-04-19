@@ -1,8 +1,35 @@
 {
   "name": "sterling",
   "title": "Sterling",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "finance",
+    "currency",
+    "money",
+    "economy"
+  ],
+  "tags": [
+    "currency",
+    "pound",
+    "money",
+    "exchange",
+    "british",
+    "finance"
+  ],
+  "aliases": [
+    "british pound",
+    "gbp",
+    "pound sterling",
+    "uk currency"
+  ],
+  "keywords": [
+    "currency exchange",
+    "british money",
+    "uk economy",
+    "forex",
+    "pound value",
+    "sterling pound",
+    "money transfer",
+    "international payments",
+    "financial system"
+  ]
 }

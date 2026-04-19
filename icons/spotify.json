@@ -1,8 +1,37 @@
 {
   "name": "spotify",
   "title": "Spotify",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "music",
+    "streaming",
+    "audio",
+    "media"
+  ],
+  "tags": [
+    "music",
+    "streaming",
+    "audio",
+    "playlist",
+    "podcasts",
+    "songs"
+  ],
+  "aliases": [
+    "spotify music",
+    "music streaming",
+    "spotify app",
+    "audio streaming platform"
+  ],
+  "keywords": [
+    "songs",
+    "playlists",
+    "albums",
+    "podcasts",
+    "online music",
+    "music player",
+    "stream music",
+    "discover music",
+    "artists",
+    "offline listening"
+  ]
 }

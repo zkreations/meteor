@@ -1,8 +1,36 @@
 {
   "name": "square-xmark",
   "title": "Square Xmark",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "controls",
+    "alerts"
+  ],
+  "tags": [
+    "close",
+    "cancel",
+    "remove",
+    "delete",
+    "xmark",
+    "dismiss"
+  ],
+  "aliases": [
+    "close box",
+    "cancel box",
+    "x square",
+    "remove box",
+    "dismiss"
+  ],
+  "keywords": [
+    "close dialog",
+    "cancel action",
+    "remove item",
+    "dismiss window",
+    "exit modal",
+    "delete entry",
+    "stop action",
+    "clear selection",
+    "error close"
+  ]
 }

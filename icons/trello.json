@@ -1,8 +1,36 @@
 {
   "name": "trello",
   "title": "Trello",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "productivity",
+    "project-management",
+    "software",
+    "collaboration"
+  ],
+  "tags": [
+    "kanban",
+    "tasks",
+    "boards",
+    "workflow",
+    "organization",
+    "planning"
+  ],
+  "aliases": [
+    "trello app",
+    "kanban tool",
+    "task board",
+    "project board tool"
+  ],
+  "keywords": [
+    "task management",
+    "project tracking",
+    "kanban boards",
+    "to-do lists",
+    "workflow management",
+    "team collaboration",
+    "productivity tool",
+    "cards and lists",
+    "agile boards"
+  ]
 }

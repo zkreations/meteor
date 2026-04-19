@@ -1,8 +1,36 @@
 {
   "name": "square-question",
   "title": "Square Question",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "help",
+    "support",
+    "status"
+  ],
+  "tags": [
+    "question",
+    "help",
+    "faq",
+    "support",
+    "unknown",
+    "info"
+  ],
+  "aliases": [
+    "help box",
+    "question box",
+    "unknown info",
+    "faq icon",
+    "help icon"
+  ],
+  "keywords": [
+    "help center",
+    "support info",
+    "unknown state",
+    "question mark",
+    "assistance",
+    "faq section",
+    "guidance",
+    "user help",
+    "help tooltip"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "shield",
   "title": "Shield",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "security",
+    "protection",
+    "ui",
+    "safety"
+  ],
+  "tags": [
+    "security",
+    "protection",
+    "privacy",
+    "defense",
+    "safe",
+    "security shield"
+  ],
+  "aliases": [
+    "security shield",
+    "protection",
+    "defense shield",
+    "safe guard"
+  ],
+  "keywords": [
+    "secure",
+    "protected area",
+    "firewall",
+    "privacy protection",
+    "data security",
+    "safety check",
+    "trusted",
+    "blocked threats",
+    "security status"
+  ]
 }

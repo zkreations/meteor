@@ -1,8 +1,36 @@
 {
   "name": "thumbs-down",
   "title": "Thumbs Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "feedback",
+    "social",
+    "reactions"
+  ],
+  "tags": [
+    "dislike",
+    "feedback",
+    "negative",
+    "vote",
+    "reaction",
+    "approval"
+  ],
+  "aliases": [
+    "dislike",
+    "downvote",
+    "bad",
+    "not good",
+    "thumb down"
+  ],
+  "keywords": [
+    "negative feedback",
+    "disapproval",
+    "vote down",
+    "rating low",
+    "unsatisfied",
+    "reject",
+    "poor rating",
+    "no approval",
+    "user reaction"
+  ]
 }

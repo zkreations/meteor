@@ -1,8 +1,36 @@
 {
   "name": "soundcloud",
-  "title": "Soundcloud",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "SoundCloud",
+  "categories": [
+    "brands",
+    "music",
+    "media",
+    "streaming",
+    "audio"
+  ],
+  "tags": [
+    "music",
+    "audio",
+    "streaming",
+    "podcasts",
+    "upload",
+    "sound"
+  ],
+  "aliases": [
+    "sound cloud",
+    "soundcloud music",
+    "audio platform",
+    "music streaming"
+  ],
+  "keywords": [
+    "songs",
+    "tracks",
+    "artists",
+    "music upload",
+    "audio sharing",
+    "independent music",
+    "dj sets",
+    "podcasts",
+    "online music platform"
+  ]
 }

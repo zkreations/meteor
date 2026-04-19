@@ -1,8 +1,35 @@
 {
   "name": "telegram",
   "title": "Telegram",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "communication",
+    "messaging",
+    "social"
+  ],
+  "tags": [
+    "chat",
+    "messaging",
+    "social",
+    "encryption",
+    "channels",
+    "groups"
+  ],
+  "aliases": [
+    "telegram messenger",
+    "tg",
+    "telegram app",
+    "chat app"
+  ],
+  "keywords": [
+    "instant messaging",
+    "private chat",
+    "channels",
+    "groups",
+    "stickers",
+    "bots",
+    "secure messaging",
+    "voice chat",
+    "file sharing"
+  ]
 }

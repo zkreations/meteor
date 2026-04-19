@@ -1,8 +1,36 @@
 {
   "name": "trash",
   "title": "Trash",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "files",
+    "system"
+  ],
+  "tags": [
+    "delete",
+    "remove",
+    "trash",
+    "bin",
+    "discard",
+    "cleanup"
+  ],
+  "aliases": [
+    "bin",
+    "trash can",
+    "delete",
+    "recycle bin",
+    "garbage"
+  ],
+  "keywords": [
+    "delete item",
+    "remove file",
+    "clear data",
+    "discard content",
+    "system trash",
+    "recycle bin",
+    "empty trash",
+    "file deletion",
+    "cleanup"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "tree-pine",
   "title": "Tree Pine",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "environment",
+    "weather",
+    "ui"
+  ],
+  "tags": [
+    "tree",
+    "pine",
+    "forest",
+    "evergreen",
+    "nature",
+    "conifer"
+  ],
+  "aliases": [
+    "pine tree",
+    "evergreen tree",
+    "fir tree",
+    "conifer tree"
+  ],
+  "keywords": [
+    "winter forest",
+    "snow tree",
+    "mountain forest",
+    "evergreen nature",
+    "woodland",
+    "natural landscape",
+    "pine forest",
+    "coniferous tree",
+    "outdoor nature"
+  ]
 }

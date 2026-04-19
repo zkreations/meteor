@@ -1,8 +1,35 @@
 {
   "name": "rss",
-  "title": "Rss",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "RSS",
+  "categories": [
+    "web",
+    "media",
+    "communication",
+    "technology"
+  ],
+  "tags": [
+    "feed",
+    "news",
+    "subscription",
+    "updates",
+    "xml",
+    "content"
+  ],
+  "aliases": [
+    "rss feed",
+    "news feed",
+    "web feed",
+    "syndication feed"
+  ],
+  "keywords": [
+    "really simple syndication",
+    "blog updates",
+    "article feed",
+    "content updates",
+    "subscribe feed",
+    "latest posts",
+    "news reader",
+    "aggregator",
+    "feed reader"
+  ]
 }

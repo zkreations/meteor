@@ -1,8 +1,31 @@
 {
   "name": "vuejs",
-  "title": "Vuejs",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "Vue.js",
+  "categories": [
+    "brands",
+    "development",
+    "software"
+  ],
+  "tags": [
+    "frontend",
+    "framework",
+    "javascript",
+    "reactive",
+    "ui"
+  ],
+  "aliases": [
+    "vue",
+    "vue js",
+    "vue.js framework"
+  ],
+  "keywords": [
+    "spa",
+    "components",
+    "reactivity",
+    "composition api",
+    "nuxt",
+    "web development",
+    "frontend framework",
+    "single page application"
+  ]
 }

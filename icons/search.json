@@ -1,8 +1,35 @@
 {
   "name": "search",
   "title": "Search",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "navigation"
+  ],
+  "tags": [
+    "search",
+    "find",
+    "lookup",
+    "query",
+    "filter",
+    "explore"
+  ],
+  "aliases": [
+    "find",
+    "magnify",
+    "lookup",
+    "search tool",
+    "search bar"
+  ],
+  "keywords": [
+    "search engine",
+    "find content",
+    "query data",
+    "explore items",
+    "filter results",
+    "magnifying glass",
+    "web search",
+    "database search",
+    "quick find"
+  ]
 }

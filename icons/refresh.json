@@ -1,8 +1,34 @@
 {
   "name": "refresh",
   "title": "Refresh",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "navigation"
+  ],
+  "tags": [
+    "reload",
+    "update",
+    "sync",
+    "rotate",
+    "retry"
+  ],
+  "aliases": [
+    "reload",
+    "reload page",
+    "sync",
+    "update content",
+    "redo"
+  ],
+  "keywords": [
+    "reload page",
+    "fetch again",
+    "update data",
+    "refresh view",
+    "sync content",
+    "recheck",
+    "restart request",
+    "update UI",
+    "circular arrow"
+  ]
 }

@@ -1,8 +1,32 @@
 {
   "name": "user",
   "title": "User",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "users",
+    "account",
+    "interface"
+  ],
+  "tags": [
+    "profile",
+    "person",
+    "account",
+    "avatar",
+    "identity"
+  ],
+  "aliases": [
+    "profile",
+    "account",
+    "person",
+    "user profile"
+  ],
+  "keywords": [
+    "login",
+    "account user",
+    "profile page",
+    "member",
+    "avatar icon",
+    "user data",
+    "dashboard",
+    "settings user"
+  ]
 }

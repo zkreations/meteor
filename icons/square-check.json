@@ -1,8 +1,36 @@
 {
   "name": "square-check",
   "title": "Square Check",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "controls",
+    "forms",
+    "status"
+  ],
+  "tags": [
+    "check",
+    "checkbox",
+    "select",
+    "done",
+    "verified",
+    "confirm"
+  ],
+  "aliases": [
+    "checkbox checked",
+    "checked box",
+    "selected",
+    "tick box",
+    "confirm box"
+  ],
+  "keywords": [
+    "form selection",
+    "task completed",
+    "mark done",
+    "approved",
+    "verified item",
+    "toggle on",
+    "selection control",
+    "checkmark",
+    "confirmation"
+  ]
 }

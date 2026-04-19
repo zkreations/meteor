@@ -1,8 +1,36 @@
 {
   "name": "tv",
-  "title": "Tv",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "TV",
+  "categories": [
+    "devices",
+    "media",
+    "entertainment",
+    "technology"
+  ],
+  "tags": [
+    "tv",
+    "television",
+    "screen",
+    "display",
+    "broadcast",
+    "media"
+  ],
+  "aliases": [
+    "television",
+    "smart tv",
+    "tv set",
+    "screen",
+    "display screen"
+  ],
+  "keywords": [
+    "watch tv",
+    "broadcast channels",
+    "streaming",
+    "home entertainment",
+    "video display",
+    "digital tv",
+    "live tv",
+    "media device",
+    "screen content"
+  ]
 }

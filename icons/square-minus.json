@@ -1,8 +1,36 @@
 {
   "name": "square-minus",
   "title": "Square Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "controls",
+    "editing"
+  ],
+  "tags": [
+    "remove",
+    "delete",
+    "minus",
+    "decrease",
+    "subtract",
+    "collapse"
+  ],
+  "aliases": [
+    "remove box",
+    "delete box",
+    "minus square",
+    "collapse",
+    "decrease box"
+  ],
+  "keywords": [
+    "remove item",
+    "delete entry",
+    "reduce value",
+    "collapse section",
+    "subtract element",
+    "turn off",
+    "disable option",
+    "decrement",
+    "minus button"
+  ]
 }

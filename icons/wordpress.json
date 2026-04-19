@@ -1,8 +1,31 @@
 {
   "name": "wordpress",
-  "title": "Wordpress",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "WordPress",
+  "categories": [
+    "brands",
+    "development",
+    "cms"
+  ],
+  "tags": [
+    "blog",
+    "website",
+    "cms",
+    "content",
+    "publishing"
+  ],
+  "aliases": [
+    "wp",
+    "wordpress cms",
+    "wordpress platform"
+  ],
+  "keywords": [
+    "blogging",
+    "website builder",
+    "themes",
+    "plugins",
+    "posts",
+    "pages",
+    "seo",
+    "content management system"
+  ]
 }

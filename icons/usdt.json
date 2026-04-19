@@ -1,8 +1,35 @@
 {
   "name": "usdt",
-  "title": "Usdt",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "USDT",
+  "categories": [
+    "finance",
+    "cryptocurrency",
+    "payments",
+    "currency"
+  ],
+  "tags": [
+    "crypto",
+    "stablecoin",
+    "blockchain",
+    "trading",
+    "usd",
+    "digital currency"
+  ],
+  "aliases": [
+    "tether",
+    "tether usd",
+    "usd tether",
+    "usdt coin"
+  ],
+  "keywords": [
+    "stable coin",
+    "cryptocurrency dollar",
+    "digital dollar",
+    "crypto trading",
+    "blockchain payments",
+    "crypto exchange",
+    "price stable asset",
+    "crypto wallet",
+    "fiat equivalent crypto"
+  ]
 }

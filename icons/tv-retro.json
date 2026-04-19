@@ -1,8 +1,35 @@
 {
   "name": "tv-retro",
-  "title": "Tv Retro",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "TV Retro",
+  "categories": [
+    "devices",
+    "media",
+    "entertainment",
+    "technology"
+  ],
+  "tags": [
+    "tv",
+    "television",
+    "retro",
+    "screen",
+    "broadcast",
+    "media"
+  ],
+  "aliases": [
+    "old tv",
+    "vintage tv",
+    "classic tv",
+    "retro television"
+  ],
+  "keywords": [
+    "analog tv",
+    "old television",
+    "broadcast signal",
+    "retro screen",
+    "vintage device",
+    "classic media",
+    "tv set",
+    "home entertainment",
+    "television set"
+  ]
 }

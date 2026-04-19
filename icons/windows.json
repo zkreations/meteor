@@ -1,8 +1,31 @@
 {
   "name": "windows",
   "title": "Windows",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "software",
+    "operating-system"
+  ],
+  "tags": [
+    "os",
+    "microsoft",
+    "desktop",
+    "system",
+    "computer"
+  ],
+  "aliases": [
+    "windows os",
+    "microsoft windows",
+    "win"
+  ],
+  "keywords": [
+    "pc",
+    "laptop",
+    "operating system",
+    "file explorer",
+    "desktop environment",
+    "start menu",
+    "system settings",
+    "windows update"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "shuffle",
   "title": "Shuffle",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "media",
+    "music"
+  ],
+  "tags": [
+    "shuffle",
+    "random",
+    "mix",
+    "playback",
+    "order",
+    "music"
+  ],
+  "aliases": [
+    "randomize",
+    "mix",
+    "shuffle play",
+    "random play"
+  ],
+  "keywords": [
+    "random order",
+    "music shuffle",
+    "playlist shuffle",
+    "mix songs",
+    "random playback",
+    "sort randomly",
+    "shuffle mode",
+    "media player",
+    "random selection"
+  ]
 }

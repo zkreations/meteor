@@ -1,8 +1,31 @@
 {
   "name": "wikipedia",
   "title": "Wikipedia",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "education",
+    "reference"
+  ],
+  "tags": [
+    "encyclopedia",
+    "knowledge",
+    "information",
+    "research",
+    "articles"
+  ],
+  "aliases": [
+    "wiki",
+    "online encyclopedia",
+    "wikipedia.org"
+  ],
+  "keywords": [
+    "free encyclopedia",
+    "articles",
+    "information source",
+    "research tool",
+    "knowledge base",
+    "collaborative writing",
+    "facts",
+    "reference site"
+  ]
 }

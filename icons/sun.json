@@ -1,8 +1,35 @@
 {
   "name": "sun",
   "title": "Sun",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "weather",
+    "time",
+    "ui"
+  ],
+  "tags": [
+    "sun",
+    "sunny",
+    "light",
+    "brightness",
+    "day",
+    "weather"
+  ],
+  "aliases": [
+    "sun icon",
+    "sunny",
+    "brightness",
+    "daylight"
+  ],
+  "keywords": [
+    "sunlight",
+    "clear weather",
+    "daytime",
+    "warmth",
+    "solar",
+    "brightness control",
+    "weather forecast",
+    "summer",
+    "outdoor"
+  ]
 }

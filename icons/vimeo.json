@@ -1,8 +1,30 @@
 {
   "name": "vimeo",
   "title": "Vimeo",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "media",
+    "video"
+  ],
+  "tags": [
+    "video",
+    "streaming",
+    "hosting",
+    "player",
+    "content"
+  ],
+  "aliases": [
+    "vimeo logo",
+    "vimeo video platform"
+  ],
+  "keywords": [
+    "video sharing",
+    "upload video",
+    "watch videos",
+    "video hosting",
+    "creator platform",
+    "online video player",
+    "film hosting",
+    "HD video"
+  ]
 }

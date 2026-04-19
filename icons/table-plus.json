@@ -1,8 +1,35 @@
 {
   "name": "table-plus",
   "title": "Table Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "actions"
+  ],
+  "tags": [
+    "table",
+    "add",
+    "insert",
+    "row",
+    "column",
+    "plus"
+  ],
+  "aliases": [
+    "add row",
+    "insert row",
+    "add column",
+    "table add"
+  ],
+  "keywords": [
+    "add row",
+    "new entry",
+    "table editing",
+    "spreadsheet add",
+    "data insertion",
+    "grid edit",
+    "table modify",
+    "insert item",
+    "row creation"
+  ]
 }

@@ -1,8 +1,36 @@
 {
   "name": "star",
   "title": "Star",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shapes",
+    "ui",
+    "rating",
+    "favorites",
+    "design"
+  ],
+  "tags": [
+    "star",
+    "favorite",
+    "rating",
+    "bookmark",
+    "highlight",
+    "award"
+  ],
+  "aliases": [
+    "favorite",
+    "star icon",
+    "rating star",
+    "bookmark star"
+  ],
+  "keywords": [
+    "rate item",
+    "favorite content",
+    "save",
+    "bookmark",
+    "top rated",
+    "like",
+    "highlight choice",
+    "featured",
+    "review rating"
+  ]
 }

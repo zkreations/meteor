@@ -1,8 +1,36 @@
 {
   "name": "twitch",
   "title": "Twitch",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "streaming",
+    "video",
+    "entertainment",
+    "gaming"
+  ],
+  "tags": [
+    "streaming",
+    "live",
+    "gaming",
+    "video",
+    "chat",
+    "broadcast"
+  ],
+  "aliases": [
+    "twitch tv",
+    "live streaming platform",
+    "game streaming",
+    "twitch app"
+  ],
+  "keywords": [
+    "live streams",
+    "gaming streams",
+    "esports",
+    "content creators",
+    "live chat",
+    "broadcasting",
+    "streamers",
+    "video platform",
+    "online streaming"
+  ]
 }

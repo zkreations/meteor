@@ -1,8 +1,35 @@
 {
   "name": "table",
   "title": "Table",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "layout"
+  ],
+  "tags": [
+    "table",
+    "grid",
+    "data",
+    "rows",
+    "columns",
+    "structure"
+  ],
+  "aliases": [
+    "data table",
+    "grid table",
+    "tabular data",
+    "table view"
+  ],
+  "keywords": [
+    "spreadsheet",
+    "database table",
+    "structured data",
+    "excel table",
+    "google sheets",
+    "rows and columns",
+    "data grid",
+    "information layout",
+    "table format"
+  ]
 }

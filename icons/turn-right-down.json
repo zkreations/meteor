@@ -1,8 +1,35 @@
 {
   "name": "turn-right-down",
   "title": "Turn Right Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "arrows",
+    "actions"
+  ],
+  "tags": [
+    "arrow",
+    "turn",
+    "direction",
+    "right",
+    "down",
+    "redirect"
+  ],
+  "aliases": [
+    "turn down right",
+    "right bend down",
+    "corner arrow down right",
+    "curved arrow right down"
+  ],
+  "keywords": [
+    "change direction",
+    "navigation arrow",
+    "flow direction",
+    "routing arrow",
+    "ui navigation",
+    "forward navigation",
+    "movement path",
+    "turn indicator",
+    "direction change"
+  ]
 }

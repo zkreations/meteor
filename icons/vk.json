@@ -1,8 +1,32 @@
 {
   "name": "vk",
-  "title": "Vk",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "VK",
+  "categories": [
+    "brands",
+    "social",
+    "media"
+  ],
+  "tags": [
+    "social network",
+    "messaging",
+    "community",
+    "posts",
+    "media"
+  ],
+  "aliases": [
+    "vkontakte",
+    "vk social",
+    "vk logo"
+  ],
+  "keywords": [
+    "social media",
+    "chat",
+    "friends",
+    "groups",
+    "feed",
+    "posts",
+    "russian social network",
+    "video sharing",
+    "music streaming"
+  ]
 }

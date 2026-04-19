@@ -1,8 +1,36 @@
 {
   "name": "thumbs-up",
   "title": "Thumbs Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "feedback",
+    "social",
+    "reactions"
+  ],
+  "tags": [
+    "like",
+    "approval",
+    "positive",
+    "vote",
+    "reaction",
+    "feedback"
+  ],
+  "aliases": [
+    "like",
+    "upvote",
+    "good",
+    "approved",
+    "thumb up"
+  ],
+  "keywords": [
+    "positive feedback",
+    "approval",
+    "vote up",
+    "rating high",
+    "satisfied",
+    "recommendation",
+    "good rating",
+    "user reaction",
+    "support"
+  ]
 }

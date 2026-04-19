@@ -1,8 +1,32 @@
 {
   "name": "volume-high",
   "title": "Volume High",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "sound",
+    "audio",
+    "volume",
+    "speaker",
+    "loud"
+  ],
+  "aliases": [
+    "volume up",
+    "high volume",
+    "sound on",
+    "loud speaker"
+  ],
+  "keywords": [
+    "music volume",
+    "audio level",
+    "sound control",
+    "speaker loud",
+    "increase volume",
+    "audio output",
+    "media sound",
+    "volume control"
+  ]
 }

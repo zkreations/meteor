@@ -1,8 +1,35 @@
 {
   "name": "quote-right",
   "title": "Quote Right",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "text",
+    "typography",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "quote",
+    "quotation",
+    "text",
+    "typography",
+    "citation",
+    "speech"
+  ],
+  "aliases": [
+    "right quote",
+    "closing quote",
+    "quote mark",
+    "quotation mark right"
+  ],
+  "keywords": [
+    "blockquote end",
+    "citation end",
+    "dialogue end",
+    "writing",
+    "text editor",
+    "markdown quote",
+    "speech text",
+    "reference",
+    "closing punctuation"
+  ]
 }

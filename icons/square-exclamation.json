@@ -1,8 +1,35 @@
 {
   "name": "square-exclamation",
   "title": "Square Exclamation",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "alerts",
+    "status",
+    "warnings"
+  ],
+  "tags": [
+    "warning",
+    "alert",
+    "exclamation",
+    "notification",
+    "error",
+    "attention"
+  ],
+  "aliases": [
+    "warning box",
+    "alert square",
+    "exclamation box",
+    "warning icon"
+  ],
+  "keywords": [
+    "important notice",
+    "system alert",
+    "error message",
+    "attention required",
+    "warning sign",
+    "notification alert",
+    "issue indicator",
+    "validation error",
+    "caution"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "triangle-exclamation",
   "title": "Triangle Exclamation",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "alerts",
+    "warnings",
+    "safety"
+  ],
+  "tags": [
+    "warning",
+    "alert",
+    "danger",
+    "exclamation",
+    "caution",
+    "attention"
+  ],
+  "aliases": [
+    "warning triangle",
+    "alert triangle",
+    "caution sign",
+    "danger warning"
+  ],
+  "keywords": [
+    "system warning",
+    "error alert",
+    "important notice",
+    "safety warning",
+    "risk alert",
+    "attention required",
+    "hazard",
+    "problem detected",
+    "validation warning"
+  ]
 }

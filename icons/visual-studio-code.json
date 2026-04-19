@@ -1,8 +1,31 @@
 {
   "name": "visual-studio-code",
   "title": "Visual Studio Code",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "software",
+    "development",
+    "brands"
+  ],
+  "tags": [
+    "code editor",
+    "ide",
+    "programming",
+    "development",
+    "editor"
+  ],
+  "aliases": [
+    "vscode",
+    "vs code",
+    "visual studio code editor"
+  ],
+  "keywords": [
+    "code",
+    "javascript",
+    "typescript",
+    "debugging",
+    "extensions",
+    "intellisense",
+    "terminal",
+    "git integration"
+  ]
 }

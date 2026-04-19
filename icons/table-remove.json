@@ -1,8 +1,35 @@
 {
   "name": "table-remove",
   "title": "Table Remove",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "actions"
+  ],
+  "tags": [
+    "table",
+    "remove",
+    "delete",
+    "clear",
+    "row",
+    "column"
+  ],
+  "aliases": [
+    "remove table",
+    "delete table",
+    "clear table",
+    "table delete"
+  ],
+  "keywords": [
+    "remove table data",
+    "delete rows",
+    "clear spreadsheet",
+    "table cleanup",
+    "data deletion",
+    "grid remove",
+    "table editing",
+    "reset table",
+    "remove structure"
+  ]
 }

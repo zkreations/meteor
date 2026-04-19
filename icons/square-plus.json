@@ -1,8 +1,36 @@
 {
   "name": "square-plus",
   "title": "Square Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "controls",
+    "editing"
+  ],
+  "tags": [
+    "add",
+    "plus",
+    "create",
+    "insert",
+    "new",
+    "expand"
+  ],
+  "aliases": [
+    "add box",
+    "plus square",
+    "create item",
+    "new item",
+    "insert"
+  ],
+  "keywords": [
+    "add element",
+    "create entry",
+    "new record",
+    "insert item",
+    "expand section",
+    "add button",
+    "increase value",
+    "add content",
+    "plus action"
+  ]
 }

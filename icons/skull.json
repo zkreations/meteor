@@ -1,8 +1,35 @@
 {
   "name": "skull",
   "title": "Skull",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "symbols",
+    "halloween",
+    "danger",
+    "ui"
+  ],
+  "tags": [
+    "skull",
+    "danger",
+    "death",
+    "warning",
+    "horror",
+    "bone"
+  ],
+  "aliases": [
+    "skull icon",
+    "death symbol",
+    "skull and bones",
+    "danger skull"
+  ],
+  "keywords": [
+    "warning sign",
+    "hazard",
+    "danger alert",
+    "pirate symbol",
+    "halloween icon",
+    "poison",
+    "deadly",
+    "risk",
+    "threat"
+  ]
 }

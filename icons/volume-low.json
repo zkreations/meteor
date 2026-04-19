@@ -1,8 +1,32 @@
 {
   "name": "volume-low",
   "title": "Volume Low",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "sound",
+    "audio",
+    "volume",
+    "speaker",
+    "quiet"
+  ],
+  "aliases": [
+    "low volume",
+    "volume down",
+    "soft sound",
+    "quiet speaker"
+  ],
+  "keywords": [
+    "reduce volume",
+    "audio level",
+    "sound control",
+    "lower sound",
+    "mute low",
+    "background sound",
+    "media audio",
+    "volume control"
+  ]
 }

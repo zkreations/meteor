@@ -1,8 +1,31 @@
 {
   "name": "x",
   "title": "X",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication"
+  ],
+  "tags": [
+    "social network",
+    "posts",
+    "microblogging",
+    "messaging",
+    "news"
+  ],
+  "aliases": [
+    "twitter",
+    "x social",
+    "x platform"
+  ],
+  "keywords": [
+    "tweets",
+    "posts",
+    "feed",
+    "followers",
+    "trending",
+    "social media",
+    "microblog",
+    "real-time updates"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "turn-left-down",
   "title": "Turn Left Down",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "arrows",
+    "actions"
+  ],
+  "tags": [
+    "arrow",
+    "turn",
+    "direction",
+    "left",
+    "down",
+    "redirect"
+  ],
+  "aliases": [
+    "turn down left",
+    "left bend down",
+    "corner arrow down left",
+    "curved arrow left down"
+  ],
+  "keywords": [
+    "change direction",
+    "navigation arrow",
+    "flow direction",
+    "routing arrow",
+    "ui navigation",
+    "back navigation",
+    "movement path",
+    "turn indicator",
+    "direction change"
+  ]
 }

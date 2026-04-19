@@ -1,8 +1,35 @@
 {
   "name": "threads",
   "title": "Threads",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication",
+    "messaging"
+  ],
+  "tags": [
+    "social",
+    "chat",
+    "posts",
+    "discussion",
+    "meta",
+    "community"
+  ],
+  "aliases": [
+    "threads app",
+    "instagram threads",
+    "meta threads",
+    "social threads"
+  ],
+  "keywords": [
+    "microblogging",
+    "posts feed",
+    "conversation threads",
+    "social network",
+    "public discussion",
+    "short posts",
+    "twitter alternative",
+    "online community",
+    "engagement"
+  ]
 }

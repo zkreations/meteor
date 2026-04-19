@@ -1,8 +1,35 @@
 {
   "name": "radio",
   "title": "Radio",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "devices",
+    "entertainment"
+  ],
+  "tags": [
+    "broadcast",
+    "music",
+    "audio",
+    "signal",
+    "tuner",
+    "transmission"
+  ],
+  "aliases": [
+    "fm radio",
+    "am radio",
+    "radio receiver",
+    "broadcast radio"
+  ],
+  "keywords": [
+    "stations",
+    "frequency",
+    "live broadcast",
+    "news radio",
+    "music radio",
+    "tuning",
+    "antenna",
+    "airwaves",
+    "listening device"
+  ]
 }

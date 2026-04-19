@@ -1,8 +1,31 @@
 {
   "name": "plus",
   "title": "Plus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "actions",
+    "ui",
+    "math"
+  ],
+  "tags": [
+    "plus",
+    "add",
+    "create",
+    "increase",
+    "new"
+  ],
+  "aliases": [
+    "add",
+    "addition",
+    "create new"
+  ],
+  "keywords": [
+    "add item",
+    "create new entry",
+    "increase value",
+    "expand",
+    "math addition",
+    "positive sign",
+    "insert content",
+    "new action"
+  ]
 }

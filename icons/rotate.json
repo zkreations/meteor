@@ -1,8 +1,36 @@
 {
   "name": "rotate",
   "title": "Rotate",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "actions",
+    "editing",
+    "transform"
+  ],
+  "tags": [
+    "rotate",
+    "turn",
+    "spin",
+    "transform",
+    "orientation",
+    "refresh"
+  ],
+  "aliases": [
+    "rotate tool",
+    "turn",
+    "spin",
+    "reorient",
+    "rotate element"
+  ],
+  "keywords": [
+    "rotate image",
+    "change orientation",
+    "flip direction",
+    "transform object",
+    "clockwise",
+    "counterclockwise",
+    "canvas rotation",
+    "edit shape",
+    "adjust angle"
+  ]
 }

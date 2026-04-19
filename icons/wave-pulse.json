@@ -1,8 +1,32 @@
 {
   "name": "wave-pulse",
   "title": "Wave Pulse",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "wave",
+    "pulse",
+    "signal",
+    "audio",
+    "heartbeat"
+  ],
+  "aliases": [
+    "pulse wave",
+    "signal pulse",
+    "audio pulse",
+    "heartbeat wave"
+  ],
+  "keywords": [
+    "audio visualization",
+    "sound signal",
+    "heartbeat monitor",
+    "ECG line",
+    "frequency pulse",
+    "waveform animation",
+    "music rhythm",
+    "signal tracking"
+  ]
 }

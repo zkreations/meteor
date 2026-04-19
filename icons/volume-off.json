@@ -1,8 +1,32 @@
 {
   "name": "volume-off",
   "title": "Volume Off",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "sound",
+    "audio",
+    "mute",
+    "volume",
+    "speaker"
+  ],
+  "aliases": [
+    "mute",
+    "mute sound",
+    "sound off",
+    "no audio"
+  ],
+  "keywords": [
+    "silence",
+    "disable sound",
+    "audio off",
+    "mute speaker",
+    "no sound",
+    "turn off volume",
+    "media mute",
+    "quiet mode"
+  ]
 }

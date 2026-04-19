@@ -1,8 +1,34 @@
 {
   "name": "triangle",
   "title": "Triangle",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shapes",
+    "geometry",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "triangle",
+    "shape",
+    "geometry",
+    "polygon",
+    "arrow",
+    "direction"
+  ],
+  "aliases": [
+    "triangle shape",
+    "polygon triangle",
+    "geometric triangle"
+  ],
+  "keywords": [
+    "three sides",
+    "geometric shape",
+    "math shape",
+    "arrow indicator",
+    "direction icon",
+    "UI shape",
+    "diagram element",
+    "pointed shape",
+    "vector shape"
+  ]
 }

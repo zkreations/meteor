@@ -1,8 +1,32 @@
 {
   "name": "volume-xmark",
   "title": "Volume Xmark",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "sound",
+    "audio",
+    "mute",
+    "error",
+    "speaker"
+  ],
+  "aliases": [
+    "mute audio",
+    "sound off",
+    "audio disabled",
+    "volume error"
+  ],
+  "keywords": [
+    "no sound",
+    "audio muted",
+    "speaker off",
+    "disable audio",
+    "mute icon",
+    "broken sound",
+    "audio unavailable",
+    "volume blocked"
+  ]
 }

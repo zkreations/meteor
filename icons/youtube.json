@@ -1,8 +1,31 @@
 {
   "name": "youtube",
-  "title": "Youtube",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "YouTube",
+  "categories": [
+    "brands",
+    "media",
+    "video"
+  ],
+  "tags": [
+    "video",
+    "streaming",
+    "platform",
+    "content",
+    "entertainment"
+  ],
+  "aliases": [
+    "yt",
+    "youtube video",
+    "youtube platform"
+  ],
+  "keywords": [
+    "watch videos",
+    "upload video",
+    "video sharing",
+    "channels",
+    "live streaming",
+    "subscriptions",
+    "shorts",
+    "content creator"
+  ]
 }

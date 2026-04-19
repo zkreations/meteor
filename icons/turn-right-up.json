@@ -1,8 +1,35 @@
 {
   "name": "turn-right-up",
   "title": "Turn Right Up",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "navigation",
+    "arrows",
+    "actions"
+  ],
+  "tags": [
+    "arrow",
+    "turn",
+    "direction",
+    "right",
+    "up",
+    "redirect"
+  ],
+  "aliases": [
+    "turn up right",
+    "right bend up",
+    "corner arrow up right",
+    "curved arrow right up"
+  ],
+  "keywords": [
+    "change direction",
+    "navigation arrow",
+    "flow direction",
+    "routing arrow",
+    "ui navigation",
+    "forward navigation",
+    "movement path",
+    "turn indicator",
+    "direction change"
+  ]
 }

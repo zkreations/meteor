@@ -1,8 +1,35 @@
 {
   "name": "quote-left",
   "title": "Quote Left",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "text",
+    "typography",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "quote",
+    "quotation",
+    "text",
+    "typography",
+    "citation",
+    "speech"
+  ],
+  "aliases": [
+    "left quote",
+    "opening quote",
+    "quote mark",
+    "quotation mark left"
+  ],
+  "keywords": [
+    "blockquote",
+    "citation",
+    "dialogue",
+    "writing",
+    "text editor",
+    "markdown quote",
+    "speech text",
+    "reference",
+    "highlight text"
+  ]
 }

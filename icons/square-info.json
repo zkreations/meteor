@@ -1,8 +1,35 @@
 {
   "name": "square-info",
   "title": "Square Info",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "information",
+    "alerts",
+    "status"
+  ],
+  "tags": [
+    "info",
+    "information",
+    "help",
+    "details",
+    "tooltip",
+    "notice"
+  ],
+  "aliases": [
+    "info box",
+    "information square",
+    "info icon",
+    "help box"
+  ],
+  "keywords": [
+    "more information",
+    "help message",
+    "system info",
+    "details panel",
+    "documentation hint",
+    "tooltip info",
+    "guidance",
+    "explanation",
+    "ui hint"
+  ]
 }

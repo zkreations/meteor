@@ -1,8 +1,36 @@
 {
   "name": "sparkles",
   "title": "Sparkles",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "design",
+    "effects",
+    "decorative"
+  ],
+  "tags": [
+    "sparkles",
+    "shine",
+    "glitter",
+    "magic",
+    "effect",
+    "highlight"
+  ],
+  "aliases": [
+    "sparkle",
+    "glitter",
+    "twinkle",
+    "magic sparkles",
+    "shine effect"
+  ],
+  "keywords": [
+    "visual effects",
+    "animation highlight",
+    "premium feature",
+    "magic UI",
+    "aesthetic decoration",
+    "shine particles",
+    "glow effect",
+    "cleaning sparkle",
+    "attention highlight"
+  ]
 }

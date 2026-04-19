@@ -1,8 +1,32 @@
 {
   "name": "wind",
   "title": "Wind",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "weather",
+    "nature",
+    "environment"
+  ],
+  "tags": [
+    "air",
+    "weather",
+    "breeze",
+    "storm",
+    "motion"
+  ],
+  "aliases": [
+    "breeze",
+    "gust",
+    "air flow",
+    "windy"
+  ],
+  "keywords": [
+    "wind speed",
+    "weather conditions",
+    "air movement",
+    "storm wind",
+    "atmosphere",
+    "gusts",
+    "climate",
+    "nature force"
+  ]
 }

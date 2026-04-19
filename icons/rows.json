@@ -1,8 +1,34 @@
 {
   "name": "rows",
   "title": "Rows",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "layout",
+    "ui",
+    "design"
+  ],
+  "tags": [
+    "rows",
+    "layout",
+    "structure",
+    "list",
+    "grid",
+    "alignment"
+  ],
+  "aliases": [
+    "row layout",
+    "list rows",
+    "content rows",
+    "stacked rows"
+  ],
+  "keywords": [
+    "list view",
+    "table rows",
+    "UI structure",
+    "content organization",
+    "vertical layout",
+    "dashboard layout",
+    "sections",
+    "stacked items",
+    "data rows"
+  ]
 }

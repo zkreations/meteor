@@ -1,8 +1,37 @@
 {
   "name": "tumblr",
   "title": "Tumblr",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "blogging",
+    "media",
+    "communication"
+  ],
+  "tags": [
+    "blog",
+    "posts",
+    "social",
+    "media",
+    "microblogging",
+    "community"
+  ],
+  "aliases": [
+    "tumblr app",
+    "blogging platform",
+    "social blog",
+    "tumblr logo"
+  ],
+  "keywords": [
+    "microblog",
+    "posts feed",
+    "reblog",
+    "dashboard",
+    "posts sharing",
+    "creative community",
+    "photos",
+    "gifs",
+    "text posts",
+    "online blogging platform"
+  ]
 }

@@ -1,8 +1,36 @@
 {
   "name": "reddit",
   "title": "Reddit",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication",
+    "community"
+  ],
+  "tags": [
+    "forum",
+    "discussion",
+    "community",
+    "social",
+    "threads",
+    "voting"
+  ],
+  "aliases": [
+    "reddit logo",
+    "reddit app",
+    "social forum",
+    "online community"
+  ],
+  "keywords": [
+    "subreddit",
+    "posts",
+    "comments",
+    "upvote",
+    "downvote",
+    "ask reddit",
+    "AMA",
+    "discussion board",
+    "internet forum",
+    "communities"
+  ]
 }

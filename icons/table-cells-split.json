@@ -1,8 +1,35 @@
 {
   "name": "table-cells-split",
   "title": "Table Cells Split",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "editing"
+  ],
+  "tags": [
+    "table",
+    "split",
+    "cells",
+    "spreadsheet",
+    "divide",
+    "layout"
+  ],
+  "aliases": [
+    "split cells",
+    "divide cells",
+    "unmerge cells",
+    "separate cells"
+  ],
+  "keywords": [
+    "spreadsheet editing",
+    "excel split cells",
+    "table formatting",
+    "cell division",
+    "data layout",
+    "row split",
+    "column split",
+    "grid editing",
+    "document editor"
+  ]
 }

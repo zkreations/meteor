@@ -1,8 +1,33 @@
 {
   "name": "rhombus",
   "title": "Rhombus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "shapes",
+    "geometry",
+    "design",
+    "ui"
+  ],
+  "tags": [
+    "diamond",
+    "shape",
+    "polygon",
+    "geometry",
+    "tilted-square"
+  ],
+  "aliases": [
+    "diamond",
+    "tilted square",
+    "lozenge",
+    "rhomb"
+  ],
+  "keywords": [
+    "geometric shape",
+    "four sides",
+    "equal sides",
+    "parallelogram",
+    "rotated square",
+    "icon shape",
+    "design element",
+    "abstract shape"
+  ]
 }

@@ -1,8 +1,36 @@
 {
   "name": "twitter",
   "title": "Twitter",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "brands",
+    "social",
+    "communication",
+    "microblogging",
+    "media"
+  ],
+  "tags": [
+    "social",
+    "posts",
+    "tweets",
+    "news",
+    "trending",
+    "community"
+  ],
+  "aliases": [
+    "x",
+    "twitter app",
+    "tweet platform",
+    "microblogging platform"
+  ],
+  "keywords": [
+    "tweets",
+    "retweets",
+    "hashtags",
+    "timeline",
+    "trending topics",
+    "social network",
+    "short posts",
+    "news feed",
+    "public discussion"
+  ]
 }

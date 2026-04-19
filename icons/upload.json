@@ -1,8 +1,35 @@
 {
   "name": "upload",
   "title": "Upload",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "files",
+    "actions",
+    "network"
+  ],
+  "tags": [
+    "upload",
+    "file",
+    "send",
+    "transfer",
+    "import",
+    "data"
+  ],
+  "aliases": [
+    "send file",
+    "file upload",
+    "import file",
+    "upload data"
+  ],
+  "keywords": [
+    "upload document",
+    "send to server",
+    "file transfer",
+    "cloud upload",
+    "submit file",
+    "add file",
+    "data upload",
+    "network transfer",
+    "share file"
+  ]
 }

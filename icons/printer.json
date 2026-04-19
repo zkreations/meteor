@@ -1,8 +1,34 @@
 {
   "name": "printer",
   "title": "Printer",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "devices",
+    "hardware",
+    "office"
+  ],
+  "tags": [
+    "print",
+    "paper",
+    "document",
+    "scan",
+    "office",
+    "output"
+  ],
+  "aliases": [
+    "print",
+    "printing machine",
+    "laser printer",
+    "inkjet printer"
+  ],
+  "keywords": [
+    "documents",
+    "paper print",
+    "scanning",
+    "copy machine",
+    "office printer",
+    "wireless printing",
+    "usb printer",
+    "print file",
+    "hard copy"
+  ]
 }

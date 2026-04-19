@@ -1,8 +1,36 @@
 {
   "name": "tiktok",
-  "title": "Tiktok",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "TikTok",
+  "categories": [
+    "brands",
+    "social",
+    "media",
+    "video",
+    "entertainment"
+  ],
+  "tags": [
+    "video",
+    "short-form",
+    "social",
+    "reels",
+    "entertainment",
+    "viral"
+  ],
+  "aliases": [
+    "tiktok app",
+    "short video app",
+    "music video app",
+    "social video platform"
+  ],
+  "keywords": [
+    "short videos",
+    "viral content",
+    "trending videos",
+    "reels",
+    "creators",
+    "music clips",
+    "challenges",
+    "algorithm feed",
+    "social media platform"
+  ]
 }

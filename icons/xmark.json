@@ -1,8 +1,32 @@
 {
   "name": "xmark",
-  "title": "Xmark",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "title": "X Mark",
+  "categories": [
+    "ui",
+    "actions",
+    "status"
+  ],
+  "tags": [
+    "close",
+    "cancel",
+    "remove",
+    "delete",
+    "error"
+  ],
+  "aliases": [
+    "close",
+    "cross",
+    "cancel icon",
+    "remove x"
+  ],
+  "keywords": [
+    "exit",
+    "dismiss",
+    "clear",
+    "delete item",
+    "close button",
+    "stop action",
+    "remove entry",
+    "error mark"
+  ]
 }

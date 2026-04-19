@@ -1,8 +1,35 @@
 {
   "name": "tag",
   "title": "Tag",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "labels",
+    "data",
+    "organization"
+  ],
+  "tags": [
+    "tag",
+    "label",
+    "category",
+    "marker",
+    "classification",
+    "filter"
+  ],
+  "aliases": [
+    "label",
+    "category tag",
+    "keyword tag",
+    "label chip"
+  ],
+  "keywords": [
+    "categorize",
+    "label item",
+    "filter content",
+    "group data",
+    "metadata tag",
+    "content organization",
+    "topics",
+    "taxonomy",
+    "classification system"
+  ]
 }

@@ -1,8 +1,32 @@
 {
   "name": "vinyl-disc",
   "title": "Vinyl Disc",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "music",
+    "media",
+    "objects"
+  ],
+  "tags": [
+    "music",
+    "record",
+    "analog",
+    "audio",
+    "retro"
+  ],
+  "aliases": [
+    "vinyl",
+    "record",
+    "lp",
+    "vinyl record"
+  ],
+  "keywords": [
+    "turntable",
+    "music player",
+    "album",
+    "audiophile",
+    "classic music",
+    "disc",
+    "retro audio",
+    "sound recording"
+  ]
 }

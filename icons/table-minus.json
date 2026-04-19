@@ -1,8 +1,35 @@
 {
   "name": "table-minus",
   "title": "Table Minus",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "actions"
+  ],
+  "tags": [
+    "table",
+    "remove",
+    "delete",
+    "row",
+    "column",
+    "minus"
+  ],
+  "aliases": [
+    "remove table item",
+    "delete row",
+    "delete column",
+    "table remove"
+  ],
+  "keywords": [
+    "remove row",
+    "delete entry",
+    "table editing",
+    "spreadsheet delete",
+    "data removal",
+    "grid edit",
+    "table modify",
+    "subtract item",
+    "row delete action"
+  ]
 }

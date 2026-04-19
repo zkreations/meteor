@@ -1,8 +1,33 @@
 {
   "name": "shrimp",
   "title": "Shrimp",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "food",
+    "seafood",
+    "animal"
+  ],
+  "tags": [
+    "seafood",
+    "shellfish",
+    "cooking",
+    "protein",
+    "marine"
+  ],
+  "aliases": [
+    "prawn",
+    "shrimp seafood",
+    "crustacean",
+    "sea shrimp"
+  ],
+  "keywords": [
+    "seafood dish",
+    "grilled shrimp",
+    "fried shrimp",
+    "seafood recipe",
+    "ocean food",
+    "cooking ingredients",
+    "shellfish cuisine",
+    "shrimp cocktail",
+    "boiled shrimp"
+  ]
 }

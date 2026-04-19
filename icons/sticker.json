@@ -1,8 +1,35 @@
 {
   "name": "sticker",
   "title": "Sticker",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "messaging",
+    "social",
+    "design"
+  ],
+  "tags": [
+    "sticker",
+    "emoji",
+    "label",
+    "decoration",
+    "chat",
+    "reaction"
+  ],
+  "aliases": [
+    "label",
+    "chat sticker",
+    "emoji sticker",
+    "decals"
+  ],
+  "keywords": [
+    "chat reaction",
+    "messaging app",
+    "decorative element",
+    "digital sticker",
+    "expression icon",
+    "social media sticker",
+    "whatsapp sticker",
+    "telegram sticker",
+    "fun label"
+  ]
 }

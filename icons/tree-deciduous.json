@@ -1,8 +1,35 @@
 {
   "name": "tree-deciduous",
   "title": "Tree Deciduous",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "environment",
+    "weather",
+    "ui"
+  ],
+  "tags": [
+    "tree",
+    "nature",
+    "forest",
+    "leaf",
+    "plant",
+    "season"
+  ],
+  "aliases": [
+    "tree",
+    "leafy tree",
+    "forest tree",
+    "deciduous tree"
+  ],
+  "keywords": [
+    "autumn tree",
+    "fall leaves",
+    "green nature",
+    "ecosystem",
+    "environmental icon",
+    "park trees",
+    "seasonal change",
+    "woodland",
+    "natural landscape"
+  ]
 }

@@ -1,8 +1,35 @@
 {
   "name": "text",
   "title": "Text",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "typography",
+    "content",
+    "editor"
+  ],
+  "tags": [
+    "text",
+    "typography",
+    "content",
+    "font",
+    "writing",
+    "label"
+  ],
+  "aliases": [
+    "paragraph",
+    "text block",
+    "type",
+    "written content"
+  ],
+  "keywords": [
+    "text editor",
+    "write content",
+    "paragraph text",
+    "font style",
+    "typography design",
+    "text input",
+    "document text",
+    "readable content",
+    "ui label"
+  ]
 }

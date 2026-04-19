@@ -1,8 +1,35 @@
 {
   "name": "table-list",
   "title": "Table List",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "layout"
+  ],
+  "tags": [
+    "table",
+    "list",
+    "rows",
+    "data",
+    "grid",
+    "view"
+  ],
+  "aliases": [
+    "list table",
+    "table view",
+    "data list",
+    "tabular list"
+  ],
+  "keywords": [
+    "structured list",
+    "table format",
+    "rows view",
+    "data rows",
+    "spreadsheet view",
+    "list layout",
+    "tabular data",
+    "database table",
+    "grid list"
+  ]
 }

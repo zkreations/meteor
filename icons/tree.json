@@ -1,8 +1,35 @@
 {
   "name": "tree",
   "title": "Tree",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "nature",
+    "environment",
+    "ui",
+    "landscape"
+  ],
+  "tags": [
+    "tree",
+    "nature",
+    "forest",
+    "plant",
+    "environment",
+    "green"
+  ],
+  "aliases": [
+    "plant",
+    "forest tree",
+    "nature tree",
+    "wood tree"
+  ],
+  "keywords": [
+    "woodland",
+    "ecosystem",
+    "environment",
+    "green nature",
+    "outdoor",
+    "landscape",
+    "forest icon",
+    "plant life",
+    "natural scenery"
+  ]
 }

@@ -1,8 +1,36 @@
 {
   "name": "terminal",
   "title": "Terminal",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "development",
+    "system",
+    "software",
+    "ui"
+  ],
+  "tags": [
+    "cli",
+    "command",
+    "shell",
+    "console",
+    "code",
+    "developer"
+  ],
+  "aliases": [
+    "command line",
+    "cmd",
+    "shell terminal",
+    "console",
+    "bash terminal"
+  ],
+  "keywords": [
+    "command prompt",
+    "linux terminal",
+    "mac terminal",
+    "windows cmd",
+    "bash",
+    "zsh",
+    "script execution",
+    "developer tools",
+    "system commands"
+  ]
 }

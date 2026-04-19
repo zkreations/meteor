@@ -1,8 +1,32 @@
 {
   "name": "wave-square",
   "title": "Wave Square",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "media",
+    "audio",
+    "ui"
+  ],
+  "tags": [
+    "wave",
+    "signal",
+    "audio",
+    "square",
+    "waveform"
+  ],
+  "aliases": [
+    "square wave",
+    "digital signal",
+    "audio waveform",
+    "signal wave"
+  ],
+  "keywords": [
+    "sound wave",
+    "frequency signal",
+    "digital audio",
+    "oscilloscope",
+    "wave pattern",
+    "audio visualization",
+    "square signal",
+    "electronics signal"
+  ]
 }

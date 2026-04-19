@@ -1,8 +1,35 @@
 {
   "name": "table-cells",
   "title": "Table Cells",
-  "categories": [],
-  "tags": [],
-  "aliases": [],
-  "keywords": []
+  "categories": [
+    "ui",
+    "data",
+    "tables",
+    "layout"
+  ],
+  "tags": [
+    "table",
+    "cells",
+    "grid",
+    "spreadsheet",
+    "data",
+    "layout"
+  ],
+  "aliases": [
+    "table grid",
+    "cells grid",
+    "spreadsheet cells",
+    "table layout"
+  ],
+  "keywords": [
+    "rows and columns",
+    "data table",
+    "excel sheet",
+    "grid layout",
+    "document table",
+    "tabular data",
+    "structured data",
+    "cell structure",
+    "table editor"
+  ]
 }
