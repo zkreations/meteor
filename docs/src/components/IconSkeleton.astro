@@ -12,14 +12,17 @@ const gridPath = Array.from({ length: 24 }, (_, i) => {
 }).join(' ');
 ---
 
-<svg-skeleton class={`svg-skeleton-wrapper pointer-events-none w-full aspect-square rounded relative ${customClass}`} data-random-selector={randomSelector}>
-  <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-500/20 *:w-full *:h-full" aria-hidden="true">
-    <slot />
-  </div>
-  <div class="render-zone w-full h-full relative"></div>
-  <svg class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-slate-500/10" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
-    <path d={gridPath}/>
-  </svg>
+<svg-skeleton  class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`} data-random-selector={randomSelector}>
+  <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto">
+    <input type="checkbox" class="sr-only peer" />
+    <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-500/20 transition-colors duration-300 peer-checked:text-slate-900 *:w-full *:h-full" aria-hidden="true">
+      <slot />
+    </div>
+    <div class="render-zone w-full h-full relative transition-opacity duration-300 peer-checked:opacity-0 pointer-events-none"></div>
+    <svg class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-slate-500/10 pointer-events-none" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
+      <path d={gridPath}/>
+    </svg>
+  </label>
 </svg-skeleton>
 
 <script>
