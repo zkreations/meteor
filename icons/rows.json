@@ -1,34 +1,34 @@
 {
-  "name": "rows",
-  "title": "Rows",
+  "name": "rows-3",
+  "title": "Rows 3",
   "categories": [
     "layout",
     "ui",
     "design"
   ],
   "tags": [
+    "grid",
     "rows",
     "layout",
     "structure",
-    "list",
-    "grid",
-    "alignment"
+    "view",
+    "organization"
   ],
   "aliases": [
-    "row layout",
-    "list rows",
-    "content rows",
-    "stacked rows"
+    "three rows",
+    "row layout 3",
+    "grid rows",
+    "layout rows"
   ],
   "keywords": [
     "list view",
-    "table rows",
-    "UI structure",
-    "content organization",
-    "vertical layout",
-    "dashboard layout",
-    "sections",
-    "stacked items",
-    "data rows"
+    "grid view",
+    "table layout",
+    "content structure",
+    "UI layout",
+    "dashboard rows",
+    "section rows",
+    "content blocks",
+    "three-line layout"
   ]
 }

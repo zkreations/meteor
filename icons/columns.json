@@ -1,6 +1,6 @@
 {
-  "name": "columns",
-  "title": "Columns",
+  "name": "columns-3",
+  "title": "Columns 3",
   "categories": [
     "layout",
     "ui",
@@ -8,24 +8,24 @@
   ],
   "tags": [
     "columns",
-    "layout",
     "grid",
-    "structure",
-    "responsive"
+    "layout",
+    "three",
+    "structure"
   ],
   "aliases": [
-    "column layout",
-    "multi columns",
-    "grid columns"
+    "3 columns",
+    "three columns layout",
+    "grid 3"
   ],
   "keywords": [
-    "page layout",
-    "content layout",
-    "dashboard grid",
-    "ui structure",
-    "responsive design",
-    "text columns",
-    "panel layout",
-    "web layout"
+    "grid layout",
+    "multi column",
+    "page structure",
+    "content columns",
+    "dashboard layout",
+    "responsive grid",
+    "three panel layout",
+    "ui layout"
   ]
 }
