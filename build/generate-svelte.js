@@ -1,5 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
+import config from './icons.config.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
@@ -8,6 +9,7 @@ import {
   resetDir,
   toPascalCase
 } from './core/framework-utils.js'
+import { writePackageManifest } from './core/create-packages.js'
 
 const ROOT_DIR = new URL('..', import.meta.url)
 const SVELTE_DIR = new URL('../packages/svelte/src/', import.meta.url)
@@ -63,6 +65,8 @@ export default class ${componentName} extends SvelteComponentTyped<MeteorSvelteI
 async function generateSveltePackage () {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
+
+  await writePackageManifest('svelte', config.packages)
 
   await resetDir(SVELTE_ICONS_DIR)
   await fs.mkdir(SVELTE_DIR, { recursive: true })

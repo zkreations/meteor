@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 import config from './icons.config.js'
+import { writePackageManifest } from './core/create-packages.js'
 import { generateCoreVanilla } from './core/create-core-vanilla.js'
 import { generateCoreSprite } from './core/create-core-sprite.js'
 import { generateCoreIncludable } from './core/create-core-includable.js'
@@ -32,6 +33,8 @@ function copyDir (src, dest) {
 
 async function generateCorePackage () {
   console.log('Building meteor-icons core package')
+
+  await writePackageManifest('core', config.packages)
 
   resetDir(DIST_ICONS)
   copyDir(SRC_ICONS, DIST_ICONS)

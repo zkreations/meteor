@@ -1,5 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
+import config from './icons.config.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
@@ -8,6 +9,7 @@ import {
   resetDir,
   toPascalCase
 } from './core/framework-utils.js'
+import { writePackageManifest } from './core/create-packages.js'
 
 const ROOT_DIR = new URL('..', import.meta.url)
 const ASTRO_DIR = new URL('../packages/astro/src/', import.meta.url)
@@ -74,6 +76,8 @@ export default ${componentName}
 async function generateAstroPackage () {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
+
+  await writePackageManifest('astro', config.packages)
 
   await resetDir(ASTRO_ICONS_DIR)
   await fs.mkdir(ASTRO_DIR, { recursive: true })

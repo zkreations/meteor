@@ -1,12 +1,38 @@
 {
   "name": "@meteor-icons/svelte",
   "version": "4.0.0",
+  "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
   "private": false,
   "type": "module",
+  "homepage": "https://meteoricons.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkreations/icons.git"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "meteor-icons"
+  ],
+  "author": "Abel Moreira <daniel@zkreations.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkreations/icons/issues"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "prepack": "npm --prefix ../.. run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
   "main": "src/index.js",
   "module": "src/index.js",
   "types": "src/index.d.ts",
-  "svelte": "src/index.js",
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
@@ -19,14 +45,8 @@
       "import": "./src/icons/*.svelte"
     }
   },
-  "sideEffects": false,
-  "files": [
-    "src"
-  ],
-  "scripts": {
-    "prepack": "npm --prefix ../.. run build"
-  },
   "peerDependencies": {
     "svelte": ">=4"
-  }
+  },
+  "svelte": "src/index.js"
 }

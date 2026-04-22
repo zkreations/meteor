@@ -1,5 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
+import config from './icons.config.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
@@ -8,6 +9,7 @@ import {
   resetDir,
   toPascalCase
 } from './core/framework-utils.js'
+import { writePackageManifest } from './core/create-packages.js'
 import { buildReactLikeCreateIconSource } from './core/react-like-icon-template.js'
 import { buildReactCreateIconTypesSource } from './core/react-like-icon-types.js'
 
@@ -51,6 +53,8 @@ export default ${componentName}
 async function generateReactPackage () {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
+
+  await writePackageManifest('react', config.packages)
 
   await resetDir(REACT_ICONS_DIR)
   await fs.mkdir(REACT_DIR, { recursive: true })
