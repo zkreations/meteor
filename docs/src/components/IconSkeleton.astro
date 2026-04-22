@@ -5,16 +5,21 @@ interface Props {
 }
 
 const { customClass, randomSelector } = Astro.props;
+
+const gridPath = Array.from({ length: 24 }, (_, i) => {
+  const pos = (i + 1) * 10;
+  return `M0 ${pos}H240 M${pos} 0V240`;
+}).join(' ');
 ---
 
 <svg-skeleton class={`svg-skeleton-wrapper pointer-events-none w-full aspect-square rounded relative ${customClass}`} data-random-selector={randomSelector}>
-  <svg xmlns="http://www.w3.org/2000/svg" class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-slate-500/10" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
-    <path d="M0 10H240M0 20H240M0 30H240M0 40H240M0 50H240M0 60H240M0 70H240M0 80H240M0 90H240M0 100H240M0 110H240M0 120H240M0 130H240M0 140H240M0 150H240M0 160H240M0 170H240M0 180H240M0 190H240M0 200H240M0 210H240M0 220H240M0 230H240M10 0V240M20 0V240M30 0V240M40 0V240M50 0V240M60 0V240M70 0V240M80 0V240M90 0V240M100 0V240M110 0V240M120 0V240M130 0V240M140 0V240M150 0V240M160 0V240M170 0V240M180 0V240M190 0V240M200 0V240M210 0V240M220 0V240M230 0V240"/>
-  </svg>
   <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-500/20 *:w-full *:h-full" aria-hidden="true">
     <slot />
   </div>
-  <div class="render-zone w-full h-full"></div>
+  <div class="render-zone w-full h-full relative"></div>
+  <svg class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-slate-500/10" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
+    <path d={gridPath}/>
+  </svg>
 </svg-skeleton>
 
 <script>
