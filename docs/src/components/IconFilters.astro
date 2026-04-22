@@ -1,26 +1,21 @@
 ---
-import { Search, AngleDown } from '@meteor-icons/astro'
+import { Search, AngleDown, SlidersSimple } from '@meteor-icons/astro'
 
 interface Props {
   total: number
 }
 
 const { total } = Astro.props
+const btnClasses = 'flex gap-1 justify-between items-center px-3 h-12 text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors duration-300 cursor-pointer rounded-md whitespace-nowrap'
 ---
 
-<div class="mb-4 flex items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-md sticky top-4 z-10">
-  <!-- dropdown of categories -->
+<div class="z-10 flex gap-4 items-center p-3 mb-4 bg-white border border-slate-200 shadow-lg transition duration-300 focus-within:border-teal-500 focus-within:ring-4 ring-teal-500/10 rounded-lg sticky top-4">
+  <!-- dropdown of Settings -->
   <div class="relative select-none">
-    <button class="flex items-center justify-between gap-1 rounded-md bg-slate-100 px-3 py-2 text-slate-700 w-40">
-      All
+    <button class=`${btnClasses} w-40`>
+      All icons
       <AngleDown size={20} />
     </button>
-    <!-- dropdown menu -->
-    <div class="absolute left-0 top-full mt-1 hidden w-full rounded-md border border-slate-200 bg-white shadow-lg">
-      <ul class="py-1 text-sm text-slate-700">
-        <li><button data-category="all" class="block w-full px-4 py-2 text-left hover:bg-slate-100">All Categories</button></li>
-      </ul>
-    </div>
   </div>
   <input
     id="icon-search"
@@ -34,4 +29,8 @@ const { total } = Astro.props
   <span class="pointer-events-none text-slate-400">
     <Search />
   </span>
+  <div class="relative select-none bg-slate-100 rounded-md flex h-12">
+    <button class={btnClasses}>
+      <SlidersSimple size={20} />
+    </button>
 </div>
