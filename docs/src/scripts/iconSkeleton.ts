@@ -425,7 +425,6 @@ const parsePathData = (d: string, handlers: PathPointHandlers): void => {
 
         handlers.addHandle(cx, cy, c1x, c1y)
         handlers.addHandle(ex, ey, c2x, c2y)
-        handlers.addControl(c1x, c1y)
         handlers.addControl(c2x, c2y)
         handlers.addAnchor(ex, ey)
 
