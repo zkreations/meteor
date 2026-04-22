@@ -1,0 +1,32 @@
+{
+  "name": "sliders",
+  "title": "Sliders",
+  "categories": [
+    "ui",
+    "settings",
+    "controls"
+  ],
+  "tags": [
+    "sliders",
+    "adjustment",
+    "configuration",
+    "filters",
+    "controls"
+  ],
+  "aliases": [
+    "settings",
+    "controls panel",
+    "adjust controls",
+    "equalizer"
+  ],
+  "keywords": [
+    "preferences",
+    "tuning",
+    "customization",
+    "manage options",
+    "filter settings",
+    "parameter controls",
+    "sound mixer",
+    "settings menu"
+  ]
+}
