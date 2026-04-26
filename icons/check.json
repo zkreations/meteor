@@ -3,8 +3,7 @@
   "title": "Check",
   "categories": [
     "status",
-    "actions",
-    "ui"
+    "actions"
   ],
   "tags": [
     "check",

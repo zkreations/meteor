@@ -2,8 +2,6 @@
   "name": "command",
   "title": "Command",
   "categories": [
-    "ui",
-    "system",
     "controls"
   ],
   "tags": [
@@ -11,7 +9,8 @@
     "control",
     "input",
     "shortcut",
-    "action"
+    "action",
+    "system"
   ],
   "aliases": [
     "cmd",

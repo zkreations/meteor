@@ -2,7 +2,6 @@
   "name": "upload",
   "title": "Upload",
   "categories": [
-    "ui",
     "files",
     "actions",
     "network"

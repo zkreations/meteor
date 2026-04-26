@@ -2,11 +2,10 @@
   "name": "link",
   "title": "Link",
   "categories": [
-    "ui",
-    "web",
     "navigation"
   ],
   "tags": [
+    "web",
     "link",
     "url",
     "chain",

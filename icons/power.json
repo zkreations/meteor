@@ -2,8 +2,6 @@
   "name": "power",
   "title": "Power",
   "categories": [
-    "ui",
-    "system",
     "devices",
     "energy"
   ],
@@ -13,7 +11,8 @@
     "toggle",
     "button",
     "control",
-    "standby"
+    "standby",
+    "system"
   ],
   "aliases": [
     "power button",

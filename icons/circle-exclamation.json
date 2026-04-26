@@ -3,8 +3,7 @@
   "title": "Circle Exclamation",
   "categories": [
     "alerts",
-    "status",
-    "ui"
+    "status"
   ],
   "tags": [
     "warning",

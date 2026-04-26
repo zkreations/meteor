@@ -3,9 +3,7 @@
   "title": "Terminal",
   "categories": [
     "development",
-    "system",
-    "software",
-    "ui"
+    "software"
   ],
   "tags": [
     "cli",
@@ -13,7 +11,8 @@
     "shell",
     "console",
     "code",
-    "developer"
+    "developer",
+    "system"
   ],
   "aliases": [
     "command line",

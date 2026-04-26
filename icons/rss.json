@@ -2,12 +2,12 @@
   "name": "rss",
   "title": "RSS",
   "categories": [
-    "web",
     "media",
     "communication",
     "technology"
   ],
   "tags": [
+    "web",
     "feed",
     "news",
     "subscription",

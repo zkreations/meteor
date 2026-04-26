@@ -2,12 +2,11 @@
   "name": "trash",
   "title": "Trash",
   "categories": [
-    "ui",
     "actions",
-    "files",
-    "system"
+    "files"
   ],
   "tags": [
+    "system",
     "delete",
     "remove",
     "trash",

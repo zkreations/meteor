@@ -2,10 +2,8 @@
   "name": "trash-can",
   "title": "Trash Can",
   "categories": [
-    "ui",
     "actions",
-    "files",
-    "system"
+    "files"
   ],
   "tags": [
     "delete",
@@ -13,7 +11,8 @@
     "trash",
     "bin",
     "discard",
-    "cleanup"
+    "cleanup",
+    "system"
   ],
   "aliases": [
     "trash",
