@@ -2,11 +2,11 @@
   "name": "square-exclamation",
   "title": "Square Exclamation",
   "categories": [
-    "alerts",
     "status",
     "warnings"
   ],
   "tags": [
+    "alerts",
     "warning",
     "alert",
     "exclamation",

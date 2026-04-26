@@ -5,8 +5,7 @@
     "brands",
     "productivity",
     "project-management",
-    "software",
-    "collaboration"
+    "software"
   ],
   "tags": [
     "kanban",
@@ -14,7 +13,8 @@
     "boards",
     "workflow",
     "organization",
-    "planning"
+    "planning",
+    "collaboration"
   ],
   "aliases": [
     "trello app",

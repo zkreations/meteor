@@ -2,8 +2,7 @@
   "name": "bookmark",
   "title": "Bookmark",
   "categories": [
-    "reading",
-    "actions"
+    "reading"
   ],
   "tags": [
     "save",

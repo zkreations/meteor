@@ -2,11 +2,10 @@
   "name": "square-xmark",
   "title": "Square Xmark",
   "categories": [
-    "actions",
-    "controls",
-    "alerts"
+    "controls"
   ],
   "tags": [
+    "alerts",
     "close",
     "cancel",
     "remove",

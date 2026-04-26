@@ -2,8 +2,7 @@
   "name": "alarm-snooze",
   "title": "Alarm Snooze",
   "categories": [
-    "time",
-    "actions"
+    "time"
   ],
   "tags": [
     "alarm",

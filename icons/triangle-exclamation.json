@@ -2,11 +2,11 @@
   "name": "triangle-exclamation",
   "title": "Triangle Exclamation",
   "categories": [
-    "alerts",
     "warnings",
     "safety"
   ],
   "tags": [
+    "alerts",
     "warning",
     "alert",
     "danger",

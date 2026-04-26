@@ -2,8 +2,7 @@
   "name": "file-search",
   "title": "File Search",
   "categories": [
-    "files",
-    "actions"
+    "files"
   ],
   "tags": [
     "file",

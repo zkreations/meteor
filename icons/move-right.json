@@ -2,7 +2,6 @@
   "name": "move-right",
   "title": "Move Right",
   "categories": [
-    "actions",
     "navigation"
   ],
   "tags": [

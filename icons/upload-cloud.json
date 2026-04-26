@@ -2,9 +2,7 @@
   "name": "upload-cloud",
   "title": "Upload Cloud",
   "categories": [
-    "files",
-    "cloud",
-    "actions"
+    "files"
   ],
   "tags": [
     "upload",

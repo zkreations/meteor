@@ -2,7 +2,6 @@
   "name": "move-left",
   "title": "Move Left",
   "categories": [
-    "actions",
     "navigation"
   ],
   "tags": [

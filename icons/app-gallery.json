@@ -2,10 +2,10 @@
   "name": "app-gallery",
   "title": "App Gallery",
   "categories": [
-    "apps",
     "media"
   ],
   "tags": [
+    "apps",
     "gallery",
     "grid",
     "applications",

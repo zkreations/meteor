@@ -2,12 +2,11 @@
   "name": "gumroad",
   "title": "Gumroad",
   "categories": [
-    "brands",
-    "ecommerce",
-    "business"
+    "brands"
   ],
   "tags": [
     "store",
+    "ecommerce",
     "digital products",
     "sales",
     "creator",

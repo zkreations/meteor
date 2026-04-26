@@ -3,10 +3,10 @@
   "title": "Wave",
   "categories": [
     "media",
-    "audio",
     "design"
   ],
   "tags": [
+    "audio",
     "wave",
     "signal",
     "fluid",

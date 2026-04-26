@@ -2,8 +2,7 @@
   "name": "folder-search",
   "title": "Folder Search",
   "categories": [
-    "files",
-    "actions"
+    "files"
   ],
   "tags": [
     "folder",

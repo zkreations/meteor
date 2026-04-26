@@ -2,11 +2,10 @@
   "name": "trending-up",
   "title": "Trending Up",
   "categories": [
-    "analytics",
-    "finance",
-    "charts"
+    "finance"
   ],
   "tags": [
+    "charts",
     "trend",
     "up",
     "increase",

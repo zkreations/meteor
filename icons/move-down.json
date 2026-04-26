@@ -2,7 +2,6 @@
   "name": "move-down",
   "title": "Move Down",
   "categories": [
-    "actions",
     "navigation"
   ],
   "tags": [

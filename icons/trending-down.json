@@ -2,11 +2,10 @@
   "name": "trending-down",
   "title": "Trending Down",
   "categories": [
-    "analytics",
-    "finance",
-    "charts"
+    "finance"
   ],
   "tags": [
+    "charts",
     "trend",
     "down",
     "decrease",

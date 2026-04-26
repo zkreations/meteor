@@ -2,10 +2,10 @@
   "name": "alarm-exclamation",
   "title": "Alarm Exclamation",
   "categories": [
-    "time",
-    "alerts"
+    "time"
   ],
   "tags": [
+    "alerts",
     "alarm",
     "warning",
     "notification",

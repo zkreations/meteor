@@ -3,11 +3,11 @@
   "title": "WordPress",
   "categories": [
     "brands",
-    "development",
-    "cms"
+    "development"
   ],
   "tags": [
     "blog",
+    "blogging",
     "website",
     "cms",
     "content",
@@ -19,7 +19,6 @@
     "wordpress platform"
   ],
   "keywords": [
-    "blogging",
     "website builder",
     "themes",
     "plugins",

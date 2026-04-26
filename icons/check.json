@@ -2,8 +2,7 @@
   "name": "check",
   "title": "Check",
   "categories": [
-    "status",
-    "actions"
+    "status"
   ],
   "tags": [
     "check",

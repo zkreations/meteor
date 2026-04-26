@@ -2,13 +2,13 @@
   "name": "cart-shopping",
   "title": "Cart Shopping",
   "categories": [
-    "shopping",
-    "ecommerce"
+    "shopping"
   ],
   "tags": [
     "cart",
     "store",
     "purchase",
+    "ecommerce",
     "checkout",
     "basket"
   ],

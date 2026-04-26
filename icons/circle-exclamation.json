@@ -2,10 +2,10 @@
   "name": "circle-exclamation",
   "title": "Circle Exclamation",
   "categories": [
-    "alerts",
     "status"
   ],
   "tags": [
+    "alerts",
     "warning",
     "error",
     "attention",

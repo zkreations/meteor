@@ -3,10 +3,10 @@
   "title": "Fingerprint",
   "categories": [
     "security",
-    "biometrics",
     "technology"
   ],
   "tags": [
+    "biometrics",
     "fingerprint",
     "identity",
     "authentication",

@@ -3,10 +3,10 @@
   "title": "Square Info",
   "categories": [
     "information",
-    "alerts",
     "status"
   ],
   "tags": [
+    "alerts",
     "info",
     "information",
     "help",

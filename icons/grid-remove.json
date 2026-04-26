@@ -2,8 +2,7 @@
   "name": "grid-remove",
   "title": "Grid Remove",
   "categories": [
-    "layout",
-    "actions"
+    "layout"
   ],
   "tags": [
     "grid",
