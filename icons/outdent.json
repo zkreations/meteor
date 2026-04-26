@@ -2,6 +2,7 @@
   "name": "outdent",
   "title": "Outdent",
   "categories": [
+    "coding",
     "development",
     "formatting"
   ],
@@ -9,7 +10,6 @@
     "outdent",
     "format",
     "text",
-    "code",
     "spacing"
   ],
   "aliases": [

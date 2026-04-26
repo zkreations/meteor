@@ -2,13 +2,13 @@
   "name": "github",
   "title": "GitHub",
   "categories": [
+    "coding",
     "brands",
     "development",
     "tools"
   ],
   "tags": [
     "git",
-    "code",
     "repository",
     "collaboration"
   ],

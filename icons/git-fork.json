@@ -2,6 +2,7 @@
   "name": "git-fork",
   "title": "Git Fork",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,7 +10,6 @@
     "git",
     "fork",
     "repository",
-    "code",
     "collaboration"
   ],
   "aliases": [

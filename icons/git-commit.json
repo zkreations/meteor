@@ -2,6 +2,7 @@
   "name": "git-commit",
   "title": "Git Commit",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,7 +10,6 @@
     "git",
     "commit",
     "repository",
-    "code",
     "versioning"
   ],
   "aliases": [

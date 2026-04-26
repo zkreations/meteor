@@ -2,6 +2,7 @@
   "name": "git-compare",
   "title": "Git Compare",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,8 +10,7 @@
     "git",
     "compare",
     "diff",
-    "repository",
-    "code"
+    "repository"
   ],
   "aliases": [
     "compare changes",

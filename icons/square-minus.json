@@ -2,7 +2,6 @@
   "name": "square-minus",
   "title": "Square Minus",
   "categories": [
-    "controls",
     "editing"
   ],
   "tags": [
@@ -11,7 +10,8 @@
     "minus",
     "decrease",
     "subtract",
-    "collapse"
+    "collapse",
+    "control"
   ],
   "aliases": [
     "remove box",

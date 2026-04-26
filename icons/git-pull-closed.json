@@ -2,6 +2,7 @@
   "name": "git-pull-closed",
   "title": "Git Pull Closed",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,8 +10,7 @@
     "git",
     "pull request",
     "closed",
-    "merge",
-    "code"
+    "merge"
   ],
   "aliases": [
     "closed pull request",

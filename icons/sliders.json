@@ -2,15 +2,14 @@
   "name": "sliders",
   "title": "Sliders",
   "categories": [
-    "settings",
-    "controls"
+    "settings"
   ],
   "tags": [
     "sliders",
     "adjustment",
     "configuration",
     "filters",
-    "controls"
+    "control"
   ],
   "aliases": [
     "settings",

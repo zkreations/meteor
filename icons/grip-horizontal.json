@@ -2,7 +2,6 @@
   "name": "grip-horizontal",
   "title": "Grip Horizontal",
   "categories": [
-    "controls",
     "layout"
   ],
   "tags": [
@@ -10,7 +9,8 @@
     "drag",
     "handle",
     "move",
-    "horizontal"
+    "horizontal",
+    "control"
   ],
   "aliases": [
     "drag handle horizontal",

@@ -3,7 +3,6 @@
   "title": "USDT",
   "categories": [
     "finance",
-    "cryptocurrency",
     "payments",
     "currency"
   ],
@@ -13,7 +12,8 @@
     "blockchain",
     "trading",
     "usd",
-    "digital currency"
+    "digital currency",
+    "cryptocurrency"
   ],
   "aliases": [
     "tether",

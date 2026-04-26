@@ -2,15 +2,15 @@
   "name": "backward",
   "title": "Backward",
   "categories": [
-    "media",
-    "controls"
+    "media"
   ],
   "tags": [
     "rewind",
     "backward",
     "reverse",
     "audio",
-    "video"
+    "video",
+    "control"
   ],
   "aliases": [
     "rewind",

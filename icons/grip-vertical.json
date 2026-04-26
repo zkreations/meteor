@@ -2,7 +2,6 @@
   "name": "grip-vertical",
   "title": "Grip Vertical",
   "categories": [
-    "controls",
     "layout"
   ],
   "tags": [
@@ -10,7 +9,8 @@
     "drag",
     "handle",
     "move",
-    "vertical"
+    "vertical",
+    "control"
   ],
   "aliases": [
     "drag handle vertical",

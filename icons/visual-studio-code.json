@@ -4,7 +4,8 @@
   "categories": [
     "software",
     "development",
-    "brands"
+    "brands",
+    "coding"
   ],
   "tags": [
     "code editor",
@@ -19,7 +20,6 @@
     "visual studio code editor"
   ],
   "keywords": [
-    "code",
     "javascript",
     "typescript",
     "debugging",

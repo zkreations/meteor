@@ -3,10 +3,10 @@
   "title": "Airplay",
   "categories": [
     "devices",
-    "media",
-    "connectivity"
+    "media"
   ],
   "tags": [
+    "connectivity",
     "streaming",
     "wireless",
     "display",

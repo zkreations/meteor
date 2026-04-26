@@ -2,19 +2,19 @@
   "name": "sliders-simple",
   "title": "Sliders Simple",
   "categories": [
-    "settings",
-    "controls"
+    "settings"
   ],
   "tags": [
     "sliders",
     "adjustment",
     "preferences",
     "filters",
-    "configuration"
+    "configuration",
+    "control"
   ],
   "aliases": [
     "settings sliders",
-    "controls",
+    "control sliders",
     "adjust sliders",
     "tune"
   ],

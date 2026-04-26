@@ -2,7 +2,6 @@
   "name": "square-check",
   "title": "Square Check",
   "categories": [
-    "controls",
     "forms",
     "status"
   ],
@@ -12,7 +11,8 @@
     "select",
     "done",
     "verified",
-    "confirm"
+    "confirm",
+    "control"
   ],
   "aliases": [
     "checkbox checked",

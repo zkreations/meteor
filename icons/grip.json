@@ -2,7 +2,6 @@
   "name": "grip",
   "title": "Grip",
   "categories": [
-    "controls",
     "layout"
   ],
   "tags": [
@@ -10,7 +9,8 @@
     "drag",
     "handle",
     "move",
-    "reorder"
+    "reorder",
+    "control"
   ],
   "aliases": [
     "drag handle",

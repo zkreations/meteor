@@ -2,6 +2,7 @@
   "name": "git-branch",
   "title": "Git Branch",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,7 +10,6 @@
     "git",
     "branch",
     "repository",
-    "code",
     "versioning"
   ],
   "aliases": [

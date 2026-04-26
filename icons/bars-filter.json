@@ -2,15 +2,15 @@
   "name": "bars-filter",
   "title": "Bars Filter",
   "categories": [
-    "filters",
-    "controls"
+    "filters"
   ],
   "tags": [
     "filter",
     "bars",
     "settings",
     "sort",
-    "options"
+    "options",
+    "control"
   ],
   "aliases": [
     "filter menu",

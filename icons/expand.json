@@ -2,14 +2,16 @@
   "name": "expand",
   "title": "Expand",
   "categories": [
-    "controls"
+    "design",
+    "layout"
   ],
   "tags": [
     "expand",
     "maximize",
     "fullscreen",
     "grow",
-    "resize"
+    "resize",
+    "control"
   ],
   "aliases": [
     "maximize",

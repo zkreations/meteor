@@ -2,15 +2,15 @@
   "name": "backward-step",
   "title": "Backward Step",
   "categories": [
-    "media",
-    "controls"
+    "media"
   ],
   "tags": [
     "backward",
     "previous",
     "rewind",
     "audio",
-    "video"
+    "video",
+    "control"
   ],
   "aliases": [
     "previous track",

@@ -2,6 +2,7 @@
   "name": "git-pull-create",
   "title": "Git Pull Create",
   "categories": [
+    "coding",
     "development",
     "tools"
   ],
@@ -9,7 +10,6 @@
     "git",
     "pull request",
     "create",
-    "code",
     "collaboration"
   ],
   "aliases": [

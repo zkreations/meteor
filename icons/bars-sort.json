@@ -2,15 +2,15 @@
   "name": "bars-sort",
   "title": "Bars Sort",
   "categories": [
-    "sorting",
-    "controls"
+    "sorting"
   ],
   "tags": [
     "sort",
     "bars",
     "order",
     "list",
-    "arrange"
+    "arrange",
+    "control"
   ],
   "aliases": [
     "sort menu",

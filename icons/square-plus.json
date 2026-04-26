@@ -2,7 +2,6 @@
   "name": "square-plus",
   "title": "Square Plus",
   "categories": [
-    "controls",
     "editing"
   ],
   "tags": [
@@ -11,7 +10,8 @@
     "create",
     "insert",
     "new",
-    "expand"
+    "expand",
+    "control"
   ],
   "aliases": [
     "add box",

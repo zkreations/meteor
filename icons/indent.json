@@ -2,6 +2,7 @@
   "name": "indent",
   "title": "Indent",
   "categories": [
+    "coding",
     "development",
     "formatting"
   ],
@@ -9,7 +10,6 @@
     "indent",
     "format",
     "text",
-    "code",
     "spacing"
   ],
   "aliases": [

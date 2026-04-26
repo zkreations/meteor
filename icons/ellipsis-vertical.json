@@ -2,15 +2,15 @@
   "name": "ellipsis-vertical",
   "title": "Ellipsis Vertical",
   "categories": [
-    "navigation",
-    "controls"
+    "navigation"
   ],
   "tags": [
     "menu",
     "more",
     "options",
     "vertical",
-    "dots"
+    "dots",
+    "control"
   ],
   "aliases": [
     "vertical ellipsis",

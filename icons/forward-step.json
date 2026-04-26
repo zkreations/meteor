@@ -2,15 +2,15 @@
   "name": "forward-step",
   "title": "Forward Step",
   "categories": [
-    "media",
-    "controls"
+    "media"
   ],
   "tags": [
     "forward",
     "next",
     "skip",
     "step",
-    "advance"
+    "advance",
+    "control"
   ],
   "aliases": [
     "skip forward",

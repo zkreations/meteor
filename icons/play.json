@@ -2,15 +2,15 @@
   "name": "play",
   "title": "Play",
   "categories": [
-    "media",
-    "controls"
+    "media"
   ],
   "tags": [
     "play",
     "start",
     "media",
     "video",
-    "audio"
+    "audio",
+    "control"
   ],
   "aliases": [
     "play button",
