@@ -6,7 +6,7 @@ interface Props {
 
 const { customClass, randomSelector } = Astro.props;
 
-const gridPath = Array.from({ length: 24 }, (_, i) => {
+const gridPath = Array.from({ length: 23 }, (_, i) => {
   const pos = (i + 1) * 10;
   return `M0 ${pos}H240 M${pos} 0V240`;
 }).join(' ');
