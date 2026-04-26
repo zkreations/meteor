@@ -2,16 +2,16 @@
   "name": "microchip",
   "title": "Microchip",
   "categories": [
-    "technology",
-    "hardware",
-    "electronics"
+    "devices"
   ],
   "tags": [
     "chip",
     "processor",
     "circuit",
     "hardware",
-    "semiconductor"
+    "technology",
+    "semiconductor",
+    "hardware"
   ],
   "aliases": [
     "chip",
@@ -19,6 +19,7 @@
     "cpu chip"
   ],
   "keywords": [
+    "electronics",
     "computer processor",
     "silicon chip",
     "electronic circuit",

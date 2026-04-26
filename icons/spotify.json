@@ -3,9 +3,7 @@
   "title": "Spotify",
   "categories": [
     "brands",
-    "music",
-    "streaming",
-    "media"
+    "multimedia"
   ],
   "tags": [
     "music",
@@ -13,7 +11,8 @@
     "audio",
     "playlist",
     "podcasts",
-    "songs"
+    "songs",
+    "media"
   ],
   "aliases": [
     "spotify music",

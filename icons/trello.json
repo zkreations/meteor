@@ -2,10 +2,7 @@
   "name": "trello",
   "title": "Trello",
   "categories": [
-    "brands",
-    "productivity",
-    "project-management",
-    "software"
+    "brands"
   ],
   "tags": [
     "kanban",
@@ -14,7 +11,9 @@
     "workflow",
     "organization",
     "planning",
-    "collaboration"
+    "productivity",
+    "collaboration",
+    "software"
   ],
   "aliases": [
     "trello app",

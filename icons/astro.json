@@ -3,10 +3,10 @@
   "title": "Astro",
   "categories": [
     "brands",
-    "development",
-    "frameworks"
+    "development"
   ],
   "tags": [
+    "framework",
     "javascript",
     "web",
     "static site",

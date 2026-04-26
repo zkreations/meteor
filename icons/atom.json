@@ -2,13 +2,12 @@
   "name": "atom",
   "title": "Atom",
   "categories": [
-    "science",
-    "education",
-    "technology"
+    "education"
   ],
   "tags": [
     "physics",
     "molecule",
+    "science",
     "nucleus",
     "energy",
     "chemistry"

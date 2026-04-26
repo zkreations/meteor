@@ -2,17 +2,17 @@
   "name": "table-cells-split",
   "title": "Table Cells Split",
   "categories": [
-    "data",
     "tables",
-    "editing"
+    "editing",
+    "layout"
   ],
   "tags": [
+    "data",
     "table",
     "split",
     "cells",
     "spreadsheet",
-    "divide",
-    "layout"
+    "divide"
   ],
   "aliases": [
     "split cells",

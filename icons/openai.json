@@ -2,15 +2,15 @@
   "name": "openai",
   "title": "OpenAI",
   "categories": [
-    "brands",
-    "technology"
+    "brands"
   ],
   "tags": [
     "ai",
     "machine learning",
     "chatbot",
     "research",
-    "models"
+    "models",
+    "technology"
   ],
   "aliases": [
     "open ai",

@@ -2,16 +2,16 @@
   "name": "vinyl-disc",
   "title": "Vinyl Disc",
   "categories": [
-    "music",
-    "media",
-    "objects"
+    "multimedia"
   ],
   "tags": [
     "music",
     "record",
     "analog",
     "audio",
-    "retro"
+    "retro",
+    "media",
+    "objects"
   ],
   "aliases": [
     "vinyl",

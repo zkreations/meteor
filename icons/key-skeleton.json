@@ -2,15 +2,14 @@
   "name": "key-skeleton",
   "title": "Key Skeleton",
   "categories": [
-    "security",
-    "objects"
+    "security"
   ],
   "tags": [
     "key",
     "access",
-    "security",
     "lock",
-    "unlock"
+    "unlock",
+    "objects"
   ],
   "aliases": [
     "skeleton key",

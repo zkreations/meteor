@@ -2,10 +2,10 @@
   "name": "film",
   "title": "Film",
   "categories": [
-    "media",
-    "entertainment"
+    "multimedia"
   ],
   "tags": [
+    "entertainment",
     "movie",
     "film",
     "video",

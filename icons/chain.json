@@ -2,7 +2,6 @@
   "name": "chain",
   "title": "Chain",
   "categories": [
-    "objects",
     "security"
   ],
   "tags": [
@@ -10,6 +9,7 @@
     "chain",
     "connected",
     "lock",
+    "objects",
     "binding"
   ],
   "aliases": [

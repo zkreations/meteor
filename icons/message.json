@@ -3,12 +3,12 @@
   "title": "Message",
   "categories": [
     "communication",
-    "messaging"
+    "text"
   ],
   "tags": [
+    "messaging",
     "message",
     "chat",
-    "text",
     "conversation"
   ],
   "aliases": [

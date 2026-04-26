@@ -2,7 +2,6 @@
   "name": "robot",
   "title": "Robot",
   "categories": [
-    "technology",
     "devices"
   ],
   "tags": [
@@ -11,6 +10,7 @@
     "machine",
     "automation",
     "android",
+    "technology",
     "bot"
   ],
   "aliases": [

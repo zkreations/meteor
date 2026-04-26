@@ -2,14 +2,15 @@
   "name": "wave-square",
   "title": "Wave Square",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "wave",
     "signal",
     "audio",
     "square",
-    "waveform"
+    "waveform",
+    "media"
   ],
   "aliases": [
     "square wave",

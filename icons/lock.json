@@ -2,15 +2,14 @@
   "name": "lock",
   "title": "Lock",
   "categories": [
-    "security",
-    "objects"
+    "security"
   ],
   "tags": [
     "lock",
-    "security",
     "privacy",
     "access",
-    "protection"
+    "protection",
+    "objects"
   ],
   "aliases": [
     "padlock",

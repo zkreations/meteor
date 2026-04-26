@@ -3,7 +3,6 @@
   "title": "At",
   "categories": [
     "communication",
-    "symbols",
     "text"
   ],
   "tags": [
@@ -11,6 +10,7 @@
     "mention",
     "username",
     "address",
+    "symbols",
     "character"
   ],
   "aliases": [

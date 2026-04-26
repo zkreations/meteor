@@ -2,15 +2,14 @@
   "name": "clock",
   "title": "Clock",
   "categories": [
-    "time",
-    "productivity"
+    "time"
   ],
   "tags": [
     "clock",
-    "time",
     "schedule",
     "watch",
-    "hour"
+    "hour",
+    "productivity"
   ],
   "aliases": [
     "time clock",

@@ -1,13 +1,12 @@
 {
-  "name": "columns",
-  "title": "Columns",
+  "name": "column",
+  "title": "Column",
   "categories": [
     "layout",
     "design"
   ],
   "tags": [
     "columns",
-    "layout",
     "grid",
     "structure",
     "responsive"

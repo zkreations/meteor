@@ -2,15 +2,13 @@
   "name": "plug",
   "title": "Plug",
   "categories": [
-    "objects",
-    "technology",
-    "electronics"
+    "devices"
   ],
   "tags": [
-    "plug",
     "power",
     "electricity",
     "connector",
+    "objects",
     "socket"
   ],
   "aliases": [
@@ -19,6 +17,7 @@
     "charger plug"
   ],
   "keywords": [
+    "electronics",
     "power connection",
     "electrical outlet",
     "device charging",

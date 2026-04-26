@@ -2,13 +2,14 @@
   "name": "sliders-simple",
   "title": "Sliders Simple",
   "categories": [
-    "settings"
+    "editing"
   ],
   "tags": [
     "sliders",
+    "settings",
     "adjustment",
     "preferences",
-    "filters",
+    "filter",
     "configuration",
     "control"
   ],

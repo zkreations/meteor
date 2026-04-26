@@ -2,14 +2,14 @@
   "name": "adobe",
   "title": "Adobe",
   "categories": [
+    "editing",
     "brands",
-    "design",
-    "software"
+    "design"
   ],
   "tags": [
     "creative",
+    "software",
     "graphics",
-    "editing",
     "media"
   ],
   "aliases": [

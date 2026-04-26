@@ -1,6 +1,6 @@
 {
-  "name": "columns-3",
-  "title": "Columns 3",
+  "name": "columns",
+  "title": "Columns",
   "categories": [
     "layout",
     "design"
@@ -8,7 +8,6 @@
   "tags": [
     "columns",
     "grid",
-    "layout",
     "three",
     "structure"
   ],

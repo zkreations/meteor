@@ -2,16 +2,17 @@
   "name": "album",
   "title": "Album",
   "categories": [
-    "media",
-    "music",
+    "multimedia",
     "files"
   ],
   "tags": [
+    "music",
     "album",
     "audio",
     "songs",
     "collection",
-    "playlist"
+    "playlist",
+    "media"
   ],
   "aliases": [
     "music album",

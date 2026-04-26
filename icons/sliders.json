@@ -2,17 +2,17 @@
   "name": "sliders",
   "title": "Sliders",
   "categories": [
-    "settings"
+    "editing"
   ],
   "tags": [
     "sliders",
+    "settings",
     "adjustment",
     "configuration",
-    "filters",
+    "filter",
     "control"
   ],
   "aliases": [
-    "settings",
     "controls panel",
     "adjust controls",
     "equalizer"

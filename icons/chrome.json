@@ -2,15 +2,13 @@
   "name": "chrome",
   "title": "Chrome",
   "categories": [
-    "brands",
-    "technology"
+    "brands"
   ],
   "tags": [
     "google",
     "browser",
     "web",
-    "internet",
-    "navigation"
+    "internet"
   ],
   "aliases": [
     "google chrome",
@@ -25,6 +23,7 @@
     "chromium",
     "tabs browser",
     "desktop browser",
-    "mobile browser"
+    "mobile browser",
+    "navigation"
   ]
 }

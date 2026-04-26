@@ -3,7 +3,6 @@
   "title": "Tree Pine",
   "categories": [
     "nature",
-    "environment",
     "weather"
   ],
   "tags": [
@@ -11,7 +10,6 @@
     "pine",
     "forest",
     "evergreen",
-    "nature",
     "conifer"
   ],
   "aliases": [
@@ -21,6 +19,7 @@
     "conifer tree"
   ],
   "keywords": [
+    "environment",
     "winter forest",
     "snow tree",
     "mountain forest",

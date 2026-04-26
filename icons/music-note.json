@@ -2,15 +2,15 @@
   "name": "music-note",
   "title": "Music Note",
   "categories": [
-    "music",
-    "media"
+    "multimedia"
   ],
   "tags": [
     "music",
     "note",
     "sound",
     "audio",
-    "song"
+    "song",
+    "media"
   ],
   "aliases": [
     "musical note",

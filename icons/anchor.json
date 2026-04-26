@@ -2,16 +2,17 @@
   "name": "anchor",
   "title": "Anchor",
   "categories": [
-    "travel",
-    "marine",
-    "objects"
+    "maps"
   ],
   "tags": [
+    "marine",
     "boat",
     "ship",
     "nautical",
     "harbor",
-    "sea"
+    "sea",
+    "objects",
+    "travel"
   ],
   "aliases": [
     "ship anchor",

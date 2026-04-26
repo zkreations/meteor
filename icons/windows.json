@@ -2,15 +2,15 @@
   "name": "windows",
   "title": "Windows",
   "categories": [
-    "brands",
-    "software"
+    "brands"
   ],
   "tags": [
     "os",
     "microsoft",
     "desktop",
     "system",
-    "computer"
+    "computer",
+    "software"
   ],
   "aliases": [
     "windows os",

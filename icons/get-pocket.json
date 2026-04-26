@@ -2,16 +2,16 @@
   "name": "get-pocket",
   "title": "Get Pocket",
   "categories": [
-    "brands",
-    "productivity",
-    "reading"
+    "brands"
   ],
   "tags": [
     "save",
     "read later",
     "articles",
     "bookmark",
-    "content"
+    "content",
+    "reading",
+    "productivity"
   ],
   "aliases": [
     "pocket app",

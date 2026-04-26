@@ -2,9 +2,7 @@
   "name": "flipboard",
   "title": "Flipboard",
   "categories": [
-    "brands",
-    "news",
-    "media"
+    "brands"
   ],
   "tags": [
     "news",

@@ -2,15 +2,15 @@
   "name": "list-music",
   "title": "List Music",
   "categories": [
-    "music",
-    "media"
+    "multimedia"
   ],
   "tags": [
     "music",
     "list",
     "playlist",
     "audio",
-    "songs"
+    "songs",
+    "media"
   ],
   "aliases": [
     "music list",

@@ -2,16 +2,15 @@
   "name": "carrot",
   "title": "Carrot",
   "categories": [
-    "food",
-    "vegetables",
-    "health"
+    "food"
   ],
   "tags": [
     "carrot",
     "vegetable",
     "nutrition",
     "fresh",
-    "organic"
+    "organic",
+    "health"
   ],
   "aliases": [
     "orange carrot",

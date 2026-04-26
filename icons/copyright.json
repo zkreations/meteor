@@ -2,8 +2,7 @@
   "name": "copyright",
   "title": "Copyright",
   "categories": [
-    "legal",
-    "symbols"
+    "text"
   ],
   "tags": [
     "copyright",
@@ -13,6 +12,7 @@
     "intellectual property"
   ],
   "aliases": [
+    "license",
     "copyright symbol",
     "copyright mark",
     "all rights reserved"

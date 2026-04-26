@@ -4,11 +4,11 @@
   "categories": [
     "brands",
     "social",
-    "communication",
-    "messaging"
+    "communication"
   ],
   "tags": [
-    "social",
+    "messaging",
+    "microblogging",
     "chat",
     "posts",
     "discussion",
@@ -22,7 +22,6 @@
     "social threads"
   ],
   "keywords": [
-    "microblogging",
     "posts feed",
     "conversation threads",
     "social network",

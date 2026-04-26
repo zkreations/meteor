@@ -2,17 +2,16 @@
   "name": "visual-studio-code",
   "title": "Visual Studio Code",
   "categories": [
-    "software",
     "development",
     "brands",
+    "editing",
     "coding"
   ],
   "tags": [
     "code editor",
     "ide",
-    "programming",
-    "development",
-    "editor"
+    "software",
+    "programming"
   ],
   "aliases": [
     "vscode",

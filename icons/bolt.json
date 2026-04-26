@@ -2,10 +2,10 @@
   "name": "bolt",
   "title": "Bolt",
   "categories": [
-    "energy",
     "weather"
   ],
   "tags": [
+    "energy",
     "lightning",
     "power",
     "electricity",

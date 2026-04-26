@@ -2,11 +2,9 @@
   "name": "shopping-bag",
   "title": "Shopping Bag",
   "categories": [
-    "shopping",
-    "retail"
+    "shopping"
   ],
   "tags": [
-    "shopping",
     "ecommerce",
     "bag",
     "cart",

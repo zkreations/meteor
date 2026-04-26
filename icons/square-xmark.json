@@ -2,15 +2,14 @@
   "name": "square-xmark",
   "title": "Square Xmark",
   "categories": [
-    "math"
+    "mathematics"
   ],
   "tags": [
-    "alerts",
+    "alert",
     "close",
     "cancel",
     "remove",
     "delete",
-    "xmark",
     "dismiss"
   ],
   "aliases": [

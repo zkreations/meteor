@@ -3,12 +3,10 @@
   "title": "Wind",
   "categories": [
     "weather",
-    "nature",
-    "environment"
+    "nature"
   ],
   "tags": [
     "air",
-    "weather",
     "breeze",
     "storm",
     "motion"
@@ -20,6 +18,7 @@
     "windy"
   ],
   "keywords": [
+    "environment",
     "wind speed",
     "weather conditions",
     "air movement",

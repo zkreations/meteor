@@ -2,13 +2,13 @@
   "name": "sticker",
   "title": "Sticker",
   "categories": [
-    "messaging",
+    "emoji",
     "social",
     "design"
   ],
   "tags": [
+    "messaging",
     "sticker",
-    "emoji",
     "label",
     "decoration",
     "chat",

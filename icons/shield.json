@@ -2,12 +2,12 @@
   "name": "shield",
   "title": "Shield",
   "categories": [
+    "gaming",
     "security",
-    "protection",
-    "safety"
+    "development"
   ],
   "tags": [
-    "security",
+    "safety",
     "protection",
     "privacy",
     "defense",
@@ -16,7 +16,6 @@
   ],
   "aliases": [
     "security shield",
-    "protection",
     "defense shield",
     "safe guard"
   ],

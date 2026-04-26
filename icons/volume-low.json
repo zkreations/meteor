@@ -2,14 +2,15 @@
   "name": "volume-low",
   "title": "Volume Low",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "sound",
     "audio",
     "volume",
     "speaker",
-    "quiet"
+    "quiet",
+    "media"
   ],
   "aliases": [
     "low volume",

@@ -2,15 +2,15 @@
   "name": "pin",
   "title": "Pin",
   "categories": [
-    "navigation",
-    "objects"
+    "navigation"
   ],
   "tags": [
     "pin",
     "location",
     "marker",
     "map",
-    "save"
+    "save",
+    "objects"
   ],
   "aliases": [
     "map pin",

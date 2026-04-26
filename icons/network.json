@@ -2,11 +2,11 @@
   "name": "network",
   "title": "Network",
   "categories": [
-    "technology",
     "communication"
   ],
   "tags": [
     "network",
+    "technology",
     "connection",
     "internet",
     "nodes",

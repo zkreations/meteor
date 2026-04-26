@@ -3,14 +3,13 @@
   "title": "Align Left",
   "categories": [
     "text",
-    "editor"
+    "editing"
   ],
   "tags": [
     "alignment",
     "formatting",
     "typography",
-    "paragraph",
-    "layout"
+    "paragraph"
   ],
   "aliases": [
     "left align",

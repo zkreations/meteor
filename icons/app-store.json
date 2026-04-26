@@ -2,8 +2,7 @@
   "name": "app-store",
   "title": "App Store",
   "categories": [
-    "brands",
-    "mobile"
+    "brands"
   ],
   "tags": [
     "apps",
@@ -11,7 +10,8 @@
     "store",
     "applications",
     "ios",
-    "marketplace"
+    "marketplace",
+    "mobile"
   ],
   "aliases": [
     "apple app store",

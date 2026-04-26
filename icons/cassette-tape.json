@@ -2,16 +2,16 @@
   "name": "cassette-tape",
   "title": "Cassette Tape",
   "categories": [
-    "media",
-    "music",
-    "retro"
+    "multimedia"
   ],
   "tags": [
     "cassette",
+    "music",
     "audio",
     "tape",
     "recording",
-    "vintage"
+    "vintage",
+    "retro"
   ],
   "aliases": [
     "audio cassette",

@@ -2,16 +2,16 @@
   "name": "book",
   "title": "Book",
   "categories": [
-    "education",
-    "reading",
-    "objects"
+    "education"
   ],
   "tags": [
     "book",
     "study",
     "library",
     "knowledge",
-    "learning"
+    "learning",
+    "reading",
+    "objects"
   ],
   "aliases": [
     "closed book",

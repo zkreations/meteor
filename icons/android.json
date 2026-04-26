@@ -2,16 +2,16 @@
   "name": "android",
   "title": "Android",
   "categories": [
-    "brands",
-    "technology",
-    "mobile"
+    "brands"
   ],
   "tags": [
+    "mobile",
     "google",
     "operating system",
     "smartphone",
     "robot",
-    "os"
+    "os",
+    "technology"
   ],
   "aliases": [
     "android logo",

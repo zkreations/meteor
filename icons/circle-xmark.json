@@ -2,14 +2,13 @@
   "name": "circle-xmark",
   "title": "Circle Xmark",
   "categories": [
-    "status"
+    "security"
   ],
   "tags": [
     "close",
     "cancel",
     "error",
-    "remove",
-    "xmark"
+    "remove"
   ],
   "aliases": [
     "x circle",

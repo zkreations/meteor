@@ -2,16 +2,16 @@
   "name": "apple",
   "title": "Apple",
   "categories": [
-    "brands",
-    "technology",
-    "mobile"
+    "brands"
   ],
   "tags": [
     "iphone",
     "mac",
     "ios",
     "hardware",
-    "software"
+    "software",
+    "mobile",
+    "technology"
   ],
   "aliases": [
     "apple logo",

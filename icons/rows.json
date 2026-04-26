@@ -1,6 +1,6 @@
 {
-  "name": "rows-3",
-  "title": "Rows 3",
+  "name": "rows",
+  "title": "Rows",
   "categories": [
     "layout",
     "design"
@@ -8,7 +8,6 @@
   "tags": [
     "grid",
     "rows",
-    "layout",
     "structure",
     "view",
     "organization"

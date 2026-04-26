@@ -2,14 +2,14 @@
   "name": "envelope",
   "title": "Envelope",
   "categories": [
-    "communication",
-    "objects"
+    "communication"
   ],
   "tags": [
     "email",
     "mail",
     "message",
     "letter",
+    "objects",
     "contact"
   ],
   "aliases": [

@@ -2,16 +2,16 @@
   "name": "books",
   "title": "Books",
   "categories": [
-    "education",
-    "reading",
-    "library"
+    "education"
   ],
   "tags": [
     "books",
     "study",
     "collection",
     "knowledge",
-    "learning"
+    "learning",
+    "library",
+    "reading"
   ],
   "aliases": [
     "book stack",

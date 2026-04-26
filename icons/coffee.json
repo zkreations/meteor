@@ -2,11 +2,10 @@
   "name": "coffee",
   "title": "Coffee",
   "categories": [
-    "food",
-    "drinks",
-    "lifestyle"
+    "food"
   ],
   "tags": [
+    "lifestyle",
     "coffee",
     "beverage",
     "cup",

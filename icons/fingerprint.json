@@ -2,8 +2,7 @@
   "name": "fingerprint",
   "title": "Fingerprint",
   "categories": [
-    "security",
-    "technology"
+    "security"
   ],
   "tags": [
     "biometrics",
@@ -11,7 +10,7 @@
     "identity",
     "authentication",
     "biometric",
-    "security"
+    "technology"
   ],
   "aliases": [
     "biometric print",

@@ -2,11 +2,10 @@
   "name": "square-info",
   "title": "Square Info",
   "categories": [
-    "information",
-    "status"
+    "security"
   ],
   "tags": [
-    "alerts",
+    "alert",
     "info",
     "information",
     "help",

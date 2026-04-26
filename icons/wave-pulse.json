@@ -2,14 +2,15 @@
   "name": "wave-pulse",
   "title": "Wave Pulse",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "wave",
     "pulse",
     "signal",
     "audio",
-    "heartbeat"
+    "heartbeat",
+    "media"
   ],
   "aliases": [
     "pulse wave",

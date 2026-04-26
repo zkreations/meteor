@@ -2,10 +2,10 @@
   "name": "table-remove",
   "title": "Table Remove",
   "categories": [
-    "data",
     "tables"
   ],
   "tags": [
+    "data",
     "table",
     "remove",
     "delete",

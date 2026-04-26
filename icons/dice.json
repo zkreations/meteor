@@ -2,16 +2,15 @@
   "name": "dice",
   "title": "Dice",
   "categories": [
-    "games",
-    "gaming",
-    "objects"
+    "gaming"
   ],
   "tags": [
     "dice",
     "random",
     "roll",
     "game",
-    "chance"
+    "chance",
+    "objects"
   ],
   "aliases": [
     "die",

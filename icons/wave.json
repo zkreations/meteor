@@ -2,7 +2,7 @@
   "name": "wave",
   "title": "Wave",
   "categories": [
-    "media",
+    "multimedia",
     "design"
   ],
   "tags": [
@@ -11,7 +11,8 @@
     "signal",
     "fluid",
     "motion",
-    "sound"
+    "sound",
+    "media"
   ],
   "aliases": [
     "waveform",

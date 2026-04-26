@@ -2,15 +2,16 @@
   "name": "laptop",
   "title": "Laptop",
   "categories": [
-    "devices",
-    "technology"
+    "devices"
   ],
   "tags": [
     "laptop",
     "computer",
     "portable",
     "notebook",
-    "device"
+    "device",
+    "technology",
+    "hardware"
   ],
   "aliases": [
     "notebook",

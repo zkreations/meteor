@@ -2,15 +2,15 @@
   "name": "book-open",
   "title": "Book Open",
   "categories": [
-    "education",
-    "reading"
+    "education"
   ],
   "tags": [
     "book",
     "open",
     "study",
     "learning",
-    "library"
+    "library",
+    "reading"
   ],
   "aliases": [
     "open book",

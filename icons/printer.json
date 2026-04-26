@@ -2,9 +2,7 @@
   "name": "printer",
   "title": "Printer",
   "categories": [
-    "devices",
-    "hardware",
-    "office"
+    "devices"
   ],
   "tags": [
     "print",
@@ -21,7 +19,6 @@
     "inkjet printer"
   ],
   "keywords": [
-    "documents",
     "paper print",
     "scanning",
     "copy machine",

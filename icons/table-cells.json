@@ -2,7 +2,6 @@
   "name": "table-cells",
   "title": "Table Cells",
   "categories": [
-    "data",
     "tables",
     "layout"
   ],
@@ -11,8 +10,7 @@
     "cells",
     "grid",
     "spreadsheet",
-    "data",
-    "layout"
+    "data"
   ],
   "aliases": [
     "table grid",

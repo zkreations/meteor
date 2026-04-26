@@ -2,14 +2,15 @@
   "name": "volume-off",
   "title": "Volume Off",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "sound",
     "audio",
     "mute",
     "volume",
-    "speaker"
+    "speaker",
+    "media"
   ],
   "aliases": [
     "mute",

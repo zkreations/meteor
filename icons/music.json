@@ -2,16 +2,16 @@
   "name": "music",
   "title": "Music",
   "categories": [
-    "music",
-    "media",
-    "entertainment"
+    "multimedia"
   ],
   "tags": [
     "music",
     "audio",
     "sound",
     "songs",
-    "playlist"
+    "playlist",
+    "entertainment",
+    "media"
   ],
   "aliases": [
     "songs",

@@ -2,15 +2,15 @@
   "name": "list",
   "title": "List",
   "categories": [
-    "data",
-    "structure"
+    "text"
   ],
   "tags": [
+    "data",
     "list",
     "items",
     "menu",
-    "collection",
-    "text"
+    "structure",
+    "collection"
   ],
   "aliases": [
     "item list",

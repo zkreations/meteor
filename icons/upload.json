@@ -2,10 +2,10 @@
   "name": "upload",
   "title": "Upload",
   "categories": [
-    "files",
-    "network"
+    "files"
   ],
   "tags": [
+    "network",
     "upload",
     "file",
     "send",

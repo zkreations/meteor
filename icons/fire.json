@@ -2,10 +2,10 @@
   "name": "fire",
   "title": "Fire",
   "categories": [
-    "nature",
-    "elements"
+    "nature"
   ],
   "tags": [
+    "danger",
     "fire",
     "flame",
     "heat",
@@ -23,7 +23,6 @@
     "burning flame",
     "energy symbol",
     "fire element",
-    "danger",
     "ignite",
     "temperature"
   ]

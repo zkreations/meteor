@@ -2,15 +2,14 @@
   "name": "folder",
   "title": "Folder",
   "categories": [
-    "files",
-    "organization"
+    "files"
   ],
   "tags": [
     "folder",
     "directory",
-    "files",
     "storage",
-    "organize"
+    "organize",
+    "organization"
   ],
   "aliases": [
     "file folder",

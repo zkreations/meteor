@@ -2,16 +2,16 @@
   "name": "camera",
   "title": "Camera",
   "categories": [
-    "media",
-    "devices",
-    "photography"
+    "multimedia",
+    "devices"
   ],
   "tags": [
     "photo",
     "camera",
     "picture",
     "lens",
-    "capture"
+    "capture",
+    "photography"
   ],
   "aliases": [
     "photo camera",

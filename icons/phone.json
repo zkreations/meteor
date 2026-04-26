@@ -3,14 +3,12 @@
   "title": "Phone",
   "categories": [
     "devices",
-    "communication",
-    "technology"
+    "communication"
   ],
   "tags": [
-    "phone",
     "call",
-    "mobile",
-    "device"
+    "device",
+    "mobile"
   ],
   "aliases": [
     "telephone",

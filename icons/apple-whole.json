@@ -2,16 +2,15 @@
   "name": "apple-whole",
   "title": "Apple Whole",
   "categories": [
-    "food",
-    "fruits",
-    "health"
+    "food"
   ],
   "tags": [
     "apple",
     "fruit",
     "nutrition",
     "fresh",
-    "organic"
+    "organic",
+    "health"
   ],
   "aliases": [
     "whole apple",

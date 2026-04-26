@@ -2,15 +2,14 @@
   "name": "google-play",
   "title": "Google Play",
   "categories": [
-    "brands",
-    "mobile"
+    "brands"
   ],
   "tags": [
     "apps",
     "store",
     "android",
-    "games",
-    "downloads"
+    "downloads",
+    "mobile"
   ],
   "aliases": [
     "play store",

@@ -5,16 +5,16 @@
     "brands",
     "social",
     "communication",
-    "microblogging",
-    "media"
+    "multimedia"
   ],
   "tags": [
-    "social",
+    "microblogging",
     "posts",
     "tweets",
     "news",
     "trending",
-    "community"
+    "community",
+    "media"
   ],
   "aliases": [
     "x",

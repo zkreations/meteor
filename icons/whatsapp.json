@@ -10,7 +10,6 @@
     "messaging",
     "chat",
     "calls",
-    "social",
     "mobile"
   ],
   "aliases": [
@@ -24,7 +23,7 @@
     "voice call",
     "video call",
     "groups",
-    "status",
+    "status updates",
     "end to end encryption",
     "mobile messaging"
   ]

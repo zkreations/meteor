@@ -2,10 +2,10 @@
   "name": "power",
   "title": "Power",
   "categories": [
-    "devices",
-    "energy"
+    "devices"
   ],
   "tags": [
+    "energy",
     "power",
     "on/off",
     "toggle",

@@ -2,15 +2,15 @@
   "name": "google-gemini",
   "title": "Google Gemini",
   "categories": [
-    "brands",
-    "technology"
+    "brands"
   ],
   "tags": [
     "ai",
     "assistant",
     "chatbot",
     "machine-learning",
-    "google"
+    "google",
+    "technology"
   ],
   "aliases": [
     "gemini",

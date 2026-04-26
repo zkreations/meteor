@@ -2,14 +2,12 @@
   "name": "devices",
   "title": "Devices",
   "categories": [
-    "technology",
-    "hardware"
+    "devices"
   ],
   "tags": [
+    "technology",
     "computer",
-    "devices",
     "hardware",
-    "electronics",
     "gadgets",
     "screens"
   ],

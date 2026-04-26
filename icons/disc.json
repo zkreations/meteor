@@ -2,15 +2,14 @@
   "name": "disc",
   "title": "Disc",
   "categories": [
-    "media",
-    "objects",
-    "storage"
+    "multimedia"
   ],
   "tags": [
     "disc",
     "cd",
     "dvd",
     "storage",
+    "objects",
     "media"
   ],
   "aliases": [

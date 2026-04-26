@@ -2,9 +2,7 @@
   "name": "thumbs-up",
   "title": "Thumbs Up",
   "categories": [
-    "feedback",
-    "social",
-    "reactions"
+    "social"
   ],
   "tags": [
     "like",
@@ -12,7 +10,8 @@
     "positive",
     "vote",
     "reaction",
-    "feedback"
+    "feedback",
+    "support"
   ],
   "aliases": [
     "like",
@@ -29,7 +28,6 @@
     "satisfied",
     "recommendation",
     "good rating",
-    "user reaction",
-    "support"
+    "user reaction"
   ]
 }

@@ -2,15 +2,15 @@
   "name": "headphones",
   "title": "Headphones",
   "categories": [
-    "devices",
-    "technology"
+    "devices"
   ],
   "tags": [
     "audio",
     "music",
     "sound",
     "listening",
-    "wireless"
+    "wireless",
+    "hardware"
   ],
   "aliases": [
     "headset",

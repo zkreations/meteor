@@ -2,16 +2,15 @@
   "name": "meteor",
   "title": "Meteor",
   "categories": [
-    "space",
-    "nature",
-    "science"
+    "astronomy",
+    "nature"
   ],
   "tags": [
     "meteor",
     "space",
     "falling star",
-    "astronomy",
-    "comet"
+    "comet",
+    "science"
   ],
   "aliases": [
     "shooting star",

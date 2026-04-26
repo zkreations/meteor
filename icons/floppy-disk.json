@@ -2,16 +2,17 @@
   "name": "floppy-disk",
   "title": "Floppy Disk",
   "categories": [
-    "technology",
-    "storage",
-    "retro"
+    "devices"
   ],
   "tags": [
     "save",
     "disk",
     "storage",
     "file",
-    "data"
+    "data",
+    "retro",
+    "technology",
+    "hardware"
   ],
   "aliases": [
     "save icon",

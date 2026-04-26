@@ -2,11 +2,10 @@
   "name": "text",
   "title": "Text",
   "categories": [
-    "typography",
-    "editor"
+    "editing",
+    "text"
   ],
   "tags": [
-    "text",
     "typography",
     "content",
     "font",

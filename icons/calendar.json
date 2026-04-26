@@ -2,14 +2,14 @@
   "name": "calendar",
   "title": "Calendar",
   "categories": [
-    "time",
-    "productivity"
+    "time"
   ],
   "tags": [
     "date",
     "schedule",
     "event",
     "planner",
+    "productivity",
     "agenda"
   ],
   "aliases": [

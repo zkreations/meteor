@@ -2,14 +2,15 @@
   "name": "volume-high",
   "title": "Volume High",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "sound",
     "audio",
     "volume",
     "speaker",
-    "loud"
+    "loud",
+    "media"
   ],
   "aliases": [
     "volume up",

@@ -2,12 +2,12 @@
   "name": "usdt",
   "title": "USDT",
   "categories": [
-    "finance",
-    "payments",
-    "currency"
+    "finance"
   ],
   "tags": [
     "crypto",
+    "payments",
+    "currency",
     "stablecoin",
     "blockchain",
     "trading",

@@ -3,9 +3,7 @@
   "title": "SoundCloud",
   "categories": [
     "brands",
-    "music",
-    "media",
-    "streaming"
+    "multimedia"
   ],
   "tags": [
     "music",
@@ -13,7 +11,8 @@
     "streaming",
     "podcasts",
     "upload",
-    "sound"
+    "sound",
+    "media"
   ],
   "aliases": [
     "sound cloud",

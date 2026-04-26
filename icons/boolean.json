@@ -2,13 +2,9 @@
   "name": "boolean",
   "title": "Boolean",
   "categories": [
-    "development",
-    "logic",
-    "technology"
+    "development"
   ],
   "tags": [
-    "true",
-    "false",
     "binary",
     "condition",
     "programming"

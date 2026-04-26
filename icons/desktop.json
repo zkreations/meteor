@@ -2,15 +2,15 @@
   "name": "desktop",
   "title": "Desktop",
   "categories": [
-    "devices",
-    "technology"
+    "devices"
   ],
   "tags": [
     "computer",
     "pc",
     "monitor",
     "workstation",
-    "hardware"
+    "hardware",
+    "technology"
   ],
   "aliases": [
     "desktop computer",

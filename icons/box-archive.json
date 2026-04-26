@@ -2,15 +2,15 @@
   "name": "box-archive",
   "title": "Box Archive",
   "categories": [
-    "files",
-    "storage"
+    "files"
   ],
   "tags": [
     "archive",
     "box",
     "package",
     "backup",
-    "container"
+    "container",
+    "storage"
   ],
   "aliases": [
     "archive box",

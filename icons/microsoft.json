@@ -2,16 +2,15 @@
   "name": "microsoft",
   "title": "Microsoft",
   "categories": [
-    "brands",
-    "technology",
-    "software"
+    "brands"
   ],
   "tags": [
     "software",
     "windows",
     "office",
     "cloud",
-    "enterprise"
+    "enterprise",
+    "technology"
   ],
   "aliases": [
     "ms",

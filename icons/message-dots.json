@@ -2,10 +2,10 @@
   "name": "message-dots",
   "title": "Message Dots",
   "categories": [
-    "communication",
-    "messaging"
+    "communication"
   ],
   "tags": [
+    "messaging",
     "message",
     "chat",
     "typing",

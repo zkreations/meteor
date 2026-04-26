@@ -2,13 +2,11 @@
   "name": "bars",
   "title": "Bars",
   "categories": [
-    "navigation",
-    "menus"
+    "navigation"
   ],
   "tags": [
     "menu",
     "hamburger",
-    "navigation",
     "list",
     "toggle"
   ],

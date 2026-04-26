@@ -2,15 +2,14 @@
   "name": "microphone",
   "title": "Microphone",
   "categories": [
-    "devices",
-    "technology"
+    "devices"
   ],
   "tags": [
-    "microphone",
     "audio",
     "voice",
     "recording",
-    "sound"
+    "sound",
+    "hardware"
   ],
   "aliases": [
     "mic",

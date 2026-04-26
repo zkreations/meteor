@@ -2,8 +2,7 @@
   "name": "shuffle",
   "title": "Shuffle",
   "categories": [
-    "media",
-    "music"
+    "multimedia"
   ],
   "tags": [
     "shuffle",
@@ -11,7 +10,8 @@
     "mix",
     "playback",
     "order",
-    "music"
+    "music",
+    "media"
   ],
   "aliases": [
     "randomize",

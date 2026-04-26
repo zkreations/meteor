@@ -2,15 +2,15 @@
   "name": "book-marked",
   "title": "Book Marked",
   "categories": [
-    "education",
-    "reading"
+    "education"
   ],
   "tags": [
     "book",
     "bookmark",
     "saved",
     "library",
-    "study"
+    "study",
+    "reading"
   ],
   "aliases": [
     "book bookmarked",

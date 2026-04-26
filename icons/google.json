@@ -2,15 +2,15 @@
   "name": "google",
   "title": "Google",
   "categories": [
-    "brands",
-    "technology"
+    "brands"
   ],
   "tags": [
     "search",
     "engine",
     "web",
     "internet",
-    "services"
+    "services",
+    "technology"
   ],
   "aliases": [
     "google search",

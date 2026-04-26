@@ -2,15 +2,14 @@
   "name": "key",
   "title": "Key",
   "categories": [
-    "security",
-    "objects"
+    "security"
   ],
   "tags": [
     "key",
     "access",
     "unlock",
-    "security",
-    "lock"
+    "lock",
+    "objects"
   ],
   "aliases": [
     "access key",

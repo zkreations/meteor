@@ -8,8 +8,7 @@
     "grid",
     "remove",
     "delete",
-    "layout",
-    "layout edit"
+    "edit"
   ],
   "aliases": [
     "remove grid item",

@@ -2,9 +2,8 @@
   "name": "radio",
   "title": "Radio",
   "categories": [
-    "media",
-    "devices",
-    "entertainment"
+    "multimedia",
+    "devices"
   ],
   "tags": [
     "broadcast",
@@ -12,7 +11,8 @@
     "audio",
     "signal",
     "tuner",
-    "transmission"
+    "transmission",
+    "entertainment"
   ],
   "aliases": [
     "fm radio",

@@ -2,6 +2,7 @@
   "name": "brush",
   "title": "Brush",
   "categories": [
+    "editing",
     "design",
     "tools"
   ],
@@ -10,8 +11,7 @@
     "paint",
     "brush",
     "drawing",
-    "creative",
-    "editing"
+    "creative"
   ],
   "aliases": [
     "paint brush",

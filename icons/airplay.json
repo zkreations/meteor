@@ -2,8 +2,7 @@
   "name": "airplay",
   "title": "Airplay",
   "categories": [
-    "devices",
-    "media"
+    "devices"
   ],
   "tags": [
     "connectivity",
@@ -11,7 +10,8 @@
     "wireless",
     "display",
     "casting",
-    "screen"
+    "screen",
+    "media"
   ],
   "aliases": [
     "screen mirroring",

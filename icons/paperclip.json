@@ -2,15 +2,15 @@
   "name": "paperclip",
   "title": "Paperclip",
   "categories": [
-    "office",
-    "objects"
+    "files"
   ],
   "tags": [
     "paperclip",
     "attachment",
     "file",
     "document",
-    "office"
+    "office",
+    "objects"
   ],
   "aliases": [
     "clip",

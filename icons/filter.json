@@ -2,10 +2,10 @@
   "name": "filter",
   "title": "Filter",
   "categories": [
-    "tools",
-    "data"
+    "tools"
   ],
   "tags": [
+    "data",
     "filter",
     "sort",
     "refine",

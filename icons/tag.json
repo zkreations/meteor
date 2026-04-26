@@ -2,16 +2,16 @@
   "name": "tag",
   "title": "Tag",
   "categories": [
-    "labels",
-    "data",
-    "organization"
+    "shopping"
   ],
   "tags": [
+    "data",
     "tag",
     "label",
     "category",
     "marker",
     "classification",
+    "organization",
     "filter"
   ],
   "aliases": [

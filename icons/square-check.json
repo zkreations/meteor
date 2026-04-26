@@ -2,10 +2,10 @@
   "name": "square-check",
   "title": "Square Check",
   "categories": [
-    "forms",
-    "status"
+    "security"
   ],
   "tags": [
+    "forms",
     "check",
     "checkbox",
     "select",

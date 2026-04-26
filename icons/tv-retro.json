@@ -3,9 +3,7 @@
   "title": "TV Retro",
   "categories": [
     "devices",
-    "media",
-    "entertainment",
-    "technology"
+    "multimedia"
   ],
   "tags": [
     "tv",
@@ -13,7 +11,8 @@
     "retro",
     "screen",
     "broadcast",
-    "media"
+    "media",
+    "entertainment"
   ],
   "aliases": [
     "old tv",

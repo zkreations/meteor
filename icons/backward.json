@@ -2,7 +2,7 @@
   "name": "backward",
   "title": "Backward",
   "categories": [
-    "media"
+    "multimedia"
   ],
   "tags": [
     "rewind",
@@ -10,7 +10,8 @@
     "reverse",
     "audio",
     "video",
-    "control"
+    "control",
+    "media"
   ],
   "aliases": [
     "rewind",

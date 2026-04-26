@@ -2,15 +2,15 @@
   "name": "home",
   "title": "Home",
   "categories": [
-    "navigation",
-    "places"
+    "navigation"
   ],
   "tags": [
     "home",
     "start",
     "house",
     "main",
-    "dashboard"
+    "dashboard",
+    "places"
   ],
   "aliases": [
     "house",

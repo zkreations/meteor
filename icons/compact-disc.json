@@ -2,16 +2,16 @@
   "name": "compact-disc",
   "title": "Compact Disc",
   "categories": [
-    "media",
-    "music",
-    "storage"
+    "multimedia"
   ],
   "tags": [
     "cd",
     "disc",
     "audio",
     "music",
-    "data"
+    "data",
+    "media",
+    "storage"
   ],
   "aliases": [
     "cd",

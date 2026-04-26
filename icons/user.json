@@ -2,15 +2,15 @@
   "name": "user",
   "title": "User",
   "categories": [
-    "users",
-    "interface"
+    "communication"
   ],
   "tags": [
     "profile",
     "person",
     "account",
     "avatar",
-    "identity"
+    "identity",
+    "interface"
   ],
   "aliases": [
     "profile",
