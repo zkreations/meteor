@@ -2,21 +2,14 @@
   "name": "paw",
   "title": "Paw",
   "categories": [
-    "animals",
     "nature"
   ],
   "tags": [
-    "paw",
     "animal",
     "footprint",
     "pet",
     "dog",
     "cat"
-  ],
-  "aliases": [
-    "paw print",
-    "animal paw",
-    "pet paw"
   ],
   "keywords": [
     "animal tracks",

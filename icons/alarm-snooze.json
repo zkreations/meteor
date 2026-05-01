@@ -11,11 +11,6 @@
     "clock",
     "delay"
   ],
-  "aliases": [
-    "snooze alarm",
-    "delay alarm",
-    "sleep alarm"
-  ],
   "keywords": [
     "postpone alarm",
     "sleep more",

@@ -11,11 +11,6 @@
     "create",
     "collaboration"
   ],
-  "aliases": [
-    "create pull request",
-    "new pull request",
-    "open pr"
-  ],
   "keywords": [
     "submit changes",
     "code review request",

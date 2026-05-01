@@ -12,11 +12,6 @@
     "format",
     "spacing"
   ],
-  "aliases": [
-    "decrease indent",
-    "unindent",
-    "remove indent"
-  ],
   "keywords": [
     "code formatting",
     "text alignment",

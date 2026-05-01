@@ -11,13 +11,6 @@
     "rotate",
     "retry"
   ],
-  "aliases": [
-    "reload",
-    "reload page",
-    "sync",
-    "update content",
-    "redo"
-  ],
   "keywords": [
     "reload page",
     "fetch again",

@@ -10,11 +10,6 @@
     "delete",
     "edit"
   ],
-  "aliases": [
-    "remove grid item",
-    "delete grid cell",
-    "grid delete"
-  ],
   "keywords": [
     "remove from grid",
     "delete layout item",

@@ -11,11 +11,6 @@
     "clock",
     "disable"
   ],
-  "aliases": [
-    "remove alarm",
-    "delete alarm",
-    "disable alarm"
-  ],
   "keywords": [
     "turn off reminder",
     "cancel alarm",

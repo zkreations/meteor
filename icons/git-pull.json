@@ -11,11 +11,6 @@
     "sync",
     "repository"
   ],
-  "aliases": [
-    "pull changes",
-    "git update",
-    "repository sync"
-  ],
   "keywords": [
     "fetch updates",
     "download changes",

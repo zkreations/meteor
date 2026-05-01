@@ -12,11 +12,6 @@
     "reorder",
     "control"
   ],
-  "aliases": [
-    "drag handle",
-    "move handle",
-    "reorder grip"
-  ],
   "keywords": [
     "drag and drop",
     "sortable items",

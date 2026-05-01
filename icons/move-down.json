@@ -11,11 +11,6 @@
     "sort",
     "reorder"
   ],
-  "aliases": [
-    "down arrow",
-    "move lower",
-    "shift down"
-  ],
   "keywords": [
     "move item down",
     "reorder list",

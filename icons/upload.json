@@ -13,12 +13,6 @@
     "import",
     "data"
   ],
-  "aliases": [
-    "send file",
-    "file upload",
-    "import file",
-    "upload data"
-  ],
   "keywords": [
     "upload document",
     "send to server",

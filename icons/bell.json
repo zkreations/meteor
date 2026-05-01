@@ -11,11 +11,6 @@
     "message",
     "alarm"
   ],
-  "aliases": [
-    "notification bell",
-    "alert bell",
-    "ring bell"
-  ],
   "keywords": [
     "new notification",
     "unread alerts",

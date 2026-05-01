@@ -11,11 +11,6 @@
     "clock",
     "schedule"
   ],
-  "aliases": [
-    "add alarm",
-    "new alarm",
-    "create alarm"
-  ],
   "keywords": [
     "set alarm",
     "add reminder",

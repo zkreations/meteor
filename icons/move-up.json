@@ -11,11 +11,6 @@
     "direction",
     "reorder"
   ],
-  "aliases": [
-    "up arrow",
-    "shift up",
-    "move higher"
-  ],
   "keywords": [
     "move item up",
     "reorder list",

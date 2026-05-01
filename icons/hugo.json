@@ -12,11 +12,6 @@
     "web",
     "cms"
   ],
-  "aliases": [
-    "hugo static site",
-    "hugo framework",
-    "hugo logo"
-  ],
   "keywords": [
     "static site generator",
     "jamstack",

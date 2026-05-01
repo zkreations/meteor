@@ -10,11 +10,6 @@
     "plus",
     "create"
   ],
-  "aliases": [
-    "add grid item",
-    "grid add",
-    "grid create"
-  ],
   "keywords": [
     "add to grid",
     "create tile",

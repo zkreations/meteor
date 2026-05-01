@@ -10,11 +10,6 @@
     "minus",
     "delete"
   ],
-  "aliases": [
-    "remove grid item",
-    "grid delete",
-    "grid subtract"
-  ],
   "keywords": [
     "remove from grid",
     "delete tile",

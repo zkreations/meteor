@@ -12,11 +12,6 @@
     "container",
     "storage"
   ],
-  "aliases": [
-    "archive box",
-    "storage box",
-    "boxed archive"
-  ],
   "keywords": [
     "compressed files",
     "backup storage",

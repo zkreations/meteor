@@ -11,11 +11,6 @@
     "transaction",
     "money"
   ],
-  "aliases": [
-    "debit card",
-    "bank card",
-    "payment card"
-  ],
   "keywords": [
     "online payment",
     "checkout",

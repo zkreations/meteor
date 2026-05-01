@@ -13,11 +13,6 @@
     "ci",
     "cd"
   ],
-  "aliases": [
-    "git lab",
-    "gitlab platform",
-    "gitlab ci"
-  ],
   "keywords": [
     "code hosting",
     "version control",

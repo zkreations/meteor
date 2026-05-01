@@ -11,11 +11,6 @@
     "closed",
     "merge"
   ],
-  "aliases": [
-    "closed pull request",
-    "merged pull request closed",
-    "pr closed"
-  ],
   "keywords": [
     "pull request closed",
     "code review finished",

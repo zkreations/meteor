@@ -10,11 +10,6 @@
     "create",
     "structure"
   ],
-  "aliases": [
-    "add layout",
-    "layout add",
-    "new layout"
-  ],
   "keywords": [
     "add section",
     "create layout block",

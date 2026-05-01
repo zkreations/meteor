@@ -13,13 +13,6 @@
     "delete",
     "dismiss"
   ],
-  "aliases": [
-    "close box",
-    "cancel box",
-    "x square",
-    "remove box",
-    "dismiss"
-  ],
   "keywords": [
     "close dialog",
     "cancel action",

@@ -12,11 +12,6 @@
     "archive",
     "file"
   ],
-  "aliases": [
-    "zip",
-    "shrink",
-    "pack"
-  ],
   "keywords": [
     "file compression",
     "reduce size",

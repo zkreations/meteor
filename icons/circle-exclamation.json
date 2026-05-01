@@ -12,11 +12,6 @@
     "notice",
     "important"
   ],
-  "aliases": [
-    "warning circle",
-    "alert circle",
-    "exclamation circle"
-  ],
   "keywords": [
     "important message",
     "system warning",

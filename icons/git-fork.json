@@ -11,11 +11,6 @@
     "repository",
     "collaboration"
   ],
-  "aliases": [
-    "repository fork",
-    "git clone fork",
-    "project fork"
-  ],
   "keywords": [
     "copy repository",
     "duplicate project",

@@ -12,11 +12,6 @@
     "gps",
     "marker"
   ],
-  "aliases": [
-    "map dot",
-    "location marker",
-    "position dot"
-  ],
   "keywords": [
     "current location",
     "map position",

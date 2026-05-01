@@ -10,11 +10,6 @@
     "delete",
     "structure"
   ],
-  "aliases": [
-    "remove layout",
-    "layout delete",
-    "layout subtract"
-  ],
   "keywords": [
     "remove section",
     "delete layout block",

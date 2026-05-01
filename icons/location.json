@@ -12,11 +12,6 @@
     "pin",
     "gps"
   ],
-  "aliases": [
-    "map location",
-    "place",
-    "geo location"
-  ],
   "keywords": [
     "address",
     "geolocation",

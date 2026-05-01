@@ -11,11 +11,6 @@
     "diff",
     "repository"
   ],
-  "aliases": [
-    "compare changes",
-    "git diff",
-    "branch compare"
-  ],
   "keywords": [
     "code comparison",
     "diff view",

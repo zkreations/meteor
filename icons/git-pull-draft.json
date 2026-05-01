@@ -11,11 +11,6 @@
     "draft",
     "review"
   ],
-  "aliases": [
-    "draft pull request",
-    "wip pull request",
-    "pr draft"
-  ],
   "keywords": [
     "work in progress",
     "code review draft",

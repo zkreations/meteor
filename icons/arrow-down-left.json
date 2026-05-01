@@ -12,11 +12,6 @@
     "direction",
     "corner"
   ],
-  "aliases": [
-    "down left arrow",
-    "southwest arrow",
-    "diagonal left down"
-  ],
   "keywords": [
     "move bottom left",
     "resize corner",

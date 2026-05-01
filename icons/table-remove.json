@@ -13,12 +13,6 @@
     "row",
     "column"
   ],
-  "aliases": [
-    "remove table",
-    "delete table",
-    "clear table",
-    "table delete"
-  ],
   "keywords": [
     "remove table data",
     "delete rows",

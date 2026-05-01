@@ -12,12 +12,6 @@
     "delete",
     "error"
   ],
-  "aliases": [
-    "close",
-    "cross",
-    "cancel icon",
-    "remove x"
-  ],
   "keywords": [
     "exit",
     "dismiss",

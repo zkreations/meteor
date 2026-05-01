@@ -12,12 +12,6 @@
     "column",
     "minus"
   ],
-  "aliases": [
-    "remove table item",
-    "delete row",
-    "delete column",
-    "table remove"
-  ],
   "keywords": [
     "remove row",
     "delete entry",
