@@ -2,11 +2,10 @@
   "name": "outdent",
   "title": "Outdent",
   "categories": [
-    "coding",
-    "development",
-    "text"
+    "editing"
   ],
   "tags": [
+    "text",
     "formatting",
     "outdent",
     "format",

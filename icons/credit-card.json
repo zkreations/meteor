@@ -2,9 +2,10 @@
   "name": "credit-card",
   "title": "Credit Card",
   "categories": [
-    "finance"
+    "shopping"
   ],
   "tags": [
+    "finance",
     "payment",
     "card",
     "banking",

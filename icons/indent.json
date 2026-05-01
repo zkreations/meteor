@@ -2,11 +2,10 @@
   "name": "indent",
   "title": "Indent",
   "categories": [
-    "coding",
-    "development",
-    "text"
+    "editing"
   ],
   "tags": [
+    "text",
     "formatting",
     "indent",
     "format",

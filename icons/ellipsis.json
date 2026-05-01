@@ -3,9 +3,10 @@
   "title": "Ellipsis",
   "categories": [
     "navigation",
-    "text"
+    "editing"
   ],
   "tags": [
+    "text",
     "dots",
     "more",
     "truncation",

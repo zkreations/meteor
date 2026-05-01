@@ -2,10 +2,10 @@
   "name": "file-text",
   "title": "File Text",
   "categories": [
-    "files",
-    "text"
+    "files"
   ],
   "tags": [
+    "text",
     "document",
     "notes",
     "content"

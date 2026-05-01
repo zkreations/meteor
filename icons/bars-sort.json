@@ -2,9 +2,10 @@
   "name": "bars-sort",
   "title": "Bars Sort",
   "categories": [
-    "text"
+    "editing"
   ],
   "tags": [
+    "text",
     "sort",
     "bars",
     "order",

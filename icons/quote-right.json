@@ -2,10 +2,11 @@
   "name": "quote-right",
   "title": "Quote Right",
   "categories": [
-    "text",
+    "editing",
     "design"
   ],
   "tags": [
+    "text",
     "quote",
     "quotation",
     "typography",

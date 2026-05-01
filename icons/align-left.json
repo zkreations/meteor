@@ -2,10 +2,10 @@
   "name": "align-left",
   "title": "Align Left",
   "categories": [
-    "text",
     "editing"
   ],
   "tags": [
+    "text",
     "alignment",
     "formatting",
     "typography",

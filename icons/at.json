@@ -2,10 +2,10 @@
   "name": "at",
   "title": "At",
   "categories": [
-    "communication",
-    "text"
+    "communication"
   ],
   "tags": [
+    "text",
     "email",
     "mention",
     "username",

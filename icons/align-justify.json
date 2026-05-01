@@ -2,10 +2,10 @@
   "name": "align-justify",
   "title": "Align Justify",
   "categories": [
-    "text",
     "editing"
   ],
   "tags": [
+    "text",
     "alignment",
     "formatting",
     "typography",

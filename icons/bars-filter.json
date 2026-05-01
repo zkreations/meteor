@@ -2,9 +2,10 @@
   "name": "bars-filter",
   "title": "Bars Filter",
   "categories": [
-    "text"
+    "editing"
   ],
   "tags": [
+    "text",
     "filter",
     "bars",
     "settings",

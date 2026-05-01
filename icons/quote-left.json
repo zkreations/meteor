@@ -2,10 +2,11 @@
   "name": "quote-left",
   "title": "Quote Left",
   "categories": [
-    "text",
+    "editing",
     "design"
   ],
   "tags": [
+    "text",
     "quote",
     "quotation",
     "typography",

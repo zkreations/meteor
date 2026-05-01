@@ -2,10 +2,10 @@
   "name": "message",
   "title": "Message",
   "categories": [
-    "communication",
-    "text"
+    "communication"
   ],
   "tags": [
+    "text",
     "messaging",
     "message",
     "chat",

@@ -2,10 +2,10 @@
   "name": "align-right",
   "title": "Align Right",
   "categories": [
-    "text",
     "editing"
   ],
   "tags": [
+    "text",
     "alignment",
     "formatting",
     "typography",
