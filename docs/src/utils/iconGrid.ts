@@ -1,17 +1,12 @@
-type IconCardMeta = {
-  name?: string
-  category?: string
-}
+import { normalize } from './helpers'
 
-// Check if an icon card matches the search query and selected category
-// @param meta - The metadata of the icon card, including its name and category
-// @param query - The search query to match against the icon name
-// @param category - The selected category to match against the icon category (or 'all' for no category filter)
-// @returns true if the icon matches the query and category, false otherwise
-export const isIconMatch = (meta: IconCardMeta, query: string, category: string): boolean => {
-  const name = meta.name ?? ''
-  const cardCategory = meta.category ?? ''
-  return name.includes(query) && (category === 'all' || cardCategory === category)
+// Basic fuzzy matching: all query tokens must exist in the icon search index.
+export const isIconMatch = (searchIndex: string, query: string): boolean => {
+  const normalizedQuery = normalize(query)
+  if (!normalizedQuery) return true
+
+  const haystack = normalize(searchIndex)
+  return normalizedQuery.split(' ').every((token) => haystack.includes(token))
 }
 
 // Build a label for the icon counter based on the number of visible icons

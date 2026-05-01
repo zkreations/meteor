@@ -4,4 +4,110 @@
   .wrapper {
     @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
   }
+  .dropdown {
+    @apply absolute top-full mt-2 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+  }
+  .dropdown-visible {
+    @apply opacity-100 pointer-events-auto scale-100 translate-y-0;
+  }
+
+  .dropdown-item {
+    @apply px-3 py-2.5 rounded-md flex items-center gap-2 w-full text-left text-slate-700 hover:bg-slate-100 transition-colors duration-200 cursor-pointer;
+  }
+
+  .dropdown-item-active {
+    @apply bg-teal-50 text-teal-700;
+  }
+
+  [data-icon-grid] .svg-preview {
+    color: var(--icon-grid-preview-color, currentColor);
+    stroke-width: var(--icon-grid-preview-stroke-width, 2);
+    width: var(--icon-grid-preview-size, 24px);
+    height: var(--icon-grid-preview-size, 24px);
+  }
+
+  .icon-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1.25rem;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .icon-slider:focus {
+    outline: none;
+  }
+
+  .icon-slider::-webkit-slider-runnable-track {
+    height: 0.25rem;
+    border-radius: 9999px;
+    background: #d1d5db;
+  }
+
+  .icon-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 9999px;
+    border: 2px solid #0f766e;
+    background: #ffffff;
+    margin-top: -0.325rem;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.2);
+  }
+
+  .icon-slider:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+  }
+
+  .icon-slider::-moz-range-track {
+    height: 0.25rem;
+    border-radius: 9999px;
+    border: 0;
+    background: #d1d5db;
+  }
+
+  .icon-slider::-moz-range-thumb {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 9999px;
+    border: 2px solid #0f766e;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.2);
+  }
+
+  .icon-slider:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+  }
+
+  .size-chip {
+    @apply inline-flex items-center justify-center h-7 px-2.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50;
+  }
+
+  .size-chip-active {
+    @apply border-teal-500 bg-teal-50 text-teal-700 shadow-sm;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-gray-50;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-100;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-200;
+  }
+
+  @supports not (selector(::-webkit-scrollbar-thumb)) {
+    .scrollbar {
+      scrollbar-width: thin;
+      @apply bg-gray-50;
+    }
+  }
 }

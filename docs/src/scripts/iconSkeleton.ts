@@ -1,10 +1,38 @@
-import { isAllowedRandomIconName } from '../utils/iconRandom'
-
 const SKELETON_CONFIG = {
   selectors: {
     renderZone: '.render-zone',
     sourceSlotSvg: '.source-slot',
-    iconNameHost: '[data-name]',
+  },
+  random: {
+    candidates: [
+      'astro',
+      'github',
+      'shrimp',
+      'meteor',
+      'app-store',
+      'discord',
+      'figma',
+      'dribbble',
+      'github-copilot',
+      'openai',
+      'tiktok',
+      'visual-studio-code',
+      'vk',
+      'twitch',
+      'newspaper',
+      'brush',
+      'eye',
+      'gear',
+      'sticker',
+      'gamepad-modern',
+      'carrot',
+      'broom',
+      'microchip',
+      'laravel',
+      'language',
+      'bullhorn',
+      'gumroad',
+    ],
   },
   output: {
     width: '100%',
@@ -32,146 +60,11 @@ const SKELETON_CONFIG = {
     shapeTags: ['path', 'rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon'],
     nonPathTags: ['rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon'],
   },
-  random: {
-    ignoredIconNames: [
-      'align-center',
-      'align-justify',
-      'align-left',
-      'align-right',
-      'amazon',
-      'angle-down',
-      'angle-left',
-      'angle-right',
-      'angle-up',
-      'angles-down',
-      'angles-left',
-      'angles-right',
-      'angles-up',
-      'app-gallery',
-      'apple',
-      'arrow-down',
-      'arrow-down-left',
-      'arrow-down-right',
-      'arrow-left',
-      'arrow-right',
-      'arrow-up',
-      'arrow-up-left',
-      'arrow-up-right',
-      'backward',
-      'backward-step',
-      'bars',
-      'bars-filter',
-      'bars-sort',
-      'bell',
-      'bolt',
-      'book',
-      'bookmark',
-      'brackets',
-      'brackets-angled',
-      'brackets-round',
-      'camera',
-      'chain',
-      'check',
-      'check-double',
-      'circle',
-      'circle-check',
-      'circle-exclamation',
-      'circle-info',
-      'circle-minus',
-      'circle-plus',
-      'circle-xmark',
-      'cloud',
-      'code',
-      'coinbase',
-      'columns',
-      'columns3',
-      'compress',
-      'copyright',
-      'cross',
-      'dice',
-      'disc',
-      'dollar',
-      'download',
-      'ellipsis',
-      'ellipsis-vertical',
-      'envelope',
-      'equals',
-      'euro',
-      'expand',
-      'face-angry',
-      'face-blank',
-      'face-frown',
-      'face-laugh',
-      'face-meh',
-      'face-smile',
-      'feather',
-      'filter',
-      'forward',
-      'forward-step',
-      'get-pocket',
-      'globe',
-      'indent',
-      'layout-panel-bottom',
-      'layout-panel-left',
-      'layout-panel-right',
-      'layout-panel-top',
-      'list',
-      'lock',
-      'minus',
-      'mobile',
-      'move-down',
-      'move-left',
-      'move-right',
-      'move-up',
-      'music',
-      'outdent',
-      'pause',
-      'play',
-      'plug',
-      'plus',
-      'power',
-      'radio',
-      'rhombus',
-      'rotate',
-      'rows3',
-      'rows',
-      'rss',
-      'square',
-      'square-check',
-      'square-exclamation',
-      'square-info',
-      'square-minus',
-      'square-plus',
-      'square-xmark',
-      'text',
-      'trending-down',
-      'trending-up',
-      'triangle',
-      'triangle-exclamation',
-      'turn-down-left',
-      'turn-down-right',
-      'turn-left-down',
-      'turn-left-up',
-      'turn-right-down',
-      'turn-right-up',
-      'turn-up-left',
-      'turn-up-right',
-      'tv',
-      'tv-retro',
-      'volume-low',
-      'volume-off',
-      'volume-xmark',
-      'xmark'
-    ],
-    allowedIconNames: [],
-  },
 } as const
 
 const PATH_CMD_RE = /^[MmZzLlHhVvCcSsQqTtAa]$/
 const PATH_TOKEN_RE = /([MmZzLlHhVvCcSsQqTtAa])|([-+]?(?:\d*\.\d+|\d+)(?:[eE][-+]?\d+)?)/g
 const SOURCE_IGNORED_ATTRS = new Set<string>(SKELETON_CONFIG.source.ignoredAttributes)
-const RANDOM_IGNORED_ICON_NAMES = new Set<string>(SKELETON_CONFIG.random.ignoredIconNames)
-const RANDOM_ALLOWED_ICON_NAMES = new Set<string>(SKELETON_CONFIG.random.allowedIconNames)
 
 type NumberLike = string | number
 type SvgTagName = keyof SVGElementTagNameMap
@@ -239,11 +132,6 @@ const getScaleMetrics = (scale: number): ScaleMetrics => ({
   handleWidth: scale * SKELETON_CONFIG.scale.handleWidth,
   controlStrokeWidth: scale * SKELETON_CONFIG.scale.handleWidth * SKELETON_CONFIG.scale.controlStrokeFactor,
 })
-
-const getIconNameFromSvgCandidate = (svg: SVGElement): string => {
-  const host = svg.closest<HTMLElement>(SKELETON_CONFIG.selectors.iconNameHost)
-  return host?.dataset.name?.trim() ?? ''
-}
 
 const copyShape = (
   source: Element,
@@ -513,7 +401,7 @@ const parsePathData = (d: string, handlers: PathPointHandlers): void => {
 
 class SvgSkeleton extends HTMLElement {
   static get observedAttributes(): string[] {
-    return []
+    return ['data-random-selector']
   }
 
   connectedCallback(): void {
@@ -531,14 +419,22 @@ class SvgSkeleton extends HTMLElement {
 
     const sourceSlot = this.querySelector<HTMLElement>(SKELETON_CONFIG.selectors.sourceSlotSvg)
     const randomSelector = this.getAttribute('data-random-selector')?.trim()
+    const randomCandidates = SKELETON_CONFIG.random.candidates
     if (sourceSlot && randomSelector) {
-      const candidates = Array.from(document.querySelectorAll<SVGElement>(randomSelector)).filter((svg) => {
-        const iconName = getIconNameFromSvgCandidate(svg)
-        return isAllowedRandomIconName(iconName, RANDOM_IGNORED_ICON_NAMES, RANDOM_ALLOWED_ICON_NAMES)
-      })
+      const useCandidateList = randomCandidates.length > 0 && randomSelector === '.svg-preview'
+
+      const candidates = useCandidateList
+        ? randomCandidates
+            .map((name) => document.querySelector<SVGElement>(`[data-name="${name}"] ${randomSelector}`))
+            .filter((svg): svg is SVGElement => Boolean(svg))
+        : Array.from(document.querySelectorAll<SVGElement>(randomSelector))
+
       if (candidates.length > 0) {
         const randomSvg = candidates[Math.floor(Math.random() * candidates.length)]
-        sourceSlot.replaceChildren(randomSvg.cloneNode(true))
+        const skeletonSource = randomSvg.cloneNode(true) as SVGElement
+        skeletonSource.removeAttribute('class')
+        skeletonSource.removeAttribute('style')
+        sourceSlot.replaceChildren(skeletonSource)
       }
     }
 
