@@ -12,9 +12,9 @@ const gridPath = Array.from({ length: 23 }, (_, i) => {
 ---
 
 <svg-skeleton class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`}>
-  <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto" for="icon-skeleton">
+  <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto">
     <span class="sr-only">Toggle icon skeleton mode</span>
-    <input type="checkbox" class="sr-only peer" id="icon-skeleton"/>
+    <input type="checkbox" class="sr-only peer"/>
     <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-500/20 transition-colors duration-300 peer-checked:text-slate-900 *:w-full *:h-full" aria-hidden="true">
       <slot />
     </div>
