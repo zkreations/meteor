@@ -98,7 +98,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
 
         <div class="icon-setting-group">
           <label class="icon-setting-label">Color</label>
-          <div class="flex gap-2 items-center rounded-lg bg-slate-100 p-2">
+          <label class="flex gap-2 items-center rounded-lg bg-slate-100 p-2 cursor-pointer">
             <div class="w-12 h-8 rounded-md overflow-hidden border border-slate-200 relative">
               <input
                 type="color"
@@ -110,7 +110,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
             <span data-color-value class="ml-auto font-mono text-slate-500">
               currentColor
             </span>
-          </div>
+          </label>
         </div>
 
         <div class="icon-setting-group">
@@ -148,6 +148,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
             <button type="button" data-size-preset="24" class="size-chip size-chip-active" aria-pressed="true">24</button>
             <button type="button" data-size-preset="32" class="size-chip">32</button>
             <button type="button" data-size-preset="48" class="size-chip">48</button>
+            <button type="button" data-size-preset="64" class="size-chip">64</button>
           </div>
         </div>
 
