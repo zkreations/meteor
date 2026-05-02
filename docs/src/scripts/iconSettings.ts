@@ -67,6 +67,7 @@ export const initIconSettings = (root: HTMLElement) => {
       sizeInput.dataset.sizeActual = currentConfig.size;
       sizeInput.setAttribute('aria-valuetext', `${currentConfig.size}px`);
     }
+    if (colorInput) colorInput.dataset.colorActual = currentConfig.color;
     syncSizeInput();
     syncSizePresetState();
 
@@ -83,7 +84,6 @@ export const initIconSettings = (root: HTMLElement) => {
   };
 
   const handleChange = () => {
-    if (colorInput) currentConfig.color = colorInput.value;
     if (strokeInput) currentConfig.stroke = strokeInput.value;
 
     if (sizeInput) {
@@ -97,7 +97,7 @@ export const initIconSettings = (root: HTMLElement) => {
   const reset = () => {
     currentConfig = { ...DEFAULTS };
 
-    if (colorInput) colorInput.value = '#000000';
+    if (colorInput) colorInput.value = '';
     if (strokeInput) strokeInput.value = currentConfig.stroke;
     syncSizeInput();
 
@@ -115,7 +115,11 @@ export const initIconSettings = (root: HTMLElement) => {
   syncSizeInput();
   syncSizePresetState();
 
-  colorInput?.addEventListener('input', handleChange);
+  colorInput?.addEventListener('input', () => {
+    if (colorInput) currentConfig.color = colorInput.value;
+    applySettings();
+  });
+
   strokeInput?.addEventListener('input', handleChange);
   sizeInput?.addEventListener('input', handleChange);
   btnReset?.addEventListener('click', reset);

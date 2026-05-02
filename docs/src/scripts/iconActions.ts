@@ -8,7 +8,7 @@ export const initIconActions = (root: HTMLElement) => {
     return {
       size,
       stroke,
-      color: colorInput?.value || 'currentColor'
+      color: colorInput?.dataset.colorActual || 'currentColor'
     };
   };
 
