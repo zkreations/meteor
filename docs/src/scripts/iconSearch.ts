@@ -34,12 +34,21 @@ export const initIconSearch = (root: HTMLElement) => {
   const searchIndexByName = new Map<string, string>();
   const categoryIconMap = new Map<string, string>();
 
+  const sanitizeSvgClone = (svg: SVGElement) => {
+    svg.removeAttribute('style');
+    svg.removeAttribute('class');
+    svg.querySelectorAll('*').forEach(el => el.removeAttribute('style'));
+    return svg;
+  };
+
   const updateCategoryButtonIcon = (iconName?: string) => {
     if (!categoryIconSlot) return;
 
     if (!iconName) {
       if (defaultCategoryIcon) {
-        categoryIconSlot.replaceChildren(defaultCategoryIcon.cloneNode(true));
+        const clone = defaultCategoryIcon.cloneNode(true) as SVGElement;
+        sanitizeSvgClone(clone);
+        categoryIconSlot.replaceChildren(clone);
       }
       return;
     }
@@ -48,7 +57,7 @@ export const initIconSearch = (root: HTMLElement) => {
     if (!sourceSvg) return;
 
     const buttonSvg = sourceSvg.cloneNode(true) as SVGElement;
-    buttonSvg.removeAttribute('style');
+    sanitizeSvgClone(buttonSvg);
 
     categoryIconSlot.replaceChildren(buttonSvg);
   };

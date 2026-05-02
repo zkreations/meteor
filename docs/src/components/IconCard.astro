@@ -12,20 +12,20 @@ const { name, IconComponent } = Astro.props
 
 <article
   data-name={name}
-  class="group"
+  class="icon-card group"
 >
-  <div class="flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300">
+  <div class="icon-preview">
     <IconComponent size={24} class="svg-preview" />
-    <p class="text-slate-500 hover:text-teal-500 transition duration-300 cursor-text">{name}</p>
+    <p class="icon-text">{name}</p>
   </div>
-  <div class="inset-0.75 flex gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 *:bg-slate-100 *:cursor-pointer *:flex *:gap-1 *:hover:bg-slate-200 *:items-center *:justify-center *:py-3 *:rounded *:text-slate-700 *:w-full absolute group-hover:pointer-events-auto icon-actions pointer-events-none top-auto *:transition *:duration-300">
-    <button type="button" class="action-copy-svg" title="Copy SVG">
+  <div class="icon-actions">
+    <button type="button" class="btn icon-action action-copy-svg" title="Copy SVG">
       <Copy size={16} />
     </button>
-    <button type="button" class="action-download-png" title="Download PNG">
+    <button type="button" class="btn icon-action action-download-png" title="Download PNG">
       <Image size={16} />
     </button>
-    <button type="button" class="action-download-svg" title="Download SVG">
+    <button type="button" class="btn icon-action action-download-svg" title="Download SVG">
       <Download size={16} />
     </button>
   </div>

@@ -1,6 +1,5 @@
 ---
 import { getCollection } from 'astro:content'
-import Button from './Button.astro'
 import { Search, Grid, AngleDown, SlidersSimple, Rotate } from '@meteor-icons/astro'
 import { capitalize } from '../utils/helpers'
 
@@ -35,15 +34,15 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
 >
 
   <div class="relative select-none">
-    <Button class="w-50" data-outside="categories" aria-label="Filter by category">
+    <button class="btn w-50" data-outside="categories" aria-label="Filter by category">
       <span data-category-icon class="shrink-0">
         <Grid/>
       </span>
       <span data-category-label class="truncate">All Categories</span>
       <AngleDown size={20} class="ml-auto shrink-0" />
-    </Button>
+    </button>
 
-    <div class="left-0 dropdown overflow-y-auto max-h-80 scrollbar w-full" data-dropdown="categories" role="menu" aria-label="Categories">
+    <div class="left-0 dropdown overflow-y-auto max-h-75 scrollbar w-full" data-dropdown="categories" role="menu" aria-label="Categories">
       <div class="p-2">
 
         <button type="button" data-category="all" data-dropdown-close class="dropdown-item dropdown-item-active" aria-current="true">
@@ -79,13 +78,13 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
   </span>
 
   <div class="relative select-none bg-slate-100 rounded-md flex h-12">
-    <Button data-outside="settings" aria-label="Icon settings">
+    <button class="btn" data-outside="settings" aria-label="Icon settings">
       <SlidersSimple />
-    </Button>
+    </button>
 
     <div class="right-0 w-72 dropdown z-50" data-dropdown="settings" role="dialog" aria-label="Icon settings">
 
-      <div class="p-4 border-b border-slate-100 flex justify-between items-center">
+      <div class="px-5 py-4 border-b border-slate-100 flex justify-between items-center">
         <h3 class="font-semibold text-slate-800">Settings</h3>
         <button
           data-reset-settings
@@ -95,27 +94,29 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
         </button>
       </div>
 
-      <div class="p-4 space-y-4">
+      <div class="p-5 space-y-4">
 
-        <div class="flex flex-col gap-2.5">
-          <label class="text-sm font-medium text-slate-700">Color</label>
-          <div class="flex gap-2 items-center rounded-lg border border-slate-200 bg-slate-50 p-2">
-            <input
-              type="color"
-              data-setting-color
-              value="#000000"
-              class="h-8 w-12 cursor-pointer rounded-md bg-transparent border border-slate-200 p-0"
-            />
-            <span data-color-value class="ml-auto text-xs font-mono px-2 py-1 rounded-md bg-white border border-slate-200 text-slate-500">
+        <div class="icon-setting-group">
+          <label class="icon-setting-label">Color</label>
+          <div class="flex gap-2 items-center rounded-lg bg-slate-100 p-2">
+            <div class="w-12 h-8 rounded-md overflow-hidden border border-slate-200 relative">
+              <input
+                type="color"
+                data-setting-color
+                class="h-12 w-16 cursor-pointer bg-transparent absolute -ml-2 -mt-2"
+              />
+            </div>
+
+            <span data-color-value class="ml-auto font-mono text-slate-500">
               currentColor
             </span>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2.5">
-          <div class="flex justify-between items-center">
-            <label class="text-sm font-medium text-slate-700">Stroke width</label>
-            <span data-stroke-value class="text-xs font-mono px-2 py-1 rounded-md bg-slate-100 text-slate-600">2px</span>
+        <div class="icon-setting-group">
+          <div class="icon-setting-row">
+            <label class="icon-setting-label">Stroke width</label>
+            <span data-stroke-value class="ml-auto text-sm text-slate-400 font-mono">2px</span>
           </div>
           <input
             type="range"
@@ -128,10 +129,10 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
           />
         </div>
 
-        <div class="flex flex-col gap-2.5">
-          <div class="flex justify-between items-center">
-            <label class="text-sm font-medium text-slate-700">Size</label>
-            <span data-size-value class="text-xs font-mono px-2 py-1 rounded-md bg-slate-100 text-slate-600">24px</span>
+        <div class="icon-setting-group">
+          <div class="icon-setting-row">
+            <label class="icon-setting-label">Size</label>
+            <span data-size-value class="ml-auto text-sm text-slate-400 font-mono">24px</span>
           </div>
           <input
             type="range"
@@ -142,7 +143,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
             value="8"
             class="icon-slider w-full"
           />
-          <div class="mt-2 flex flex-wrap gap-2">
+          <div class="chip-list">
             <button type="button" data-size-preset="16" class="size-chip">16</button>
             <button type="button" data-size-preset="24" class="size-chip size-chip-active" aria-pressed="true">24</button>
             <button type="button" data-size-preset="32" class="size-chip">32</button>

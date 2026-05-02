@@ -68,7 +68,7 @@ const title = icon.title ?? icon.name
       </div>
       <div>
         <h2 class="text-sm font-semibold text-slate-500 uppercase">Categories</h2>
-        <div class="mt-2 flex flex-wrap gap-2">
+        <div class="chip-list">
           {icon.categories.map((item) => (
             <span class="rounded-md bg-slate-100 px-2 py-1 text-sm text-slate-700">
               {item}
@@ -78,7 +78,7 @@ const title = icon.title ?? icon.name
       </div>
       <div>
         <h2 class="text-sm font-semibold text-slate-500 uppercase">Tags</h2>
-        <div class="mt-2 flex flex-wrap gap-2">
+        <div class="chip-list">
           {icon.tags.map((item) => (
             <span class="rounded-md bg-slate-100 px-2 py-1 text-sm text-slate-700">
               {item}

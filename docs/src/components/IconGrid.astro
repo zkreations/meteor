@@ -48,9 +48,7 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
           </span>
         </h2>
 
-        <div class={`
-          grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6
-          *:flex *:flex-col *:items-center *:justify-center *:gap-2 *:rounded-lg *:border *:border-slate-200 *:text-center *:aspect-square *:transition *:hover:border-teal-500 *:cursor-pointer *:relative`}>
+        <div class="section-content">
 
           {items.map((icon) => (
             <IconCard {...icon} />
@@ -69,11 +67,13 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
 <script>
   import { initDropdown } from '../scripts/dropdown'
   import { initIconGrid } from '../scripts/iconGrid'
+  import { initLazyLoadIcons } from '../scripts/lazyLoadIcons'
 
   document.querySelectorAll('[data-icon-grid]').forEach((root) => {
     if (!(root instanceof HTMLElement)) return
 
     initIconGrid(root)
+    initLazyLoadIcons(root)
 
     const buttons = root.querySelectorAll('[data-outside]')
     const activeClass = 'dropdown-visible'

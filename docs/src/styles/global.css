@@ -12,72 +12,43 @@
   }
 
   .dropdown-item {
-    @apply px-3 py-2.5 rounded-md flex items-center gap-2 w-full text-left text-slate-700 hover:bg-slate-100 transition-colors duration-200 cursor-pointer;
+    @apply px-3 py-2 rounded-md flex items-center gap-2 w-full text-left text-slate-700 hover:bg-slate-100 transition-colors duration-200 cursor-pointer;
   }
 
   .dropdown-item-active {
     @apply bg-teal-50 text-teal-700;
   }
 
-  [data-icon-grid] .svg-preview {
-    color: var(--icon-grid-preview-color, currentColor);
-    stroke-width: var(--icon-grid-preview-stroke-width, 2);
-    width: var(--icon-grid-preview-size, 24px);
-    height: var(--icon-grid-preview-size, 24px);
+  .btn {
+    @apply inline-flex items-center gap-2 h-12 px-3 rounded-md whitespace-nowrap bg-slate-100 text-slate-700 cursor-pointer transition-colors duration-300 hover:bg-slate-200 focus:outline-none;
   }
 
   .icon-slider {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 1.25rem;
-    background: transparent;
-    cursor: pointer;
-  }
-
-  .icon-slider:focus {
-    outline: none;
+    @apply h-5 bg-transparent cursor-pointer appearance-none focus:outline-none;
   }
 
   .icon-slider::-webkit-slider-runnable-track {
-    height: 0.25rem;
-    border-radius: 9999px;
-    background: #d1d5db;
+    @apply h-1 rounded-full bg-slate-300;
   }
 
   .icon-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 9999px;
-    border: 2px solid #0f766e;
-    background: #ffffff;
-    margin-top: -0.325rem;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.2);
+    @apply appearance-none w-4 h-4 rounded-full border-2 border-teal-700 bg-white shadow-sm -mt-1.5;
   }
 
   .icon-slider:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+    @apply shadow-lg;
   }
 
   .icon-slider::-moz-range-track {
-    height: 0.25rem;
-    border-radius: 9999px;
-    border: 0;
-    background: #d1d5db;
+    @apply h-1 rounded-full bg-slate-300 border-none;
   }
 
   .icon-slider::-moz-range-thumb {
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 9999px;
-    border: 2px solid #0f766e;
-    background: #ffffff;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.2);
+    @apply w-4 h-4 rounded-full border-2 border-teal-700 bg-white shadow-sm;
   }
 
   .icon-slider:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+    @apply shadow-lg;
   }
 
   .size-chip {
@@ -88,8 +59,48 @@
     @apply border-teal-500 bg-teal-50 text-teal-700 shadow-sm;
   }
 
+  .section-content {
+    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6;
+  }
+
+  .icon-setting-group {
+    @apply flex flex-col gap-2.5;
+  }
+
+  .icon-setting-label {
+    @apply text-sm font-medium text-slate-700;
+  }
+
+  .icon-setting-row {
+    @apply flex justify-between items-center;
+  }
+
+  .icon-card {
+    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-teal-500 cursor-pointer relative;
+  }
+
+  .icon-preview {
+    @apply flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300;
+  }
+
+  .icon-text {
+    @apply text-slate-500 hover:text-teal-500 transition duration-300 cursor-text;
+  }
+
+  .icon-actions {
+    @apply inset-0.75 flex gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
+  }
+
+  .icon-action {
+    @apply items-center justify-center py-3 w-full transition h-auto;
+  }
+
+  .chip-list {
+    @apply mt-2 flex flex-wrap gap-2;
+  }
+
   .scrollbar::-webkit-scrollbar {
-    @apply w-2;
+    @apply w-1;
   }
 
   .scrollbar-custom::-webkit-scrollbar-track {
@@ -97,7 +108,7 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-gray-100;
+    @apply bg-gray-100 rounded-lg;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
@@ -109,5 +120,12 @@
       scrollbar-width: thin;
       @apply bg-gray-50;
     }
+  }
+
+  [data-icon-grid] .svg-preview {
+    color: var(--icon-grid-preview-color, currentColor);
+    stroke-width: var(--icon-grid-preview-stroke-width, 2);
+    width: var(--icon-grid-preview-size, 24px);
+    height: var(--icon-grid-preview-size, 24px);
   }
 }
