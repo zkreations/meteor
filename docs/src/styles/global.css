@@ -122,7 +122,7 @@
     }
   }
 
-  [data-icon-grid] .svg-preview {
+  [data-icon-grid] .icon-preview svg {
     color: var(--icon-grid-preview-color, currentColor);
     stroke-width: var(--icon-grid-preview-stroke-width, 2);
     width: var(--icon-grid-preview-size, 24px);

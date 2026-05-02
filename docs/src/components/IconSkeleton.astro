@@ -1,10 +1,9 @@
 ---
 interface Props {
   customClass?: string;
-  randomSelector?: string;
 }
 
-const { customClass, randomSelector } = Astro.props;
+const { customClass } = Astro.props;
 
 const gridPath = Array.from({ length: 23 }, (_, i) => {
   const pos = (i + 1) * 10;
@@ -12,7 +11,7 @@ const gridPath = Array.from({ length: 23 }, (_, i) => {
 }).join(' ');
 ---
 
-<svg-skeleton  class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`} data-random-selector={randomSelector}>
+<svg-skeleton class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`}>
   <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto">
     <input type="checkbox" class="sr-only peer" />
     <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-500/20 transition-colors duration-300 peer-checked:text-slate-900 *:w-full *:h-full" aria-hidden="true">

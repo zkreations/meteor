@@ -400,15 +400,7 @@ const parsePathData = (d: string, handlers: PathPointHandlers): void => {
 }
 
 class SvgSkeleton extends HTMLElement {
-  static get observedAttributes(): string[] {
-    return ['data-random-selector']
-  }
-
   connectedCallback(): void {
-    this.render()
-  }
-
-  attributeChangedCallback(): void {
     this.render()
   }
 
@@ -418,19 +410,13 @@ class SvgSkeleton extends HTMLElement {
     zone.replaceChildren()
 
     const sourceSlot = this.querySelector<HTMLElement>(SKELETON_CONFIG.selectors.sourceSlotSvg)
-    const randomSelector = this.getAttribute('data-random-selector')?.trim()
+
     const randomCandidates = SKELETON_CONFIG.random.candidates
-    if (sourceSlot && randomSelector) {
-      const useCandidateList = randomCandidates.length > 0 && randomSelector === '.svg-preview'
+    if (sourceSlot && randomCandidates.length > 0) {
+      const name = randomCandidates[Math.floor(Math.random() * randomCandidates.length)]
+      const randomSvg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
 
-      const candidates = useCandidateList
-        ? randomCandidates
-            .map((name) => document.querySelector<SVGElement>(`[data-name="${name}"] ${randomSelector}`))
-            .filter((svg): svg is SVGElement => Boolean(svg))
-        : Array.from(document.querySelectorAll<SVGElement>(randomSelector))
-
-      if (candidates.length > 0) {
-        const randomSvg = candidates[Math.floor(Math.random() * candidates.length)]
+      if (randomSvg) {
         const skeletonSource = randomSvg.cloneNode(true) as SVGElement
         skeletonSource.removeAttribute('class')
         skeletonSource.removeAttribute('style')

@@ -11,7 +11,7 @@ export const initLazyLoadIcons = (root: HTMLElement) => {
     (entries) => {
       entries.forEach((entry) => {
         const card = entry.target as HTMLElement;
-        const preview = card.querySelector('.svg-preview') as SVGElement;
+        const preview = card.querySelector('.icon-preview svg') as SVGElement;
 
         if (!preview) return;
 

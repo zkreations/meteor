@@ -43,7 +43,7 @@ export const initIconActions = (root: HTMLElement) => {
 
     const article = target.closest('article[data-name]');
     const name = article?.getAttribute('data-name') || 'icon';
-    const svg = article?.querySelector('.svg-preview') as SVGElement;
+    const svg = article?.querySelector('.icon-preview svg') as SVGElement;
 
     if (!svg) return;
 

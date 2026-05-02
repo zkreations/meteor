@@ -53,7 +53,7 @@ export const initIconSearch = (root: HTMLElement) => {
       return;
     }
 
-    const sourceSvg = root.querySelector<SVGElement>(`[data-name="${iconName}"] .svg-preview`);
+    const sourceSvg = root.querySelector<SVGElement>(`[data-name="${iconName}"] .icon-preview svg`);
     if (!sourceSvg) return;
 
     const buttonSvg = sourceSvg.cloneNode(true) as SVGElement;
@@ -142,13 +142,13 @@ export const initIconSearch = (root: HTMLElement) => {
 
       if (svgSkeleton) {
         if (activeCategory === 'all') {
-          svgSkeleton.setAttribute('data-random-selector', '.svg-preview');
+          svgSkeleton.setAttribute('data-random-selector', '.icon-preview svg');
         } else {
           const icon = categoryIconMap.get(activeCategory);
           if (icon) {
             svgSkeleton.setAttribute(
               'data-random-selector',
-              `[data-name="${icon}"] .svg-preview`
+              `[data-name="${icon}"] .icon-preview svg`
             );
           }
         }
