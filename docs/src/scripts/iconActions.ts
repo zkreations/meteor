@@ -17,7 +17,6 @@ export const initIconActions = (root: HTMLElement) => {
     const clone = svg.cloneNode(true) as SVGElement;
 
     clone.removeAttribute('style');
-    clone.removeAttribute('class');
 
     clone.setAttribute('width', config.size);
     clone.setAttribute('height', config.size);
