@@ -70,7 +70,6 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
     aria-label="Search icons"
     autocomplete="off"
     spellcheck="false"
-    autofocus
   />
 
   <span class="pointer-events-none text-slate-400">
@@ -97,13 +96,14 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
       <div class="p-5 space-y-4">
 
         <div class="icon-setting-group">
-          <label class="icon-setting-label">Color</label>
+          <label class="icon-setting-label" for="icon-color-picker">Color</label>
           <label class="flex gap-2 items-center rounded-lg bg-slate-100 p-2 cursor-pointer">
             <div class="w-12 h-8 rounded-md overflow-hidden border border-slate-200 relative">
               <input
                 type="color"
                 data-setting-color
                 class="h-12 w-16 cursor-pointer bg-transparent absolute -ml-2 -mt-2"
+                id="icon-color-picker"
               />
             </div>
 
@@ -115,7 +115,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
 
         <div class="icon-setting-group">
           <div class="icon-setting-row">
-            <label class="icon-setting-label">Stroke width</label>
+            <label class="icon-setting-label" for="icon-stroke-width">Stroke width</label>
             <span data-stroke-value class="ml-auto text-sm text-slate-400 font-mono">2px</span>
           </div>
           <input
@@ -126,12 +126,13 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
             step="0.1"
             value="2"
             class="icon-slider w-full"
+            id="icon-stroke-width"
           />
         </div>
 
         <div class="icon-setting-group">
           <div class="icon-setting-row">
-            <label class="icon-setting-label">Size</label>
+            <label class="icon-setting-label" for="icon-size">Size</label>
             <span data-size-value class="ml-auto text-sm text-slate-400 font-mono">24px</span>
           </div>
           <input
@@ -142,6 +143,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
             step="1"
             value="8"
             class="icon-slider w-full"
+            id="icon-size"
           />
           <div class="chip-list">
             <button type="button" data-size-preset="16" class="size-chip">16</button>
