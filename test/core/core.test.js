@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
@@ -58,8 +58,8 @@ describe('core package contract', () => {
   it('includes Blogger template switch and sampled cases', () => {
     const includable = readFileSync(resolve(exportsRoot, 'icons.xml'), 'utf8')
 
-    expect(includable).toContain("<b:includable id='@meteor'>")
-    expect(includable).toContain("<b:switch var='data:icon'>")
+    expect(includable).toContain('<b:includable id=\'@meteor\'>')
+    expect(includable).toContain('<b:switch var=\'data:icon\'>')
 
     for (const sample of ['alarm-clock', 'arrow-right', 'github']) {
       expect(includable).toContain(`<b:case value='${sample}'/>`)

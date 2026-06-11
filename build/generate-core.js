@@ -1,22 +1,23 @@
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
+import process from 'node:process'
 
-import config from './icons.config.js'
-import { writePackageManifest } from './core/create-packages.js'
-import { generateCoreVanilla } from './core/create-core-vanilla.js'
-import { generateCoreSprite } from './core/create-core-sprite.js'
 import { generateCoreIncludable } from './core/create-core-includable.js'
+import { generateCoreSprite } from './core/create-core-sprite.js'
+import { generateCoreVanilla } from './core/create-core-vanilla.js'
+import { writePackageManifest } from './core/create-packages.js'
+import config from './icons.config.js'
 
 const SRC_ICONS = config.iconsDir
 const DIST_ICONS = config.coreIconsDir
 
-function resetDir (dir) {
+function resetDir(dir) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
   fs.writeFileSync(path.join(dir, '.gitkeep'), '')
 }
 
-function copyDir (src, dest) {
+function copyDir(src, dest) {
   fs.mkdirSync(dest, { recursive: true })
 
   for (const entry of fs.readdirSync(src)) {
@@ -25,14 +26,15 @@ function copyDir (src, dest) {
 
     if (fs.statSync(srcPath).isDirectory()) {
       copyDir(srcPath, destPath)
-    } else if (path.extname(entry).toLowerCase() === '.svg') {
+    }
+    else if (path.extname(entry).toLowerCase() === '.svg') {
       fs.copyFileSync(srcPath, destPath)
     }
   }
 }
 
-async function generateCorePackage () {
-  console.log('Building meteor-icons core package')
+async function generateCorePackage() {
+  console.warn('Building meteor-icons core package')
 
   await writePackageManifest('core', config.packages)
 
@@ -43,7 +45,7 @@ async function generateCorePackage () {
   await generateCoreSprite()
   await generateCoreIncludable()
 
-  console.log('Core package ready')
+  console.warn('Core package ready')
 }
 
 generateCorePackage().catch((error) => {

@@ -1,12 +1,12 @@
-import { afterEach, describe, expect, it } from 'vitest'
 import { cleanup, render } from '@testing-library/svelte'
+import { afterEach, describe, expect, it } from 'vitest'
 
 import AlarmClock from '../../packages/svelte/src/icons/alarm-clock.svelte'
 import ArrowRight from '../../packages/svelte/src/icons/arrow-right.svelte'
 
 import {
   AlarmClock as AlarmClockFromIndex,
-  ArrowRight as ArrowRightFromIndex
+  ArrowRight as ArrowRightFromIndex,
 } from '../../packages/svelte/src/index.js'
 
 afterEach(() => {
@@ -20,13 +20,13 @@ describe('svelte icons', () => {
         Component: AlarmClock,
         expectedClass: 'i i-alarm-clock',
         expectedPathD: 'm1 4 3-3m16 0 3 3M12 7v5l3 3',
-        extraSelector: 'circle'
+        extraSelector: 'circle',
       },
       {
         Component: ArrowRight,
         expectedClass: 'i i-arrow-right',
-        expectedPathD: 'm12 19 7-7-7-7m7 7H5'
-      }
+        expectedPathD: 'm12 19 7-7-7-7m7 7H5',
+      },
     ]
 
     for (const { Component, expectedClass, expectedPathD, extraSelector } of cases) {
@@ -56,12 +56,12 @@ describe('svelte icons', () => {
   it('applies size, color, strokeWidth, class and passthrough attributes', () => {
     const { container } = render(ArrowRight, {
       props: {
-        size: 48,
-        color: 'red',
-        strokeWidth: 1.5,
-        class: 'extra-class',
-        'data-testid': 'arrow-right-icon'
-      }
+        'size': 48,
+        'color': 'red',
+        'strokeWidth': 1.5,
+        'class': 'extra-class',
+        'data-testid': 'arrow-right-icon',
+      },
     })
 
     const svg = container.querySelector('svg')

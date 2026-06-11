@@ -1,4 +1,4 @@
-export function buildReactCreateIconTypesSource () {
+export function buildReactCreateIconTypesSource() {
   return `import type * as React from 'react'
 
 export type IconAttrs = Record<string, string | number | boolean>
@@ -23,7 +23,7 @@ export declare function createIcon(iconName: string, iconNode: IconNode[]): Mete
 `
 }
 
-export function buildPreactCreateIconTypesSource () {
+export function buildPreactCreateIconTypesSource() {
   return `import type { JSX } from 'preact'
 import type { Ref } from 'preact'
 

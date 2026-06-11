@@ -46,7 +46,7 @@ const SKELETON_CONFIG = {
     nonPath: 'stroke-teal-500/90',
     handle: 'stroke-slate-900/40',
     node: 'fill-slate-900',
-    control: 'fill-slate-100 stroke-slate-900/65'
+    control: 'fill-slate-100 stroke-slate-900/65',
   },
   scale: {
     anchorRadius: 0.018,
@@ -62,15 +62,15 @@ const SKELETON_CONFIG = {
   },
 } as const
 
-const PATH_CMD_RE = /^[MmZzLlHhVvCcSsQqTtAa]$/
-const PATH_TOKEN_RE = /([MmZzLlHhVvCcSsQqTtAa])|([-+]?(?:\d*\.\d+|\d+)(?:[eE][-+]?\d+)?)/g
+const PATH_CMD_RE = /^[MZLHVCSQTA]$/i
+const PATH_TOKEN_RE = /([MZLHVCSQTA])|([-+]?(?:\d*\.\d+|\d+)(?:e[-+]?\d+)?)/gi
 const SOURCE_IGNORED_ATTRS = new Set<string>(SKELETON_CONFIG.source.ignoredAttributes)
 
 type NumberLike = string | number
 type SvgTagName = keyof SVGElementTagNameMap
 type SkeletonShapeTag = (typeof SKELETON_CONFIG.source.shapeTags)[number]
 
-type ScaleMetrics = {
+interface ScaleMetrics {
   pathStrokeWidth: number
   anchorRadius: number
   controlRadius: number
@@ -78,16 +78,13 @@ type ScaleMetrics = {
   controlStrokeWidth: number
 }
 
-type PathPointHandlers = {
+interface PathPointHandlers {
   addAnchor: (x: number, y: number) => void
   addControl: (x: number, y: number) => void
   addHandle: (x1: number, y1: number, x2: number, y2: number) => void
 }
 
-const createSvgEl = <K extends keyof SVGElementTagNameMap>(
-  tag: K,
-  attrs?: Record<string, NumberLike>,
-): SVGElementTagNameMap[K] => {
+function createSvgEl<K extends keyof SVGElementTagNameMap>(tag: K, attrs?: Record<string, NumberLike>): SVGElementTagNameMap[K] {
   const el = document.createElementNS('http://www.w3.org/2000/svg', tag)
   if (attrs) {
     for (const [key, value] of Object.entries(attrs)) {
@@ -99,16 +96,18 @@ const createSvgEl = <K extends keyof SVGElementTagNameMap>(
 
 const isFinitePoint = (...values: number[]): boolean => values.every(Number.isFinite)
 
-const tokenizePathData = (d: string): string[] => {
+function tokenizePathData(d: string): string[] {
   const tokens: string[] = []
   let match: RegExpExecArray | null
-  while ((match = PATH_TOKEN_RE.exec(d)) !== null) {
+  match = PATH_TOKEN_RE.exec(d)
+  while (match !== null) {
     tokens.push(match[1] ?? match[2])
+    match = PATH_TOKEN_RE.exec(d)
   }
   return tokens
 }
 
-const parseViewBox = (svg: SVGElement): [number, number, number, number] => {
+function parseViewBox(svg: SVGElement): [number, number, number, number] {
   const raw = svg
     .getAttribute('viewBox')
     ?.trim()
@@ -118,31 +117,30 @@ const parseViewBox = (svg: SVGElement): [number, number, number, number] => {
   return [raw[0] ?? 0, raw[1] ?? 0, raw[2] ?? 24, raw[3] ?? 24]
 }
 
-const ensureViewBox = (svg: SVGElement): void => {
-  if (svg.getAttribute('viewBox')) return
-  const width = parseFloat(svg.getAttribute('width') || '24')
-  const height = parseFloat(svg.getAttribute('height') || '24')
+function ensureViewBox(svg: SVGElement): void {
+  if (svg.getAttribute('viewBox'))
+    return
+  const width = Number.parseFloat(svg.getAttribute('width') || '24')
+  const height = Number.parseFloat(svg.getAttribute('height') || '24')
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`)
 }
 
-const getScaleMetrics = (scale: number): ScaleMetrics => ({
-  pathStrokeWidth: scale * SKELETON_CONFIG.scale.pathStroke,
-  anchorRadius: scale * SKELETON_CONFIG.scale.anchorRadius,
-  controlRadius: scale * SKELETON_CONFIG.scale.controlRadius,
-  handleWidth: scale * SKELETON_CONFIG.scale.handleWidth,
-  controlStrokeWidth: scale * SKELETON_CONFIG.scale.handleWidth * SKELETON_CONFIG.scale.controlStrokeFactor,
-})
+function getScaleMetrics(scale: number): ScaleMetrics {
+  return {
+    pathStrokeWidth: scale * SKELETON_CONFIG.scale.pathStroke,
+    anchorRadius: scale * SKELETON_CONFIG.scale.anchorRadius,
+    controlRadius: scale * SKELETON_CONFIG.scale.controlRadius,
+    handleWidth: scale * SKELETON_CONFIG.scale.handleWidth,
+    controlStrokeWidth: scale * SKELETON_CONFIG.scale.handleWidth * SKELETON_CONFIG.scale.controlStrokeFactor,
+  }
+}
 
-const copyShape = (
-  source: Element,
-  tag: SvgTagName,
-  targetLayer: SVGGElement,
-  className?: string,
-): void => {
+function copyShape(source: Element, tag: SvgTagName, targetLayer: SVGGElement, className?: string): void {
   const copy = createSvgEl(tag)
 
   for (const { name, value } of Array.from(source.attributes)) {
-    if (!SOURCE_IGNORED_ATTRS.has(name)) copy.setAttribute(name, value)
+    if (!SOURCE_IGNORED_ATTRS.has(name))
+      copy.setAttribute(name, value)
   }
 
   if (className) {
@@ -152,16 +150,16 @@ const copyShape = (
   targetLayer.appendChild(copy)
 }
 
-const copySourceShapes = (sourceSvg: SVGElement, layer: SVGGElement): void => {
+function copySourceShapes(sourceSvg: SVGElement, layer: SVGGElement): void {
   SKELETON_CONFIG.source.shapeTags.forEach((tag: SkeletonShapeTag) => {
     const className = tag === 'path' ? undefined : SKELETON_CONFIG.classes.nonPath
     sourceSvg
       .querySelectorAll(tag)
-      .forEach((el) => copyShape(el, tag, layer, className))
+      .forEach(el => copyShape(el, tag, layer, className))
   })
 }
 
-const parsePathData = (d: string, handlers: PathPointHandlers): void => {
+function parsePathData(d: string, handlers: PathPointHandlers): void {
   const tokens = tokenizePathData(d)
   const isCmd = (token: string | undefined): boolean => PATH_CMD_RE.test(String(token))
 
@@ -180,11 +178,12 @@ const parsePathData = (d: string, handlers: PathPointHandlers): void => {
     prevCPType = null
   }
 
-  const readNumber = (): number => parseFloat(tokens[i++])
+  const readNumber = (): number => Number.parseFloat(tokens[i++])
 
   const readArcFlag = (): number => {
     const token = tokens[i]
-    if (token == null || isCmd(token)) return Number.NaN
+    if (token == null || isCmd(token))
+      return Number.NaN
 
     if (token === '0' || token === '1') {
       i += 1
@@ -196,14 +195,15 @@ const parsePathData = (d: string, handlers: PathPointHandlers): void => {
       const rest = token.slice(1)
       if (rest.length > 0) {
         tokens[i] = rest
-      } else {
+      }
+      else {
         i += 1
       }
       return Number(first)
     }
 
     i += 1
-    return parseFloat(token)
+    return Number.parseFloat(token)
   }
 
   const hasMore = (): boolean => i < tokens.length && !isCmd(tokens[i])
@@ -406,7 +406,8 @@ class SvgSkeleton extends HTMLElement {
 
   private render(): void {
     const zone = this.querySelector<HTMLDivElement>(SKELETON_CONFIG.selectors.renderZone)
-    if (!zone) return
+    if (!zone)
+      return
     zone.replaceChildren()
 
     const sourceSlot = this.querySelector<HTMLElement>(SKELETON_CONFIG.selectors.sourceSlotSvg)
@@ -425,11 +426,13 @@ class SvgSkeleton extends HTMLElement {
     }
 
     const rawSvg = sourceSlot?.innerHTML.trim() || ''
-    if (!rawSvg) return
+    if (!rawSvg)
+      return
 
     const parsed = new DOMParser().parseFromString(rawSvg, 'image/svg+xml')
     const sourceSvg = parsed.querySelector('svg')
-    if (!sourceSvg) return
+    if (!sourceSvg)
+      return
 
     ensureViewBox(sourceSvg)
     const [vbMinX, vbMinY, vbW, vbH] = parseViewBox(sourceSvg)
@@ -446,8 +449,8 @@ class SvgSkeleton extends HTMLElement {
     })
 
     const strokeLayer = createSvgEl('g', {
-      fill: 'none',
-      class: SKELETON_CONFIG.classes.path,
+      'fill': 'none',
+      'class': SKELETON_CONFIG.classes.path,
       'stroke-width': metrics.pathStrokeWidth,
       'stroke-linecap': 'round',
       'stroke-linejoin': 'round',
@@ -461,7 +464,8 @@ class SvgSkeleton extends HTMLElement {
 
     const handlers: PathPointHandlers = {
       addAnchor: (x, y) => {
-        if (!isFinitePoint(x, y)) return
+        if (!isFinitePoint(x, y))
+          return
         nodeLayer.appendChild(
           createSvgEl('circle', {
             cx: x,
@@ -472,26 +476,28 @@ class SvgSkeleton extends HTMLElement {
         )
       },
       addControl: (x, y) => {
-        if (!isFinitePoint(x, y)) return
+        if (!isFinitePoint(x, y))
+          return
         nodeLayer.appendChild(
           createSvgEl('circle', {
-            cx: x,
-            cy: y,
-            r: metrics.controlRadius,
-            class: SKELETON_CONFIG.classes.control,
+            'cx': x,
+            'cy': y,
+            'r': metrics.controlRadius,
+            'class': SKELETON_CONFIG.classes.control,
             'stroke-width': metrics.controlStrokeWidth,
           }),
         )
       },
       addHandle: (x1, y1, x2, y2) => {
-        if (!isFinitePoint(x1, y1, x2, y2)) return
+        if (!isFinitePoint(x1, y1, x2, y2))
+          return
         handleLayer.appendChild(
           createSvgEl('line', {
             x1,
             y1,
             x2,
             y2,
-            class: SKELETON_CONFIG.classes.handle,
+            'class': SKELETON_CONFIG.classes.handle,
             'stroke-width': metrics.handleWidth,
           }),
         )

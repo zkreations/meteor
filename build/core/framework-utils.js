@@ -1,30 +1,30 @@
-import fs from 'fs/promises'
+import fs from 'node:fs/promises'
 
 const DEFAULT_ICONS_JSON = new URL('../../packages/core/exports/icons.json', import.meta.url)
 
-export function toPascalCase (value) {
+export function toPascalCase(value) {
   return value
     .split('-')
     .map(part => part.charAt(0).toUpperCase() + part.slice(1))
     .join('')
 }
 
-export async function resetDir (dirUrl) {
+export async function resetDir(dirUrl) {
   await fs.rm(dirUrl, { recursive: true, force: true })
   await fs.mkdir(dirUrl, { recursive: true })
   await fs.writeFile(new URL('./.gitkeep', dirUrl), '')
 }
 
-export async function readIconMap (iconsJsonUrl = DEFAULT_ICONS_JSON) {
+export async function readIconMap(iconsJsonUrl = DEFAULT_ICONS_JSON) {
   const raw = await fs.readFile(iconsJsonUrl, 'utf8')
   return JSON.parse(raw)
 }
 
-export function getSortedIconNames (icons) {
+export function getSortedIconNames(icons) {
   return Object.keys(icons).sort((a, b) => a.localeCompare(b))
 }
 
-export function jsLiteral (value) {
+export function jsLiteral(value) {
   if (typeof value === 'string') {
     return JSON.stringify(value)
   }
@@ -48,13 +48,13 @@ export function jsLiteral (value) {
   return 'null'
 }
 
-export function escapeXmlAttr (value) {
+export function escapeXmlAttr(value) {
   return String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('"', '&quot;')
 }
 
-export function nodeToMarkup (node) {
+export function nodeToMarkup(node) {
   const attrs = Object.entries(node.attrs || {})
     .map(([key, value]) => `${key}="${escapeXmlAttr(value)}"`)
     .join(' ')
@@ -69,11 +69,11 @@ export function nodeToMarkup (node) {
   return `${openTag}${children}</${node.tag}>`
 }
 
-export function buildNamedExportsIndex (iconNames, extension) {
+export function buildNamedExportsIndex(iconNames, extension) {
   const exports = iconNames.map((name) => {
     const componentName = toPascalCase(name)
     return `export { default as ${componentName} } from './icons/${name}.${extension}'`
   })
 
-  return exports.join('\n') + '\n'
+  return `${exports.join('\n')}\n`
 }

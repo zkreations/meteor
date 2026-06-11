@@ -1,13 +1,18 @@
 {
   "name": "meteor-icons",
-  "version": "4.0.0",
-  "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
-  "private": false,
   "type": "module",
+  "version": "4.0.0",
+  "private": false,
+  "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
+  "author": "Abel Moreira <daniel@zkreations.com>",
+  "license": "MIT",
   "homepage": "https://meteoricons.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zkreations/icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zkreations/icons/issues"
   },
   "keywords": [
     "icons",
@@ -15,25 +20,7 @@
     "icon-library",
     "meteor-icons"
   ],
-  "author": "Abel Moreira <daniel@zkreations.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zkreations/icons/issues"
-  },
-  "files": [
-    "icons",
-    "exports",
-    "src"
-  ],
-  "scripts": {
-    "prepack": "npm --prefix ../.. run build"
-  },
-  "engines": {
-    "node": ">=18"
-  },
   "sideEffects": false,
-  "main": "src/esm/index.js",
-  "module": "src/esm/index.js",
   "exports": {
     ".": {
       "default": "./src/esm/index.js"
@@ -48,5 +35,20 @@
       "default": "./exports/icons.js"
     },
     "./exports/*": "./exports/*"
-  }
+  },
+  "main": "src/esm/index.js",
+  "module": "src/esm/index.js",
+  "types": "",
+  "files": [
+    "exports",
+    "icons",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "prepack": "npm --prefix ../.. run build"
+  },
+  "peerDependencies": {}
 }

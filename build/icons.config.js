@@ -1,5 +1,5 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { makeFrameworkEntry } from './core/create-packages.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -16,68 +16,77 @@ export default {
   jsFilename: 'icons.js',
 
   defaultSvgAttributes: {
-    class: '',
-    viewBox: '0 0 24 24',
-    xmlns: 'http://www.w3.org/2000/svg',
-    fill: 'none',
-    stroke: 'currentColor',
+    'class': '',
+    'viewBox': '0 0 24 24',
+    'xmlns': 'http://www.w3.org/2000/svg',
+    'fill': 'none',
+    'stroke': 'currentColor',
     'stroke-width': '2',
     'stroke-linecap': 'round',
-    'stroke-linejoin': 'round'
+    'stroke-linejoin': 'round',
   },
 
   packages: {
     defaults: {
       name: 'meteor-icons',
-      version: '4.0.0',
-      description: 'Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.',
-      private: false,
       type: 'module',
+      version: '4.0.0',
+      private: false,
+      description: 'Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.',
+      author: 'Abel Moreira <daniel@zkreations.com>',
+      license: 'MIT',
       homepage: 'https://meteoricons.com',
       repository: {
         type: 'git',
-        url: 'git+https://github.com/zkreations/icons.git'
+        url: 'git+https://github.com/zkreations/icons.git',
       },
+      bugs: { url: 'https://github.com/zkreations/icons/issues' },
       keywords: [
         'icons',
         'svg',
         'icon-library',
-        'meteor-icons'
+        'meteor-icons',
       ],
-      author: 'Abel Moreira <daniel@zkreations.com>',
-      license: 'MIT',
-      bugs: { url: 'https://github.com/zkreations/icons/issues' },
+      sideEffects: false,
+      exports: {},
+      main: '',
+      module: '',
+      types: '',
       files: ['src'],
-      scripts: { prepack: 'npm --prefix ../.. run build' },
-      engines: { node: '>=18' },
-      sideEffects: false
+      engines: {
+        node: '>=18',
+      },
+      scripts: {
+        prepack: 'npm --prefix ../.. run build',
+      },
+      peerDependencies: {},
     },
 
     entries: {
       core: {
         name: 'meteor-icons',
-        files: [
-          'icons',
-          'exports',
-          'src'
-        ],
-        main: 'src/esm/index.js',
-        module: 'src/esm/index.js',
         exports: {
           '.': {
-            default: './src/esm/index.js'
+            default: './src/esm/index.js',
           },
           './icons': {
-            default: './src/esm/icons.js'
+            default: './src/esm/icons.js',
           },
           './icons/*': {
-            default: './src/esm/icons/*.js'
+            default: './src/esm/icons/*.js',
           },
           './browser': {
-            default: './exports/icons.js'
+            default: './exports/icons.js',
           },
-          './exports/*': './exports/*'
-        }
+          './exports/*': './exports/*',
+        },
+        main: 'src/esm/index.js',
+        module: 'src/esm/index.js',
+        files: [
+          'exports',
+          'icons',
+          'src',
+        ],
       },
 
       astro: makeFrameworkEntry({
@@ -90,42 +99,42 @@ export default {
           exports: {
             '.': {
               import: undefined,
-              default: './src/index.js'
+              default: './src/index.js',
             },
             './icons/*': {
               import: undefined,
-              default: './src/icons/*.astro'
-            }
-          }
-        }
+              default: './src/icons/*.astro',
+            },
+          },
+        },
       }),
 
       preact: makeFrameworkEntry({
         name: '@meteor-icons/preact',
         ext: 'js',
         peer: 'preact',
-        peerVersion: '>=10'
+        peerVersion: '>=10',
       }),
 
       react: makeFrameworkEntry({
         name: '@meteor-icons/react',
         ext: 'js',
         peer: 'react',
-        peerVersion: '>=17'
+        peerVersion: '>=17',
       }),
 
       vue: makeFrameworkEntry({
         name: '@meteor-icons/vue',
         ext: 'js',
         peer: 'vue',
-        peerVersion: '>=3'
+        peerVersion: '>=3',
       }),
 
       solid: makeFrameworkEntry({
         name: '@meteor-icons/solid',
         ext: 'jsx',
         peer: 'solid-js',
-        peerVersion: '>=1.8'
+        peerVersion: '>=1.8',
       }),
 
       svelte: makeFrameworkEntry({
@@ -135,17 +144,17 @@ export default {
         peer: 'svelte',
         peerVersion: '>=4',
         extraConditions: {
-          svelte: './src/index.js'
+          svelte: './src/index.js',
         },
         overrides: {
           svelte: 'src/index.js',
           exports: {
             './icons/*': {
-              svelte: './src/icons/*.svelte'
-            }
-          }
-        }
-      })
-    }
-  }
+              svelte: './src/icons/*.svelte',
+            },
+          },
+        },
+      }),
+    },
+  },
 }

@@ -1,16 +1,16 @@
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 
 import config from '../icons.config.js'
 import svgoConfig from '../svgo.config.js'
 import { processAllIcons } from './icons-pipeline.js'
 
-export async function generateCoreIncludable () {
+export async function generateCoreIncludable() {
   const processed = await processAllIcons({
     iconsDir: config.iconsDir,
     writeNormalized: false,
     svgoConfig,
-    defaultSvgAttributes: config.defaultSvgAttributes
+    defaultSvgAttributes: config.defaultSvgAttributes,
   })
 
   const items = processed.map(({ iconName, innerContent }) => {
@@ -33,5 +33,5 @@ export async function generateCoreIncludable () {
   const dist = path.join(config.outputDir, config.includableFilename)
   await fs.writeFile(dist, includable, 'utf8')
 
-  console.log('Includable file generated successfully.')
+  console.warn('Includable file generated successfully.')
 }

@@ -1,9 +1,11 @@
-import { initIconSearch } from './iconSearch';
-import { initIconSettings } from './iconSettings';
-import { initIconActions } from './iconActions';
+import { initIconActions } from './iconActions'
+import { initIconModal } from './iconModal'
+import { initIconSearch } from './iconSearch'
+import { initIconSettings } from './iconSettings'
 
-export const initIconGrid = (root: HTMLElement) => {
-  initIconSearch(root);
-  initIconSettings(root);
-  initIconActions(root);
-};
+export function initIconGrid(root: HTMLElement) {
+  initIconSearch(root)
+  initIconSettings(root)
+  initIconModal(root)
+  initIconActions(root)
+}

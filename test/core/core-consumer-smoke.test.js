@@ -18,12 +18,12 @@ describe('core consumer smoke', () => {
           private: true,
           type: 'module',
           scripts: {
-            build: 'node build.mjs'
+            build: 'node build.mjs',
           },
           dependencies: {
-            'meteor-icons': `file:${toPosixPath(corePackagePath)}`
-          }
-        }, null, 2)
+            'meteor-icons': `file:${toPosixPath(corePackagePath)}`,
+          },
+        }, null, 2),
       )
 
       writeFileSync(
@@ -63,12 +63,13 @@ const includable = readFileSync(resolve(exportsRoot, 'icons.xml'), 'utf8')
 if (!includable.includes("<b:includable id='@meteor'>")) {
   throw new Error('icons.xml missing includable root')
 }
-`
+`,
       )
 
       npmInstall(tempDir)
       npmBuild(tempDir)
-    } finally {
+    }
+    finally {
       rmSync(tempDir, { recursive: true, force: true })
     }
 

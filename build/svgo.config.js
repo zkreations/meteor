@@ -3,14 +3,14 @@ export default {
   multipass: true,
   js2svg: {
     pretty: true,
-    indent: 2
+    indent: 2,
   },
   plugins: [
     {
       name: 'removeAttrs',
       params: {
-        attrs: 'xmlns'
-      }
+        attrs: 'xmlns',
+      },
     },
     {
       name: 'preset-default',
@@ -19,10 +19,10 @@ export default {
           collapseGroups: true,
           convertPathData: {
             noSpaceAfterFlags: true,
-            removeUseless: false
-          }
-        }
-      }
-    }
-  ]
+            removeUseless: false,
+          },
+        },
+      },
+    },
+  ],
 }

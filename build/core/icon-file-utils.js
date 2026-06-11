@@ -1,9 +1,9 @@
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 
-export async function readIconFiles (dir, options = {}) {
+export async function readIconFiles(dir, options = {}) {
   const {
-    sort = defaultSort
+    sort = defaultSort,
   } = options
 
   const entries = await fs.readdir(dir, { withFileTypes: true })
@@ -14,7 +14,7 @@ export async function readIconFiles (dir, options = {}) {
     .sort(sort)
 }
 
-function defaultSort (a, b) {
+function defaultSort(a, b) {
   return path
     .basename(a)
     .localeCompare(path.basename(b), undefined, { sensitivity: 'base' })

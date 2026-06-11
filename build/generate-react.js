@@ -1,31 +1,30 @@
-import fs from 'fs/promises'
-import path from 'path'
-import config from './icons.config.js'
+import fs from 'node:fs/promises'
+import process from 'node:process'
+import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
   jsLiteral,
   readIconMap,
   resetDir,
-  toPascalCase
+  toPascalCase,
 } from './core/framework-utils.js'
-import { writePackageManifest } from './core/create-packages.js'
 import { buildReactLikeCreateIconSource } from './core/react-like-icon-template.js'
 import { buildReactCreateIconTypesSource } from './core/react-like-icon-types.js'
+import config from './icons.config.js'
 
-const ROOT_DIR = new URL('..', import.meta.url)
 const REACT_DIR = new URL('../packages/react/src/', import.meta.url)
 const REACT_ICONS_DIR = new URL('../packages/react/src/icons/', import.meta.url)
 
-function buildCreateIconSource () {
+function buildCreateIconSource() {
   return buildReactLikeCreateIconSource('react')
 }
 
-function buildCreateIconTypesSource () {
+function buildCreateIconTypesSource() {
   return buildReactCreateIconTypesSource()
 }
 
-function buildIconModuleSource (iconName, nodes) {
+function buildIconModuleSource(iconName, nodes) {
   const componentName = toPascalCase(iconName)
   const iconNodeLiteral = jsLiteral(nodes)
 
@@ -39,7 +38,7 @@ export default ${componentName}
 `
 }
 
-function buildIconTypesSource (iconName) {
+function buildIconTypesSource(iconName) {
   const componentName = toPascalCase(iconName)
 
   return `import type { MeteorIconComponent } from '../create-icon.js'
@@ -50,7 +49,7 @@ export default ${componentName}
 `
 }
 
-async function generateReactPackage () {
+async function generateReactPackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
 
@@ -67,13 +66,13 @@ async function generateReactPackage () {
     await fs.writeFile(
       new URL(`./${iconName}.js`, REACT_ICONS_DIR),
       buildIconModuleSource(iconName, nodes),
-      'utf8'
+      'utf8',
     )
 
     await fs.writeFile(
       new URL(`./${iconName}.d.ts`, REACT_ICONS_DIR),
       buildIconTypesSource(iconName),
-      'utf8'
+      'utf8',
     )
   }
 
@@ -81,8 +80,7 @@ async function generateReactPackage () {
   await fs.writeFile(new URL('./index.js', REACT_DIR), indexSource, 'utf8')
   await fs.writeFile(new URL('./index.d.ts', REACT_DIR), indexSource, 'utf8')
 
-  const rootPath = path.normalize(ROOT_DIR.pathname)
-  console.log(`React package generated (${iconNames.length} icons) at ${rootPath}`)
+  console.warn(`React package generated (${iconNames.length} icons)`)
 }
 
 generateReactPackage().catch((error) => {

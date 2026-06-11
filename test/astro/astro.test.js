@@ -1,11 +1,11 @@
-import { describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { describe, expect, it } from 'vitest'
 import { getWorkspaceRoot } from '../smoke-utils.js'
 
 const workspaceRoot = getWorkspaceRoot(import.meta.url)
 
-function readWorkspaceFile (relativePath) {
+function readWorkspaceFile(relativePath) {
   return readFileSync(resolve(workspaceRoot, relativePath), 'utf8')
 }
 
@@ -16,15 +16,15 @@ describe('astro icons contracts', () => {
 
     expect(alarmClock).toContain('size = 24')
     expect(alarmClock).toContain('strokeWidth = 2')
-    expect(alarmClock).toContain("color = 'currentColor'")
-    expect(alarmClock).toContain("class: className = ''")
+    expect(alarmClock).toContain('color = \'currentColor\'')
+    expect(alarmClock).toContain('class: className = \'\'')
     expect(alarmClock).toContain('class={mergedClass}')
     expect(alarmClock).toContain('<circle cx="12" cy="12" r="10"></circle>')
     expect(alarmClock).toContain('<path d="m1 4 3-3m16 0 3 3M12 7v5l3 3"></path>')
 
     expect(arrowRight).toContain('size = 24')
     expect(arrowRight).toContain('strokeWidth = 2')
-    expect(arrowRight).toContain("color = 'currentColor'")
+    expect(arrowRight).toContain('color = \'currentColor\'')
     expect(arrowRight).toContain('class={mergedClass}')
     expect(arrowRight).toContain('<path d="m12 19 7-7-7-7m7 7H5"></path>')
   })
@@ -33,8 +33,8 @@ describe('astro icons contracts', () => {
     const indexSource = readWorkspaceFile('packages/astro/src/index.js')
     const packageSource = JSON.parse(readWorkspaceFile('packages/astro/package.json'))
 
-    expect(indexSource).toContain("export { default as AlarmClock } from './icons/alarm-clock.astro'")
-    expect(indexSource).toContain("export { default as ArrowRight } from './icons/arrow-right.astro'")
+    expect(indexSource).toContain('export { default as AlarmClock } from \'./icons/alarm-clock.astro\'')
+    expect(indexSource).toContain('export { default as ArrowRight } from \'./icons/arrow-right.astro\'')
 
     expect(packageSource.exports['.'].default).toBe('./src/index.js')
     expect(packageSource.exports['./icons/*'].default).toBe('./src/icons/*.astro')

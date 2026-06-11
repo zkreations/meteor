@@ -2,18 +2,18 @@ import { getCollection } from 'astro:content'
 import { normalize } from '../../utils/helpers'
 
 export interface IconPayload {
-  name: string;
-  searchIndex: string;
+  name: string
+  searchIndex: string
 }
 
 export interface CategoryPayload {
-  name: string;
-  icon: string;
+  name: string
+  icon: string
 }
 
 export interface SearchAPIResponse {
-  icons: IconPayload[];
-  categories: CategoryPayload[];
+  icons: IconPayload[]
+  categories: CategoryPayload[]
 }
 
 export async function GET(): Promise<Response> {
@@ -50,13 +50,13 @@ export async function GET(): Promise<Response> {
   const categoriesPayload: CategoryPayload[] = Array.from(categoriesMap.entries())
     .map(([name, icon]) => ({
       name,
-      icon
+      icon,
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
 
   const payload: SearchAPIResponse = {
     icons: iconsPayload,
-    categories: categoriesPayload
+    categories: categoriesPayload,
   }
 
   return new Response(JSON.stringify(payload), {

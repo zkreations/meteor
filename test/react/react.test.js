@@ -1,16 +1,16 @@
-import { afterEach, describe, expect, it } from 'vitest'
-import React, { createRef } from 'react'
 import { cleanup, render } from '@testing-library/react'
+import React, { createRef } from 'react'
+import { afterEach, describe, expect, it } from 'vitest'
 
+import { createIcon } from '../../packages/react/src/create-icon.js'
 import AlarmClock from '../../packages/react/src/icons/alarm-clock.js'
+
 import ArrowRight from '../../packages/react/src/icons/arrow-right.js'
 
 import {
   AlarmClock as AlarmClockFromIndex,
-  ArrowRight as ArrowRightFromIndex
+  ArrowRight as ArrowRightFromIndex,
 } from '../../packages/react/src/index.js'
-
-import { createIcon } from '../../packages/react/src/create-icon.js'
 
 afterEach(() => {
   cleanup()
@@ -23,13 +23,13 @@ describe('react icons', () => {
         Icon: AlarmClock,
         expectedClass: 'i i-alarm-clock',
         expectedPathD: 'm1 4 3-3m16 0 3 3M12 7v5l3 3',
-        extraSelector: 'circle'
+        extraSelector: 'circle',
       },
       {
         Icon: ArrowRight,
         expectedClass: 'i i-arrow-right',
-        expectedPathD: 'm12 19 7-7-7-7m7 7H5'
-      }
+        expectedPathD: 'm12 19 7-7-7-7m7 7H5',
+      },
     ]
 
     for (const { Icon, expectedClass, expectedPathD, extraSelector } of cases) {
@@ -59,12 +59,12 @@ describe('react icons', () => {
   it('applies size, color, strokeWidth, className and passthrough attributes', () => {
     const { container } = render(
       React.createElement(ArrowRight, {
-        size: 48,
-        color: 'red',
-        strokeWidth: 1.5,
-        className: 'extra-class',
-        'data-testid': 'arrow-right-icon'
-      })
+        'size': 48,
+        'color': 'red',
+        'strokeWidth': 1.5,
+        'className': 'extra-class',
+        'data-testid': 'arrow-right-icon',
+      }),
     )
 
     const svg = container.querySelector('svg')
@@ -91,25 +91,25 @@ describe('react icons', () => {
       {
         tag: 'g',
         attrs: {
-          class: 'node-group',
+          'class': 'node-group',
           'stroke-width': '3',
           'fill-rule': 'evenodd',
-          'stroke-dasharray': '4 2'
+          'stroke-dasharray': '4 2',
         },
         children: [
           {
             tag: 'path',
-            attrs: { d: 'M0 0h1' }
+            attrs: { d: 'M0 0h1' },
           },
           {
             tag: 'path',
             attrs: {
-              d: 'M1 1h1',
-              'clip-rule': 'evenodd'
-            }
-          }
-        ]
-      }
+              'd': 'M1 1h1',
+              'clip-rule': 'evenodd',
+            },
+          },
+        ],
+      },
     ])
 
     const { container } = render(React.createElement(CustomIcon))

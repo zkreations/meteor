@@ -1,21 +1,20 @@
-import fs from 'fs/promises'
-import path from 'path'
-import config from './icons.config.js'
+import fs from 'node:fs/promises'
+import process from 'node:process'
+import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
   nodeToMarkup,
   readIconMap,
   resetDir,
-  toPascalCase
+  toPascalCase,
 } from './core/framework-utils.js'
-import { writePackageManifest } from './core/create-packages.js'
+import config from './icons.config.js'
 
-const ROOT_DIR = new URL('..', import.meta.url)
 const SVELTE_DIR = new URL('../packages/svelte/src/', import.meta.url)
 const SVELTE_ICONS_DIR = new URL('../packages/svelte/src/icons/', import.meta.url)
 
-function buildIconSvelteSource (iconName, nodes) {
+function buildIconSvelteSource(iconName, nodes) {
   const markup = nodes.map(nodeToMarkup).join('\n  ')
 
   return `<script>
@@ -45,7 +44,7 @@ function buildIconSvelteSource (iconName, nodes) {
 `
 }
 
-function buildIconTypesSource (iconName) {
+function buildIconTypesSource(iconName) {
   const componentName = toPascalCase(iconName)
 
   return `import { SvelteComponentTyped } from 'svelte'
@@ -62,7 +61,7 @@ export default class ${componentName} extends SvelteComponentTyped<MeteorSvelteI
 `
 }
 
-async function generateSveltePackage () {
+async function generateSveltePackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
 
@@ -77,13 +76,13 @@ async function generateSveltePackage () {
     await fs.writeFile(
       new URL(`./${iconName}.svelte`, SVELTE_ICONS_DIR),
       buildIconSvelteSource(iconName, nodes),
-      'utf8'
+      'utf8',
     )
 
     await fs.writeFile(
       new URL(`./${iconName}.d.ts`, SVELTE_ICONS_DIR),
       buildIconTypesSource(iconName),
-      'utf8'
+      'utf8',
     )
   }
 
@@ -91,8 +90,7 @@ async function generateSveltePackage () {
   await fs.writeFile(new URL('./index.js', SVELTE_DIR), indexSource, 'utf8')
   await fs.writeFile(new URL('./index.d.ts', SVELTE_DIR), indexSource, 'utf8')
 
-  const rootPath = path.normalize(ROOT_DIR.pathname)
-  console.log(`Svelte package generated (${iconNames.length} icons) at ${rootPath}`)
+  console.warn(`Svelte package generated (${iconNames.length} icons)`)
 }
 
 generateSveltePackage().catch((error) => {

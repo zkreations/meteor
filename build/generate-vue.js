@@ -1,21 +1,20 @@
-import fs from 'fs/promises'
-import path from 'path'
-import config from './icons.config.js'
+import fs from 'node:fs/promises'
+import process from 'node:process'
+import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
   jsLiteral,
   readIconMap,
   resetDir,
-  toPascalCase
+  toPascalCase,
 } from './core/framework-utils.js'
-import { writePackageManifest } from './core/create-packages.js'
+import config from './icons.config.js'
 
-const ROOT_DIR = new URL('..', import.meta.url)
 const VUE_DIR = new URL('../packages/vue/src/', import.meta.url)
 const VUE_ICONS_DIR = new URL('../packages/vue/src/icons/', import.meta.url)
 
-function buildCreateIconSource () {
+function buildCreateIconSource() {
   return `import { defineComponent, h } from 'vue'
 
 function renderNodes (nodes) {
@@ -71,7 +70,7 @@ export function createIcon (iconName, iconNode) {
 `
 }
 
-function buildCreateIconTypesSource () {
+function buildCreateIconTypesSource() {
   return `import type { DefineComponent } from 'vue'
 
 export type IconAttrs = Record<string, string | number | boolean>
@@ -94,7 +93,7 @@ export declare function createIcon(iconName: string, iconNode: IconNode[]): Mete
 `
 }
 
-function buildIconModuleSource (iconName, nodes) {
+function buildIconModuleSource(iconName, nodes) {
   const componentName = toPascalCase(iconName)
   const iconNodeLiteral = jsLiteral(nodes)
 
@@ -108,7 +107,7 @@ export default ${componentName}
 `
 }
 
-function buildIconTypesSource (iconName) {
+function buildIconTypesSource(iconName) {
   const componentName = toPascalCase(iconName)
 
   return `import type { MeteorIconComponent } from '../create-icon.js'
@@ -119,7 +118,7 @@ export default ${componentName}
 `
 }
 
-async function generateVuePackage () {
+async function generateVuePackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
 
@@ -136,13 +135,13 @@ async function generateVuePackage () {
     await fs.writeFile(
       new URL(`./${iconName}.js`, VUE_ICONS_DIR),
       buildIconModuleSource(iconName, nodes),
-      'utf8'
+      'utf8',
     )
 
     await fs.writeFile(
       new URL(`./${iconName}.d.ts`, VUE_ICONS_DIR),
       buildIconTypesSource(iconName),
-      'utf8'
+      'utf8',
     )
   }
 
@@ -150,8 +149,7 @@ async function generateVuePackage () {
   await fs.writeFile(new URL('./index.js', VUE_DIR), indexSource, 'utf8')
   await fs.writeFile(new URL('./index.d.ts', VUE_DIR), indexSource, 'utf8')
 
-  const rootPath = path.normalize(ROOT_DIR.pathname)
-  console.log(`Vue package generated (${iconNames.length} icons) at ${rootPath}`)
+  console.warn(`Vue package generated (${iconNames.length} icons)`)
 }
 
 generateVuePackage().catch((error) => {

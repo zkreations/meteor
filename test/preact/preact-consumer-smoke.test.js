@@ -1,13 +1,13 @@
-import { describe, expect, it } from 'vitest'
-import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
+import { describe, expect, it } from 'vitest'
 import {
   getInstalledPackageVersion,
   getWorkspaceRoot,
   npmBuild,
   npmInstall,
-  toPosixPath
+  toPosixPath,
 } from '../smoke-utils.js'
 
 const workspaceRoot = getWorkspaceRoot(import.meta.url)
@@ -30,37 +30,37 @@ describe('preact package consumer smoke', () => {
         version: '1.0.0',
         type: 'module',
         scripts: {
-          build: 'vite build'
+          build: 'vite build',
         },
         dependencies: {
           '@meteor-icons/preact': `file:${meteorPreactPath}`,
-          preact: installedPreactVersion
+          'preact': installedPreactVersion,
         },
         devDependencies: {
-          vite: `file:${vitePath}`
-        }
+          vite: `file:${vitePath}`,
+        },
       }
 
       writeFileSync(join(tempRoot, 'package.json'), JSON.stringify(packageJson, null, 2))
 
       writeFileSync(
         join(tempRoot, 'index.html'),
-        '<!doctype html><html><body><div id="app"></div><script type="module" src="/src/main.js"></script></body></html>'
+        '<!doctype html><html><body><div id="app"></div><script type="module" src="/src/main.js"></script></body></html>',
       )
 
       writeFileSync(
         join(tempRoot, 'vite.config.js'),
-        "import { defineConfig } from 'vite'\n\nexport default defineConfig({})\n"
+        'import { defineConfig } from \'vite\'\n\nexport default defineConfig({})\n',
       )
 
       writeFileSync(
         join(srcDir, 'App.js'),
-        "import { h } from 'preact'\nimport { AlarmClock, ArrowRight } from '@meteor-icons/preact'\nimport AlarmClockByPath from '@meteor-icons/preact/icons/alarm-clock'\n\nexport default function App () {\n  return h('main', {}, [\n    h(AlarmClock, { size: 32, strokeWidth: 1.25, 'data-testid': 'named-export', key: 'a' }),\n    h(ArrowRight, { size: 28, color: 'tomato', 'data-testid': 'second-icon', key: 'b' }),\n    h(AlarmClockByPath, { size: 24, 'data-testid': 'subpath-export', key: 'c' })\n  ])\n}\n"
+        'import { h } from \'preact\'\nimport { AlarmClock, ArrowRight } from \'@meteor-icons/preact\'\nimport AlarmClockByPath from \'@meteor-icons/preact/icons/alarm-clock\'\n\nexport default function App () {\n  return h(\'main\', {}, [\n    h(AlarmClock, { size: 32, strokeWidth: 1.25, \'data-testid\': \'named-export\', key: \'a\' }),\n    h(ArrowRight, { size: 28, color: \'tomato\', \'data-testid\': \'second-icon\', key: \'b\' }),\n    h(AlarmClockByPath, { size: 24, \'data-testid\': \'subpath-export\', key: \'c\' })\n  ])\n}\n',
       )
 
       writeFileSync(
         join(srcDir, 'main.js'),
-        "import { h, render } from 'preact'\nimport App from './App'\n\nrender(h(App, {}), document.getElementById('app'))\n"
+        'import { h, render } from \'preact\'\nimport App from \'./App\'\n\nrender(h(App, {}), document.getElementById(\'app\'))\n',
       )
 
       npmInstall(tempRoot)
@@ -71,7 +71,8 @@ describe('preact package consumer smoke', () => {
 
       const indexContent = readFileSync(distIndex, 'utf8')
       expect(indexContent.includes('/assets/')).toBe(true)
-    } finally {
+    }
+    finally {
       rmSync(tempRoot, { recursive: true, force: true })
     }
   })

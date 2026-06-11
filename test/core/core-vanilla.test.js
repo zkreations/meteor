@@ -22,7 +22,7 @@ describe('core vanilla api', () => {
 
     createIcons({
       nameAttr: 'data-icon',
-      icons: { Star }
+      icons: { Star },
     })
 
     const rendered = document.querySelectorAll('svg')

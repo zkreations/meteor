@@ -1,21 +1,20 @@
-import fs from 'fs/promises'
-import path from 'path'
-import config from './icons.config.js'
+import fs from 'node:fs/promises'
+import process from 'node:process'
+import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
   nodeToMarkup,
   readIconMap,
   resetDir,
-  toPascalCase
+  toPascalCase,
 } from './core/framework-utils.js'
-import { writePackageManifest } from './core/create-packages.js'
+import config from './icons.config.js'
 
-const ROOT_DIR = new URL('..', import.meta.url)
 const ASTRO_DIR = new URL('../packages/astro/src/', import.meta.url)
 const ASTRO_ICONS_DIR = new URL('../packages/astro/src/icons/', import.meta.url)
 
-function buildIconAstroSource (iconName, nodes) {
+function buildIconAstroSource(iconName, nodes) {
   const markup = nodes.map(nodeToMarkup).join('\n  ')
 
   return `---
@@ -56,7 +55,7 @@ const mergedClass = ('i i-${iconName} ' + className).trim()
 `
 }
 
-function buildIconTypesSource (iconName) {
+function buildIconTypesSource(iconName) {
   const componentName = toPascalCase(iconName)
 
   return `export interface MeteorAstroIconProps {
@@ -73,7 +72,7 @@ export default ${componentName}
 `
 }
 
-async function generateAstroPackage () {
+async function generateAstroPackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
 
@@ -88,13 +87,13 @@ async function generateAstroPackage () {
     await fs.writeFile(
       new URL(`./${iconName}.astro`, ASTRO_ICONS_DIR),
       buildIconAstroSource(iconName, nodes),
-      'utf8'
+      'utf8',
     )
 
     await fs.writeFile(
       new URL(`./${iconName}.d.ts`, ASTRO_ICONS_DIR),
       buildIconTypesSource(iconName),
-      'utf8'
+      'utf8',
     )
   }
 
@@ -102,8 +101,7 @@ async function generateAstroPackage () {
   await fs.writeFile(new URL('./index.js', ASTRO_DIR), indexSource, 'utf8')
   await fs.writeFile(new URL('./index.d.ts', ASTRO_DIR), indexSource, 'utf8')
 
-  const rootPath = path.normalize(ROOT_DIR.pathname)
-  console.log(`Astro package generated (${iconNames.length} icons) at ${rootPath}`)
+  console.warn(`Astro package generated (${iconNames.length} icons)`)
 }
 
 generateAstroPackage().catch((error) => {

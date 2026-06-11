@@ -1,15 +1,15 @@
-import { afterEach, describe, expect, it } from 'vitest'
 import { cleanup, render } from '@solidjs/testing-library'
+import { afterEach, describe, expect, it } from 'vitest'
 
+import { createIcon } from '../../packages/solid/src/create-icon.jsx'
 import AlarmClock from '../../packages/solid/src/icons/alarm-clock.jsx'
+
 import ArrowRight from '../../packages/solid/src/icons/arrow-right.jsx'
 
 import {
   AlarmClock as AlarmClockFromIndex,
-  ArrowRight as ArrowRightFromIndex
+  ArrowRight as ArrowRightFromIndex,
 } from '../../packages/solid/src/index.jsx'
-
-import { createIcon } from '../../packages/solid/src/create-icon.jsx'
 
 afterEach(() => {
   cleanup()
@@ -22,13 +22,13 @@ describe('solid icons', () => {
         Icon: AlarmClock,
         expectedClass: 'i i-alarm-clock',
         expectedPathD: 'm1 4 3-3m16 0 3 3M12 7v5l3 3',
-        extraSelector: 'circle'
+        extraSelector: 'circle',
       },
       {
         Icon: ArrowRight,
         expectedClass: 'i i-arrow-right',
-        expectedPathD: 'm12 19 7-7-7-7m7 7H5'
-      }
+        expectedPathD: 'm12 19 7-7-7-7m7 7H5',
+      },
     ]
 
     for (const { Icon, expectedClass, expectedPathD, extraSelector } of cases) {
@@ -59,10 +59,10 @@ describe('solid icons', () => {
     const { container } = render(() => (
       <ArrowRight
         size={48}
-        color='red'
+        color="red"
         strokeWidth={1.5}
-        class='extra-class'
-        data-testid='arrow-right-icon'
+        class="extra-class"
+        data-testid="arrow-right-icon"
       />
     ))
 
@@ -81,25 +81,25 @@ describe('solid icons', () => {
       {
         tag: 'g',
         attrs: {
-          class: 'node-group',
+          'class': 'node-group',
           'stroke-width': '3',
           'fill-rule': 'evenodd',
-          'stroke-dasharray': '4 2'
+          'stroke-dasharray': '4 2',
         },
         children: [
           {
             tag: 'path',
-            attrs: { d: 'M0 0h1' }
+            attrs: { d: 'M0 0h1' },
           },
           {
             tag: 'path',
             attrs: {
-              d: 'M1 1h1',
-              'clip-rule': 'evenodd'
-            }
-          }
-        ]
-      }
+              'd': 'M1 1h1',
+              'clip-rule': 'evenodd',
+            },
+          },
+        ],
+      },
     ])
 
     const { container } = render(() => CustomIcon({}))

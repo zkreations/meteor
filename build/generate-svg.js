@@ -1,11 +1,12 @@
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import process from 'node:process'
 
+import { processAllIcons } from './core/icons-pipeline.js'
 import config from './icons.config.js'
 import svgoConfig from './svgo.config.js'
-import { processAllIcons } from './core/icons-pipeline.js'
 
-function toTitleFromIconName (iconName) {
+function toTitleFromIconName(iconName) {
   return iconName
     .split('-')
     .filter(Boolean)
@@ -13,22 +14,22 @@ function toTitleFromIconName (iconName) {
     .join(' ')
 }
 
-function getDefaultMetadata (iconName) {
+function getDefaultMetadata(iconName) {
   return {
     name: iconName,
     title: toTitleFromIconName(iconName),
     categories: [],
     tags: [],
     aliases: [],
-    keywords: []
+    keywords: [],
   }
 }
 
-function sortCaseInsensitive (a, b) {
+function sortCaseInsensitive(a, b) {
   return a.localeCompare(b, undefined, { sensitivity: 'base' })
 }
 
-async function syncIconMetadata (iconsDir, svgIconNames) {
+async function syncIconMetadata(iconsDir, svgIconNames) {
   const svgIconSet = new Set(svgIconNames)
   const entries = await fs.readdir(iconsDir, { withFileTypes: true })
 
@@ -59,28 +60,29 @@ async function syncIconMetadata (iconsDir, svgIconNames) {
   }
 }
 
-async function generateIconsFiles () {
+async function generateIconsFiles() {
   try {
     const processed = await processAllIcons({
       iconsDir: config.iconsDir,
       writeNormalized: true,
       svgoConfig,
-      defaultSvgAttributes: config.defaultSvgAttributes
+      defaultSvgAttributes: config.defaultSvgAttributes,
     })
 
     const svgIconNames = processed.map(({ iconName }) => iconName)
     await syncIconMetadata(config.iconsDir, svgIconNames)
 
     const iconData = processed.map(({ iconName, nodes }) => ({
-      [iconName]: { nodes }
+      [iconName]: { nodes },
     }))
     const iconMap = Object.assign({}, ...iconData)
     const jsonContent = JSON.stringify(iconMap)
 
     await fs.writeFile(path.join(config.outputDir, config.jsonFilename), jsonContent, 'utf8')
 
-    console.log('SVG files processed, metadata synchronized, and icons.json generated')
-  } catch (error) {
+    console.warn('SVG files processed, metadata synchronized, and icons.json generated')
+  }
+  catch (error) {
     console.error('Error:', error.message)
     process.exit(1)
   }

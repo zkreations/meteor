@@ -1,33 +1,33 @@
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 import * as cheerio from 'cheerio'
 import { optimize } from 'svgo'
 
 import { readIconFiles } from './icon-file-utils.js'
 
-function serializeNode (el) {
+function serializeNode(el) {
   return {
     tag: el.tagName,
     attrs: Object.fromEntries(
       Object.entries(el.attribs || {}).map(([k, v]) => {
         const num = Number(v)
         return [k, Number.isNaN(num) ? v : num]
-      })
+      }),
     ),
     ...(el.children?.length
       ? { children: el.children.filter(c => c.type === 'tag').map(serializeNode) }
-      : {})
+      : {}),
   }
 }
 
-function extractNodes ($svg) {
+function extractNodes($svg) {
   return $svg.children()
     .toArray()
     .filter(el => el.type === 'tag')
     .map(serializeNode)
 }
 
-export function normalizeSvgContent (rawSvg, iconName, options) {
+export function normalizeSvgContent(rawSvg, iconName, options) {
   const { svgoConfig, defaultSvgAttributes } = options
   const optimizedSvg = optimize(rawSvg, svgoConfig)
 
@@ -45,15 +45,15 @@ export function normalizeSvgContent (rawSvg, iconName, options) {
   return {
     finalSvg: $newSvg.toString(),
     nodes: extractNodes($newSvg),
-    innerContent: $newSvg.children().toString()
+    innerContent: $newSvg.children().toString(),
   }
 }
 
-export async function processIconFile (filePath, options = {}) {
+export async function processIconFile(filePath, options = {}) {
   const {
     writeNormalized = false,
     svgoConfig,
-    defaultSvgAttributes
+    defaultSvgAttributes,
   } = options
 
   const fileName = path.basename(filePath)
@@ -62,7 +62,7 @@ export async function processIconFile (filePath, options = {}) {
 
   const { finalSvg, nodes, innerContent } = normalizeSvgContent(rawSvg, iconName, {
     svgoConfig,
-    defaultSvgAttributes
+    defaultSvgAttributes,
   })
 
   if (writeNormalized && finalSvg !== rawSvg) {
@@ -74,11 +74,11 @@ export async function processIconFile (filePath, options = {}) {
     filePath,
     nodes,
     finalSvg,
-    innerContent
+    innerContent,
   }
 }
 
-export async function processAllIcons (options) {
+export async function processAllIcons(options) {
   const {
     iconsDir,
     ...rest

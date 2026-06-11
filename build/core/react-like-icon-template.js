@@ -1,4 +1,4 @@
-export function buildReactLikeCreateIconSource (runtimeImport) {
+export function buildReactLikeCreateIconSource(runtimeImport) {
   return `import * as IconRuntime from '${runtimeImport}'
 
 const ATTR_MAP = {

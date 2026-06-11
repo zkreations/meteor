@@ -1,13 +1,13 @@
-import { describe, expect, it } from 'vitest'
-import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
+import { describe, expect, it } from 'vitest'
 import {
   getInstalledPackageVersion,
   getWorkspaceRoot,
   npmBuild,
   npmInstall,
-  toPosixPath
+  toPosixPath,
 } from '../smoke-utils.js'
 
 const workspaceRoot = getWorkspaceRoot(import.meta.url)
@@ -31,38 +31,38 @@ describe('solid package consumer smoke', () => {
         version: '1.0.0',
         type: 'module',
         scripts: {
-          build: 'vite build'
+          build: 'vite build',
         },
         dependencies: {
           '@meteor-icons/solid': `file:${meteorSolidPath}`,
-          'solid-js': installedSolidVersion
+          'solid-js': installedSolidVersion,
         },
         devDependencies: {
-          vite: `file:${vitePath}`,
-          'vite-plugin-solid': installedSolidPluginVersion
-        }
+          'vite': `file:${vitePath}`,
+          'vite-plugin-solid': installedSolidPluginVersion,
+        },
       }
 
       writeFileSync(join(tempRoot, 'package.json'), JSON.stringify(packageJson, null, 2))
 
       writeFileSync(
         join(tempRoot, 'index.html'),
-        '<!doctype html><html><body><div id="app"></div><script type="module" src="/src/main.jsx"></script></body></html>'
+        '<!doctype html><html><body><div id="app"></div><script type="module" src="/src/main.jsx"></script></body></html>',
       )
 
       writeFileSync(
         join(tempRoot, 'vite.config.js'),
-        "import { defineConfig } from 'vite'\nimport solid from 'vite-plugin-solid'\n\nexport default defineConfig({ plugins: [solid()] })\n"
+        'import { defineConfig } from \'vite\'\nimport solid from \'vite-plugin-solid\'\n\nexport default defineConfig({ plugins: [solid()] })\n',
       )
 
       writeFileSync(
         join(srcDir, 'App.jsx'),
-        "import { AlarmClock, ArrowRight } from '@meteor-icons/solid'\nimport AlarmClockByPath from '@meteor-icons/solid/icons/alarm-clock'\n\nexport default function App () {\n  return (\n    <main>\n      <AlarmClock size={32} strokeWidth={1.25} data-testid=\"named-export\" />\n      <ArrowRight size={28} color=\"tomato\" data-testid=\"second-icon\" />\n      <AlarmClockByPath size={24} data-testid=\"subpath-export\" />\n    </main>\n  )\n}\n"
+        'import { AlarmClock, ArrowRight } from \'@meteor-icons/solid\'\nimport AlarmClockByPath from \'@meteor-icons/solid/icons/alarm-clock\'\n\nexport default function App () {\n  return (\n    <main>\n      <AlarmClock size={32} strokeWidth={1.25} data-testid="named-export" />\n      <ArrowRight size={28} color="tomato" data-testid="second-icon" />\n      <AlarmClockByPath size={24} data-testid="subpath-export" />\n    </main>\n  )\n}\n',
       )
 
       writeFileSync(
         join(srcDir, 'main.jsx'),
-        "import { render } from 'solid-js/web'\nimport App from './App'\n\nrender(() => <App />, document.getElementById('app'))\n"
+        'import { render } from \'solid-js/web\'\nimport App from \'./App\'\n\nrender(() => <App />, document.getElementById(\'app\'))\n',
       )
 
       npmInstall(tempRoot)
@@ -73,7 +73,8 @@ describe('solid package consumer smoke', () => {
 
       const indexContent = readFileSync(distIndex, 'utf8')
       expect(indexContent.includes('/assets/')).toBe(true)
-    } finally {
+    }
+    finally {
       rmSync(tempRoot, { recursive: true, force: true })
     }
   })
