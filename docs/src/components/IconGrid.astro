@@ -5,6 +5,7 @@ import { getIconList } from '../utils/iconUtils'
 import { capitalize } from '../utils/helpers'
 import IconFilters from './IconFilters.astro'
 import IconCard from './IconCard.astro'
+import IconModal from './IconModal.astro'
 
 const icons = getIconList(MeteorIcons)
 const entries = await getCollection('icons')
@@ -37,7 +38,7 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
 ---
 
 <main class="py-10 wrapper">
-  <div data-icon-grid class="flex flex-col gap-8">
+  <div class="flex flex-col gap-8" data-icon-grid>
     <IconFilters total={icons.length} />
     {sortedGroups.map(([category, items]) => (
       <section data-section={category}>
@@ -61,6 +62,8 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
     <p data-icon-empty class="hidden py-10 text-center text-slate-500">
       No icons found with your filters.
     </p>
+
+    <IconModal />
   </div>
 </main>
 
@@ -69,7 +72,9 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
   import { initIconGrid } from '../scripts/iconGrid'
   import { initLazyLoadIcons } from '../scripts/lazyLoadIcons'
 
-  document.querySelectorAll('[data-icon-grid]').forEach((root) => {
+  const root = document.querySelector('[data-icon-grid]')
+
+  function initIconGridPage() {
     if (!(root instanceof HTMLElement)) return
 
     initIconGrid(root)
@@ -80,8 +85,10 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
 
     buttons.forEach((button) => {
       if (button instanceof HTMLElement) {
-        initDropdown(button, activeClass)
+        initDropdown(button, activeClass, root)
       }
     })
-  })
+  }
+
+  initIconGridPage()
 </script>

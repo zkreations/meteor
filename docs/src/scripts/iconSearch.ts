@@ -1,5 +1,7 @@
 import { debounce } from '../utils/debounce'
 import { buildCounterLabel, isIconMatch } from '../utils/iconGrid'
+import { cloneSvg } from '../utils/iconUtils'
+import { ICON_CATEGORY_CHANGE } from './iconCategoryChange'
 
 interface SearchAPIResponse {
   icons: { name: string, searchIndex: string }[]
@@ -10,164 +12,151 @@ export function initIconSearch(root: HTMLElement) {
   const searchInput = root.querySelector<HTMLInputElement>('[data-icon-search]')
   const counter = root.querySelector('[data-icon-counter]')
   const emptyState = root.querySelector('[data-icon-empty]')
-  const categoryButtons = root.querySelectorAll<HTMLElement>('[data-category]')
+  const categoryButtons = [...root.querySelectorAll<HTMLElement>('[data-category]')]
   const categoryLabel = root.querySelector('[data-category-label]')
   const categoryIconSlot = root.querySelector<HTMLElement>('[data-category-icon]')
-  const svgSkeleton = document.querySelector('svg-skeleton')
+  const sections = [...root.querySelectorAll<HTMLElement>('section[data-section]')]
+
   const defaultCategoryIcon = categoryIconSlot?.querySelector('svg')?.cloneNode(true) as
     | SVGElement
     | undefined
 
-  const updateActiveCategoryUI = (selectedButton: HTMLElement) => {
-    categoryButtons.forEach((button) => {
-      const isSelected = button === selectedButton
-      button.classList.toggle('dropdown-item-active', isSelected)
-      button.setAttribute('aria-current', isSelected ? 'true' : 'false')
-
-      const marker = button.querySelector<HTMLElement>('span[aria-hidden="true"]')
-      if (marker) {
-        marker.classList.toggle('opacity-0', !isSelected)
-      }
-    })
-  }
-
   const searchIndexByName = new Map<string, string>()
   const categoryIconMap = new Map<string, string>()
 
-  const sanitizeSvgClone = (svg: SVGElement) => {
-    svg.removeAttribute('style')
-    svg.removeAttribute('class')
-    svg.querySelectorAll('*').forEach(el => el.removeAttribute('style'))
-    return svg
+  let activeCategory = 'all'
+
+  const getCategoryIconName = () =>
+    activeCategory === 'all'
+      ? undefined
+      : categoryIconMap.get(activeCategory)
+
+  const getCategorySvg = (iconName?: string) => {
+    if (!iconName)
+      return null
+
+    return root.querySelector<SVGElement>(
+      `[data-name="${iconName}"] .icon-preview svg`,
+    )
   }
 
-  const updateCategoryButtonIcon = (iconName?: string) => {
+  const updateCategoryIcon = () => {
     if (!categoryIconSlot)
       return
 
-    if (!iconName) {
-      if (defaultCategoryIcon) {
-        const clone = defaultCategoryIcon.cloneNode(true) as SVGElement
-        sanitizeSvgClone(clone)
-        categoryIconSlot.replaceChildren(clone)
-      }
+    const sourceSvg = getCategorySvg(getCategoryIconName())
+
+    if (sourceSvg) {
+      categoryIconSlot.replaceChildren(cloneSvg(sourceSvg))
       return
     }
 
-    const sourceSvg = root.querySelector<SVGElement>(`[data-name="${iconName}"] .icon-preview svg`)
-    if (!sourceSvg)
-      return
-
-    const buttonSvg = sourceSvg.cloneNode(true) as SVGElement
-    sanitizeSvgClone(buttonSvg)
-
-    categoryIconSlot.replaceChildren(buttonSvg)
+    if (defaultCategoryIcon) {
+      categoryIconSlot.replaceChildren(cloneSvg(defaultCategoryIcon))
+    }
   }
 
-  let activeCategory = 'all'
+  const updateActiveCategoryUI = (selectedButton: HTMLElement) => {
+    categoryButtons.forEach((button) => {
+      const selected = button === selectedButton
+
+      button.classList.toggle('dropdown-item-active', selected)
+      button.setAttribute('aria-current', String(selected))
+
+      button
+        .querySelector<HTMLElement>('span[aria-hidden="true"]')
+        ?.classList
+        .toggle('opacity-0', !selected)
+    })
+  }
 
   const updateVisibleIcons = () => {
     const query = searchInput?.value ?? ''
-    let globalVisibleCount = 0
-
-    const sections = root.querySelectorAll<HTMLElement>('section[data-section]')
+    let totalVisible = 0
 
     sections.forEach((section) => {
-      const sectionCategory = section.dataset.section ?? ''
+      const category = section.dataset.section ?? ''
       const sectionCount = section.querySelector<HTMLElement>('[data-section-count]')
 
-      if (activeCategory !== 'all' && sectionCategory !== activeCategory) {
+      if (activeCategory !== 'all' && category !== activeCategory) {
         section.classList.add('hidden')
         return
       }
 
-      const cards = section.querySelectorAll<HTMLElement>('[data-name]')
-      let visibleInSection = 0
+      let visibleCount = 0
 
-      cards.forEach((card) => {
+      section.querySelectorAll<HTMLElement>('[data-name]').forEach((card) => {
         const name = card.dataset.name ?? ''
         const searchIndex = searchIndexByName.get(name) ?? name
-
         const visible = isIconMatch(searchIndex, query)
+
         card.classList.toggle('hidden!', !visible)
 
         if (visible)
-          visibleInSection++
+          visibleCount++
       })
 
-      if (sectionCount) {
-        sectionCount.textContent = `[${visibleInSection}]`
-      }
+      sectionCount && (sectionCount.textContent = `[${visibleCount}]`)
+      section.classList.toggle('hidden', visibleCount === 0)
 
-      section.classList.toggle('hidden', visibleInSection === 0)
-      globalVisibleCount += visibleInSection
+      totalVisible += visibleCount
     })
 
-    if (counter)
-      counter.textContent = buildCounterLabel(globalVisibleCount)
-    emptyState?.classList.toggle('hidden', globalVisibleCount !== 0)
+    counter && (counter.textContent = buildCounterLabel(totalVisible))
+    emptyState?.classList.toggle('hidden', totalVisible !== 0)
   }
 
   const loadSearchIndex = async () => {
     try {
-      const res = await fetch('/api/icons-search.json')
-      if (!res.ok)
+      const response = await fetch('/api/icons-search.json')
+
+      if (!response.ok)
         return
 
-      const payload = (await res.json()) as SearchAPIResponse
+      const payload = await response.json() as SearchAPIResponse
 
-      payload.icons.forEach(i => searchIndexByName.set(i.name, i.searchIndex))
-      payload.categories.forEach(c => categoryIconMap.set(c.name, c.icon))
+      payload.icons.forEach(({ name, searchIndex }) => {
+        searchIndexByName.set(name, searchIndex)
+      })
 
-      if (activeCategory === 'all') {
-        updateCategoryButtonIcon()
-      }
-      else {
-        updateCategoryButtonIcon(categoryIconMap.get(activeCategory))
-      }
+      payload.categories.forEach(({ name, icon }) => {
+        categoryIconMap.set(name, icon)
+      })
 
+      updateCategoryIcon()
       updateVisibleIcons()
     }
-    catch {}
+    catch (error) {
+      console.error('Failed to load icons search index', error)
+    }
   }
 
-  categoryButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      activeCategory = button.dataset.category ?? 'all'
-      updateActiveCategoryUI(button)
+  const handleCategoryChange = (button: HTMLElement) => {
+    activeCategory = button.dataset.category ?? 'all'
 
-      if (categoryLabel) {
-        categoryLabel.textContent
-          = button.querySelector('span.truncate')?.textContent || 'Categories'
-      }
+    updateActiveCategoryUI(button)
 
-      if (activeCategory === 'all') {
-        updateCategoryButtonIcon()
-      }
-      else {
-        updateCategoryButtonIcon(categoryIconMap.get(activeCategory))
-      }
+    categoryLabel!.textContent
+      = button.querySelector('span.truncate')?.textContent || 'Categories'
 
-      if (svgSkeleton) {
-        if (activeCategory === 'all') {
-          svgSkeleton.setAttribute('data-random-selector', '.icon-preview svg')
-        }
-        else {
-          const icon = categoryIconMap.get(activeCategory)
-          if (icon) {
-            svgSkeleton.setAttribute(
-              'data-random-selector',
-              `[data-name="${icon}"] .icon-preview svg`,
-            )
-          }
-        }
-      }
+    updateCategoryIcon()
+    updateVisibleIcons()
 
-      updateVisibleIcons()
-    })
-  })
+    document.dispatchEvent(new CustomEvent(ICON_CATEGORY_CHANGE, {
+      detail: {
+        svg: getCategorySvg(getCategoryIconName()),
+      },
+    }))
+  }
 
-  searchInput?.addEventListener('input', debounce(updateVisibleIcons, 300))
+  categoryButtons.forEach(button =>
+    button.addEventListener('click', () => handleCategoryChange(button)),
+  )
+
+  searchInput?.addEventListener(
+    'input',
+    debounce(updateVisibleIcons, 300),
+  )
 
   updateVisibleIcons()
   void loadSearchIndex()

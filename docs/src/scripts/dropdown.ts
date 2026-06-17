@@ -3,6 +3,7 @@ const ACTIVE_CLASS = 'is-active'
 export function initDropdown(
   button: HTMLElement | null,
   activeClass: string = ACTIVE_CLASS,
+  root: HTMLElement | null,
 ): void {
   if (!button)
     return
@@ -11,7 +12,6 @@ export function initDropdown(
   if (!targetKey)
     return
 
-  const root = button.closest('[data-icon-grid]')
   if (!root)
     return
 
