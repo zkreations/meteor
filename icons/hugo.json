@@ -10,7 +10,8 @@
     "generator",
     "markdown",
     "web",
-    "cms"
+    "cms",
+    "logo"
   ],
   "keywords": [
     "static site generator",

@@ -10,7 +10,8 @@
     "repository",
     "devops",
     "ci",
-    "cd"
+    "cd",
+    "logo"
   ],
   "keywords": [
     "code hosting",

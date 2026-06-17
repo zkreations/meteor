@@ -10,7 +10,8 @@
     "framework",
     "web",
     "ssr",
-    "frontend"
+    "frontend",
+    "logo"
   ],
   "keywords": [
     "react framework",

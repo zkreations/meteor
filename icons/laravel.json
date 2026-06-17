@@ -10,7 +10,8 @@
     "backend",
     "framework",
     "web",
-    "api"
+    "api",
+    "logo"
   ],
   "keywords": [
     "php framework",
