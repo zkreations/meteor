@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import { Search, Grid, AngleDown, SlidersSimple, Rotate } from '@meteor-icons/astro'
+import { Search, Grid, ChevronDown, SlidersSimple, Rotate } from '@meteor-icons/astro'
 import { capitalize } from '../utils/helpers'
 
 interface Props {
@@ -38,7 +38,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
         <Grid/>
       </span>
       <span data-category-label class="truncate">All Categories</span>
-      <AngleDown size={20} class="ml-auto shrink-0" />
+      <ChevronDown size={20} class="ml-auto shrink-0" />
     </button>
 
     <div class="left-0 dropdown overflow-y-auto max-h-75 scrollbar w-full" data-dropdown="categories" role="menu" aria-label="Categories">
