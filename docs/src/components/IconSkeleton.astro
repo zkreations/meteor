@@ -1,14 +1,12 @@
 ---
+import { createGridPath } from '../utils/iconUtils'
+
 interface Props {
   customClass?: string;
 }
 
 const { customClass } = Astro.props;
-
-const gridPath = Array.from({ length: 23 }, (_, i) => {
-  const pos = (i + 1) * 10;
-  return `M0 ${pos}H240 M${pos} 0V240`;
-}).join(' ');
+const gridPath = createGridPath(23);
 ---
 
 <svg-skeleton class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`}>

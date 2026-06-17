@@ -102,3 +102,12 @@ export function svgToPng(svg: SVGElement, size: number): Promise<Blob | null> {
     image.src = svgUrl
   })
 }
+
+// Create an SVG path string for a grid pattern of the specified length
+// @param length - The number of grid lines in each direction
+export function createGridPath(length: number): string {
+  return Array.from({ length }, (_, i) => {
+    const pos = (i + 1) * 10
+    return `M0 ${pos}H240 M${pos} 0V240`
+  }).join(' ')
+}
