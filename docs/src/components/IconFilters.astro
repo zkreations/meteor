@@ -29,7 +29,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
 ---
 
 <div
-  class={`z-10 flex gap-4 items-center p-3 bg-white border border-slate-200 shadow-lg transition duration-300 focus-within:border-teal-500 focus-within:ring-4 ring-teal-500/10 rounded-lg sticky top-2 ${className}`}
+  class={`z-10 flex gap-4 items-center p-3 bg-white border border-slate-200 shadow-lg transition duration-300 focus-within:border-brand-active focus-within:ring-4 ring-brand-active/10 rounded-lg sticky top-2 ${className}`}
 >
 
   <div class="relative select-none">
@@ -69,13 +69,14 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
     aria-label="Search icons"
     autocomplete="off"
     spellcheck="false"
+    name="icon-search"
   />
 
   <span class="pointer-events-none text-slate-400">
     <Search />
   </span>
 
-  <div class="relative select-none bg-slate-100 rounded-md flex h-12">
+  <div class="relative select-none bg-slate-100 rounded-lg flex h-12">
     <button class="btn" data-outside="settings" aria-label="Icon settings">
       <SlidersSimple />
     </button>

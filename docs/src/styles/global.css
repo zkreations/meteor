@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
-@layer base {
+@theme {
+  --color-brand: var(--color-teal-700);
+  --color-brand-subtle: var(--color-teal-50);
+  --color-brand-border: var(--color-teal-300);
+  --color-brand-active: var(--color-teal-500);
+}
+
+@layer components {
   .wrapper {
     @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
   }
+
   .dropdown {
-    @apply absolute top-full mt-2 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+    @apply absolute top-full mt-2 bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
   }
+
   .dropdown-visible {
     @apply opacity-100 pointer-events-auto scale-100 translate-y-0;
   }
@@ -16,7 +25,7 @@
   }
 
   .dropdown-item-active {
-    @apply bg-teal-50 text-teal-700;
+    @apply bg-brand-subtle text-brand;
   }
 
   .btn {
@@ -32,7 +41,7 @@
   }
 
   .icon-slider::-webkit-slider-thumb {
-    @apply appearance-none w-4 h-4 rounded-full border-2 border-teal-700 bg-white shadow-sm -mt-1.5;
+    @apply appearance-none w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm -mt-1.5;
   }
 
   .icon-slider:focus::-webkit-slider-thumb {
@@ -44,7 +53,7 @@
   }
 
   .icon-slider::-moz-range-thumb {
-    @apply w-4 h-4 rounded-full border-2 border-teal-700 bg-white shadow-sm;
+    @apply w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm;
   }
 
   .icon-slider:focus::-moz-range-thumb {
@@ -52,11 +61,15 @@
   }
 
   .size-chip {
-    @apply inline-flex items-center justify-center h-7 px-2.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50;
+    @apply inline-flex items-center justify-center h-7 px-2.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-brand-border hover:text-brand hover:bg-brand-subtle;
   }
 
   .size-chip-active {
-    @apply border-teal-500 bg-teal-50 text-teal-700 shadow-sm;
+    @apply border-brand-active bg-brand-subtle text-brand shadow-sm;
+  }
+
+  .chip-list {
+    @apply mt-2 flex flex-wrap gap-2;
   }
 
   .section-content {
@@ -76,7 +89,7 @@
   }
 
   .icon-card {
-    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-teal-500 cursor-pointer relative;
+    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-brand-active cursor-pointer relative;
   }
 
   .icon-preview {
@@ -84,7 +97,7 @@
   }
 
   .icon-text {
-    @apply text-slate-500 hover:text-teal-500 transition duration-300 cursor-text;
+    @apply text-slate-500 transition duration-300;
   }
 
   .icon-actions {
@@ -95,15 +108,11 @@
     @apply items-center justify-center py-3 w-full transition h-auto;
   }
 
-  .chip-list {
-    @apply mt-2 flex flex-wrap gap-2;
-  }
-
   .scrollbar::-webkit-scrollbar {
     @apply w-1;
   }
 
-  .scrollbar-custom::-webkit-scrollbar-track {
+  .scrollbar::-webkit-scrollbar-track {
     @apply bg-gray-50;
   }
 
