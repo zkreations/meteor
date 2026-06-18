@@ -33,15 +33,15 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
 >
 
   <div class="relative select-none">
-    <button class="btn w-50" data-outside="categories" aria-label="Filter by category">
+    <button class="btn md:w-50" data-outside="categories" aria-label="Filter by category">
       <span data-category-icon class="shrink-0">
         <Grid/>
       </span>
-      <span data-category-label class="truncate">All Categories</span>
+      <span data-category-label class="truncate md:flex hidden">All Categories</span>
       <ChevronDown size={20} class="ml-auto shrink-0" />
     </button>
 
-    <div class="left-0 dropdown overflow-y-auto max-h-75 scrollbar w-full" data-dropdown="categories" role="menu" aria-label="Categories">
+    <div class="left-0 dropdown overflow-y-auto max-h-75 min-w-50 scrollbar w-full" data-dropdown="categories" role="menu" aria-label="Categories">
       <div class="p-2">
 
         <button type="button" data-category="all" data-dropdown-close class="dropdown-item dropdown-item-active" aria-current="true">

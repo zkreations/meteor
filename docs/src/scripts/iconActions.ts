@@ -1,35 +1,7 @@
-import { cloneSvg, downloadBlob, svgToPng } from '../utils/iconUtils'
+import { downloadBlob, getActiveConfig, getProcessedSvgString, svgToPng } from '../utils/iconUtils'
+import { showToast } from './toast'
 
 export function initIconActions(root: HTMLElement) {
-  const getConfig = () => {
-    const sizeInput = root.querySelector<HTMLInputElement>('[data-setting-size]')
-    const size = sizeInput?.dataset.sizeActual || '24'
-    const stroke = root.querySelector<HTMLInputElement>('[data-setting-stroke]')?.value || '2'
-    const colorInput = root.querySelector<HTMLInputElement>('[data-setting-color]')
-
-    return {
-      size,
-      stroke,
-      color: colorInput?.dataset.colorActual || 'currentColor',
-    }
-  }
-
-  const getSvgString = (svg: SVGElement) => {
-    const config = getConfig()
-    const clone = cloneSvg(svg)
-    clone.setAttribute('width', config.size)
-    clone.setAttribute('height', config.size)
-    clone.setAttribute('stroke-width', config.stroke)
-
-    let str = clone.outerHTML
-
-    if (config.color !== 'currentColor') {
-      str = str.replace(/currentColor/g, config.color)
-    }
-
-    return str
-  }
-
   root.addEventListener('click', async (e) => {
     const target = e.target as HTMLElement
 
@@ -47,18 +19,22 @@ export function initIconActions(root: HTMLElement) {
     if (!svg)
       return
 
-    const svgStr = getSvgString(svg)
+    const config = getActiveConfig()
+    const svgStr = getProcessedSvgString(svg, config)
 
     if (btnCopy) {
       navigator.clipboard.writeText(svgStr)
+        .then(() => showToast('SVG copied!'))
+        .catch(() => showToast('Failed to copy SVG'))
     }
 
     if (btnSvg) {
       downloadBlob(svgStr, `${name}.svg`, 'image/svg+xml')
+      showToast('SVG downloaded!')
     }
 
     if (btnPng) {
-      const size = Number.parseInt(getConfig().size, 10) || 24
+      const size = Number.parseInt(config.size, 10) || 24
       const tmp = new DOMParser()
         .parseFromString(svgStr, 'image/svg+xml')
         .querySelector('svg') as SVGElement | null
@@ -70,6 +46,7 @@ export function initIconActions(root: HTMLElement) {
         return
 
       downloadBlob(blob, `${name}.png`, 'image/png')
+      showToast('PNG downloaded!')
     }
   })
 }

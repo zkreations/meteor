@@ -1,0 +1,49 @@
+---
+import { Download, Image, Copy } from '@meteor-icons/astro'
+import TabsFramework from './TabsFramework.astro'
+---
+
+<div
+  data-icon-modal
+  class="fixed inset-0 z-50 items-center justify-center bg-slate-950/50 p-4 modal flex"
+  role="dialog"
+  aria-modal="true"
+  aria-hidden="true"
+>
+  <button type="button" data-modal-backdrop class="absolute inset-0 -z-10 cursor-default" aria-label="Cerrar modal" tabindex="-1"></button>
+
+  <div class="w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl modal-dialog">
+    <div class="flex items-center gap-3">
+      <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-slate-200">
+        <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12"></div>
+      </div>
+
+      <div class="flex flex-col min-w-0 flex-1 items-start gap-1.5">
+        <button type="button" data-copy-name class="font-semibold text-slate-900 cursor-pointer hover:text-brand-active transition-colors duration-300" aria-label="Copy name" title="Copy name"></button>
+        <div class="flex items-center gap-1 *:text-sm *:text-slate-500 *:cursor-pointer *:transition-colors *:duration-300">
+          <button class="hover:text-brand-active" type="button" data-copy-component-name aria-label="Copy component name" title="Copy component name"></button>
+          <span aria-hidden="true" class="sm:flex hidden">·</span>
+          <button class="hover:text-brand-active sm:flex hidden" type="button" data-copy-html aria-label="Copy HTML" title="Copy HTML"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4" data-modal-tabs-wrapper>
+      <TabsFramework defaultFw="astro" />
+    </div>
+
+    <div class="mt-4 flex items-center gap-2 border-t border-slate-100 pt-4">
+      <button type="button" data-modal-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+        <Copy size={16} /> Copy SVG
+      </button>
+      <button type="button" data-modal-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+        <Image size={16} /> Download PNG
+      </button>
+      <button type="button" data-modal-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+        <Download size={16} /> Download SVG
+      </button>
+    </div>
+  </div>
+
+  <div data-modal-source-svg hidden></div>
+</div>
