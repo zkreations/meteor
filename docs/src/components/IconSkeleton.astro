@@ -3,13 +3,19 @@ import { createGridPath } from '../utils/iconUtils'
 
 interface Props {
   customClass?: string;
+  random?: boolean;
+  reactive?: boolean;
 }
 
-const { customClass } = Astro.props;
+const { customClass, random = false, reactive = false } = Astro.props;
 const gridPath = createGridPath(23);
 ---
 
-<svg-skeleton class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`}>
+<svg-skeleton
+  class={`svg-skeleton-wrapper w-full aspect-square rounded relative ${customClass}`}
+  data-random={random}
+  data-reactive={reactive}
+>
   <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto">
     <span class="sr-only">Toggle icon skeleton mode</span>
     <input type="checkbox" class="sr-only peer"/>

@@ -410,8 +410,18 @@ export class SvgSkeleton extends HTMLElement {
   private sourceSvg: SVGElement | null = null
 
   connectedCallback(): void {
+    this.captureInitialSource()
+
+    if (this.hasAttribute('data-reactive')) {
+      document.addEventListener(ICON_CATEGORY_CHANGE, this.handleIconCategoryChange)
+    }
+
+    if (!this.sourceSvg && this.hasAttribute('data-random')) {
+      this.pickRandomIcon()
+      return
+    }
+
     this.render()
-    document.addEventListener(ICON_CATEGORY_CHANGE, this.handleIconCategoryChange)
   }
 
   disconnectedCallback(): void {
@@ -427,8 +437,46 @@ export class SvgSkeleton extends HTMLElement {
     }
   }
 
+  private captureInitialSource(): void {
+    if (this.sourceSvg)
+      return
+
+    const sourceSlot = this.querySelector<HTMLElement>(SKELETON_CONFIG.selectors.sourceSlotSvg)
+    const initialSvg = sourceSlot?.querySelector('svg')
+
+    if (initialSvg) {
+      this.sourceSvg = initialSvg.cloneNode(true) as SVGElement
+    }
+  }
+
+  public pickRandomIcon(): void {
+    const candidates: readonly string[] = SKELETON_CONFIG.random.candidates
+    if (candidates.length === 0)
+      return
+
+    const name = candidates[Math.floor(Math.random() * candidates.length)]
+    const svg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
+
+    if (svg) {
+      this.setSourceSvg(svg)
+    }
+  }
+
+  public setSourceIconByName(name: string): void {
+    const svg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
+
+    if (svg) {
+      this.setSourceSvg(svg)
+    }
+  }
+
   public setSourceSvg(svg: SVGElement): void {
     this.sourceSvg = svg.cloneNode(true) as SVGElement
+    this.render()
+  }
+
+  public clearSourceSvg(): void {
+    this.sourceSvg = null
     this.render()
   }
 
@@ -449,29 +497,12 @@ export class SvgSkeleton extends HTMLElement {
 
     if (this.sourceSvg) {
       const svg = this.sourceSvg.cloneNode(true) as SVGElement
-
       svg.removeAttribute('class')
       svg.removeAttribute('style')
-
       sourceSlot.replaceChildren(svg)
     }
-    else {
-      const randomCandidates = SKELETON_CONFIG.random.candidates
 
-      if (sourceSlot && randomCandidates.length > 0) {
-        const name = randomCandidates[Math.floor(Math.random() * randomCandidates.length)]
-        const randomSvg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
-
-        if (randomSvg) {
-          const skeletonSource = randomSvg.cloneNode(true) as SVGElement
-          skeletonSource.removeAttribute('class')
-          skeletonSource.removeAttribute('style')
-          sourceSlot.replaceChildren(skeletonSource)
-        }
-      }
-    }
-
-    const rawSvg = sourceSlot?.innerHTML.trim() || ''
+    const rawSvg = sourceSlot.innerHTML.trim()
     if (!rawSvg)
       return
 
@@ -563,11 +594,6 @@ export class SvgSkeleton extends HTMLElement {
         svg.classList.add(SKELETON_CONFIG.classes.parentVisible)
       })
     })
-  }
-
-  public clearSourceSvg(): void {
-    this.sourceSvg = null
-    this.render()
   }
 }
 
