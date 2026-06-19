@@ -105,17 +105,18 @@ export function initIconModal(root: HTMLElement) {
   const bindCopy = (
     button: HTMLButtonElement | null,
     getText: () => string,
+    message = 'Copied to clipboard!',
   ) => {
     button?.addEventListener('click', () => {
       navigator.clipboard.writeText(getText())
-        .then(() => showToast('Copied to clipboard!'))
+        .then(() => showToast(message))
         .catch(() => showToast('Failed to copy to clipboard.'))
     })
   }
 
-  bindCopy(copyNameBtn, () => name)
-  bindCopy(copyComponentBtn, () => toPascalCase(name))
-  bindCopy(copyHtmlBtn, () => `<i data-i="${name}"></i>`)
+  bindCopy(copyNameBtn, () => name, 'Name copied!')
+  bindCopy(copyComponentBtn, () => toPascalCase(name), 'Component name copied!')
+  bindCopy(copyHtmlBtn, () => `<i data-i="${name}"></i>`, 'HTML snippet copied!')
 
   copySvgBtn?.addEventListener('click', () => {
     const svg = source?.querySelector<SVGElement>('svg')
