@@ -18,6 +18,8 @@ export function showToast(message: string, duration = 1500) {
     document.body.appendChild(container)
   }
 
+  container.classList.add('toast-container')
+
   const toast = document.createElement('div')
   toast.className = 'toast-item'
   toast.textContent = message
