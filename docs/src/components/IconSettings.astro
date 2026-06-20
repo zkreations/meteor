@@ -1,0 +1,70 @@
+---
+import { Rotate } from '@meteor-icons/astro'
+---
+
+<div class="px-5 py-4 border-b border-slate-100 flex justify-between items-center">
+  <h3 class="font-semibold text-slate-800">Settings</h3>
+  <button data-reset-settings class="text-sm font-medium text-slate-600 hover:text-slate-700 cursor-pointer transition">
+    <Rotate size={20} />
+  </button>
+</div>
+
+<div class="p-5 space-y-4">
+  <div class="icon-setting-group">
+    <label class="icon-setting-label" for="icon-color-picker">Color</label>
+    <label class="flex gap-2 items-center rounded-lg bg-slate-100 p-2 cursor-pointer">
+      <div class="w-12 h-8 rounded-md overflow-hidden border border-slate-200 relative">
+        <input
+          type="color"
+          data-setting-color
+          class="h-12 w-16 cursor-pointer bg-transparent absolute -ml-2 -mt-2"
+          id="icon-color-picker"
+        />
+      </div>
+      <span data-color-value class="ml-auto font-mono text-slate-500">
+        currentColor
+      </span>
+    </label>
+  </div>
+
+  <div class="icon-setting-group">
+    <div class="icon-setting-row">
+      <label class="icon-setting-label" for="icon-stroke-width">Stroke width</label>
+      <span data-stroke-value class="ml-auto text-sm text-slate-400 font-mono">2px</span>
+    </div>
+    <input
+      type="range"
+      data-setting-stroke
+      min="1"
+      max="2"
+      step="0.1"
+      value="2"
+      class="icon-slider w-full"
+      id="icon-stroke-width"
+    />
+  </div>
+
+  <div class="icon-setting-group">
+    <div class="icon-setting-row">
+      <label class="icon-setting-label" for="icon-size">Size</label>
+      <span data-size-value class="ml-auto text-sm text-slate-400 font-mono">24px</span>
+    </div>
+    <input
+      type="range"
+      data-setting-size
+      min="0"
+      max="340"
+      step="1"
+      value="8"
+      class="icon-slider w-full"
+      id="icon-size"
+    />
+    <div class="chip-list">
+      <button type="button" data-size-preset="16" class="size-chip">16</button>
+      <button type="button" data-size-preset="24" class="size-chip size-chip-active" aria-pressed="true">24</button>
+      <button type="button" data-size-preset="32" class="size-chip">32</button>
+      <button type="button" data-size-preset="48" class="size-chip">48</button>
+      <button type="button" data-size-preset="64" class="size-chip">64</button>
+    </div>
+  </div>
+</div>
