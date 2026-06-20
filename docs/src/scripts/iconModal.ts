@@ -18,6 +18,7 @@ export function initIconModal(root: HTMLElement) {
 
   const preview = modal.querySelector<HTMLElement>('[data-modal-icon-preview]')
   const source = modal.querySelector<HTMLElement>('[data-modal-source-svg]')
+  const viewFullInfoLink = modal.querySelector<HTMLAnchorElement>('[data-modal-view-full-info]')
   const copyNameBtn = modal.querySelector<HTMLButtonElement>('[data-copy-name]')
   const copyComponentBtn = modal.querySelector<HTMLButtonElement>('[data-copy-component-name]')
   const copyHtmlBtn = modal.querySelector<HTMLButtonElement>('[data-copy-html]')
@@ -49,6 +50,8 @@ export function initIconModal(root: HTMLElement) {
       copyComponentBtn.textContent = toPascalCase(name)
     if (copyHtmlBtn)
       copyHtmlBtn.textContent = `<i data-i="${name}"></i>`
+    if (viewFullInfoLink)
+      viewFullInfoLink.href = `/icons/${name}`
 
     preview?.replaceChildren(cloneSvg(svg, 24))
     source?.replaceChildren(cloneSvg(svg, 24))

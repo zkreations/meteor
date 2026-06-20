@@ -1,5 +1,5 @@
 ---
-import { Download, Image, Copy } from '@meteor-icons/astro'
+import { Download, Image, Copy, FileSearch } from '@meteor-icons/astro'
 import TabsFramework from './TabsFramework.astro'
 ---
 
@@ -26,6 +26,10 @@ import TabsFramework from './TabsFramework.astro'
           <button class="hover:text-brand-active sm:flex hidden" type="button" data-copy-html aria-label="Copy HTML" title="Copy HTML"></button>
         </div>
       </div>
+
+      <a href="#" data-modal-view-full-info class="ml-auto self-start text-slate-900 hover:text-brand-active transition-colors duration-300 flex items-center gap-1" aria-label="View full source code" title="View full info">
+        <FileSearch size={28} />
+      </a>
     </div>
 
     <div class="mt-4" data-modal-tabs-wrapper>
