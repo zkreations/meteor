@@ -1,7 +1,7 @@
 import { lockScroll, unlockScroll } from '../utils/helpers'
-import { cloneSvg, downloadBlob, getActiveConfig, getProcessedSvgString, svgToPng, toPascalCase } from '../utils/iconUtils'
+import { cloneSvg, toPascalCase } from '../utils/iconUtils'
+import { bindCopyTextOnClick, copyIconSvg, downloadIconPng, downloadIconSvg } from './clipboardActions'
 import { initTabsFramework } from './tabsFramework'
-import { showToast } from './toast'
 
 export function initIconModal(root: HTMLElement) {
   let isOpen = false
@@ -105,65 +105,25 @@ export function initIconModal(root: HTMLElement) {
       close()
   })
 
-  const bindCopy = (
-    button: HTMLButtonElement | null,
-    getText: () => string,
-    message = 'Copied to clipboard!',
-  ) => {
-    button?.addEventListener('click', () => {
-      navigator.clipboard.writeText(getText())
-        .then(() => showToast(message))
-        .catch(() => showToast('Failed to copy to clipboard.'))
-    })
-  }
-
-  bindCopy(copyNameBtn, () => name, 'Name copied!')
-  bindCopy(copyComponentBtn, () => toPascalCase(name), 'Component name copied!')
-  bindCopy(copyHtmlBtn, () => `<i data-i="${name}"></i>`, 'HTML snippet copied!')
+  bindCopyTextOnClick(copyNameBtn, 'Name copied!')
+  bindCopyTextOnClick(copyComponentBtn, 'Component name copied!')
+  bindCopyTextOnClick(copyHtmlBtn, 'HTML snippet copied!')
 
   copySvgBtn?.addEventListener('click', () => {
     const svg = source?.querySelector<SVGElement>('svg')
-    if (svg) {
-      const config = getActiveConfig()
-      const svgStr = getProcessedSvgString(svg, config)
-
-      navigator.clipboard.writeText(svgStr)
-        .then(() => showToast('SVG copied!'))
-        .catch(() => showToast('Failed to copy SVG'))
-    }
+    if (svg)
+      copyIconSvg(svg)
   })
 
   dlSvgBtn?.addEventListener('click', () => {
     const svg = source?.querySelector<SVGElement>('svg')
-    if (svg) {
-      const config = getActiveConfig()
-      const svgStr = getProcessedSvgString(svg, config)
-      downloadBlob(svgStr, `${name}.svg`, 'image/svg+xml')
-      showToast('SVG downloaded!')
-    }
+    if (svg)
+      downloadIconSvg(svg, name)
   })
 
-  dlPngBtn?.addEventListener('click', async () => {
+  dlPngBtn?.addEventListener('click', () => {
     const svg = source?.querySelector<SVGElement>('svg')
-    if (!svg)
-      return
-
-    const config = getActiveConfig()
-    const svgStr = getProcessedSvgString(svg, config)
-    const size = Number.parseInt(config.size, 10) || 120
-
-    const tmp = new DOMParser()
-      .parseFromString(svgStr, 'image/svg+xml')
-      .querySelector('svg') as SVGElement | null
-
-    if (!tmp)
-      return
-
-    const blob = await svgToPng(tmp, size)
-    if (!blob)
-      return
-
-    downloadBlob(blob, `${name}.png`, 'image/png')
-    showToast('PNG downloaded!')
+    if (svg)
+      downloadIconPng(svg, name, 120)
   })
 }

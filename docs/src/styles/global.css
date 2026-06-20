@@ -13,7 +13,7 @@
   }
 
   .dropdown {
-    @apply absolute top-full mt-2 bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+    @apply absolute top-full bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
   }
 
   .dropdown-visible {

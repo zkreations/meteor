@@ -1,6 +1,6 @@
 ---
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js'
-import { Download, Image, Copy } from '@meteor-icons/astro'
+import IconActions from './IconActions.astro'
 
 interface Props {
   name: string
@@ -15,15 +15,5 @@ const { name, IconComponent } = Astro.props
     <IconComponent size={24} />
     <p class="icon-text">{name}</p>
   </div>
-  <div class="icon-actions">
-    <button type="button" class="btn icon-action action-copy-svg" title="Copy SVG" tabindex="-1">
-      <Copy size={16} />
-    </button>
-    <button type="button" class="btn icon-action action-download-png" title="Download PNG" tabindex="-1">
-      <Image size={16} />
-    </button>
-    <button type="button" class="btn icon-action action-download-svg" title="Download SVG" tabindex="-1">
-      <Download size={16} />
-    </button>
-  </div>
+  <IconActions variant="compact" />
 </article>

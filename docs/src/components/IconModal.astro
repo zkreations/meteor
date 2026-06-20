@@ -1,6 +1,7 @@
 ---
-import { Download, Image, Copy, FileSearch } from '@meteor-icons/astro'
+import { FileSearch } from '@meteor-icons/astro'
 import TabsFramework from './TabsFramework.astro'
+import IconActions from './IconActions.astro'
 ---
 
 <div
@@ -36,16 +37,8 @@ import TabsFramework from './TabsFramework.astro'
       <TabsFramework defaultFw="astro" />
     </div>
 
-    <div class="mt-4 flex items-center gap-2 border-t border-slate-100 pt-4">
-      <button type="button" data-modal-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-        <Copy size={16} /> Copy SVG
-      </button>
-      <button type="button" data-modal-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-        <Image size={16} /> Download PNG
-      </button>
-      <button type="button" data-modal-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-        <Download size={16} /> Download SVG
-      </button>
+    <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-5">
+      <IconActions />
     </div>
   </div>
 
