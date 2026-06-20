@@ -433,7 +433,9 @@ export class SvgSkeleton extends HTMLElement {
       this.setSourceSvg(event.detail.svg)
     }
     else {
-      this.clearSourceSvg()
+      this.hasAttribute('data-random')
+        ? this.pickRandomIcon()
+        : this.clearSourceSvg()
     }
   }
 
