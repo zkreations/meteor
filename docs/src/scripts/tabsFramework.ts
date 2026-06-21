@@ -21,6 +21,7 @@ export function snippet(name: string, fw: FwKey): string {
 
 export function initTabsFramework(container: HTMLElement, initialName: string = '') {
   const implDisplay = container.querySelector<HTMLElement>('[data-impl-display]')
+  const staticContents = Array.from(container.querySelectorAll<HTMLElement>('[data-impl-content]'))
   const implButtons = Array.from(container.querySelectorAll<HTMLButtonElement>('[data-impl-toggle]'))
   const copyImplBtn = container.querySelector<HTMLButtonElement>('[data-copy-impl]')
 
@@ -28,9 +29,22 @@ export function initTabsFramework(container: HTMLElement, initialName: string = 
   let currentFw: FwKey = (container.querySelector('[data-impl-toggle][aria-selected="true"]') as HTMLButtonElement)?.dataset.implToggle as FwKey || 'react'
 
   const updateDisplay = () => {
-    if (implDisplay && currentName) {
-      implDisplay.textContent = snippet(currentName, currentFw)
+    if (implDisplay) {
+      if (currentName)
+        implDisplay.textContent = snippet(currentName, currentFw)
+      return
     }
+
+    staticContents.forEach((el) => {
+      el.classList.toggle('hidden', el.dataset.implFw !== currentFw)
+    })
+  }
+
+  const getActiveContent = (): string => {
+    if (implDisplay)
+      return implDisplay.textContent ?? ''
+
+    return staticContents.find(el => el.dataset.implFw === currentFw)?.textContent ?? ''
   }
 
   const setFw = (key: FwKey) => {
@@ -44,9 +58,11 @@ export function initTabsFramework(container: HTMLElement, initialName: string = 
   )
 
   copyImplBtn?.addEventListener('click', async () => {
-    if (!currentName)
+    const content = getActiveContent()
+    if (!content)
       return
-    await navigator.clipboard.writeText(snippet(currentName, currentFw))
+
+    await navigator.clipboard.writeText(content)
       .then(() => showToast('Implementation copied!'))
       .catch(() => showToast('Failed to copy implementation.'))
   })

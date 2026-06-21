@@ -22,9 +22,10 @@ export function initIconModal(root: HTMLElement) {
   const copyNameBtn = modal.querySelector<HTMLButtonElement>('[data-copy-name]')
   const copyComponentBtn = modal.querySelector<HTMLButtonElement>('[data-copy-component-name]')
   const copyHtmlBtn = modal.querySelector<HTMLButtonElement>('[data-copy-html]')
-  const copySvgBtn = modal.querySelector<HTMLButtonElement>('[data-modal-copy-svg]')
-  const dlSvgBtn = modal.querySelector<HTMLButtonElement>('[data-modal-download-svg]')
-  const dlPngBtn = modal.querySelector<HTMLButtonElement>('[data-modal-download-png]')
+
+  const copySvgBtn = modal.querySelector<HTMLButtonElement>('[data-action-copy-svg]')
+  const dlSvgBtn = modal.querySelector<HTMLButtonElement>('[data-action-download-svg]')
+  const dlPngBtn = modal.querySelector<HTMLButtonElement>('[data-action-download-png]')
 
   let name = ''
 

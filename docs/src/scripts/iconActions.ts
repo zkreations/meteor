@@ -13,9 +13,9 @@ export function initIconActions(root: HTMLElement) {
     if (!btnCopy && !btnPng && !btnSvg)
       return
 
-    const article = target.closest('article[data-name]')
-    const name = article?.getAttribute('data-name') || 'icon'
-    const svg = article?.querySelector<SVGElement>('.icon-preview svg')
+    const container = target.closest<HTMLElement>('[data-name]')
+    const name = container?.getAttribute('data-name') || 'icon'
+    const svg = container?.querySelector<SVGElement>('.icon-preview svg, .source-slot svg')
 
     if (!svg)
       return

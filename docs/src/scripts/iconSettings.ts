@@ -1,6 +1,7 @@
 import { clamp, safeParseInt } from '../utils/iconUtils'
 
 export function initIconSettings(root: HTMLElement) {
+  const svgSkeleton = document.querySelector<HTMLElement>('.svg-skeleton-wrapper')
   const colorInput = root.querySelector<HTMLInputElement>('[data-setting-color]')
   const colorValue = root.querySelector('[data-color-value]')
   const strokeInput = root.querySelector<HTMLInputElement>('[data-setting-stroke]')
@@ -76,16 +77,19 @@ export function initIconSettings(root: HTMLElement) {
     syncSizeInput()
     syncSizePresetState()
 
-    const visualSize = clamp(safeParseInt(currentConfig.size, 24), 16, 48)
+    const visualSize = clamp(safeParseInt(currentConfig.size, 24), 16, 64)
 
-    root.style.setProperty('--icon-grid-preview-stroke-width', currentConfig.stroke)
-    root.style.setProperty('--icon-grid-preview-size', `${visualSize}px`)
+    root.style.setProperty('--icon-customize-stroke-width', currentConfig.stroke)
+    root.style.setProperty('--icon-customize-size', `${visualSize}px`)
+    svgSkeleton?.style.setProperty('--icon-customize-stroke-width', currentConfig.stroke)
 
     if (currentConfig.color === 'currentColor') {
-      root.style.removeProperty('--icon-grid-preview-color')
+      root.style.removeProperty('--icon-customize-color')
+      svgSkeleton?.style.removeProperty('--icon-customize-color')
     }
     else {
-      root.style.setProperty('--icon-grid-preview-color', currentConfig.color)
+      root.style.setProperty('--icon-customize-color', currentConfig.color)
+      svgSkeleton?.style.setProperty('--icon-customize-color', currentConfig.color)
     }
   }
 

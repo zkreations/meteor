@@ -1,12 +1,14 @@
 ---
 import { Copy } from '@meteor-icons/astro'
+import { snippet, type FwKey } from '../scripts/tabsFramework'
 
 interface Props {
-  defaultFw?: 'astro' | 'react' | 'vue' | 'solid' | 'svelte';
+  defaultFw?: FwKey
+  iconName?: string
+  frameworks?: string[]
 }
 
-const { defaultFw = 'react' } = Astro.props;
-const frameworks = ['Astro', 'React', 'Vue', 'Solid', 'Svelte'] as const;
+const { defaultFw = 'react', iconName, frameworks = ['Astro', 'React', 'Preact', 'Vue', 'Solid', 'Svelte'] } = Astro.props;
 ---
 
 <div data-framework-tabs-container class="bg-slate-100 rounded-lg sm:px-5 sm:pt-5 px-4 pt-4">
@@ -30,11 +32,24 @@ const frameworks = ['Astro', 'React', 'Vue', 'Solid', 'Svelte'] as const;
       class="pb-3 transition-colors duration-300 shrink-0 text-slate-400 hover:text-slate-700 cursor-pointer ml-auto"
       aria-label="Copy code"
     >
-      <Copy size={16} />
+      <Copy size={20} />
     </button>
   </div>
 
   <div class="flex items-center scrollbar overflow-x-auto overflow-y-hidden sm:pb-5 pb-4">
-    <pre data-impl-display class="flex-1 font-mono text-slate-600"></pre>
+    {iconName ? (
+      frameworks.map((framework) => {
+        const fw = framework.toLowerCase() as FwKey
+        return (
+          <pre
+            data-impl-content
+            data-impl-fw={fw}
+            class={`flex-1 font-mono text-slate-600 ${fw === defaultFw ? '' : 'hidden'}`}
+          >{snippet(iconName, fw)}</pre>
+        )
+      })
+    ) : (
+      <pre data-impl-display class="flex-1 font-mono text-slate-600"></pre>
+    )}
   </div>
 </div>
