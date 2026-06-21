@@ -1,10 +1,7 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content'
-import * as MeteorIcons from '@meteor-icons/astro'
+import { getCollection } from 'astro:content'
 import Layout from '../../layout/Layout.astro'
-import { getIconList } from '../../utils/iconUtils'
-
-type IconEntry = CollectionEntry<'icons'>
+import IconDetail from '../../components/IconDetail.astro'
 
 type IconData = {
   name: string
@@ -20,72 +17,18 @@ type Props = {
 }
 
 export async function getStaticPaths() {
+  const createIdFromName = (name: string) => name.toLowerCase().replace(/\s+/g, '-')
   const entries = await getCollection('icons')
 
-  return entries.map((entry: IconEntry) => {
-    const slug =
-      entry.id.replace(/\.json$/, '').split('/').pop() ?? entry.data.name
-
-    return {
-      params: { slug },
-      props: {
-        icon: entry.data,
-        slug
-      }
-    }
-  })
+  return entries.map(entry => ({
+    params: { slug: createIdFromName(entry.data.name) },
+    props: { icon: { ...entry.data }, slug: createIdFromName(entry.data.name) }
+  }))
 }
 
 const { icon, slug } = Astro.props as Props
-
-const icons = new Map(
-  getIconList(MeteorIcons).map(({ name, IconComponent }) => [
-    name,
-    IconComponent
-  ])
-)
-
-const IconComponent =
-  icons.get(icon.name) ??
-  icons.get(slug)
-
-if (!IconComponent) {
-  throw new Error(`Missing icon component for "${icon.name}"`)
-}
-
-const title = icon.title ?? icon.name
 ---
 
-<Layout title={title} description={icon.name}>
-  <section class="wrapper py-12 space-y-8">
-    <div class="grid place-items-center rounded-xl border border-slate-200 bg-white p-10">
-      <IconComponent size={96} />
-    </div>
-    <div class="space-y-6">
-      <div>
-        <h1 class="text-3xl font-semibold text-slate-900">{title}</h1>
-        <p class="mt-1 font-mono text-slate-600">{icon.name}</p>
-      </div>
-      <div>
-        <h2 class="text-sm font-semibold text-slate-500 uppercase">Categories</h2>
-        <div class="chip-list">
-          {icon.categories.map((item) => (
-            <span class="rounded-md bg-slate-100 px-2 py-1 text-sm text-slate-700">
-              {item}
-            </span>
-          ))}
-        </div>
-      </div>
-      <div>
-        <h2 class="text-sm font-semibold text-slate-500 uppercase">Tags</h2>
-        <div class="chip-list">
-          {icon.tags.map((item) => (
-            <span class="rounded-md bg-slate-100 px-2 py-1 text-sm text-slate-700">
-              {item}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
+<Layout title={icon.title ?? icon.name} description={icon.name}>
+  <IconDetail icon={icon} slug={slug} />
 </Layout>
