@@ -1,3 +1,4 @@
+import { getIconSvgFromContainer } from '../utils/iconRegistry'
 import { copyIconSvg, downloadIconPng, downloadIconSvg } from './clipboardActions'
 
 // Initialize icon action buttons (copy/download) in icon cards
@@ -15,7 +16,7 @@ export function initIconActions(root: HTMLElement) {
 
     const container = target.closest<HTMLElement>('[data-name]')
     const name = container?.getAttribute('data-name') || 'icon'
-    const svg = container?.querySelector<SVGElement>('.icon-preview svg, .source-slot svg')
+    const svg = getIconSvgFromContainer(container)
 
     if (!svg)
       return

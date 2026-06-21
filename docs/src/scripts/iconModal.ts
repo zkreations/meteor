@@ -1,4 +1,5 @@
 import { lockScroll, unlockScroll } from '../utils/helpers'
+import { getIconSvgFromContainer } from '../utils/iconRegistry'
 import { cloneSvg, toPascalCase } from '../utils/iconUtils'
 import { bindCopyTextOnClick, copyIconSvg, downloadIconPng, downloadIconSvg } from './clipboardActions'
 import { initTabsFramework } from './tabsFramework'
@@ -40,7 +41,7 @@ export function initIconModal(root: HTMLElement) {
     })
 
     const cardName = card.dataset.name || ''
-    const svg = card.querySelector<SVGElement>('.icon-preview svg')
+    const svg = getIconSvgFromContainer(card)
     if (!cardName || !svg)
       return
 

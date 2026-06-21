@@ -1,5 +1,6 @@
 import { debounce } from '../utils/debounce'
 import { buildCounterLabel, isIconMatch } from '../utils/iconGrid'
+import { getIconSvgByName } from '../utils/iconRegistry'
 import { cloneSvg } from '../utils/iconUtils'
 import { ICON_CATEGORY_CHANGE } from './iconCategoryChange'
 
@@ -35,7 +36,7 @@ export function initIconSearch(root: HTMLElement) {
   let activeCategory = 'all'
 
   const getCategorySvg = (name?: string) =>
-    name ? root.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`) : null
+    name ? getIconSvgByName(name, root) : null
 
   const getActiveIconSvg = () => getCategorySvg(categoryIconMap.get(activeCategory))
 

@@ -1,4 +1,5 @@
 import type { IconCategoryChangeDetail } from './iconCategoryChange'
+import { getIconSvgByName } from '../utils/iconRegistry'
 import { ICON_CATEGORY_CHANGE } from './iconCategoryChange'
 
 const SKELETON_CONFIG = {
@@ -457,7 +458,7 @@ export class SvgSkeleton extends HTMLElement {
       return
 
     const name = candidates[Math.floor(Math.random() * candidates.length)]
-    const svg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
+    const svg = getIconSvgByName(name)
 
     if (svg) {
       this.setSourceSvg(svg)
@@ -465,7 +466,7 @@ export class SvgSkeleton extends HTMLElement {
   }
 
   public setSourceIconByName(name: string): void {
-    const svg = document.querySelector<SVGElement>(`[data-name="${name}"] .icon-preview svg`)
+    const svg = getIconSvgByName(name)
 
     if (svg) {
       this.setSourceSvg(svg)
