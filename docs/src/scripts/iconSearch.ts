@@ -1,7 +1,7 @@
 import { debounce } from '../utils/debounce'
 import { buildCounterLabel, isIconMatch } from '../utils/iconGrid'
 import { getIconSvgByName } from '../utils/iconRegistry'
-import { cloneSvg } from '../utils/iconUtils'
+import { cloneSvg } from '../utils/svg'
 import { ICON_CATEGORY_CHANGE } from './iconCategoryChange'
 
 interface SearchAPIResponse {

@@ -1,4 +1,4 @@
-import { toPascalCase } from '../utils/iconUtils'
+import { toPascalCase } from '../utils/stringCase'
 import { showToast } from './toast'
 
 export type FwKey = 'astro' | 'react' | 'preact' | 'vue' | 'solid' | 'svelte'

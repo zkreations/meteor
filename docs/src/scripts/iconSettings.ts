@@ -1,4 +1,4 @@
-import { clamp, safeParseInt } from '../utils/iconUtils'
+import { clamp, safeParseInt } from '../utils/number'
 
 export function initIconSettings(root: HTMLElement) {
   const svgSkeleton = document.querySelector<HTMLElement>('.svg-skeleton-wrapper')

@@ -1,6 +1,7 @@
 import { lockScroll, unlockScroll } from '../utils/helpers'
 import { getIconSvgFromContainer } from '../utils/iconRegistry'
-import { cloneSvg, toPascalCase } from '../utils/iconUtils'
+import { toPascalCase } from '../utils/stringCase'
+import { cloneSvg } from '../utils/svg'
 import { bindCopyTextOnClick, copyIconSvg, downloadIconPng, downloadIconSvg } from './clipboardActions'
 import { initTabsFramework } from './tabsFramework'
 

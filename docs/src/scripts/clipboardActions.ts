@@ -1,4 +1,6 @@
-import { downloadBlob, getActiveConfig, getProcessedSvgString, svgToPng } from '../utils/iconUtils'
+import { downloadBlob } from '../utils/download'
+import { getActiveConfig, getProcessedSvgString } from '../utils/iconUtils'
+import { svgToPng } from '../utils/svg'
 import { showToast } from './toast'
 
 // Copy SVG string to clipboard
