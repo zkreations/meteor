@@ -16,7 +16,7 @@ import IconActions from './IconActions.astro'
   <div class="w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl modal-dialog">
     <div class="flex items-center gap-3">
       <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-slate-200">
-        <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12"></div>
+        <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12 icon-customize"></div>
       </div>
 
       <div class="flex flex-col min-w-0 flex-1 items-start gap-1.5">
@@ -34,7 +34,7 @@ import IconActions from './IconActions.astro'
     </div>
 
     <div class="mt-4" data-modal-tabs-wrapper>
-      <TabsFramework defaultFw="astro" />
+      <TabsFramework defaultFw="astro" frameworks={['Astro', 'React', 'Vue', 'Solid']} />
     </div>
 
     <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-5">
