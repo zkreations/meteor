@@ -3,33 +3,34 @@ import { Download, Image, Copy } from '@meteor-icons/astro'
 
 interface Props {
   variant?: 'compact' | 'full'
+  size?: number
 }
 
-const { variant = 'full' } = Astro.props
+const { variant = 'full', size = 16 } = Astro.props
 ---
 
 {variant === 'compact' ? (
   <div class="icon-actions">
     <button type="button" data-action-copy-svg class="btn icon-action" title="Copy SVG" tabindex="-1">
-      <Copy size={16} />
+      <Copy size={size} />
     </button>
     <button type="button" data-action-download-png class="btn icon-action" title="Download PNG" tabindex="-1">
-      <Image size={16} />
+      <Image size={size} />
     </button>
     <button type="button" data-action-download-svg class="btn icon-action" title="Download SVG" tabindex="-1">
-      <Download size={16} />
+      <Download size={size} />
     </button>
   </div>
 ) : (
   <>
-    <button type="button" data-modal-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Copy size={16} /> Copy SVG
+    <button type="button" data-action-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Copy size={size} /> Copy SVG
     </button>
-    <button type="button" data-modal-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Image size={16} /> Download PNG
+    <button type="button" data-action-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Image size={size} /> Download PNG
     </button>
-    <button type="button" data-modal-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Download size={16} /> Download SVG
+    <button type="button" data-action-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Download size={size} /> Download SVG
     </button>
   </>
 )}
