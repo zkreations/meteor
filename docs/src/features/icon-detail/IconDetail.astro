@@ -52,9 +52,9 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
         </div>
         <TabsFramework defaultFw="astro" iconName={icon.name} />
         <div class="flex items-center gap-2 relative">
-          <IconActions size={24} />
+          <IconActions />
           <button type="button" class="btn icon-action md:w-auto!" data-outside="settings" aria-label="Icon settings">
-            <MeteorIcons.SlidersSimple />
+            <MeteorIcons.SlidersSimple class="sm:w-6 sm:h-6 w-5 h-5" />
           </button>
           <div class="right-0 w-72 dropdown z-50" data-dropdown="settings" role="dialog" aria-label="Icon settings">
             <IconSettings />
