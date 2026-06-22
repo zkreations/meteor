@@ -1,6 +1,7 @@
 ---
 import * as MeteorIcons from '@meteor-icons/astro'
 import { toPascalCase } from '@shared/stringCase'
+import ExampleCard from './ExampleCard.astro'
 
 type Props = {
   name: string
@@ -14,76 +15,217 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 ---
 
 <section class="border-t border-slate-100 pt-4 mt-10">
-  <h2 class="font-semibold text-slate-900 text-xl md:text-2xl mb-6">Icon in action</h2>
+  <h2 class="font-semibold text-slate-900 text-xl md:text-2xl mb-6">
+    Icon in action
+  </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div class="rounded-lg border border-slate-200 transition hover:border-brand-active relative md:p-8 p-5 flex flex-col gap-4">
-      <div class="flex gap-2">
-        <button class="flex items-center gap-2 bg-slate-900 hover:bg-black text-white text-sm font-medium px-4 py-2.5 rounded-lg">
-          <IconComponent />
-          New {name}
+    <ExampleCard class="lg:col-span-2 lg:row-span-2">
+      <div class="flex flex-col items-center text-center py-6">
+
+        <div class="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-slate-900 flex items-center justify-center shadow-lg">
+          <IconComponent class="w-16 h-16 md:w-20 md:h-20 text-white" />
+        </div>
+
+        <h3 class="mt-5 text-lg font-semibold text-slate-900">
+          {name}
+        </h3>
+
+        <p class="mt-1 text-sm text-slate-500 max-w-sm">
+          A scalable icon designed to work from micro UI (16px) to hero branding (120px+).
+        </p>
+
+        <div class="mt-5 flex items-end gap-4">
+          <div class="flex flex-col items-center gap-1">
+            <IconComponent class="w-4 h-4 text-slate-400" />
+            <span class="text-[10px] text-slate-400">16</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-1">
+            <IconComponent class="w-6 h-6 text-slate-500" />
+            <span class="text-[10px] text-slate-400">24</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-1">
+            <IconComponent class="w-10 h-10 text-slate-700" />
+            <span class="text-[10px] text-slate-400">40</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-1">
+            <IconComponent class="w-16 h-16 text-slate-900" />
+            <span class="text-[10px] text-slate-400">64</span>
+          </div>
+        </div>
+
+      </div>
+    </ExampleCard>
+
+    <ExampleCard>
+      <div class="space-y-3">
+        <button class="w-full flex items-center justify-center gap-2 bg-slate-900 text-white text-sm font-medium px-4 py-3 rounded-lg">
+          <IconComponent class="w-6 h-6" />
+          Create {name}
+        </button>
+
+        <button class="w-full flex items-center justify-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-4 py-3 rounded-lg">
+          <IconComponent class="w-6 h-6" />
+          Copy {name}
+        </button>
+
+        <button class="w-full flex items-center justify-center gap-2 text-slate-500 text-sm font-medium px-4 py-3 rounded-lg hover:bg-slate-100">
+          <IconComponent class="w-6 h-6" />
+          View {name} details
         </button>
       </div>
-      <button class="flex items-center justify-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-4 py-2.5 rounded-lg">
-        <IconComponent />
-        Copy {name}
-      </button>
-    </div>
+    </ExampleCard>
 
-    <div class="rounded-lg border border-slate-200 transition hover:border-brand-active relative md:p-8 p-5 flex flex-col gap-4">
-      <div class="flex items-center gap-1 border-b border-slate-200">
-        <button class="flex items-center gap-1.5 px-3 py-2.5 text-sm text-slate-400">
+    <ExampleCard>
+      <div class="flex border-b border-slate-200">
+        <button class="flex items-center gap-2 px-3 py-2 text-sm text-slate-400">
           <MeteorIcons.Home class="w-4 h-4" />
           Home
         </button>
-        <button class="flex items-center gap-1.5 px-3 py-2.5 text-sm text-slate-900 font-medium border-b-2 border-slate-900 -mb-px">
+
+        <button class="flex items-center gap-2 px-3 py-2 text-sm text-slate-900 font-semibold border-b-2 border-slate-900 -mb-px">
           <IconComponent class="w-4 h-4" />
           {name}
         </button>
-        <button class="flex items-center gap-1.5 px-3 py-2.5 text-sm text-slate-400">
+
+        <button class="flex items-center gap-2 px-3 py-2 text-sm text-slate-400">
           <MeteorIcons.ShoppingBag class="w-4 h-4" />
-          Pricing
+          Store
         </button>
       </div>
-      <div class="pt-4 space-y-2">
-        <div class="h-2 bg-slate-100 rounded-full w-full"></div>
-        <div class="h-2 bg-slate-100 rounded-full w-2/3"></div>
-      </div>
-    </div>
 
-    <div class="rounded-lg border border-slate-200 transition hover:border-brand-active relative md:p-8 p-5 flex flex-col gap-4">
+      <div class="mt-4 space-y-2">
+        <div class="h-3 bg-slate-100 rounded-full w-full"></div>
+        <div class="h-3 bg-slate-100 rounded-full w-3/5"></div>
+        <div class="h-3 bg-slate-100 rounded-full w-4/5"></div>
+      </div>
+    </ExampleCard>
+
+    <ExampleCard>
+      <nav class="space-y-1">
+        <a class="flex items-center gap-2 p-3 rounded-md text-sm text-slate-500">
+          <MeteorIcons.Home class="w-5 h-5" />
+          Dashboard
+        </a>
+
+        <a class="flex items-center gap-2 p-3 rounded-md bg-slate-900 text-white text-sm font-medium">
+          <IconComponent class="w-5 h-5" />
+          {name}
+        </a>
+
+        <a class="flex items-center gap-2 p-3 rounded-md text-sm text-slate-500">
+          <MeteorIcons.Gear class="w-5 h-5" />
+          Settings
+        </a>
+      </nav>
+    </ExampleCard>
+
+    <ExampleCard>
+      <div class="space-y-3">
+        <div class="flex items-center gap-2 border border-slate-200 rounded-lg p-3">
+          <MeteorIcons.Search class="w-5 h-5 text-slate-400" />
+          <input class="text-sm w-full outline-none" placeholder="Search icons..." />
+        </div>
+
+        <div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-100">
+          <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center">
+            <IconComponent class="w-5 h-5 text-white" />
+          </div>
+          <span class="text-sm font-medium text-slate-900">{name}</span>
+          <span class="ml-auto text-xs text-slate-400">UI</span>
+        </div>
+      </div>
+    </ExampleCard>
+
+    <ExampleCard class="items-center text-center">
+      <div class="w-20 h-20 rounded-full bg-slate-100 flex items-center justify-center">
+        <IconComponent class="w-10 h-10 text-slate-400" />
+      </div>
+
+      <div>
+        <p class="font-medium text-slate-900 mt-2">
+          No {name} found
+        </p>
+        <p class="text-sm text-slate-400">
+          Start by adding your first icon.
+        </p>
+      </div>
+    </ExampleCard>
+
+    <ExampleCard>
       <div class="space-y-1">
         <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg">
           <MeteorIcons.File class="w-6 h-6 text-slate-400" />
           <span class="text-sm text-slate-500 flex-1">readme.md</span>
         </div>
-        <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-50">
+        <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-100">
           <IconComponent class="w-6 h-6 text-slate-900" />
-          <span class="text-sm text-slate-900 font-medium flex-1">{name}.tsx</span>
-          <span class="text-xs text-slate-400">2 KB</span>
+          <span class="text-sm text-slate-900 font-medium flex-1">{name}.tsx</span> <span class="text-xs text-slate-400">2 KB</span>
         </div>
       </div>
-    </div>
+    </ExampleCard>
 
-    <div class="rounded-lg border border-slate-200 transition hover:border-brand-active relative md:p-8 p-5 flex flex-col gap-4">
-      <div class="flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5 mb-3">
-        <MeteorIcons.Search class="w-5 h-5 text-slate-400" />
-        <span class="text-sm text-slate-400">Search...</span>
-      </div>
-      <div class="flex items-center gap-3 px-3 py-2 rounded-lg border border-slate-200">
-        <IconComponent class="w-5 h-5 text-slate-900" />
-        <span class="text-sm text-slate-900 font-medium">{name}</span>
-        <span class="text-xs text-slate-400 ml-auto">UI</span>
-      </div>
-    </div>
+    <ExampleCard class="lg:col-span-2">
+      <div class="flex flex-col md:flex-row gap-6">
 
-    <div class="rounded-lg border border-slate-200 transition hover:border-brand-active relative md:p-8 p-5 flex flex-col gap-4">
-      <div class="w-14 h-14 rounded-lg bg-slate-900 flex items-center justify-center shrink-0">
-        <IconComponent class="w-8 h-8  text-white" />
+        <div class="relative w-20 h-20 rounded-2xl bg-slate-900 flex items-center justify-center shrink-0 shadow-md overflow-hidden">
+          <IconComponent class="w-10 h-10 text-white relative z-10" />
+        </div>
+
+        <!-- Contenido -->
+        <div class="flex-1 space-y-3">
+
+          <div>
+            <p class="font-semibold text-slate-900">
+              {title} icon system
+            </p>
+
+            <p class="text-slate-500 mt-1">
+              A scalable icon designed for modern interfaces — from compact UI elements to high-impact visual identity.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="text-sm text-slate-900 font-medium mb-1">{title} is here!</p>
-        <p class="text-sm text-slate-400">It's a great day to use the {name} icon in your project. Don't forget to customize it to fit your design!</p>
+    </ExampleCard>
+
+    <ExampleCard class="lg:col-span-3">
+      <div class="flex flex-col gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-spin" />
+            <span class="text-sm text-slate-400">Spin</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-bounce" />
+            <span class="text-sm text-slate-400">Bounce</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-ping absolute opacity-25" />
+            <IconComponent class="w-10 h-10 " />
+            <span class="text-sm text-slate-400">Ping</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-shake" />
+            <span class="text-sm text-slate-400">Shake</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-pulse" />
+            <span class="text-sm text-slate-400">Pulse</span>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+            <IconComponent class="w-10 h-10 animate-float" />
+            <span class="text-sm text-slate-400">Float</span>
+          </div>
+
+        </div>
       </div>
-    </div>
+    </ExampleCard>
   </div>
 </section>
