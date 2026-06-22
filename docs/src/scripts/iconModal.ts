@@ -2,7 +2,8 @@ import { lockScroll, unlockScroll } from '../utils/helpers'
 import { getIconSvgFromContainer } from '../utils/iconRegistry'
 import { toPascalCase } from '../utils/stringCase'
 import { cloneSvg } from '../utils/svg'
-import { bindCopyTextOnClick, copyIconSvg, downloadIconPng, downloadIconSvg } from './clipboardActions'
+import { bindCopyTextOnClick } from './clipboardActions'
+import { bindIconActionButtons } from './iconActionButtons'
 import { initTabsFramework } from './tabsFramework'
 
 export function initIconModal(root: HTMLElement) {
@@ -24,10 +25,6 @@ export function initIconModal(root: HTMLElement) {
   const copyNameBtn = modal.querySelector<HTMLButtonElement>('[data-copy-name]')
   const copyComponentBtn = modal.querySelector<HTMLButtonElement>('[data-copy-component-name]')
   const copyHtmlBtn = modal.querySelector<HTMLButtonElement>('[data-copy-html]')
-
-  const copySvgBtn = modal.querySelector<HTMLButtonElement>('[data-action-copy-svg]')
-  const dlSvgBtn = modal.querySelector<HTMLButtonElement>('[data-action-download-svg]')
-  const dlPngBtn = modal.querySelector<HTMLButtonElement>('[data-action-download-png]')
 
   let name = ''
 
@@ -112,21 +109,8 @@ export function initIconModal(root: HTMLElement) {
   bindCopyTextOnClick(copyComponentBtn, 'Component name copied!')
   bindCopyTextOnClick(copyHtmlBtn, 'HTML snippet copied!')
 
-  copySvgBtn?.addEventListener('click', () => {
-    const svg = source?.querySelector<SVGElement>('svg')
-    if (svg)
-      copyIconSvg(svg)
-  })
-
-  dlSvgBtn?.addEventListener('click', () => {
-    const svg = source?.querySelector<SVGElement>('svg')
-    if (svg)
-      downloadIconSvg(svg, name)
-  })
-
-  dlPngBtn?.addEventListener('click', () => {
-    const svg = source?.querySelector<SVGElement>('svg')
-    if (svg)
-      downloadIconPng(svg, name, 120)
-  })
+  bindIconActionButtons(modal, () => ({
+    svg: source?.querySelector<SVGElement>('svg') ?? null,
+    name,
+  }), { pngFallbackSize: 120 })
 }
