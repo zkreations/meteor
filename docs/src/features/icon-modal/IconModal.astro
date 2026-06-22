@@ -13,7 +13,7 @@ import IconActions from '../icon-export/IconActions.astro'
 >
   <button type="button" data-modal-backdrop class="absolute inset-0 -z-10 cursor-default" aria-label="Cerrar modal" tabindex="-1"></button>
 
-  <div class="w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl modal-dialog">
+  <div class="w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl modal-dialog flex flex-col gap-5">
     <div class="flex items-center gap-3">
       <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-slate-200">
         <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12 icon-customize"></div>
@@ -33,11 +33,11 @@ import IconActions from '../icon-export/IconActions.astro'
       </a>
     </div>
 
-    <div class="mt-4" data-modal-tabs-wrapper>
+    <div data-modal-tabs-wrapper>
       <TabsFramework defaultFw="astro" frameworks={['Astro', 'React', 'Vue', 'Solid']} />
     </div>
 
-    <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-5">
+    <div class="flex items-center gap-2">
       <IconActions />
     </div>
   </div>
