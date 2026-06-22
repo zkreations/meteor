@@ -38,7 +38,7 @@ export function bindIconActionButtons(
       return
 
     if (isCopy)
-      copyIconSvg(svg)
+      copyIconSvg(svg, name)
 
     if (isDownloadSvg)
       downloadIconSvg(svg, name)

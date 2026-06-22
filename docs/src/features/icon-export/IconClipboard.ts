@@ -20,11 +20,12 @@ function getActiveConfig(root: HTMLElement = document.body) {
 // Get a processed SVG string with the current configuration applied
 // @param svg - The SVG element to process
 // @param config - The configuration to apply (size, stroke, color)
-function getProcessedSvgString(svg: SVGElement, config: ReturnType<typeof getActiveConfig>): string {
+function getProcessedSvgString(svg: SVGElement, name: string, config: ReturnType<typeof getActiveConfig>): string {
   const clone = cloneSvg(svg)
   clone.setAttribute('width', config.size)
   clone.setAttribute('height', config.size)
   clone.setAttribute('stroke-width', config.stroke)
+  clone.setAttribute('class', `i i-${name}`)
 
   let str = clone.outerHTML
 
@@ -37,9 +38,9 @@ function getProcessedSvgString(svg: SVGElement, config: ReturnType<typeof getAct
 
 // Copy SVG string to clipboard
 // @param svg SVG element to copy
-export async function copyIconSvg(svg: SVGElement) {
+export async function copyIconSvg(svg: SVGElement, name: string) {
   const config = getActiveConfig()
-  const svgStr = getProcessedSvgString(svg, config)
+  const svgStr = getProcessedSvgString(svg, name, config)
 
   try {
     await navigator.clipboard.writeText(svgStr)
@@ -55,7 +56,7 @@ export async function copyIconSvg(svg: SVGElement) {
 // @param name Base name for the downloaded file (without extension)
 export function downloadIconSvg(svg: SVGElement, name: string) {
   const config = getActiveConfig()
-  const svgStr = getProcessedSvgString(svg, config)
+  const svgStr = getProcessedSvgString(svg, name, config)
   downloadBlob(svgStr, `${name}.svg`, 'image/svg+xml')
   showToast('SVG downloaded!')
 }
@@ -66,7 +67,7 @@ export function downloadIconSvg(svg: SVGElement, name: string) {
 // @param fallbackSize Size to use if the config size is invalid
 export async function downloadIconPng(svg: SVGElement, name: string, fallbackSize: number) {
   const config = getActiveConfig()
-  const svgStr = getProcessedSvgString(svg, config)
+  const svgStr = getProcessedSvgString(svg, name, config)
   const size = Number.parseInt(config.size, 10) || fallbackSize
 
   const tmp = new DOMParser()
