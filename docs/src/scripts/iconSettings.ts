@@ -1,7 +1,12 @@
+import type { IconCustomizeConfig } from '../utils/iconCustomizeStyle'
+import { applyIconCustomizeVars } from '../utils/iconCustomizeStyle'
+import { SIZE_MAX, SIZE_MIN, sizeToSlider, sliderToSize } from '../utils/iconSizeScale'
 import { clamp, safeParseInt } from '../utils/number'
+import { ICON_SETTINGS_CHANGE } from './iconSettingsChange'
 
+// Initializes the icon settings panel functionality within a given root element.
+// @param root - The root element containing the settings panel controls
 export function initIconSettings(root: HTMLElement) {
-  const svgSkeleton = document.querySelector<HTMLElement>('.svg-skeleton-wrapper')
   const colorInput = root.querySelector<HTMLInputElement>('[data-setting-color]')
   const colorValue = root.querySelector('[data-color-value]')
   const strokeInput = root.querySelector<HTMLInputElement>('[data-setting-stroke]')
@@ -11,37 +16,8 @@ export function initIconSettings(root: HTMLElement) {
   const sizePresetButtons = root.querySelectorAll<HTMLButtonElement>('[data-size-preset]')
   const btnReset = root.querySelector('[data-reset-settings]')
 
-  const DEFAULTS = { color: 'currentColor', stroke: '2', size: '24' }
-  const SIZE_SLIDER_MIN = 0
-  const SIZE_SLIDER_MAX = 340
-  const SIZE_EXACT_MAX = 256
-  const SIZE_EXACT_RANGE = SIZE_EXACT_MAX - 16
-  const SIZE_COMPRESSED_RANGE = SIZE_SLIDER_MAX - SIZE_EXACT_RANGE
-  const SIZE_MIN = 16
-  const SIZE_MAX = 1024
-  let currentConfig = { ...DEFAULTS }
-
-  const sliderToSize = (sliderValue: number): number => {
-    const v = clamp(sliderValue, SIZE_SLIDER_MIN, SIZE_SLIDER_MAX)
-
-    if (v <= SIZE_EXACT_RANGE) {
-      return SIZE_MIN + v
-    }
-
-    const ratio = (v - SIZE_EXACT_RANGE) / SIZE_COMPRESSED_RANGE
-    return Math.round(256 + (SIZE_MAX - 256) * ratio)
-  }
-
-  const sizeToSlider = (sizeValue: number): number => {
-    const s = clamp(sizeValue, SIZE_MIN, SIZE_MAX)
-
-    if (s <= SIZE_EXACT_MAX) {
-      return s - SIZE_MIN
-    }
-
-    const ratio = (s - SIZE_EXACT_MAX) / (SIZE_MAX - SIZE_EXACT_MAX)
-    return Math.round(SIZE_EXACT_RANGE + ratio * SIZE_COMPRESSED_RANGE)
-  }
+  const DEFAULTS: IconCustomizeConfig = { color: 'currentColor', stroke: '2', size: '24' }
+  let currentConfig: IconCustomizeConfig = { ...DEFAULTS }
 
   const syncSizePresetState = () => {
     const activeSize = safeParseInt(currentConfig.size, 24)
@@ -61,6 +37,12 @@ export function initIconSettings(root: HTMLElement) {
     sizeInput.value = String(sizeToSlider(safeParseInt(currentConfig.size, 24)))
   }
 
+  const notifySettingsChange = () => {
+    document.dispatchEvent(new CustomEvent(ICON_SETTINGS_CHANGE, {
+      detail: { ...currentConfig },
+    }))
+  }
+
   const applySettings = () => {
     if (colorValue)
       colorValue.textContent = currentConfig.color
@@ -74,23 +56,11 @@ export function initIconSettings(root: HTMLElement) {
     }
     if (colorInput)
       colorInput.dataset.colorActual = currentConfig.color
+
     syncSizeInput()
     syncSizePresetState()
-
-    const visualSize = clamp(safeParseInt(currentConfig.size, 24), 16, 64)
-
-    root.style.setProperty('--icon-customize-stroke-width', currentConfig.stroke)
-    root.style.setProperty('--icon-customize-size', `${visualSize}px`)
-    svgSkeleton?.style.setProperty('--icon-customize-stroke-width', currentConfig.stroke)
-
-    if (currentConfig.color === 'currentColor') {
-      root.style.removeProperty('--icon-customize-color')
-      svgSkeleton?.style.removeProperty('--icon-customize-color')
-    }
-    else {
-      root.style.setProperty('--icon-customize-color', currentConfig.color)
-      svgSkeleton?.style.setProperty('--icon-customize-color', currentConfig.color)
-    }
+    applyIconCustomizeVars(root, currentConfig)
+    notifySettingsChange()
   }
 
   const handleChange = () => {

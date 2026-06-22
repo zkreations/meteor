@@ -1,6 +1,9 @@
 import type { IconCategoryChangeDetail } from './iconCategoryChange'
+import type { IconSettingsChangeDetail } from './iconSettingsChange'
+import { applyIconCustomizeVars } from '../utils/iconCustomizeStyle'
 import { getIconSvgByName } from '../utils/iconRegistry'
 import { ICON_CATEGORY_CHANGE } from './iconCategoryChange'
+import { ICON_SETTINGS_CHANGE } from './iconSettingsChange'
 
 const SKELETON_CONFIG = {
   selectors: {
@@ -417,6 +420,8 @@ export class SvgSkeleton extends HTMLElement {
       document.addEventListener(ICON_CATEGORY_CHANGE, this.handleIconCategoryChange)
     }
 
+    document.addEventListener(ICON_SETTINGS_CHANGE, this.handleIconSettingsChange)
+
     if (!this.sourceSvg && this.hasAttribute('data-random')) {
       this.pickRandomIcon()
       return
@@ -427,6 +432,7 @@ export class SvgSkeleton extends HTMLElement {
 
   disconnectedCallback(): void {
     document.removeEventListener(ICON_CATEGORY_CHANGE, this.handleIconCategoryChange)
+    document.removeEventListener(ICON_SETTINGS_CHANGE, this.handleIconSettingsChange)
   }
 
   private handleIconCategoryChange = (event: CustomEvent<IconCategoryChangeDetail>): void => {
@@ -438,6 +444,10 @@ export class SvgSkeleton extends HTMLElement {
         ? this.pickRandomIcon()
         : this.clearSourceSvg()
     }
+  }
+
+  private handleIconSettingsChange = (event: CustomEvent<IconSettingsChangeDetail>): void => {
+    applyIconCustomizeVars(this, event.detail)
   }
 
   private captureInitialSource(): void {
