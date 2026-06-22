@@ -1,5 +1,5 @@
+import { normalize } from '@shared/stringCase'
 import { getCollection } from 'astro:content'
-import { normalize } from '../../utils/helpers'
 
 export interface IconPayload {
   name: string
