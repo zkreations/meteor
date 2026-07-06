@@ -24,6 +24,7 @@
     "build:svelte": "node ./build/generate-svelte.js",
     "build:astro": "node ./build/generate-astro.js",
     "build:readme": "node ./build/generate-readme.js",
+    "build:packages": "node ./build/generate-packages.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:core": "vitest run test/core --environment jsdom",

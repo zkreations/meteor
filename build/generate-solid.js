@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises'
 import process from 'node:process'
-import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
@@ -9,7 +8,6 @@ import {
   resetDir,
   toPascalCase,
 } from './core/framework-utils.js'
-import config from './icons.config.js'
 
 const SOLID_DIR = new URL('../packages/solid/src/', import.meta.url)
 const SOLID_ICONS_DIR = new URL('../packages/solid/src/icons/', import.meta.url)
@@ -108,8 +106,6 @@ export default ${componentName}
 async function generateSolidPackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
-
-  await writePackageManifest('solid', config.packages)
 
   await resetDir(SOLID_ICONS_DIR)
   await fs.mkdir(SOLID_DIR, { recursive: true })

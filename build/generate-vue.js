@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises'
 import process from 'node:process'
-import { writePackageManifest } from './core/create-packages.js'
 import {
   buildNamedExportsIndex,
   getSortedIconNames,
@@ -9,7 +8,6 @@ import {
   resetDir,
   toPascalCase,
 } from './core/framework-utils.js'
-import config from './icons.config.js'
 
 const VUE_DIR = new URL('../packages/vue/src/', import.meta.url)
 const VUE_ICONS_DIR = new URL('../packages/vue/src/icons/', import.meta.url)
@@ -121,8 +119,6 @@ export default ${componentName}
 async function generateVuePackage() {
   const icons = await readIconMap()
   const iconNames = getSortedIconNames(icons)
-
-  await writePackageManifest('vue', config.packages)
 
   await resetDir(VUE_ICONS_DIR)
   await fs.mkdir(VUE_DIR, { recursive: true })
