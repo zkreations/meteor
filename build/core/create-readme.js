@@ -358,8 +358,8 @@ For more information, see [CONTRIBUTING.md](https://github.com/zkreations/meteor
 Meteor Icons is licensed under the MIT License.`
 }
 
-function buildHeader(installPkg) {
-  return `![cover](./assets/cover.png)
+function buildHeader(installPkg, packageName) {
+  return `![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/${packageName}/assets/cover.png)
 
 ${buildBadges(installPkg)}
 
@@ -377,8 +377,8 @@ function buildSection({ title, description, snippet, table }) {
   return parts.join('\n')
 }
 
-function buildCoreReadme({ installPkg, about, features, contents, usageSections, bestPractices }) {
-  return `${buildHeader(installPkg)}
+function buildCoreReadme({ installPkg, about, features, contents, usageSections, bestPractices, packageName }) {
+  return `${buildHeader(installPkg, packageName)}
 
 ## About
 
@@ -410,8 +410,8 @@ ${buildSharedFooter()}
 `
 }
 
-function buildFrameworkReadme({ peerLabel, installPkg, usageSnippet, subpathSnippet, props, exampleSnippet }) {
-  return `${buildHeader(installPkg)}
+function buildFrameworkReadme({ peerLabel, installPkg, usageSnippet, subpathSnippet, props, exampleSnippet, packageName }) {
+  return `${buildHeader(installPkg, packageName)}
 
 ## About
 

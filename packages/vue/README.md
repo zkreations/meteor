@@ -1,4 +1,4 @@
-![cover](./assets/cover.png)
+![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/vue/assets/cover.png)
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@meteor-icons/vue"><img src="https://img.shields.io/npm/v/@meteor-icons/vue" alt="Version"></a>

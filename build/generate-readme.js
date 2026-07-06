@@ -12,7 +12,7 @@ async function generateReadmes() {
 
   await Promise.all(
     entries.map(async ([key, config]) => {
-      const content = buildReadme(config)
+      const content = buildReadme({ ...config, packageName: key })
       const outputPath = path.join(PACKAGES_DIR, key, 'README.md')
       await fs.writeFile(outputPath, content, 'utf8')
       console.warn(`README written: packages/${key}/README.md`)

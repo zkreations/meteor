@@ -1,4 +1,4 @@
-![cover](./assets/cover.png)
+![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/solid/assets/cover.png)
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@meteor-icons/solid"><img src="https://img.shields.io/npm/v/@meteor-icons/solid" alt="Version"></a>

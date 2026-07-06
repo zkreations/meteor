@@ -1,4 +1,4 @@
-![cover](./assets/cover.png)
+![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/astro/assets/cover.png)
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@meteor-icons/astro"><img src="https://img.shields.io/npm/v/@meteor-icons/astro" alt="Version"></a>
