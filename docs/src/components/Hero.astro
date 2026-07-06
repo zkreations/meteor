@@ -1,4 +1,5 @@
 ---
+import { Astro as AstroIcon, Solidjs, Preact, Vuejs, React, Svelte } from '@meteor-icons/astro'
 import IconSkeleton from '@features/icon-skeleton/IconSkeleton.astro';
 
 const heroTitle = 'Meteor icons'
@@ -12,6 +13,14 @@ const heroDescription = 'Meteor is an open-source icon set, designed at code lev
       <p class="mt-4 leading-7 text-slate-600 md:text-lg text-balance">
         {heroDescription}
       </p>
+      <div class="mt-6 flex gap-4 flex-wrap justify-center lg:justify-start *:text-slate-500 *:hover:text-brand-active *:transition-colors *:duration-200">
+        <a href="/#astro" title="Astro Package"><AstroIcon size={32} strokeWidth={1} /></a>
+        <a href="/#solidjs" title="SolidJS Package"><Solidjs size={32} strokeWidth={1} /></a>
+        <a href="/#preact" title="Preact Package"><Preact size={32} strokeWidth={1} /></a>
+        <a href="/#react" title="React Package"><React size={32} strokeWidth={1} /></a>
+        <a href="/#svelte" title="Svelte Package"><Svelte size={32} strokeWidth={1} /></a>
+        <a href="/#vuejs" title="Vue.js Package"><Vuejs size={32} strokeWidth={1} /></a>
+      </div>
     </div>
     <IconSkeleton customClass="max-w-sm flex-shrink-0" random reactive />
   </div>
