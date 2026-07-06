@@ -20,7 +20,6 @@ describe('svelte package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorSveltePath = toPosixPath(resolve(workspaceRoot, 'packages/svelte'))
       const installedSvelteVersion = getInstalledPackageVersion(workspaceRoot, 'svelte')
       const installedSveltePluginVersion = getInstalledPackageVersion(workspaceRoot, '@sveltejs/vite-plugin-svelte')
@@ -38,7 +37,7 @@ describe('svelte package consumer smoke', () => {
           'svelte': installedSvelteVersion,
         },
         devDependencies: {
-          'vite': `file:${vitePath}`,
+          'vite': '^8.0.0',
           '@sveltejs/vite-plugin-svelte': installedSveltePluginVersion,
         },
       }

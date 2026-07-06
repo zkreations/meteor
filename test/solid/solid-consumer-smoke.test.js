@@ -20,7 +20,6 @@ describe('solid package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorSolidPath = toPosixPath(resolve(workspaceRoot, 'packages/solid'))
       const installedSolidVersion = getInstalledPackageVersion(workspaceRoot, 'solid-js')
       const installedSolidPluginVersion = getInstalledPackageVersion(workspaceRoot, 'vite-plugin-solid')
@@ -38,7 +37,7 @@ describe('solid package consumer smoke', () => {
           'solid-js': installedSolidVersion,
         },
         devDependencies: {
-          'vite': `file:${vitePath}`,
+          'vite': '^8.0.0',
           'vite-plugin-solid': installedSolidPluginVersion,
         },
       }

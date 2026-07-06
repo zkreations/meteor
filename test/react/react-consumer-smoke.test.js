@@ -20,7 +20,6 @@ describe('react package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorReactPath = toPosixPath(resolve(workspaceRoot, 'packages/react'))
       const installedReactVersion = getInstalledPackageVersion(workspaceRoot, 'react')
       const installedReactDomVersion = getInstalledPackageVersion(workspaceRoot, 'react-dom')
@@ -39,7 +38,7 @@ describe('react package consumer smoke', () => {
           'react-dom': installedReactDomVersion,
         },
         devDependencies: {
-          vite: `file:${vitePath}`,
+          vite: '^8.0.0',
         },
       }
 
