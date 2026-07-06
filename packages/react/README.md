@@ -46,7 +46,7 @@ All icons share the same props:
 | `color` | *string* | currentColor | Defines the stroke color |
 | `strokeWidth` | *string \| number* | 2 | Controls stroke thickness |
 | `className` | *string* | - | Additional CSS classes |
-| `...rest` | *React.SVGProps<SVGSVGElement>* | - | Any valid SVG attribute |
+| `...rest` | *React.SVGProps\<SVGSVGElement\>* | - | Any valid SVG attribute |
 
 ### Example
 
@@ -57,9 +57,9 @@ export default function App() {
   return (
     <Code
       size={48}
-      color='red'
+      color="red"
       strokeWidth={1}
-      aria-label='code icon'
+      aria-label="code icon"
     />
   )
 }

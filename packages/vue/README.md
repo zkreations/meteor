@@ -5,8 +5,8 @@ A lightweight, tree-shakeable icon library for Vue applications based on Meteor 
 ## Features
 
 - Tree-shakeable: import only what you use
-- Designed for Vue 3
-- Fully customizable through props and attrs
+- Designed for Vue
+- Fully customizable through props
 - Inline SVG rendering
 - Optimized for performance
 

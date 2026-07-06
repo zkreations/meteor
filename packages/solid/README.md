@@ -1,6 +1,6 @@
 # Meteor Icons Solid
 
-A lightweight, tree-shakeable icon library for Solid applications based on Meteor Icons.
+A lightweight, tree-shakeable icon library for SolidJS applications based on Meteor Icons.
 
 ## Features
 
@@ -54,7 +54,7 @@ All icons share the same props:
 import { Code } from '@meteor-icons/solid'
 
 export default function App() {
-  return <Code size={48} color='red' strokeWidth={1} aria-label='code icon' />
+  return <Code size={48} color="red" strokeWidth={1} aria-label="code icon" />
 }
 ```
 

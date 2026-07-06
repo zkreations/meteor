@@ -6,7 +6,7 @@ A lightweight, tree-shakeable icon library for Astro applications based on Meteo
 
 - Tree-shakeable: import only what you use
 - Designed for Astro
-- Fully customizable through component props
+- Fully customizable through props
 - Inline SVG rendering
 - Optimized for performance
 
