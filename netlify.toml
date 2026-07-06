@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm --filter docs build"
+  command = "pnpm install && pnpm --filter @meteor-icons/docs build"
   publish = "docs/dist"
 
 [build.environment]
