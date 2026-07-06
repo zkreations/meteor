@@ -12,8 +12,6 @@ const SKELETON_CONFIG = {
   },
   random: {
     candidates: [
-      'anthropic',
-      'app-store',
       'astro',
       'broom',
       'brush',
