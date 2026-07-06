@@ -1,4 +1,4 @@
-![cover](https://raw.githubusercontent.com/zkreations/icons/main/.github/cover.png)
+![cover](https://raw.githubusercontent.com/zkreations/meteor/main/.github/cover.png)
 
 <p align="center">
   <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Release"></a>
-  <a href="https://github.com/zkreations/meteoricons/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
 </p>
 
 ## About

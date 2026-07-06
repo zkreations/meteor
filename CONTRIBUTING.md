@@ -55,8 +55,8 @@ The [SVG Path Editor](https://yqnn.github.io/svg-path-editor/) is the primary to
 Node.js >= 22.12.0 and pnpm are required.
 
 ```sh
-git clone https://github.com/zkreations/meteoricons.git
-cd meteoricons
+git clone https://github.com/zkreations/meteor.git
+cd meteor
 pnpm install
 ```
 
@@ -112,4 +112,4 @@ Shared utilities live in `build/core/`.
 
 ---
 
-If you have questions, open a [GitHub issue](https://github.com/zkreations/meteoricons/issues).
+If you have questions, open a [GitHub issue](https://github.com/zkreations/meteor/issues).

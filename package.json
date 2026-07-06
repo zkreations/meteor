@@ -3,13 +3,13 @@
   "private": true,
   "author": "@danieIabel",
   "license": "MIT",
-  "homepage": "https://github.com/zkreations/icons#readme",
+  "homepage": "https://github.com/zkreations/meteor#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkreations/icons.git"
+    "url": "git+https://github.com/zkreations/meteor.git"
   },
   "bugs": {
-    "url": "https://github.com/zkreations/icons/issues"
+    "url": "https://github.com/zkreations/meteor/issues"
   },
   "keywords": [],
   "scripts": {

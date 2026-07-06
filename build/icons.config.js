@@ -38,9 +38,9 @@ export default {
       homepage: 'https://meteoricons.com',
       repository: {
         type: 'git',
-        url: 'git+https://github.com/zkreations/icons.git',
+        url: 'git+https://github.com/zkreations/meteor.git',
       },
-      bugs: { url: 'https://github.com/zkreations/icons/issues' },
+      bugs: { url: 'https://github.com/zkreations/meteor/issues' },
       keywords: [
         'icons',
         'svg',
