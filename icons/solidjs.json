@@ -15,7 +15,8 @@
   "keywords": [
     "fine-grained reactivity",
     "web development",
-    "SPA",
+    "single page application",
+    "spa",
     "jsx",
     "signals",
     "components",
