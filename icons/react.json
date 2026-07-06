@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "title": "React",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "javascript",
+    "frontend",
+    "library",
+    "ui",
+    "components"
+  ],
+  "keywords": [
+    "jsx",
+    "virtual dom",
+    "hooks",
+    "SPA",
+    "web development",
+    "frontend framework",
+    "facebook",
+    "meta"
+  ]
+}
