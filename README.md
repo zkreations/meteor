@@ -1,4 +1,4 @@
-![cover](https://raw.githubusercontent.com/zkreations/meteor/main/.github/cover.png)
+![cover](./assets/cover.png)
 
 <p align="center">
   <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
