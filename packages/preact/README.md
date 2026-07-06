@@ -1,4 +1,17 @@
-# Meteor Icons Preact
+![cover](./assets/cover.png)
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@meteor-icons/preact"><img src="https://img.shields.io/npm/v/@meteor-icons/preact" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@meteor-icons/preact"><img src="https://img.shields.io/npm/dt/@meteor-icons/preact" alt="Total Downloads"></a>
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@meteor-icons/preact" alt="License"></a>
+  <a href="https://www.npmjs.com/package/@meteor-icons/preact"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
+</p>
+
+<p align="center">
+  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
+</p>
+
+## About
 
 A lightweight, tree-shakeable icon library for Preact applications based on Meteor Icons.
 
