@@ -89,7 +89,7 @@ All icons are designed by [Daniel Abel](https://twitter.com/danieI_abel). Contri
 - When requesting a new icon, include a clear visual reference
 - When contributing an icon, you must be its original author
 
-You can also support the project by [buying a coffee](https://ko-fi.com/zkreations) ☕. For more information, see [CONTRIBUTING.md](./CONTRIBUTING.md).
+For more information, see [CONTRIBUTING.md](./CONTRIBUTING.md). You can also support the project by [buying a coffee](https://ko-fi.com/zkreations) ☕.
 
 ## License
 

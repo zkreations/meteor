@@ -90,7 +90,7 @@ All icons are created by [Daniel Abel](https://twitter.com/danieI_abel), but con
 
 ## Support
 
-If you want, you can also help me maintain this and more projects by [buying me a coffee](https://ko-fi.com/zkreations).
+For more information, see [CONTRIBUTING.md](https://github.com/zkreations/meteor/blob/main/CONTRIBUTING.md). You can also support the project by [buying a coffee](https://ko-fi.com/zkreations).
 
 ## License
 

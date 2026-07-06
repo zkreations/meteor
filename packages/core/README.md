@@ -1,13 +1,27 @@
-# Meteor Icons Core
+![cover](./assets/cover.png)
 
-A lightweight, source-first icon package that contains the base Meteor Icons assets and generated exports.
+<p align="center">
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/dt/meteor-icons" alt="Total Downloads"></a>
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
+</p>
+
+<p align="center">
+  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
+</p>
+
+## About
+
+A lightweight, source-first icon package that contains the base Meteor Icons assets and generated exports. Unlike the framework wrappers, this package gives you direct access to the raw SVGs, the canonical icon map, and a vanilla JS runtime — making it suitable for custom build pipelines, CDN usage, and non-framework environments.
 
 ## Features
 
-- Historical base package published as `meteor-icons`
-- Includes all raw SVG files in `icons/`
-- Includes generated exports for integrations
-- Works well for custom build pipelines and static usage
+- Tree-shakeable: import only what you use
+- Vanilla JS runtime with no dependencies
+- Raw SVG files and canonical icon map included
+- Browser bundle ready for CDN usage
+- SVG sprite and Blogger includable outputs
 
 ## Installation
 
@@ -16,6 +30,8 @@ npm install meteor-icons
 ```
 
 ## Usage
+
+### Generated Files
 
 This package is not a framework wrapper. Instead, it provides base assets and generated files:
 
@@ -28,7 +44,7 @@ This package is not a framework wrapper. Instead, it provides base assets and ge
 
 ### Vanilla JS (Browser)
 
-Use the browser build via a CDN. After including the script, call `createIcons()` to automatically replace elements that use the `data-i` attribute.
+Load the browser bundle from a CDN and call `createIcons()` to replace all `data-i` elements with their matching SVGs.
 
 ```html
 <i data-i="star"></i>
@@ -42,7 +58,7 @@ Use the browser build via a CDN. After including the script, call `createIcons()
 
 ### Vanilla JS (ESM)
 
-Import all icons:
+Import all icons at once, or only the ones you need (recommended to reduce bundle size).
 
 ```js
 import { createIcons, icons } from 'meteor-icons'
@@ -50,45 +66,17 @@ import { createIcons, icons } from 'meteor-icons'
 createIcons({ icons })
 ```
 
-Or import only the icons you actually use (recommended to reduce bundle size)
-
 ```js
-import { createIcons, Star, Code } from 'meteor-icons'
+import { Code, createIcons, Star } from 'meteor-icons'
 
 createIcons({
-  icons: {
-    Star,
-    Code
-  }
+  icons: { Star, Code }
 })
 ```
 
-### CSS Base
-
-Use this helper class for consistent rendering when using inline SVG or sprite:
-
-```css
-.i {
-  stroke-width: var(--i-stroke, 2);
-  width: var(--i-size, 24px);
-  height: var(--i-size, 24px);
-  stroke: var(--i-color, currentColor);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-}
-```
-
-You can set the size and thickness with CSS variables:
-
-| Variable | Default |
-| --- | --- |
-| `--i-stroke` | `2` |
-| `--i-size` | `20px` |
-
 ### Inline SVG
 
-Choose any icon from [meteoricons.com](https://meteoricons.com/) and paste its SVG markup directly into your project.
+Browse any icon at [meteoricons.com](https://meteoricons.com/) and paste its SVG markup directly into your project.
 
 ### SVG Sprite
 
@@ -108,26 +96,56 @@ Add `exports/icons.xml` to your Blogger template and consume icons via include:
 <b:include name='@meteor' data='{ icon: "github" }'/>
 ```
 
-Available Blogger params:
-
 | Parameter | Description |
 | --- | --- |
 | `icon` | Icon name |
 | `class` | Additional classes |
-| `viewbox` | `viewbox` attribute |
+| `viewbox` | `viewBox` attribute |
 | `fill` | `fill` attribute |
 | `width` | `width` attribute |
 | `height` | `height` attribute |
 
+### CSS Base
+
+Use this helper class for consistent rendering when using inline SVG or sprite:
+
+```css
+.i {
+  stroke-width: var(--i-stroke, 2);
+  width: var(--i-size, 24px);
+  height: var(--i-size, 24px);
+  stroke: var(--i-color, currentColor);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+```
+
+| Variable | Default |
+| --- | --- |
+| `--i-stroke` | `2` |
+| `--i-size` | `24px` |
+
+## Package contents
+
+| Path | Description |
+| --- | --- |
+| `icons/*.svg` | Raw SVG source files |
+| `exports/icons.json` | Canonical icon map |
+| `exports/icons.svg` | SVG sprite |
+| `exports/icons.xml` | Blogger includable |
+| `exports/icons.js` | Browser-ready vanilla runtime |
+| `src/esm/` | ESM runtime and per-icon modules |
+
 ## Best Practices
 
-- Consume only the files you need from `icons/` or `exports/`
-- Prefer `currentColor` for easier theming
+- Import only the icons you need
+- Use currentColor to inherit color from parent elements
 - Keep icon names as kebab-case when mapping from file names
 
 ## Contributing
 
-All icons are designed by [Daniel Abel](https://twitter.com/danieI_abel), but contributions are welcome.
+All icons are created by [Daniel Abel](https://twitter.com/danieI_abel), but contributions are welcome.
 
 ### Guidelines
 
@@ -138,7 +156,7 @@ All icons are designed by [Daniel Abel](https://twitter.com/danieI_abel), but co
 
 ## Support
 
-If you want, you can also help me maintain this and more projects by [buying me a coffee](https://ko-fi.com/zkreations).
+For more information, see [CONTRIBUTING.md](https://github.com/zkreations/meteor/blob/main/CONTRIBUTING.md). You can also support the project by [buying a coffee](https://ko-fi.com/zkreations).
 
 ## License
 
