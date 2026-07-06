@@ -1,0 +1,27 @@
+{
+  "name": "square-xmark",
+  "title": "Square Xmark",
+  "categories": [
+    "editing",
+    "mathematics"
+  ],
+  "tags": [
+    "alert",
+    "close",
+    "cancel",
+    "remove",
+    "delete",
+    "dismiss"
+  ],
+  "keywords": [
+    "close dialog",
+    "cancel action",
+    "remove item",
+    "dismiss window",
+    "exit modal",
+    "delete entry",
+    "stop action",
+    "clear selection",
+    "error close"
+  ]
+}

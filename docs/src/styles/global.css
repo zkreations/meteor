@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: var(--color-teal-700);
+  --color-brand-subtle: var(--color-teal-50);
+  --color-brand-border: var(--color-teal-300);
+  --color-brand-active: var(--color-teal-500);
+  --animate-shake: shake 1s ease-in-out infinite;
+  --animate-float: float 2s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  8%  { transform: rotate(-18deg); }
+  16% { transform: rotate(18deg); }
+  24% { transform: rotate(-14deg); }
+  32% { transform: rotate(14deg); }
+  40% { transform: rotate(-10deg); }
+  48% { transform: rotate(10deg); }
+  56% { transform: rotate(-6deg); }
+  64% { transform: rotate(6deg); }
+  72% { transform: rotate(-2deg); }
+  80% { transform: rotate(2deg); }
+  88%, 100% { transform: rotate(0deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-.5rem); }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .dropdown {
+    @apply absolute top-full bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+  }
+
+  .dropdown-visible {
+    @apply opacity-100 pointer-events-auto scale-100 translate-y-0;
+  }
+
+  .dropdown-item {
+    @apply px-3 py-2 rounded-md flex items-center gap-2 w-full text-left text-slate-700 hover:bg-slate-100 transition-colors duration-200 cursor-pointer;
+  }
+
+  .dropdown-item-active {
+    @apply bg-brand-subtle text-brand;
+  }
+
+  .modal {
+    @apply pointer-events-none opacity-0 transition-opacity duration-300;
+  }
+
+  .modal-open {
+    @apply pointer-events-auto opacity-100;
+  }
+
+  .modal-dialog {
+    @apply -translate-y-4 transition-transform duration-300;
+  }
+
+  .modal-dialog-open {
+    @apply translate-y-0;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 h-12 px-3 rounded-md whitespace-nowrap bg-slate-100 text-slate-700 cursor-pointer transition-colors duration-300 hover:bg-slate-200 focus:outline-none;
+  }
+
+  .icon-slider {
+    @apply h-5 bg-transparent cursor-pointer appearance-none focus:outline-none;
+  }
+
+  .icon-slider::-webkit-slider-runnable-track {
+    @apply h-1 rounded-full bg-slate-300;
+  }
+
+  .icon-slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm -mt-1.5;
+  }
+
+  .icon-slider:focus::-webkit-slider-thumb {
+    @apply shadow-lg;
+  }
+
+  .icon-slider::-moz-range-track {
+    @apply h-1 rounded-full bg-slate-300 border-none;
+  }
+
+  .icon-slider::-moz-range-thumb {
+    @apply w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm;
+  }
+
+  .icon-slider:focus::-moz-range-thumb {
+    @apply shadow-lg;
+  }
+
+  .size-chip {
+    @apply inline-flex items-center justify-center h-7 px-2.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-brand-border hover:text-brand hover:bg-brand-subtle;
+  }
+
+  .size-chip-active {
+    @apply border-brand-active bg-brand-subtle text-brand shadow-sm;
+  }
+
+  .chip-list {
+    @apply mt-2 flex flex-wrap gap-2;
+  }
+
+  .section-content {
+    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6;
+  }
+
+  .icon-setting-group {
+    @apply flex flex-col gap-2.5;
+  }
+
+  .icon-setting-label {
+    @apply text-sm font-medium text-slate-700;
+  }
+
+  .icon-setting-row {
+    @apply flex justify-between items-center;
+  }
+
+  .icon-card {
+    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-brand-active cursor-pointer relative;
+  }
+
+  .icon-preview {
+    @apply flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300;
+  }
+
+  .icon-text {
+    @apply text-slate-500 transition duration-300;
+  }
+
+  .icon-actions {
+    @apply inset-0.75 flex gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
+  }
+
+  .icon-action {
+    @apply items-center justify-center py-3 w-full transition h-auto;
+  }
+
+  .text-hidden {
+    @apply text-[0px] gap-0
+  }
+
+  .icon-customize svg {
+    width: var(--icon-customize-size, 24px);
+    height: var(--icon-customize-size, 24px);
+    color: var(--icon-customize-color, currentColor);
+    stroke-width: var(--icon-customize-stroke-width, 2);
+  }
+
+  .toast-container {
+    @apply fixed bottom-6 left-1/2 transform -translate-x-1/2 z-100 pointer-events-none;
+  }
+
+  .toast-item {
+    @apply transition duration-300 flex items-center gap-2.5 bg-zinc-900 text-white px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
+  }
+
+  .toast-item:not(.is-visible) {
+    @apply opacity-0 translate-y-4;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+
+  @supports not (selector(::-webkit-scrollbar-thumb)) {
+    .scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-slate-300) transparent;
+    }
+  }
+}

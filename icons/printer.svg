@@ -1,0 +1,4 @@
+<svg class="i i-printer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M18 9V3q0-1-1-1H7Q6 2 6 3v6m12 9h2a2 2 0 002-2v-5a2 2 0 00-2-2H4a2 2 0 00-2 2v5a2 2 0 002 2h2"/>
+  <rect width="12" height="8" x="6" y="14" rx="1"/>
+</svg>

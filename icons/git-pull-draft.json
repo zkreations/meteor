@@ -1,0 +1,23 @@
+{
+  "name": "git-pull-draft",
+  "title": "Git Pull Draft",
+  "categories": [
+    "development"
+  ],
+  "tags": [
+    "git",
+    "pull request",
+    "draft",
+    "review"
+  ],
+  "keywords": [
+    "work in progress",
+    "code review draft",
+    "unfinished pull request",
+    "pre-merge changes",
+    "repository collaboration",
+    "git workflow",
+    "proposed changes",
+    "development draft"
+  ]
+}

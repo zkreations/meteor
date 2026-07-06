@@ -1,0 +1,24 @@
+{
+  "name": "visual-studio-code",
+  "title": "Visual Studio Code",
+  "categories": [
+    "development",
+    "brands"
+  ],
+  "tags": [
+    "code editor",
+    "ide",
+    "software",
+    "programming",
+    "logo"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "debugging",
+    "extensions",
+    "intellisense",
+    "terminal",
+    "git integration"
+  ]
+}

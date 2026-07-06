@@ -1,0 +1,25 @@
+{
+  "name": "svelte",
+  "title": "Svelte",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "javascript",
+    "frontend",
+    "framework",
+    "ui",
+    "compiler"
+  ],
+  "keywords": [
+    "web development",
+    "components",
+    "single page application",
+    "spa",
+    "sveltekit",
+    "reactive",
+    "frontend framework",
+    "compile-time framework"
+  ]
+}

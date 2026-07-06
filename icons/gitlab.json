@@ -1,0 +1,26 @@
+{
+  "name": "gitlab",
+  "title": "GitLab",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "git",
+    "repository",
+    "devops",
+    "ci",
+    "cd",
+    "logo"
+  ],
+  "keywords": [
+    "code hosting",
+    "version control",
+    "devops platform",
+    "continuous integration",
+    "continuous deployment",
+    "repositories",
+    "software development",
+    "collaboration platform"
+  ]
+}

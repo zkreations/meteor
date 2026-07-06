@@ -1,0 +1,26 @@
+{
+  "name": "ellipsis",
+  "title": "Ellipsis",
+  "categories": [
+    "navigation",
+    "editing"
+  ],
+  "tags": [
+    "text",
+    "dots",
+    "more",
+    "truncation",
+    "menu",
+    "continuation"
+  ],
+  "keywords": [
+    "...",
+    "text overflow",
+    "continue reading",
+    "hidden content",
+    "menu trigger",
+    "additional options",
+    "truncate text",
+    "loading indicator"
+  ]
+}

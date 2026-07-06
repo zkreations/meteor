@@ -1,0 +1,25 @@
+{
+  "name": "alarm-clock",
+  "title": "Alarm Clock",
+  "categories": [
+    "time",
+    "devices"
+  ],
+  "tags": [
+    "clock",
+    "alarm",
+    "schedule",
+    "timer",
+    "reminder"
+  ],
+  "keywords": [
+    "wake up",
+    "morning alarm",
+    "notification",
+    "bedside clock",
+    "time alert",
+    "set alarm",
+    "ring bell",
+    "appointment reminder"
+  ]
+}

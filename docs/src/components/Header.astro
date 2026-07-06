@@ -1,0 +1,24 @@
+---
+import { Meteor, Github, X } from '@meteor-icons/astro'
+
+const docsVersion = 'v4.0.0';
+const githubUrl = 'https://github.com/zkreations/meteor';
+const twitterUrl = 'https://x.com/intent/tweet?text=Meteor%20Icons%20-%20Open%20source%20icon%20library&url=https://meteoricons.com';
+---
+
+<header class="border-b border-slate-200">
+  <div class="flex items-center justify-between py-6 wrapper">
+    <a href="/" class="flex items-center gap-3" aria-label="Meteor Icons home">
+      <Meteor size={32} />
+      <button class="rounded-md bg-slate-100 px-2 py-1 text-sm font-medium text-slate-600 font-mono cursor-pointer">{docsVersion}</button>
+    </a>
+    <nav class="flex items-center gap-4 text-sm text-slate-500">
+      <a href={githubUrl} target="_blank" rel="noreferrer" class="link-hover-slate" aria-label="GitHub repository">
+        <Github size={20} />
+      </a>
+      <a href={twitterUrl} target="_blank" rel="noreferrer" class="link-hover-slate" aria-label="Twitter share">
+        <X size={20} />
+      </a>
+    </nav>
+  </div>
+</header>

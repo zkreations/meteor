@@ -1,0 +1,27 @@
+{
+  "name": "square-info",
+  "title": "Square Info",
+  "categories": [
+    "security"
+  ],
+  "tags": [
+    "alert",
+    "info",
+    "information",
+    "help",
+    "details",
+    "tooltip",
+    "notice"
+  ],
+  "keywords": [
+    "more information",
+    "help message",
+    "system info",
+    "details panel",
+    "documentation hint",
+    "tooltip info",
+    "guidance",
+    "explanation",
+    "ui hint"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "terminal",
+  "title": "Terminal",
+  "categories": [
+    "development"
+  ],
+  "tags": [
+    "cli",
+    "command",
+    "shell",
+    "console",
+    "developer",
+    "system",
+    "software"
+  ],
+  "keywords": [
+    "command prompt",
+    "linux terminal",
+    "mac terminal",
+    "windows cmd",
+    "bash",
+    "zsh",
+    "script execution",
+    "developer tools",
+    "system commands"
+  ]
+}

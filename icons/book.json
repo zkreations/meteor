@@ -1,0 +1,26 @@
+{
+  "name": "book",
+  "title": "Book",
+  "categories": [
+    "education"
+  ],
+  "tags": [
+    "book",
+    "study",
+    "library",
+    "knowledge",
+    "learning",
+    "reading",
+    "objects"
+  ],
+  "keywords": [
+    "reading material",
+    "education resource",
+    "novel",
+    "manual",
+    "reference guide",
+    "study item",
+    "knowledge source",
+    "printed pages"
+  ]
+}

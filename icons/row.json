@@ -1,0 +1,26 @@
+{
+  "name": "row",
+  "title": "Row",
+  "categories": [
+    "layout",
+    "design"
+  ],
+  "tags": [
+    "rows",
+    "structure",
+    "list",
+    "grid",
+    "alignment"
+  ],
+  "keywords": [
+    "list view",
+    "table rows",
+    "UI structure",
+    "content organization",
+    "vertical layout",
+    "dashboard layout",
+    "sections",
+    "stacked items",
+    "data rows"
+  ]
+}

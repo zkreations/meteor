@@ -1,0 +1,25 @@
+{
+  "name": "command",
+  "title": "Command",
+  "categories": [
+    "development"
+  ],
+  "tags": [
+    "command",
+    "control",
+    "input",
+    "shortcut",
+    "action",
+    "system"
+  ],
+  "keywords": [
+    "keyboard shortcut",
+    "system command",
+    "execute action",
+    "terminal command",
+    "app command",
+    "search command",
+    "quick actions",
+    "developer tool"
+  ]
+}

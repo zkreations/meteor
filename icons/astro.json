@@ -1,0 +1,27 @@
+{
+  "name": "astro",
+  "title": "Astro",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "framework",
+    "javascript",
+    "web",
+    "static site",
+    "frontend",
+    "modern",
+    "logo"
+  ],
+  "keywords": [
+    "islands architecture",
+    "vite",
+    "ssg",
+    "content site",
+    "web framework",
+    "jamstack",
+    "developer tools",
+    "frontend framework"
+  ]
+}

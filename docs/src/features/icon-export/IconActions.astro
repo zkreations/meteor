@@ -1,0 +1,36 @@
+---
+import { Download, Image, Copy } from '@meteor-icons/astro'
+
+interface Props {
+  variant?: 'compact' | 'full'
+  size?: number
+}
+
+const { variant = 'full', size = 24 } = Astro.props
+---
+
+{variant === 'compact' ? (
+  <div class="icon-actions">
+    <button type="button" data-action-copy-svg class="btn icon-action" title="Copy SVG" tabindex="-1">
+      <Copy size={size} class="w-5 h-5" />
+    </button>
+    <button type="button" data-action-download-png class="btn icon-action" title="Download PNG" tabindex="-1">
+      <Image size={size} class="w-5 h-5" />
+    </button>
+    <button type="button" data-action-download-svg class="btn icon-action" title="Download SVG" tabindex="-1">
+      <Download size={size} class="w-5 h-5" />
+    </button>
+  </div>
+) : (
+  <>
+    <button type="button" data-action-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Copy size={size} class="sm:w-6 sm:h-6 w-5 h-5" /> Copy SVG
+    </button>
+    <button type="button" data-action-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Image size={size} class="sm:w-6 sm:h-6 w-5 h-5" /> Download PNG
+    </button>
+    <button type="button" data-action-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
+      <Download size={size} class="sm:w-6 sm:h-6 w-5 h-5" /> Download SVG
+    </button>
+  </>
+)}

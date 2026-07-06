@@ -1,3 +1,3 @@
 <svg class="i i-wave" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M2 12c2 9 8 9 10 0s8-9 10 0"/>
+  <path d="M2 12a2 2 0 012 2v3a2 2 0 004 0V4a2 2 0 014 0v16a2 2 0 004 0V7a2 2 0 014 0v3a2 2 0 002 2"/>
 </svg>

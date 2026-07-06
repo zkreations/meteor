@@ -1,0 +1,25 @@
+{
+  "name": "refresh",
+  "title": "Refresh",
+  "categories": [
+    "navigation"
+  ],
+  "tags": [
+    "reload",
+    "update",
+    "sync",
+    "rotate",
+    "retry"
+  ],
+  "keywords": [
+    "reload page",
+    "fetch again",
+    "update data",
+    "refresh view",
+    "sync content",
+    "recheck",
+    "restart request",
+    "update UI",
+    "circular arrow"
+  ]
+}

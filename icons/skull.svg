@@ -1,5 +1,5 @@
 <svg class="i i-skull" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <circle cx="8" cy="11" r="1"/>
   <circle cx="16" cy="11" r="1"/>
-  <path d="M18 18a10 8.9 0 1 0-12 0v4h12Zm-8 1v3m4-3v3"/>
+  <path d="M18 18a10 8.9 0 10-12 0v4h12Zm-8 1v3m4-3v3"/>
 </svg>

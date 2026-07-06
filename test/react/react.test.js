@@ -1,0 +1,139 @@
+import { cleanup, render } from '@testing-library/react'
+import React, { createRef } from 'react'
+import { afterEach, describe, expect, it } from 'vitest'
+
+import { createIcon } from '../../packages/react/src/create-icon.js'
+import AlarmClock from '../../packages/react/src/icons/alarm-clock.js'
+
+import ArrowRight from '../../packages/react/src/icons/arrow-right.js'
+
+import {
+  AlarmClock as AlarmClockFromIndex,
+  ArrowRight as ArrowRightFromIndex,
+} from '../../packages/react/src/index.js'
+
+afterEach(() => {
+  cleanup()
+})
+
+describe('react icons', () => {
+  it('renders icons with default svg attributes', () => {
+    const cases = [
+      {
+        Icon: AlarmClock,
+        expectedClass: 'i i-alarm-clock',
+        expectedPathD: 'm1 4 3-3m16 0 3 3M12 7v5l3 3',
+        extraSelector: 'circle',
+      },
+      {
+        Icon: ArrowRight,
+        expectedClass: 'i i-arrow-right',
+        expectedPathD: 'm12 19 7-7-7-7m7 7H5',
+      },
+    ]
+
+    for (const { Icon, expectedClass, expectedPathD, extraSelector } of cases) {
+      const { container, unmount } = render(React.createElement(Icon))
+      const svg = container.querySelector('svg')
+
+      expect(svg).not.toBeNull()
+      expect(svg.getAttribute('width')).toBe('24')
+      expect(svg.getAttribute('height')).toBe('24')
+      expect(svg.getAttribute('stroke')).toBe('currentColor')
+      expect(svg.getAttribute('stroke-width')).toBe('2')
+      expect(svg.getAttribute('fill')).toBe('none')
+      expect(svg.getAttribute('class')).toBe(expectedClass)
+
+      const path = container.querySelector('path')
+      expect(path).not.toBeNull()
+      expect(path.getAttribute('d')).toBe(expectedPathD)
+
+      if (extraSelector) {
+        expect(container.querySelector(extraSelector)).not.toBeNull()
+      }
+
+      unmount()
+    }
+  })
+
+  it('applies size, color, strokeWidth, className and passthrough attributes', () => {
+    const { container } = render(
+      React.createElement(ArrowRight, {
+        'size': 48,
+        'color': 'red',
+        'strokeWidth': 1.5,
+        'className': 'extra-class',
+        'data-testid': 'arrow-right-icon',
+      }),
+    )
+
+    const svg = container.querySelector('svg')
+
+    expect(svg.getAttribute('width')).toBe('48')
+    expect(svg.getAttribute('height')).toBe('48')
+    expect(svg.getAttribute('stroke')).toBe('red')
+    expect(svg.getAttribute('stroke-width')).toBe('1.5')
+    expect(svg.getAttribute('data-testid')).toBe('arrow-right-icon')
+    expect(svg.getAttribute('class')).toBe('i i-arrow-right extra-class')
+  })
+
+  it('forwards refs to the svg element', () => {
+    const ref = createRef()
+    const { container } = render(React.createElement(AlarmClock, { ref }))
+    const svg = container.querySelector('svg')
+
+    expect(ref.current).toBe(svg)
+    expect(ref.current.tagName.toLowerCase()).toBe('svg')
+  })
+
+  it('normalizes node attributes and renders nested children with createIcon', () => {
+    const CustomIcon = createIcon('custom-shape', [
+      {
+        tag: 'g',
+        attrs: {
+          'class': 'node-group',
+          'stroke-width': '3',
+          'fill-rule': 'evenodd',
+          'stroke-dasharray': '4 2',
+        },
+        children: [
+          {
+            tag: 'path',
+            attrs: { d: 'M0 0h1' },
+          },
+          {
+            tag: 'path',
+            attrs: {
+              'd': 'M1 1h1',
+              'clip-rule': 'evenodd',
+            },
+          },
+        ],
+      },
+    ])
+
+    const { container } = render(React.createElement(CustomIcon))
+    const group = container.querySelector('g')
+    const paths = container.querySelectorAll('path')
+
+    expect(group).not.toBeNull()
+    expect(group.getAttribute('class')).toBe('node-group')
+    expect(group.getAttribute('stroke-width')).toBe('3')
+    expect(group.getAttribute('fill-rule')).toBe('evenodd')
+    expect(group.getAttribute('stroke-dasharray')).toBe('4 2')
+
+    expect(paths.length).toBe(2)
+    expect(paths[1].getAttribute('clip-rule')).toBe('evenodd')
+  })
+
+  it('sets a stable displayName on generated components', () => {
+    const Dynamic = createIcon('display-icon', [])
+
+    expect(Dynamic.displayName).toBe('display-icon')
+  })
+
+  it('exports the same generated icons from index', () => {
+    expect(AlarmClockFromIndex).toBe(AlarmClock)
+    expect(ArrowRightFromIndex).toBe(ArrowRight)
+  })
+})

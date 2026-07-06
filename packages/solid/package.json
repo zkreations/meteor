@@ -1,0 +1,49 @@
+{
+  "name": "@meteor-icons/solid",
+  "type": "module",
+  "version": "4.0.0",
+  "private": false,
+  "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
+  "author": "Abel Moreira <daniel@zkreations.com>",
+  "license": "MIT",
+  "homepage": "https://meteoricons.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkreations/meteor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zkreations/meteor/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "meteor-icons"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.jsx"
+    },
+    "./icons/*": {
+      "types": "./src/icons/*.d.ts",
+      "import": "./src/icons/*.jsx"
+    }
+  },
+  "main": "src/index.jsx",
+  "module": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "prepack": "npm --prefix ../.. run build"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.8"
+  }
+}

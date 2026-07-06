@@ -1,0 +1,26 @@
+{
+  "name": "solidjs",
+  "title": "SolidJS",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "javascript",
+    "frontend",
+    "framework",
+    "ui",
+    "reactive"
+  ],
+  "keywords": [
+    "fine-grained reactivity",
+    "web development",
+    "single page application",
+    "spa",
+    "jsx",
+    "signals",
+    "components",
+    "frontend library",
+    "react alternative"
+  ]
+}

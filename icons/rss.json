@@ -1,0 +1,27 @@
+{
+  "name": "rss",
+  "title": "RSS",
+  "categories": [
+    "communication"
+  ],
+  "tags": [
+    "web",
+    "feed",
+    "news",
+    "subscription",
+    "updates",
+    "xml",
+    "content"
+  ],
+  "keywords": [
+    "really simple syndication",
+    "blog updates",
+    "article feed",
+    "content updates",
+    "subscribe feed",
+    "latest posts",
+    "news reader",
+    "aggregator",
+    "feed reader"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "square",
+  "title": "Square",
+  "categories": [
+    "shapes",
+    "design"
+  ],
+  "tags": [
+    "square",
+    "shape",
+    "geometry",
+    "box",
+    "block",
+    "tile"
+  ],
+  "keywords": [
+    "four sides",
+    "equal sides",
+    "geometric shape",
+    "grid cell",
+    "tile",
+    "UI block",
+    "layout element",
+    "pixel block",
+    "basic shape"
+  ]
+}

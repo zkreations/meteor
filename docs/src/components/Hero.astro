@@ -1,0 +1,27 @@
+---
+import { Astro as AstroIcon, Solidjs, Preact, Vuejs, React, Svelte } from '@meteor-icons/astro'
+import IconSkeleton from '@features/icon-skeleton/IconSkeleton.astro';
+
+const heroTitle = 'Meteor Icons'
+const heroDescription = 'Meteor is an open-source icon set, designed at code level through intelligent reasoning that surpasses automated optimization, ensuring clean and lightweight code.'
+---
+
+<section class="pt-10 md:pt-18 wrapper">
+  <div class="flex justify-between lg:flex-row flex-col items-center gap-10">
+    <div class="flex flex-col lg:text-left text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">{heroTitle}</h1>
+      <p class="mt-4 leading-7 text-slate-600 md:text-lg text-balance">
+        {heroDescription}
+      </p>
+      <div class="mt-6 flex gap-4 flex-wrap justify-center lg:justify-start *:text-slate-500 *:hover:text-brand-active *:transition-colors *:duration-200">
+        <a href="/#astro" title="Astro Package"><AstroIcon size={32} strokeWidth={1} /></a>
+        <a href="/#solidjs" title="SolidJS Package"><Solidjs size={32} strokeWidth={1} /></a>
+        <a href="/#preact" title="Preact Package"><Preact size={32} strokeWidth={1} /></a>
+        <a href="/#react" title="React Package"><React size={32} strokeWidth={1} /></a>
+        <a href="/#svelte" title="Svelte Package"><Svelte size={32} strokeWidth={1} /></a>
+        <a href="/#vuejs" title="Vue.js Package"><Vuejs size={32} strokeWidth={1} /></a>
+      </div>
+    </div>
+    <IconSkeleton customClass="max-w-sm flex-shrink-0" random reactive />
+  </div>
+</section>

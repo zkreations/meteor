@@ -1,0 +1,29 @@
+{
+  "name": "power",
+  "title": "Power",
+  "categories": [
+    "devices"
+  ],
+  "tags": [
+    "energy",
+    "power",
+    "on/off",
+    "toggle",
+    "button",
+    "control",
+    "standby",
+    "system"
+  ],
+  "keywords": [
+    "turn on",
+    "shut down",
+    "restart",
+    "sleep mode",
+    "device control",
+    "electricity",
+    "energy saving",
+    "toggle switch",
+    "boot",
+    "shutdown"
+  ]
+}

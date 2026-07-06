@@ -1,0 +1,25 @@
+{
+  "name": "book-marked",
+  "title": "Book Marked",
+  "categories": [
+    "education"
+  ],
+  "tags": [
+    "book",
+    "bookmark",
+    "saved",
+    "library",
+    "study",
+    "reading"
+  ],
+  "keywords": [
+    "reading list",
+    "favorite book",
+    "saved reference",
+    "study material",
+    "library item",
+    "bookmark page",
+    "reading progress",
+    "education resource"
+  ]
+}

@@ -1,5 +1,3 @@
 <svg class="i i-codepen" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="m12 2 10 6.5v7L12 22 2 15.5v-7Zm0 20v-6.5M12 2v6.5"/>
-  <path d="m22 8.5-10 7-10-7"/>
-  <path d="m2 15.5 10-7 10 7"/>
+  <path d="M12 8.5V2m0 13.5V22M2 8.5v7L12 22l10-6.5v-7L12 2Zl10 7 10-7m0 7-10-7-10 7"/>
 </svg>

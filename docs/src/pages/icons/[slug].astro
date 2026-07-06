@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '@layout/Layout.astro'
+import IconDetail from '@features/icon-detail/IconDetail.astro'
+
+type IconData = {
+  name: string
+  title?: string
+  categories: string[]
+  tags: string[]
+  keywords?: string[]
+}
+
+type Props = {
+  icon: IconData
+  slug: string
+}
+
+export async function getStaticPaths() {
+  const createIdFromName = (name: string) => name.toLowerCase().replace(/\s+/g, '-')
+  const entries = await getCollection('icons')
+
+  return entries.map(entry => ({
+    params: { slug: createIdFromName(entry.data.name) },
+    props: { icon: { ...entry.data }, slug: createIdFromName(entry.data.name) }
+  }))
+}
+
+const { icon, slug } = Astro.props as Props
+---
+
+<Layout title={icon.title ?? icon.name} description={icon.name}>
+  <IconDetail icon={icon} slug={slug} />
+</Layout>

@@ -1,0 +1,23 @@
+{
+  "name": "circle-xmark",
+  "title": "Circle Xmark",
+  "categories": [
+    "security"
+  ],
+  "tags": [
+    "close",
+    "cancel",
+    "error",
+    "remove"
+  ],
+  "keywords": [
+    "dismiss message",
+    "delete item",
+    "stop action",
+    "negative state",
+    "error indicator",
+    "remove option",
+    "close button",
+    "cancel operation"
+  ]
+}

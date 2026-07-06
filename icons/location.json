@@ -1,0 +1,24 @@
+{
+  "name": "location",
+  "title": "Location",
+  "categories": [
+    "maps"
+  ],
+  "tags": [
+    "location",
+    "map",
+    "place",
+    "pin",
+    "gps"
+  ],
+  "keywords": [
+    "address",
+    "geolocation",
+    "navigation",
+    "current place",
+    "destination",
+    "coordinates",
+    "map marker",
+    "find place"
+  ]
+}

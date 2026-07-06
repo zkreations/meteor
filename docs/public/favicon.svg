@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="i i-meteor">
+  <circle cx="10" cy="14" r="3.5"></circle>
+  <path d="m17 10 5-5m-6-1 2-2m-5 5zM7.88 4.81 4.34 8.34M22 13.31l-6.34 6.35M4.34 8.34a1 1 0 0011.32 11.32"></path>
+  <style>
+    path { stroke: #000; }
+    @media (prefers-color-scheme: dark) {
+      path { stroke: #FFF; }
+    }
+  </style>
+</svg>

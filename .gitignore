@@ -1,6 +1,12 @@
 # Folders & files
 node_modules
 package-lock.json
+pnpm-lock.yaml
+dist
+implements
+lab
+*.html
+*.txt
 
 # jekyll
 _site
@@ -8,3 +14,12 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+# Keep package scaffolding tracked, but ignore generated framework outputs.
+packages/*/src/*
+!packages/*/src/icons/
+packages/*/src/icons/*
+!packages/*/src/icons/.gitkeep
+packages/core/exports/*
+!packages/core/exports/.gitkeep
+packages/core/icons/*
+!packages/core/icons/.gitkeep

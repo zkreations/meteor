@@ -1,0 +1,27 @@
+{
+  "name": "album",
+  "title": "Album",
+  "categories": [
+    "multimedia",
+    "files"
+  ],
+  "tags": [
+    "music",
+    "album",
+    "audio",
+    "songs",
+    "collection",
+    "playlist",
+    "media"
+  ],
+  "keywords": [
+    "tracks",
+    "discography",
+    "artist release",
+    "audio library",
+    "lp",
+    "vinyl",
+    "record",
+    "music collection"
+  ]
+}
