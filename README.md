@@ -1,12 +1,14 @@
 ![cover](./assets/cover.png)
 
 <p align="center">
-  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/dt/meteor-icons" alt="Total Downloads"></a>
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
+  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Release"></a>
-  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
+  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
 </p>
 
 ## About
