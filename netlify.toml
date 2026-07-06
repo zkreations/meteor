@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install --filter @meteor-icons/docs... && pnpm --filter @meteor-icons/docs build"
+  command = "pnpm install && node ./build/generate-svg.js && node ./build/generate-astro.js && pnpm --filter @meteor-icons/docs build"
   publish = "docs/dist"
 
 [build.environment]
