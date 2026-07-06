@@ -2,6 +2,7 @@
   "type": "module",
   "version": "4.0.0",
   "private": true,
+  "packageManager": "pnpm@10.33.0",
   "author": "@danieIabel",
   "license": "MIT",
   "homepage": "https://github.com/zkreations/meteor#readme",
