@@ -20,7 +20,6 @@ function getDefaultMetadata(iconName) {
     title: toTitleFromIconName(iconName),
     categories: [],
     tags: [],
-    aliases: [],
     keywords: [],
   }
 }
