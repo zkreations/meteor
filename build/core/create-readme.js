@@ -2,7 +2,6 @@
 export const PACKAGE_README_CONFIGS = {
   react: {
     packageName: '@meteor-icons/react',
-    framework: 'React',
     peerLabel: 'React',
     importPkg: '@meteor-icons/react',
     installPkg: '@meteor-icons/react',
@@ -40,7 +39,6 @@ export default function App() {
   },
   preact: {
     packageName: '@meteor-icons/preact',
-    framework: 'Preact',
     peerLabel: 'Preact',
     importPkg: '@meteor-icons/preact',
     installPkg: '@meteor-icons/preact',
@@ -78,7 +76,6 @@ export default function App() {
   },
   vue: {
     packageName: '@meteor-icons/vue',
-    framework: 'Vue',
     peerLabel: 'Vue',
     importPkg: '@meteor-icons/vue',
     installPkg: '@meteor-icons/vue',
@@ -113,7 +110,6 @@ import { Code } from '@meteor-icons/vue'
   },
   solid: {
     packageName: '@meteor-icons/solid',
-    framework: 'Solid',
     peerLabel: 'SolidJS',
     importPkg: '@meteor-icons/solid',
     installPkg: '@meteor-icons/solid',
@@ -144,7 +140,6 @@ export default function App() {
   },
   svelte: {
     packageName: '@meteor-icons/svelte',
-    framework: 'Svelte',
     peerLabel: 'Svelte',
     importPkg: '@meteor-icons/svelte',
     installPkg: '@meteor-icons/svelte',
@@ -177,7 +172,6 @@ export default function App() {
   },
   astro: {
     packageName: '@meteor-icons/astro',
-    framework: 'Astro',
     peerLabel: 'Astro',
     importPkg: '@meteor-icons/astro',
     installPkg: '@meteor-icons/astro',
@@ -226,7 +220,6 @@ function buildPropsTable(props) {
 // @return {string}
 export function buildReadme(config) {
   const {
-    framework,
     peerLabel,
     installPkg,
     usageSnippet,
@@ -235,7 +228,20 @@ export function buildReadme(config) {
     exampleSnippet,
   } = config
 
-  return `# Meteor Icons ${framework}
+  return `![cover](./assets/cover.png)
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/${installPkg}"><img src="https://img.shields.io/npm/v/${installPkg}" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/${installPkg}"><img src="https://img.shields.io/npm/dt/${installPkg}" alt="Total Downloads"></a>
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/${installPkg}" alt="License"></a>
+  <a href="https://www.npmjs.com/package/${installPkg}"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
+</p>
+
+<p align="center">
+  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
+</p>
+
+## About
 
 A lightweight, tree-shakeable icon library for ${peerLabel} applications based on Meteor Icons.
 
