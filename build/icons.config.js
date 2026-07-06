@@ -1,7 +1,9 @@
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import rootPkg from '../package.json' with { type: 'json' }
 import { makeFrameworkEntry } from './core/create-packages.js'
 
+const { version } = rootPkg
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
@@ -30,7 +32,7 @@ export default {
     defaults: {
       name: 'meteor-icons',
       type: 'module',
-      version: '4.0.0',
+      version,
       private: false,
       description: 'Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.',
       author: 'Abel Moreira <daniel@zkreations.com>',

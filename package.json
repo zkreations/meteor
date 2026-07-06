@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "version": "4.0.0",
   "private": true,
   "author": "@danieIabel",
   "license": "MIT",
