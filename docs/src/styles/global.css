@@ -184,7 +184,7 @@
   @supports not (selector(::-webkit-scrollbar-thumb)) {
     .scrollbar {
       scrollbar-width: thin;
-      @apply bg-gray-50;
+      scrollbar-color: var(--color-slate-300) transparent;
     }
   }
 }
