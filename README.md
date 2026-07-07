@@ -8,12 +8,40 @@
 </p>
 
 <p align="center">
-  <a href="https://meteoricons.com/"><strong>Browse at meteoricons.com →</strong></a>
+  <a href="https://meteoricons.com/"><strong>Browse icons at meteoricons.com →</strong></a>
 </p>
 
-## About
+---
 
-Meteor Icons is an open-source icon set designed at code level through intelligent reasoning that surpasses automated optimization, ensuring clean and lightweight SVG code. Every icon is manually crafted to make smart decisions about path structure, keeping file sizes as small as possible.
+## The problem with other icon libraries
+
+Most icon sets are generated. An SVG tool exports a shape, an optimizer runs over it, and the result ships — clean enough, but not clean. Automated optimization has a hard ceiling: it can remove obvious redundancy, but it cannot reason about what a path is trying to draw.
+
+The result is icon files that carry invisible weight: control points that could be anchor points, arcs expressed as Bézier curves, coordinates with six decimal places, path segments that could be a single straight line. No visual difference. Real overhead.
+
+## Meteor takes a different approach
+
+Every icon in this set is authored by hand at path level. That means looking at the SVG commands directly — not at the rendered shape — and asking whether each command is the best way to draw it. Sometimes an arc replaces four curves. Sometimes a coordinate simplifies to a round number. Sometimes two paths collapse into one.
+
+The result is SVG code that could not be made smaller without changing what it draws.
+
+**You can see this for yourself.** The [documentation site](https://meteoricons.com/) visualizes the skeleton of each icon — every anchor point, control handle, and path segment — so the structural decisions are visible, not just claimed.
+
+## What this means in practice
+
+- **Smaller bundle size.** Less path data means less to parse, transfer, and render. In an icon-heavy UI, this compounds.
+- **Cleaner diffs.** Human-authored paths don't shift on every regeneration. The SVG source is stable.
+- **Readable source.** The coordinates are intentional, not arbitrary floating-point artifacts. You can read a path and understand what it's doing.
+- **Framework-ready.** Packages for Astro, React, Preact, Vue, SolidJS, and Svelte are generated from the same optimized source. The optimization carries through to every target.
+
+## What's next
+
+The icon set is live, but the work is ongoing. A few directions that are actively being pursued:
+
+- **Deeper path audits.** Every icon already passes through manual review, but older icons in the set were designed before the current standard was fully established. These are being revisited one by one to bring them to the same level.
+- **Visual consistency pass.** Optimization and consistency are sometimes in tension — a shape that is visually consistent with the rest of the set might require a less efficient path than one drawn in isolation. The goal is to resolve those trade-offs deliberately, not by defaulting to either extreme.
+- **Expanded coverage.** New icons are added regularly, each held to the same authoring standard as the rest.
+- **Tooling for contributors.** Making it easier for contributors to understand what "optimal" looks like in practice — better guidelines, reference examples, and possibly tooling to catch common inefficiencies before review.
 
 ## Packages
 
@@ -82,14 +110,9 @@ pnpm test
 
 ## Contributing
 
-All icons are designed by [Daniel Abel](https://twitter.com/danieI_abel). Contributions are welcome — please keep the following in mind:
+All icons are designed by [Daniel Abel](https://twitter.com/danieI_abel). Contributions are welcome, but this project has a high bar for what ships: if a path can be shorter without changing the shape, it should be. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting.
 
-- Maintain visual consistency across icons
-- Keep SVG code as small as possible
-- When requesting a new icon, include a clear visual reference
-- When contributing an icon, you must be its original author
-
-For more information, see [CONTRIBUTING.md](./CONTRIBUTING.md). You can also support the project by [buying a coffee](https://ko-fi.com/zkreations) ☕.
+You can also support the project by [buying a coffee](https://ko-fi.com/zkreations) ☕.
 
 ## License
 
