@@ -10,10 +10,10 @@ interface Props {
 const { name, IconComponent } = Astro.props
 ---
 
-<article data-open-icon-modal data-name={name} class="icon-card group" role="button" tabindex="0" aria-label={`Open modal for ${name} icon`}>
+<div data-open-icon-modal data-name={name} class="icon-card group" role="button" tabindex="0" aria-label={`Open modal for ${name} icon`}>
   <div class="icon-preview icon-customize">
     <IconComponent size={24} />
     <p class="icon-text">{name}</p>
   </div>
   <IconActions variant="compact" />
-</article>
+</div>
