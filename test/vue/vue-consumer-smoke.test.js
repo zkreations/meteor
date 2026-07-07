@@ -20,7 +20,6 @@ describe('vue package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorVuePath = toPosixPath(resolve(workspaceRoot, 'packages/vue'))
       const installedVueVersion = getInstalledPackageVersion(workspaceRoot, 'vue')
 
@@ -37,7 +36,7 @@ describe('vue package consumer smoke', () => {
           'vue': installedVueVersion,
         },
         devDependencies: {
-          vite: `file:${vitePath}`,
+          vite: '^8.0.0',
         },
       }
 

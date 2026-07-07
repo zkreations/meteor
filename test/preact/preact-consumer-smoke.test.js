@@ -20,7 +20,6 @@ describe('preact package consumer smoke', () => {
     try {
       mkdirSync(srcDir, { recursive: true })
 
-      const vitePath = toPosixPath(resolve(workspaceRoot, 'node_modules/vite'))
       const meteorPreactPath = toPosixPath(resolve(workspaceRoot, 'packages/preact'))
       const installedPreactVersion = getInstalledPackageVersion(workspaceRoot, 'preact')
 
@@ -37,7 +36,7 @@ describe('preact package consumer smoke', () => {
           'preact': installedPreactVersion,
         },
         devDependencies: {
-          vite: `file:${vitePath}`,
+          vite: '^8.0.0',
         },
       }
 
