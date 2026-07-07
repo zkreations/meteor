@@ -19,6 +19,8 @@ Most icon sets are generated. An SVG tool exports a shape, an optimizer runs ove
 
 The result is icon files that carry invisible weight: control points that could be anchor points, arcs expressed as Bézier curves, coordinates with six decimal places, path segments that could be a single straight line. No visual difference. Real overhead.
 
+![example](./assets/example.png)
+
 ## Meteor takes a different approach
 
 Every icon in this set is authored by hand at path level. That means looking at the SVG commands directly — not at the rendered shape — and asking whether each command is the best way to draw it. Sometimes an arc replaces four curves. Sometimes a coordinate simplifies to a round number. Sometimes two paths collapse into one.
