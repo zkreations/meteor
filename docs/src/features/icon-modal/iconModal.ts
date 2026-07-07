@@ -84,7 +84,7 @@ export function initIconModal(root: HTMLElement) {
 
   root.addEventListener('click', (e) => {
     const t = e.target as HTMLElement
-    const card = t.closest<HTMLElement>('article[data-open-icon-modal][data-name]')
+    const card = t.closest<HTMLElement>('[data-open-icon-modal][data-name]')
     if (card && !t.closest('button') && !t.closest('a'))
       open(card)
   })
@@ -92,7 +92,7 @@ export function initIconModal(root: HTMLElement) {
   root.addEventListener('keydown', (e) => {
     if (!(e.target instanceof HTMLElement))
       return
-    const card = e.target.closest<HTMLElement>('article[data-open-icon-modal][data-name]')
+    const card = e.target.closest<HTMLElement>('[data-open-icon-modal][data-name]')
     if (card && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault()
       open(card)
