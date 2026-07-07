@@ -58,9 +58,6 @@ export default {
       engines: {
         node: '>=18',
       },
-      scripts: {
-        prepack: 'npm --prefix ../.. run build',
-      },
       peerDependencies: {},
     },
 
