@@ -3,8 +3,8 @@ import { Rotate } from '@meteor-icons/astro'
 ---
 
 <div class="px-5 py-4 border-b border-slate-100 flex justify-between items-center">
-  <h3 class="font-semibold text-slate-800">Settings</h3>
-  <button data-reset-settings class="text-sm font-medium text-slate-600 hover:text-slate-700 cursor-pointer transition">
+  <div class="font-semibold text-slate-800">Settings</div>
+  <button data-reset-settings class="text-sm font-medium text-slate-600 hover:text-slate-700 cursor-pointer transition" aria-label="Customize icons">
     <Rotate size={20} />
   </button>
 </div>
