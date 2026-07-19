@@ -37,7 +37,7 @@ function buildIncludableLibSource(includableContent) {
 }
 
 function buildIncludeSource() {
-  return `// This file is auto-generated. Do not edit it manually.\nexport const include = \`<b:include name='@meteor' data='{ icon: "{{icon}}"{{#if class}}, class: "{{class}}"{{/if}}{{#if viewbox}}, viewbox: "{{viewbox}}"{{/if}}{{#if fill}}, fill: "{{fill}}"{{/if}}{{#if width}}, width: "{{width}}"{{/if}}{{#if height}}, height: "{{height}}"{{/if}}{{#if strokeWidth}}, strokeWidth: "{{strokeWidth}}"{{/if}}{{#if color}}, color: "{{color}}"{{/if}} }' />\`\n`
+  return `// This file is auto-generated. Do not edit it manually.\nexport const include = \`<b:include name='@meteor' data='{ icon: "{{icon}}"{{#if class}}, class: "{{class}}"{{/if}}{{#if size}}, size: "{{size}}"{{/if}}{{#if strokeWidth}}, strokeWidth: "{{strokeWidth}}"{{/if}}{{#if color}}, color: "{{color}}"{{/if}} }'/>\`\n`
 }
 
 function buildIndexSource() {
