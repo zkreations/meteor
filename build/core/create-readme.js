@@ -108,10 +108,9 @@ createIcons({
           rows: [
             ['`icon`', 'Icon name'],
             ['`class`', 'Additional classes'],
-            ['`viewbox`', '`viewBox` attribute'],
-            ['`fill`', '`fill` attribute'],
-            ['`width`', '`width` attribute'],
-            ['`height`', '`height` attribute'],
+            ['`color`', 'Stroke color'],
+            ['`size`', 'Width and height'],
+            ['`strokeWidth`', 'Stroke thickness'],
           ],
         },
       },

@@ -20,10 +20,10 @@ export async function generateCoreIncludable() {
   const includable = `<b:includable id='@meteor'>
   <svg expr:class='"i i-" + data:icon' viewBox='0 0 24 24'>
     <b:class cond='data:class' expr:name='data:class'/>
-    <b:attr cond='data:viewbox' expr:value='data:viewbox' name='viewBox'/>
-    <b:attr expr:value='data:fill' name='fill'/>
-    <b:attr expr:value='data:width' name='width'/>
-    <b:attr expr:value='data:height' name='height'/>
+    <b:attr expr:value='data:color' name='stroke'/>
+    <b:attr expr:value='data:size' name='width'/>
+    <b:attr expr:value='data:size' name='height'/>
+    <b:attr expr:value='data:strokeWidth' name='stroke-width'/>
     <b:switch var='data:icon'>${items.join('')}
       <b:default/><b:attr expr:value='data:icon' name='data-i'/><circle cx="12" cy="12" r="10"/>
     </b:switch>
