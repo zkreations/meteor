@@ -1,0 +1,40 @@
+{
+  "name": "@meteor-icons/hamlet",
+  "type": "module",
+  "version": "4.0.2",
+  "private": false,
+  "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
+  "author": "Abel Moreira <daniel@zkreations.com>",
+  "license": "MIT",
+  "homepage": "https://meteoricons.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkreations/meteor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zkreations/meteor/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-library",
+    "meteor-icons"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    }
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "types": "",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {}
+}

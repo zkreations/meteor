@@ -2,7 +2,7 @@ import process from 'node:process'
 import { writePackageManifest } from './core/create-packages.js'
 import config from './icons.config.js'
 
-const PACKAGE_KEYS = ['core', 'astro', 'react', 'preact', 'vue', 'solid', 'svelte']
+const PACKAGE_KEYS = ['core', 'astro', 'react', 'preact', 'vue', 'solid', 'svelte', 'hamlet']
 
 async function generatePackageManifests() {
   await Promise.all(

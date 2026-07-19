@@ -154,6 +154,18 @@ export default {
           },
         },
       }),
+
+      hamlet: {
+        name: '@meteor-icons/hamlet',
+        exports: {
+          '.': {
+            default: './index.js',
+          },
+        },
+        main: 'index.js',
+        module: 'index.js',
+        files: ['index.js', 'lib'],
+      },
     },
   },
 }

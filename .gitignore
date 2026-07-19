@@ -23,3 +23,6 @@ packages/core/exports/*
 !packages/core/exports/.gitkeep
 packages/core/icons/*
 !packages/core/icons/.gitkeep
+packages/hamlet/index.js
+packages/hamlet/lib/*
+!packages/hamlet/lib/.gitkeep
