@@ -330,6 +330,13 @@ export default {
   ]
 }
 \`\`\``,
+    commonSnippet: `\`\`\`handlebars
+<b:defaultmarkups>
+  <b:defaultmarkup type='common'>
+    {{> Meteor.includable}}
+  </b:defaultmarkup>
+</b:defaultmarkups>
+\`\`\``,
     partials: [
       { name: '`Meteor.svg`', description: 'SVG partial for inline icon markup' },
       { name: '`Meteor.include`', description: 'Blogger <b:include> helper partial' },
@@ -503,7 +510,7 @@ ${buildSharedFooter()}
 `
 }
 
-function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, partials, parameters, exampleSnippet }) {
+function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, partials, parameters, exampleSnippet, commonSnippet }) {
   return `${buildHeader(installPkg, packageName)}
 
 ## About
@@ -536,7 +543,16 @@ ${buildTable(['Parameter', 'Description'], parameters.map(a => [a.name, a.descri
 
 ### Example
 
+You can use the partials in your Hamlet templates like this:
+
 ${exampleSnippet}
+
+Please note that if you use the \`Meteor.include\` partial, you **must** include the \`Meteor.includable\` partial in your template within Blogger's default \`common\` markup, for example:
+
+${commonSnippet}
+
+If, instead, you are using the \`Meteor.svg\` partial, you do not need to include anything else. You can use it directly in your template.
+
 
 ${buildSharedFooter()}
 `

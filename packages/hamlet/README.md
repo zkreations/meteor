@@ -62,6 +62,8 @@ export default {
 
 ### Example
 
+You can use the partials in your Hamlet templates like this:
+
 ```handlebars
 {{> Meteor.includable}}
 
@@ -69,6 +71,19 @@ export default {
 
 {{> Meteor.svg icon="github"}}
 ```
+
+Please note that if you use the `Meteor.include` partial, you **must** include the `Meteor.includable` partial in your template within Blogger's default `common` markup, for example:
+
+```handlebars
+<b:defaultmarkups>
+  <b:defaultmarkup type='common'>
+    {{> Meteor.includable}}
+  </b:defaultmarkup>
+</b:defaultmarkups>
+```
+
+If, instead, you are using the `Meteor.svg` partial, you do not need to include anything else. You can use it directly in your template.
+
 
 ## Contributing
 
