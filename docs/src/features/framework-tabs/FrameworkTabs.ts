@@ -1,7 +1,7 @@
 import { toPascalCase } from '@shared/stringCase'
 import { showToast } from '@shared/ui/toast'
 
-export type FwKey = 'astro' | 'react' | 'preact' | 'vue' | 'solid' | 'svelte'
+export type FwKey = 'astro' | 'react' | 'preact' | 'vue' | 'solid' | 'svelte' | 'hamlet'
 
 export function snippet(name: string, fw: FwKey): string {
   const ComponentName = toPascalCase(name)
@@ -15,6 +15,8 @@ export function snippet(name: string, fw: FwKey): string {
     return `import { ${ComponentName} } from '@meteor-icons/vue'\n\n<${ComponentName} size="24" />`
   if (fw === 'svelte')
     return `import { ${ComponentName} } from '@meteor-icons/svelte'\n\n<${ComponentName} size={24} />`
+  if (fw === 'hamlet')
+    return `{{> Meteor.svg icon="${name}" size=24 }}`
 
   return `import { ${ComponentName} } from '@meteor-icons/solid'\n\n<${ComponentName} size={24} />`
 }
