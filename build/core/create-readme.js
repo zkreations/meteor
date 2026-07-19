@@ -309,6 +309,47 @@ import { Code } from '@meteor-icons/astro'
 <Code size={48} color='red' strokeWidth={1} class='icon-large' aria-label='code icon' />
 \`\`\``,
   },
+
+  hamlet: {
+    type: 'hamlet',
+    packageName: '@meteor-icons/hamlet',
+    installPkg: '@meteor-icons/hamlet',
+    about: 'A Hamlet plugin that exposes Meteor Icons partials for inline SVG output and Blogger includes.',
+    features: [
+      'Registers the Meteor namespace',
+      'Provides svg, include, and includable partials',
+      'Reuses the same generated icon map as the rest of the project',
+      'Keeps Blogger and SVG output aligned with the core package',
+    ],
+    usageSnippet: `\`\`\`js
+import Meteor from '@meteor-icons/hamlet'
+
+export default {
+  plugins: [
+    Meteor()
+  ]
+}
+\`\`\``,
+    partials: [
+      { name: '`Meteor.svg`', description: 'SVG partial for inline icon markup' },
+      { name: '`Meteor.include`', description: 'Blogger <b:include> helper partial' },
+      { name: '`Meteor.includable`', description: 'Blogger includable XML partial' },
+    ],
+    parameters: [
+      { name: '`icon`', description: 'Icon name' },
+      { name: '`class`', description: 'Additional classes' },
+      { name: '`color`', description: 'Stroke color' },
+      { name: '`size`', description: 'Width and height' },
+      { name: '`strokeWidth`', description: 'Stroke thickness' },
+    ],
+    exampleSnippet: `\`\`\`handlebars
+{{> Meteor.includable}}
+
+{{> Meteor.include icon="github"}}
+
+{{> Meteor.svg icon="github"}}
+\`\`\``,
+  },
 }
 
 function buildTable(headers, rows) {
@@ -462,8 +503,51 @@ ${buildSharedFooter()}
 `
 }
 
+function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, partials, parameters, exampleSnippet }) {
+  return `${buildHeader(installPkg, packageName)}
+
+## About
+
+${about}
+
+## Features
+
+${features.map(f => `- ${f}`).join('\n')}
+
+## Installation
+
+\`\`\`sh
+npm install ${installPkg}
+\`\`\`
+
+## Usage
+
+Add the plugin to your \`hamlet.config.js\` configuration file:
+
+${usageSnippet}
+
+## Partials
+
+${buildTable(['Partial', 'Description'], partials.map(p => [p.name, p.description]))}
+
+## Parameters
+
+${buildTable(['Parameter', 'Description'], parameters.map(a => [a.name, a.description]))}
+
+### Example
+
+${exampleSnippet}
+
+${buildSharedFooter()}
+`
+}
+
 export function buildReadme(config) {
-  return config.type === 'core'
-    ? buildCoreReadme(config)
-    : buildFrameworkReadme(config)
+  if (config.type === 'core')
+    return buildCoreReadme(config)
+
+  if (config.type === 'hamlet')
+    return buildHamletReadme(config)
+
+  return buildFrameworkReadme(config)
 }
