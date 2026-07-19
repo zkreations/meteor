@@ -314,7 +314,7 @@ import { Code } from '@meteor-icons/astro'
     type: 'hamlet',
     packageName: '@meteor-icons/hamlet',
     installPkg: '@meteor-icons/hamlet',
-    about: 'A Hamlet plugin that exposes Meteor Icons partials for inline SVG output and Blogger includes.',
+    about: 'A [Hamlet](https://github.com/zkreations/hamlet) plugin that exposes Meteor Icons partials for inline SVG output and Blogger includes.',
     features: [
       'Registers the Meteor namespace',
       'Provides svg, include, and includable partials',

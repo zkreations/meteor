@@ -13,7 +13,7 @@
 
 ## About
 
-A Hamlet plugin that exposes Meteor Icons partials for inline SVG output and Blogger includes.
+A [Hamlet](https://github.com/zkreations/hamlet) plugin that exposes Meteor Icons partials for inline SVG output and Blogger includes.
 
 ## Features
 
