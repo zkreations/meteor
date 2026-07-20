@@ -1,7 +1,7 @@
 {
   "name": "meteor-icons",
   "type": "module",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "private": false,
   "description": "Meteor is an open-source icon set with ultra-lightweight, performance-focused code, crafted through human reasoning.",
   "author": "Abel Moreira <daniel@zkreations.com>",
