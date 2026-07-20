@@ -330,6 +330,16 @@ export default {
   ]
 }
 \`\`\``,
+    usageOptions: `\`\`\`js
+import Meteor from '@meteor-icons/hamlet'
+
+export default {
+  useMinimalSvgAttributes: true,
+  plugins: [
+    Meteor()
+  ]
+}
+\`\`\``,
     commonSnippet: `\`\`\`handlebars
 <b:defaultmarkups>
   <b:defaultmarkup type='common'>
@@ -348,6 +358,9 @@ export default {
       { name: '`color`', description: 'Stroke color' },
       { name: '`size`', description: 'Width and height' },
       { name: '`strokeWidth`', description: 'Stroke thickness' },
+    ],
+    options: [
+      { name: '`useMinimalSvgAttributes`', description: 'Generates SVGs with only the essential attributes (class, viewBox)' },
     ],
     exampleSnippet: `\`\`\`handlebars
 {{> Meteor.includable}}
@@ -510,7 +523,7 @@ ${buildSharedFooter()}
 `
 }
 
-function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, partials, parameters, exampleSnippet, commonSnippet }) {
+function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, usageOptions, partials, parameters, options, exampleSnippet, commonSnippet }) {
   return `${buildHeader(installPkg, packageName)}
 
 ## About
@@ -541,6 +554,10 @@ ${buildTable(['Partial', 'Description'], partials.map(p => [p.name, p.descriptio
 
 ${buildTable(['Parameter', 'Description'], parameters.map(a => [a.name, a.description]))}
 
+## Options
+
+${buildTable(['Option', 'Description'], options.map(o => [o.name, o.description]))}
+
 ### Example
 
 You can use the partials in your Hamlet templates like this:
@@ -551,8 +568,9 @@ Please note that if you use the \`Meteor.include\` partial, you **must** include
 
 ${commonSnippet}
 
-If, instead, you are using the \`Meteor.svg\` partial, you do not need to include anything else. You can use it directly in your template.
+If, instead, you are using the \`Meteor.svg\` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the \`useMinimalSvgAttributes\` option, you can enable it in your configuration like this:
 
+${usageOptions}
 
 ${buildSharedFooter()}
 `

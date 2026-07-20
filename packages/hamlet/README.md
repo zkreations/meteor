@@ -60,6 +60,12 @@ export default {
 | `size` | Width and height |
 | `strokeWidth` | Stroke thickness |
 
+## Options
+
+| Option | Description |
+| --- | --- |
+| `useMinimalSvgAttributes` | Generates SVGs with only the essential attributes (class, viewBox) |
+
 ### Example
 
 You can use the partials in your Hamlet templates like this:
@@ -82,8 +88,18 @@ Please note that if you use the `Meteor.include` partial, you **must** include t
 </b:defaultmarkups>
 ```
 
-If, instead, you are using the `Meteor.svg` partial, you do not need to include anything else. You can use it directly in your template.
+If, instead, you are using the `Meteor.svg` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the `useMinimalSvgAttributes` option, you can enable it in your configuration like this:
 
+```js
+import Meteor from '@meteor-icons/hamlet'
+
+export default {
+  useMinimalSvgAttributes: true,
+  plugins: [
+    Meteor()
+  ]
+}
+```
 
 ## Contributing
 
