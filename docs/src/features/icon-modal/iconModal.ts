@@ -63,8 +63,8 @@ export function initIconModal(root: HTMLElement) {
     lockScroll()
     modal.setAttribute('aria-hidden', 'false')
     modal.classList.add('modal-open')
+    document.documentElement.classList.add('has-modal-open')
     modalDialog.classList.add('modal-dialog-open')
-    document.body.classList.add('overflow-hidden')
   }
 
   const close = () => {
@@ -77,8 +77,8 @@ export function initIconModal(root: HTMLElement) {
     modalDialog.classList.remove('modal-dialog-open')
     unlockScroll(modal)
       .then(() => {
-        document.body.classList.remove('overflow-hidden')
         isOpen = false
+        document.documentElement.classList.remove('has-modal-open')
       })
   }
 

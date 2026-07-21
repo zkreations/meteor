@@ -29,6 +29,10 @@
   50% { transform: translateY(-.5rem); }
 }
 
+:where(html):not(.has-modal-open) {
+  @apply scrollbar-gutter-stable;
+}
+
 @layer components {
   .i {
     stroke-width: var(--i-stroke, 2);
