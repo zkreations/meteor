@@ -19,26 +19,37 @@ function buildIconSvelteSource(iconName, nodes) {
   export let size = 24
   export let strokeWidth = 2
   export let color = 'currentColor'
+  export let minimal = false
   let className = ''
 
   export { className as class }
 </script>
 
-<svg
-  xmlns='http://www.w3.org/2000/svg'
-  width={size}
-  height={size}
-  viewBox='0 0 24 24'
-  fill='none'
-  stroke={color}
-  stroke-width={strokeWidth}
-  stroke-linecap='round'
-  stroke-linejoin='round'
-  class={('i i-${iconName} ' + className).trim()}
-  {...$$restProps}
->
-  ${markup}
-</svg>
+{#if minimal}
+  <svg
+    viewBox='0 0 24 24'
+    class={('i i-${iconName} ' + className).trim()}
+    {...$$restProps}
+  >
+    ${markup}
+  </svg>
+{:else}
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={size}
+    height={size}
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke={color}
+    stroke-width={strokeWidth}
+    stroke-linecap='round'
+    stroke-linejoin='round'
+    class={('i i-${iconName} ' + className).trim()}
+    {...$$restProps}
+  >
+    ${markup}
+  </svg>
+{/if}
 `
 }
 

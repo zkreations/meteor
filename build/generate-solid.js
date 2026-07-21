@@ -30,26 +30,25 @@ function renderNodes (nodes) {
 
 export function createIcon (iconName, iconNode) {
   return function MeteorIcon (props) {
-    const [local, rest] = splitProps(props, ['size', 'strokeWidth', 'color', 'class'])
+    const [local, rest] = splitProps(props, ['size', 'strokeWidth', 'color', 'class', 'minimal'])
     const mergedClass = local.class ? 'i i-' + iconName + ' ' + local.class : 'i i-' + iconName
 
-    return (
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        width={local.size ?? 24}
-        height={local.size ?? 24}
-        viewBox='0 0 24 24'
-        fill='none'
-        stroke={local.color ?? 'currentColor'}
-        stroke-width={local.strokeWidth ?? 2}
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        class={mergedClass}
-        {...rest}
-      >
-        {renderNodes(iconNode)}
-      </svg>
-    )
+    const minimalProps = { viewBox: '0 0 24 24', class: mergedClass, ...rest }
+    const fullProps = {
+      xmlns: 'http://www.w3.org/2000/svg',
+      width: local.size ?? 24,
+      height: local.size ?? 24,
+      viewBox: '0 0 24 24',
+      fill: 'none',
+      stroke: local.color ?? 'currentColor',
+      'stroke-width': local.strokeWidth ?? 2,
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round',
+      class: mergedClass,
+      ...rest,
+    }
+
+    return <svg {...(local.minimal ? minimalProps : fullProps)}>{renderNodes(iconNode)}</svg>
   }
 }
 `

@@ -47,12 +47,26 @@ export function createIcon (iconName, iconNode) {
       strokeWidth = 2,
       color = 'currentColor',
       className,
+      minimal = false,
       ...rest
     } = props
 
     const mergedClassName = className
       ? 'i i-' + iconName + ' ' + className
       : 'i i-' + iconName
+
+    if (minimal) {
+      return IconRuntime.createElement(
+        'svg',
+        {
+          ref,
+          viewBox: '0 0 24 24',
+          className: mergedClassName,
+          ...rest
+        },
+        ...renderNodes(iconNode)
+      )
+    }
 
     return IconRuntime.createElement(
       'svg',

@@ -59,6 +59,29 @@ export default {
 | `color` | Stroke color |
 | `size` | Width and height |
 | `strokeWidth` | Stroke thickness |
+| `minimal` | Renders only essential SVG attributes (class and viewBox) |
+
+### Minimal mode
+
+Use the `minimal` prop to keep only essential attributes in the generated SVG root (`class` and `viewBox`).
+
+```handlebars
+{{> Meteor.svg icon="github" minimal=true}}
+```
+
+If you use minimal mode, you should add the following CSS to your styles for proper icon rendering:
+
+```css
+.i {
+  stroke-width: var(--i-stroke, 2);
+  width: var(--i-size, 24px);
+  height: var(--i-size, 24px);
+  stroke: var(--i-color, currentColor);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+```
 
 ## Options
 

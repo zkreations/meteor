@@ -17,7 +17,7 @@ function buildSvgPartialSource(iconNames, iconMap) {
     `<svg`,
     ` class="i i-{{icon}}{{#if class}} {{class}}{{/if}}"`,
     ` viewBox="0 0 24 24"`,
-    `{{#unless useMinimalSvgAttributes}}`,
+    `{{#unless (or useMinimalSvgAttributes minimal)}}`,
     ` xmlns="http://www.w3.org/2000/svg"`,
     ` fill="none"`,
     ` stroke="{{#if color}}{{color}}{{else}}currentColor{{/if}}"`,

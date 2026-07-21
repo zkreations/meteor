@@ -21,6 +21,7 @@ export interface Props {
   strokeWidth?: string | number
   color?: string
   class?: string
+  minimal?: boolean
   [key: string]: unknown
 }
 
@@ -29,27 +30,34 @@ const {
   strokeWidth = 2,
   color = 'currentColor',
   class: className = '',
+  minimal = false,
   ...rest
 } = Astro.props
 
 const mergedClass = ('i i-${iconName} ' + className).trim()
 ---
 
-<svg
-  xmlns='http://www.w3.org/2000/svg'
-  width={size}
-  height={size}
-  viewBox='0 0 24 24'
-  fill='none'
-  stroke={color}
-  stroke-width={strokeWidth}
-  stroke-linecap='round'
-  stroke-linejoin='round'
-  class={mergedClass}
-  {...rest}
->
-  ${markup}
-</svg>
+{minimal ? (
+  <svg viewBox='0 0 24 24' class={mergedClass} {...rest}>
+    ${markup}
+  </svg>
+) : (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={size}
+    height={size}
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke={color}
+    stroke-width={strokeWidth}
+    stroke-linecap='round'
+    stroke-linejoin='round'
+    class={mergedClass}
+    {...rest}
+  >
+    ${markup}
+  </svg>
+)}
 `
 }
 

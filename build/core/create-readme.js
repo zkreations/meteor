@@ -2,6 +2,7 @@ const PROP = {
   size: { name: '`size`', type: '*string \\| number*', default: '24', description: 'Sets width and height' },
   color: { name: '`color`', type: '*string*', default: 'currentColor', description: 'Defines the stroke color' },
   strokeWidth: { name: '`strokeWidth`', type: '*string \\| number*', default: '2', description: 'Controls stroke thickness' },
+  minimal: { name: '`minimal`', type: '*boolean*', default: 'false', description: 'Renders only essential SVG attributes (class and viewBox)' },
   className: { name: '`className`', type: '*string*', default: '-', description: 'Additional CSS classes' },
   class: { name: '`class`', type: '*string*', default: '-', description: 'Additional CSS classes' },
   classEmpty: { name: '`class`', type: '*string*', default: '\'\'', description: 'Additional CSS classes' },
@@ -17,7 +18,7 @@ const REST = {
 }
 
 function frameworkProps(classKey, restKey) {
-  return [PROP.size, PROP.color, PROP.strokeWidth, PROP[classKey], REST[restKey]]
+  return [PROP.size, PROP.color, PROP.strokeWidth, PROP.minimal, PROP[classKey], REST[restKey]]
 }
 
 // @type {Record<string, ReadmeConfig>}
@@ -158,6 +159,18 @@ export default function App() {
     subpathSnippet: `\`\`\`jsx
 import Code from '@meteor-icons/react/icons/code'
 \`\`\``,
+    minimalSnippet: `\`\`\`jsx
+import { Star } from '@meteor-icons/react'
+
+export default function App() {
+  return (
+    <>
+      <Star minimal />
+      <Star minimal className="icon-lg text-blue-500" />
+    </>
+  )
+}
+\`\`\``,
     props: frameworkProps('className', 'react'),
     exampleSnippet: `\`\`\`jsx
 import { Code } from '@meteor-icons/react'
@@ -188,6 +201,18 @@ export default function App() {
 \`\`\``,
     subpathSnippet: `\`\`\`jsx
 import Code from '@meteor-icons/preact/icons/code'
+\`\`\``,
+    minimalSnippet: `\`\`\`jsx
+import { Star } from '@meteor-icons/preact'
+
+export default function App() {
+  return (
+    <>
+      <Star minimal />
+      <Star minimal className="icon-lg text-blue-500" />
+    </>
+  )
+}
 \`\`\``,
     props: frameworkProps('className', 'preact'),
     exampleSnippet: `\`\`\`jsx
@@ -222,6 +247,16 @@ import { Code, Star } from '@meteor-icons/vue'
     subpathSnippet: `\`\`\`js
 import Code from '@meteor-icons/vue/icons/code'
 \`\`\``,
+    minimalSnippet: `\`\`\`vue
+<script setup>
+import { Star } from '@meteor-icons/vue'
+</script>
+
+<template>
+  <Star :minimal="true" />
+  <Star :minimal="true" class="icon-lg text-blue-500" />
+</template>
+\`\`\``,
     props: frameworkProps('class', 'vue'),
     exampleSnippet: `\`\`\`vue
 <script setup>
@@ -247,6 +282,18 @@ export default function App() {
 \`\`\``,
     subpathSnippet: `\`\`\`jsx
 import Code from '@meteor-icons/solid/icons/code'
+\`\`\``,
+    minimalSnippet: `\`\`\`jsx
+import { Star } from '@meteor-icons/solid'
+
+export default function App() {
+  return (
+    <>
+      <Star minimal />
+      <Star minimal class="icon-lg text-blue-500" />
+    </>
+  )
+}
 \`\`\``,
     props: frameworkProps('class', 'solid'),
     exampleSnippet: `\`\`\`jsx
@@ -274,6 +321,14 @@ export default function App() {
   import Code from '@meteor-icons/svelte/icons/code'
 </script>
 \`\`\``,
+    minimalSnippet: `\`\`\`svelte
+<script>
+  import { Star } from '@meteor-icons/svelte'
+</script>
+
+<Star minimal />
+<Star minimal class='icon-lg text-blue-500' />
+\`\`\``,
     props: frameworkProps('classEmpty', 'svelte'),
     exampleSnippet: `\`\`\`svelte
 <script>
@@ -299,6 +354,14 @@ import { Code, Star } from '@meteor-icons/astro'
 ---
 import Code from '@meteor-icons/astro/icons/code'
 ---
+\`\`\``,
+    minimalSnippet: `\`\`\`astro
+---
+import { Star } from '@meteor-icons/astro'
+---
+
+<Star minimal />
+<Star minimal class='icon-lg text-blue-500' />
 \`\`\``,
     props: frameworkProps('classEmpty', 'astro'),
     exampleSnippet: `\`\`\`astro
@@ -347,6 +410,9 @@ export default {
   </b:defaultmarkup>
 </b:defaultmarkups>
 \`\`\``,
+    minimalSnippet: `\`\`\`handlebars
+{{> Meteor.svg icon="github" minimal=true}}
+\`\`\``,
     partials: [
       { name: '`Meteor.svg`', description: 'SVG partial for inline icon markup' },
       { name: '`Meteor.include`', description: 'Blogger <b:include> helper partial' },
@@ -358,6 +424,7 @@ export default {
       { name: '`color`', description: 'Stroke color' },
       { name: '`size`', description: 'Width and height' },
       { name: '`strokeWidth`', description: 'Stroke thickness' },
+      { name: '`minimal`', description: 'Renders only essential SVG attributes (class and viewBox)' },
     ],
     options: [
       { name: '`useMinimalSvgAttributes`', description: 'Generates SVGs with only the essential attributes (class, viewBox)' },
@@ -470,7 +537,7 @@ ${buildSharedFooter()}
 `
 }
 
-function buildFrameworkReadme({ peerLabel, installPkg, usageSnippet, subpathSnippet, props, exampleSnippet, packageName }) {
+function buildFrameworkReadme({ peerLabel, installPkg, usageSnippet, subpathSnippet, minimalSnippet, props, exampleSnippet, packageName }) {
   return `${buildHeader(installPkg, packageName)}
 
 ## About
@@ -483,6 +550,7 @@ A lightweight, tree-shakeable icon library for ${peerLabel} applications based o
 - Designed for ${peerLabel}
 - Fully customizable through props
 - Inline SVG rendering
+- Optional minimal SVG attributes mode
 - Optimized for performance
 
 ## Installation
@@ -509,6 +577,26 @@ All icons share the same props:
 
 ${buildPropsTable(props)}
 
+### Minimal mode
+
+Use the \`minimal\` prop to keep only essential attributes in the generated SVG root (\`class\` and \`viewBox\`).
+
+${minimalSnippet}
+
+If you use minimal mode, you should add the following CSS to your styles for proper icon rendering:
+
+\`\`\`css
+.i {
+  stroke-width: var(--i-stroke, 2);
+  width: var(--i-size, 24px);
+  height: var(--i-size, 24px);
+  stroke: var(--i-color, currentColor);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+\`\`\`
+
 ### Example
 
 ${exampleSnippet}
@@ -523,7 +611,7 @@ ${buildSharedFooter()}
 `
 }
 
-function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, usageOptions, partials, parameters, options, exampleSnippet, commonSnippet }) {
+function buildHamletReadme({ installPkg, packageName, about, features, usageSnippet, usageOptions, partials, parameters, options, exampleSnippet, commonSnippet, minimalSnippet }) {
   return `${buildHeader(installPkg, packageName)}
 
 ## About
@@ -553,6 +641,26 @@ ${buildTable(['Partial', 'Description'], partials.map(p => [p.name, p.descriptio
 ## Parameters
 
 ${buildTable(['Parameter', 'Description'], parameters.map(a => [a.name, a.description]))}
+
+### Minimal mode
+
+Use the \`minimal\` prop to keep only essential attributes in the generated SVG root (\`class\` and \`viewBox\`).
+
+${minimalSnippet}
+
+If you use minimal mode, you should add the following CSS to your styles for proper icon rendering:
+
+\`\`\`css
+.i {
+  stroke-width: var(--i-stroke, 2);
+  width: var(--i-size, 24px);
+  height: var(--i-size, 24px);
+  stroke: var(--i-color, currentColor);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+\`\`\`
 
 ## Options
 

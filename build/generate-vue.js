@@ -38,29 +38,36 @@ export function createIcon (iconName, iconNode) {
       color: {
         type: String,
         default: 'currentColor'
+      },
+      minimal: {
+        type: Boolean,
+        default: false
       }
     },
     setup (props, { attrs }) {
       return () => {
         const { class: attrsClass, ...restAttrs } = attrs
+        const mergedClass = attrsClass
+          ? ['i i-' + iconName, attrsClass]
+          : 'i i-' + iconName
 
-        return h(
-          'svg',
-          {
-            xmlns: 'http://www.w3.org/2000/svg',
-            width: props.size,
-            height: props.size,
-            viewBox: '0 0 24 24',
-            fill: 'none',
-            stroke: props.color,
-            'stroke-width': props.strokeWidth,
-            'stroke-linecap': 'round',
-            'stroke-linejoin': 'round',
-            class: attrsClass ? ['i i-' + iconName, attrsClass] : 'i i-' + iconName,
-            ...restAttrs
-          },
-          renderNodes(iconNode)
-        )
+        const svgAttrs = props.minimal
+          ? { viewBox: '0 0 24 24', class: mergedClass, ...restAttrs }
+          : {
+              xmlns: 'http://www.w3.org/2000/svg',
+              width: props.size,
+              height: props.size,
+              viewBox: '0 0 24 24',
+              fill: 'none',
+              stroke: props.color,
+              'stroke-width': props.strokeWidth,
+              'stroke-linecap': 'round',
+              'stroke-linejoin': 'round',
+              class: mergedClass,
+              ...restAttrs,
+            }
+
+        return h('svg', svgAttrs, renderNodes(iconNode))
       }
     }
   })

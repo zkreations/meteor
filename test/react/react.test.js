@@ -77,6 +77,35 @@ describe('react icons', () => {
     expect(svg.getAttribute('class')).toBe('i i-arrow-right extra-class')
   })
 
+  it('renders minimal svg attributes when minimal is enabled', () => {
+    const { container } = render(
+      React.createElement(AlarmClock, {
+        'minimal': true,
+        'className': 'icon-lg',
+        'data-testid': 'alarm-minimal',
+      }),
+    )
+
+    const svg = container.querySelector('svg')
+
+    expect(svg).not.toBeNull()
+    expect(svg.getAttribute('viewBox')).toBe('0 0 24 24')
+    expect(svg.getAttribute('class')).toBe('i i-alarm-clock icon-lg')
+    expect(svg.getAttribute('data-testid')).toBe('alarm-minimal')
+
+    expect(svg.hasAttribute('xmlns')).toBe(false)
+    expect(svg.hasAttribute('width')).toBe(false)
+    expect(svg.hasAttribute('height')).toBe(false)
+    expect(svg.hasAttribute('fill')).toBe(false)
+    expect(svg.hasAttribute('stroke')).toBe(false)
+    expect(svg.hasAttribute('stroke-width')).toBe(false)
+    expect(svg.hasAttribute('stroke-linecap')).toBe(false)
+    expect(svg.hasAttribute('stroke-linejoin')).toBe(false)
+
+    expect(container.querySelector('circle')).not.toBeNull()
+    expect(container.querySelector('path')).not.toBeNull()
+  })
+
   it('forwards refs to the svg element', () => {
     const ref = createRef()
     const { container } = render(React.createElement(AlarmClock, { ref }))

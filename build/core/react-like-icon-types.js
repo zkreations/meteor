@@ -39,6 +39,7 @@ export interface MeteorIconProps extends Omit<JSX.SVGAttributes<SVGSVGElement>, 
   size?: string | number
   strokeWidth?: string | number
   color?: string
+  minimal?: boolean
 }
 
 export type MeteorIconComponent = (props: MeteorIconProps & { ref?: Ref<SVGSVGElement> }) => JSX.Element
