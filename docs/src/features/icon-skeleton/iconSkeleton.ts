@@ -4,6 +4,7 @@ import { applyIconCustomizeVars } from '@shared/dom/iconCustomizeVars'
 import { getIconSvgByName } from '@shared/dom/iconRegistry'
 import { ICON_CATEGORY_CHANGE } from '@shared/events/iconCategoryChange'
 import { ICON_SETTINGS_CHANGE } from '@shared/events/iconSettingsChange'
+import { cloneSvg } from '@shared/svg/svg'
 
 const SKELETON_CONFIG = {
   selectors: {
@@ -68,7 +69,7 @@ const SKELETON_CONFIG = {
     controlStrokeFactor: 0.7,
   },
   source: {
-    ignoredAttributes: ['fill', 'stroke', 'stroke-width', 'style', 'class'],
+    ignoredAttributes: ['fill', 'stroke', 'stroke-width', 'style', ''],
     shapeTags: ['path', 'rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon'],
     nonPathTags: ['rect', 'circle', 'ellipse', 'line', 'polyline', 'polygon'],
   },
@@ -98,6 +99,8 @@ interface PathPointHandlers {
 
 function createSvgEl<K extends keyof SVGElementTagNameMap>(tag: K, attrs?: Record<string, NumberLike>): SVGElementTagNameMap[K] {
   const el = document.createElementNS('http://www.w3.org/2000/svg', tag)
+  el.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
+
   if (attrs) {
     for (const [key, value] of Object.entries(attrs)) {
       el.setAttribute(key, String(value))
@@ -459,7 +462,7 @@ export class SvgSkeleton extends HTMLElement {
     const initialSvg = sourceSlot?.querySelector('svg')
 
     if (initialSvg) {
-      this.sourceSvg = initialSvg.cloneNode(true) as SVGElement
+      this.sourceSvg = cloneSvg(initialSvg)
     }
   }
 
@@ -485,7 +488,7 @@ export class SvgSkeleton extends HTMLElement {
   }
 
   public setSourceSvg(svg: SVGElement): void {
-    this.sourceSvg = svg.cloneNode(true) as SVGElement
+    this.sourceSvg = cloneSvg(svg)
     this.render()
   }
 
@@ -510,9 +513,7 @@ export class SvgSkeleton extends HTMLElement {
     sourceSlot.replaceChildren()
 
     if (this.sourceSvg) {
-      const svg = this.sourceSvg.cloneNode(true) as SVGElement
-      svg.removeAttribute('class')
-      svg.removeAttribute('style')
+      const svg = cloneSvg(this.sourceSvg)
       sourceSlot.replaceChildren(svg)
     }
 

@@ -36,10 +36,10 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
   <div class="relative select-none">
     <button class="btn md:w-50" data-outside="categories" aria-label="Filter by category">
       <span data-category-icon class="shrink-0">
-        <Grid/>
+        <Grid minimal class="ml-auto shrink-0 w-6 h-6" />
       </span>
       <span data-category-label class="truncate md:flex hidden">All Categories</span>
-      <ChevronDown size={20} class="ml-auto shrink-0" />
+      <ChevronDown minimal class="ml-auto shrink-0 w-5 h-5" />
     </button>
 
     <div class="left-0 dropdown overflow-y-auto max-h-75 min-w-50 scrollbar w-full" data-dropdown="categories" aria-label="Categories">
@@ -74,15 +74,15 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
   />
 
   <span class="pointer-events-none text-slate-400">
-    <Search />
+    <Search minimal />
   </span>
 
   <div class="relative select-none bg-slate-100 rounded-lg flex h-12">
     <button class="btn" data-outside="settings" aria-label="Icon settings">
-      <SlidersSimple />
+      <SlidersSimple minimal class="w-6 h-6" />
     </button>
     <div class="right-0 w-72 dropdown z-50" data-dropdown="settings" role="dialog" aria-label="Icon settings">
-      <IconSettings />
+      <IconSettings minimal class="w-6 h-6" />
     </div>
   </div>
 </div>

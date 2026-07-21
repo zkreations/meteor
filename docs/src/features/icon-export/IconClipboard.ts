@@ -17,23 +17,39 @@ function getActiveConfig(root: HTMLElement = document.body) {
   }
 }
 
+// Remove all attributes from an element
+// @param element - The element to clear attributes from
+function clearAttributes(element: Element): void {
+  Array.from(element.attributes).forEach(attr => {
+    element.removeAttribute(attr.name)
+  })
+}
+
 // Get a processed SVG string with the current configuration applied
 // @param svg - The SVG element to process
 // @param config - The configuration to apply (size, stroke, color)
-function getProcessedSvgString(svg: SVGElement, name: string, config: ReturnType<typeof getActiveConfig>): string {
+function getProcessedSvgString(
+  svg: SVGElement,
+  name: string,
+  config: ReturnType<typeof getActiveConfig>,
+): string {
   const clone = cloneSvg(svg)
+
+  clearAttributes(clone)
+  const color = config.color === 'currentColor' ? 'currentColor' : config.color
+
+  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
   clone.setAttribute('width', config.size)
   clone.setAttribute('height', config.size)
+  clone.setAttribute('viewBox', '0 0 24 24')
+  clone.setAttribute('fill', 'none')
+  clone.setAttribute('stroke', color)
   clone.setAttribute('stroke-width', config.stroke)
+  clone.setAttribute('stroke-linecap', 'round')
+  clone.setAttribute('stroke-linejoin', 'round')
   clone.setAttribute('class', `i i-${name}`)
 
-  let str = clone.outerHTML
-
-  if (config.color !== 'currentColor') {
-    str = str.replace(/currentColor/g, config.color)
-  }
-
-  return str
+  return clone.outerHTML
 }
 
 // Copy SVG string to clipboard

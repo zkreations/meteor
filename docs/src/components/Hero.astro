@@ -4,6 +4,16 @@ import IconSkeleton from '@features/icon-skeleton/IconSkeleton.astro';
 
 const heroTitle = 'Meteor Icons'
 const heroDescription = 'Meteor is an open-source icon set, designed at code level through intelligent reasoning that surpasses automated optimization, ensuring clean and lightweight code.'
+
+const frameworks = [
+  ['Astro', 'astro', AstroIcon],
+  ['SolidJS', 'solid', Solidjs],
+  ['Preact', 'preact', Preact],
+  ['React', 'react', React],
+  ['Svelte', 'svelte', Svelte],
+  ['Vue.js', 'vue', Vuejs],
+  ['Hamlet', 'hamlet', Hamlet],
+];
 ---
 
 <section class="pt-10 md:pt-18 wrapper">
@@ -14,13 +24,16 @@ const heroDescription = 'Meteor is an open-source icon set, designed at code lev
         {heroDescription}
       </p>
       <div class="mt-6 flex gap-4 flex-wrap justify-center lg:justify-start *:text-slate-500 *:hover:text-brand-active *:transition-colors *:duration-200">
-        <a href="https://www.npmjs.com/package/@meteor-icons/astro" title="Astro Package"  target="_blank" rel="noopener noreferrer"><AstroIcon size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/solid" title="SolidJS Package" target="_blank" rel="noopener noreferrer"><Solidjs size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/preact" title="Preact Package" target="_blank" rel="noopener noreferrer"><Preact size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/react" title="React Package" target="_blank" rel="noopener noreferrer"><React size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/svelte" title="Svelte Package" target="_blank" rel="noopener noreferrer"><Svelte size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/vue" title="Vue.js Package" target="_blank" rel="noopener noreferrer"><Vuejs size={32} strokeWidth={1} /></a>
-        <a href="https://www.npmjs.com/package/@meteor-icons/hamlet" title="Hamlet Package" target="_blank" rel="noopener noreferrer"><Hamlet size={32} strokeWidth={1} /></a>
+        {frameworks.map(([name, pkg, Icon]) => (
+          <a
+            href={`https://www.npmjs.com/package/@meteor-icons/${pkg}`}
+            title={`${name} Package`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon minimal class="w-8 h-8 stroke-1" />
+          </a>
+        ))}
       </div>
     </div>
     <IconSkeleton customClass="max-w-sm flex-shrink-0" random reactive />

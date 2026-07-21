@@ -30,6 +30,16 @@
 }
 
 @layer components {
+  .i {
+    stroke-width: var(--i-stroke, 2);
+    width: var(--i-size, 24px);
+    height: var(--i-size, 24px);
+    stroke: var(--i-color, currentColor);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+
   .wrapper {
     @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
   }

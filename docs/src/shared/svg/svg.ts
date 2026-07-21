@@ -4,7 +4,7 @@
 export function cloneSvg(svg: SVGElement, size?: number): SVGElement {
   const clone = svg.cloneNode(true) as SVGElement
   clone.removeAttribute('style')
-  clone.removeAttribute('class')
+  clone.classList.remove('!hidden')
   clone.querySelectorAll('*').forEach(el => el.removeAttribute('style'))
   if (size !== undefined) {
     clone.setAttribute('width', String(size))
