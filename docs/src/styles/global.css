@@ -179,6 +179,11 @@
     @apply transition duration-300 flex items-center gap-2.5 bg-zinc-900 text-white px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
   }
 
+  .section-content {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+
   .toast-item:not(.is-visible) {
     @apply opacity-0 translate-y-4;
   }
