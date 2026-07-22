@@ -9,6 +9,8 @@
   --animate-float: float 2s ease-in-out infinite;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @keyframes shake {
   0% { transform: rotate(0deg); }
   8%  { transform: rotate(-18deg); }
@@ -110,6 +112,10 @@
 
   .icon-slider:focus::-moz-range-thumb {
     @apply shadow-lg;
+  }
+
+  .icon-filters {
+    @apply z-10 flex gap-4 items-center p-3 bg-white border border-slate-200 shadow-lg transition duration-300 focus-within:border-brand-active focus-within:ring-4 ring-brand-active/10 rounded-lg sticky top-2;
   }
 
   .size-chip {
