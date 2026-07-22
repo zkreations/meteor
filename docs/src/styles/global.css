@@ -141,6 +141,7 @@
   }
 
   .icon-card {
+    contain: layout style paint;
     @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-brand-active cursor-pointer relative;
   }
 
