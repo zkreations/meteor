@@ -56,40 +56,83 @@ export function initIconSearch(root: HTMLElement) {
     })
   }
 
+  const sectionCache = new Map<HTMLElement, { cards: HTMLElement[]; countEl: Element | null }>()
+
+  sections.forEach((section) => {
+    sectionCache.set(section, {
+      cards: [...section.querySelectorAll<HTMLElement>('[data-name]')],
+      countEl: section.querySelector('[data-section-count]'),
+    })
+  })
+
+  let rafId: number | null = null
+
   const updateVisibleIcons = () => {
     const query = searchInput?.value ?? ''
     let totalVisible = 0
 
-    sections.forEach((section) => {
+    const visibleCards = new Map<HTMLElement, boolean[]>()
+    const visibleCounts = new Map<HTMLElement, number>()
+
+    for (const section of sections) {
       const sectionCategory = section.dataset.section ?? ''
       const isCategoryMatch = activeCategory === 'all' || sectionCategory === activeCategory
 
       if (!isCategoryMatch) {
-        section.classList.add('hidden')
-        return
+        visibleCounts.set(section, 0)
+        continue
       }
 
+      const { cards } = sectionCache.get(section)!
+      const visibility = new Array<boolean>(cards.length)
+
       let visibleCount = 0
-      section.querySelectorAll<HTMLElement>('[data-name]').forEach((card) => {
+
+      for (let i = 0; i < cards.length; i++) {
+        const card = cards[i]
         const name = card.dataset.name ?? ''
         const visible = isIconMatch(searchIndexByName.get(name) ?? name, query)
 
-        card.classList.toggle('hidden!', !visible)
+        visibility[i] = visible
+
         if (visible)
           visibleCount++
-      })
+      }
 
-      const sectionCount = section.querySelector('[data-section-count]')
-      if (sectionCount)
-        sectionCount.textContent = `[${visibleCount}]`
-
-      section.classList.toggle('hidden', visibleCount === 0)
+      visibleCards.set(section, visibility)
+      visibleCounts.set(section, visibleCount)
       totalVisible += visibleCount
-    })
+    }
 
-    if (counter)
-      counter.textContent = buildCounterLabel(totalVisible)
-    emptyState?.classList.toggle('hidden', totalVisible !== 0)
+    if (rafId !== null)
+      cancelAnimationFrame(rafId)
+
+    rafId = requestAnimationFrame(() => {
+      rafId = null
+
+      for (const section of sections) {
+        const count = visibleCounts.get(section) ?? 0
+        const sectionCategory = section.dataset.section ?? ''
+        const isCategoryMatch = activeCategory === 'all' || sectionCategory === activeCategory
+
+        if (!isCategoryMatch) {
+          section.classList.add('hidden')
+          continue
+        }
+
+        const { cards, countEl } = sectionCache.get(section)!
+        const visibility = visibleCards.get(section)!
+
+        for (let i = 0; i < cards.length; i++)
+          cards[i].classList.toggle('hidden!', !visibility[i])
+
+        countEl && (countEl.textContent = `[${count}]`)
+        section.classList.toggle('hidden', count === 0)
+      }
+
+      counter && (counter.textContent = buildCounterLabel(totalVisible))
+      emptyState?.classList.toggle('hidden', totalVisible !== 0)
+    })
   }
 
   const handleCategoryChange = (button: HTMLElement) => {
