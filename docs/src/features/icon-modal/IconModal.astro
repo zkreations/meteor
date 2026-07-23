@@ -6,14 +6,14 @@ import IconActions from '../icon-export/IconActions.astro'
 
 <div
   data-icon-modal
-  class="fixed inset-0 z-50 items-center justify-center bg-slate-950/50 p-4 modal flex"
+  class="modal"
   role="dialog"
   aria-modal="true"
   aria-label="Icon selector"
 >
   <button type="button" data-modal-backdrop class="absolute inset-0 -z-10 cursor-default" aria-label="Cerrar modal" tabindex="-1"></button>
 
-  <div class="w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl modal-dialog flex flex-col gap-5">
+  <div class="modal-dialog">
     <div class="flex items-center gap-3">
       <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-slate-200">
         <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12 icon-customize"></div>

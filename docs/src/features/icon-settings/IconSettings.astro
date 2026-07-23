@@ -2,14 +2,13 @@
 import { Rotate } from '@meteor-icons/astro'
 ---
 
-<div class="px-5 py-4 border-b border-slate-100 flex justify-between items-center">
-  <div class="font-semibold text-slate-800">Settings</div>
-  <button data-reset-settings class="text-sm font-medium text-slate-600 hover:text-slate-700 cursor-pointer transition" aria-label="Customize icons">
-    <Rotate minimal class="w-5 h-5" />
-  </button>
-</div>
-
 <div class="p-5 space-y-4">
+  <div class="flex justify-between items-center">
+    <div class="font-semibold text-slate-800">Settings</div>
+    <button data-reset-settings class="text-sm font-medium text-slate-600 hover:text-slate-700 cursor-pointer transition" aria-label="Customize icons">
+      <Rotate minimal class="w-5 h-5" />
+    </button>
+  </div>
   <div class="icon-setting-group">
     <label class="icon-setting-label" for="icon-color-picker">Color</label>
     <label class="flex gap-2 items-center rounded-lg bg-slate-100 p-2 cursor-pointer">

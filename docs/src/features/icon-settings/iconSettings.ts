@@ -19,6 +19,25 @@ export function initIconSettings(root: HTMLElement) {
   const DEFAULTS: IconCustomizeConfig = { color: 'currentColor', stroke: '2', size: '24' }
   let currentConfig: IconCustomizeConfig = { ...DEFAULTS }
 
+  const updateSliderProgress = (input: HTMLInputElement | null) => {
+    if (!input)
+      return
+
+    const min = Number(input.min)
+    const max = Number(input.max)
+    const value = Number(input.value)
+
+    const progress = ((value - min) / (max - min)) * 100
+
+    input.parentElement?.style.setProperty('--progress', `${progress}%`)
+  }
+
+  if (strokeInput)
+    updateSliderProgress(strokeInput)
+
+  if (sizeInput)
+    updateSliderProgress(sizeInput)
+
   const syncSizePresetState = () => {
     const activeSize = safeParseInt(currentConfig.size, 24)
 
@@ -35,6 +54,7 @@ export function initIconSettings(root: HTMLElement) {
     if (!sizeInput)
       return
     sizeInput.value = String(sizeToSlider(safeParseInt(currentConfig.size, 24)))
+    updateSliderProgress(sizeInput)
   }
 
   const notifySettingsChange = () => {
@@ -64,12 +84,15 @@ export function initIconSettings(root: HTMLElement) {
   }
 
   const handleChange = () => {
-    if (strokeInput)
+    if (strokeInput){
       currentConfig.stroke = strokeInput.value
+      updateSliderProgress(strokeInput)
+    }
 
     if (sizeInput) {
       const sliderValue = safeParseInt(sizeInput.value, sizeToSlider(safeParseInt(currentConfig.size, 24)))
       currentConfig.size = sliderToSize(sliderValue).toString()
+      updateSliderProgress(sizeInput)
     }
 
     applySettings()
@@ -80,10 +103,12 @@ export function initIconSettings(root: HTMLElement) {
 
     if (colorInput)
       colorInput.value = ''
-    if (strokeInput)
+    if (strokeInput) {
       strokeInput.value = currentConfig.stroke
-    syncSizeInput()
+      updateSliderProgress(strokeInput)
+    }
 
+    syncSizeInput()
     applySettings()
   }
 

@@ -71,7 +71,7 @@
   }
 
   .modal {
-    @apply pointer-events-none opacity-0 transition-opacity duration-300;
+    @apply pointer-events-none opacity-0 transition-opacity duration-300 fixed inset-0 z-50 items-center justify-center bg-slate-950/50 p-4 flex;
   }
 
   .modal-open {
@@ -79,7 +79,7 @@
   }
 
   .modal-dialog {
-    @apply -translate-y-4 transition-transform duration-300;
+    @apply -translate-y-4 transition-transform duration-300 w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl flex flex-col gap-5;
   }
 
   .modal-dialog-open {
@@ -91,23 +91,16 @@
   }
 
   .icon-slider {
-    @apply h-5 bg-transparent cursor-pointer appearance-none focus:outline-none;
-  }
-
-  .icon-slider::-webkit-slider-runnable-track {
-    @apply h-1 rounded-full bg-slate-300;
+    background: linear-gradient(to right, var(--color-brand-active) var(--progress), var(--color-slate-100) var(--progress));
+    @apply h-1 bg-transparent cursor-pointer appearance-none focus:outline-none rounded-full my-2;
   }
 
   .icon-slider::-webkit-slider-thumb {
-    @apply appearance-none w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm -mt-1.5;
+    @apply appearance-none w-5 h-5 rounded-full border-2 border-brand bg-white shadow-sm;
   }
 
   .icon-slider:focus::-webkit-slider-thumb {
     @apply shadow-lg;
-  }
-
-  .icon-slider::-moz-range-track {
-    @apply h-1 rounded-full bg-slate-300 border-none;
   }
 
   .icon-slider::-moz-range-thumb {
@@ -123,7 +116,7 @@
   }
 
   .size-chip {
-    @apply inline-flex items-center justify-center h-7 px-2.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-brand-border hover:text-brand hover:bg-brand-subtle;
+    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
   }
 
   .size-chip-active {
@@ -131,7 +124,7 @@
   }
 
   .chip-list {
-    @apply mt-2 flex flex-wrap gap-2;
+    @apply flex flex-wrap gap-2 mt-2;
   }
 
   .section-content {
