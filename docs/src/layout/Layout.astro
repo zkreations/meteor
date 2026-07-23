@@ -39,6 +39,16 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
     <!-- Twitter Card -->
     <meta content='summary_large_image' name='twitter:card'/>
     <meta content={description} name='twitter:description'/>
+
+    <!-- Theme toggle -->
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem('meteor-theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const isDark = stored === 'dark' || (!stored && prefersDark)
+        if (isDark) document.documentElement.classList.add('dark')
+      })()
+    </script>
 	</head>
 	<body>
 		<Header />

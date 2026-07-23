@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-brand: var(--color-teal-700);
@@ -23,7 +24,22 @@
   --default-transition-duration: 300ms;
 }
 
-@custom-variant dark (&:where(.dark, .dark *));
+.dark {
+  --color-brand: var(--color-teal-400);
+  --color-brand-subtle: var(--color-teal-950);
+  --color-brand-active: var(--color-teal-300);
+
+  --color-surface: var(--color-zinc-900);
+  --color-surface-container: var(--color-zinc-800);
+  --color-surface-container-high: var(--color-zinc-700);
+  --color-inverse-surface: var(--color-zinc-950);
+
+  --color-on-surface: var(--color-zinc-50);
+  --color-on-surface-variant: var(--color-zinc-400);
+  --color-on-surface-disabled: var(--color-zinc-600);
+
+  --color-outline: var(--color-zinc-700);
+}
 
 @keyframes shake {
   0% { transform: rotate(0deg); }
@@ -64,6 +80,13 @@ body {
     fill: none;
   }
 
+  .no-transitions *,
+  .no-transitions *::before,
+  .no-transitions *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+
   .wrapper {
     @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
   }
@@ -74,6 +97,7 @@ body {
 
   .dropdown {
     @apply absolute top-full bg-surface shadow-xl rounded-lg opacity-0 transition pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+    @apply dark:border dark:border-outline;
   }
 
   .dropdown-visible {
@@ -134,11 +158,11 @@ body {
   }
 
   .size-chip {
-    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-outline bg-surface text-xs font-medium transition-colors cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
+    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border-2 border-outline bg-surface text-xs font-medium transition-colors cursor-pointer hover:border-brand-active hover:text-brand;
   }
 
   .size-chip-active {
-    @apply border-brand-active bg-brand-subtle text-brand shadow-sm;
+    @apply border-brand-active text-brand shadow-sm;
   }
 
   .chip-list {

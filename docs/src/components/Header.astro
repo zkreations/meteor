@@ -1,5 +1,5 @@
 ---
-import { Meteor, Github, X } from '@meteor-icons/astro'
+import { Meteor, Github, X, Sun, Moon } from '@meteor-icons/astro'
 import { version } from '../../../package.json';
 
 const githubUrl = 'https://github.com/zkreations/meteor';
@@ -19,6 +19,25 @@ const twitterUrl = 'https://x.com/intent/tweet?text=Meteor%20Icons%20-%20Open%20
       <a href={twitterUrl} target="_blank" rel="noreferrer" class="transition hover:text-brand-active" aria-label="Twitter share">
         <X minimal class="w-5 h-5"/>
       </a>
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        data-theme="light"
+        class="transition rounded-full p-2 bg-surface-container hover:bg-surface-container-high cursor-pointer"
+      >
+        <Moon minimal class="w-5 h-5 hidden dark:block"/>
+        <Sun minimal class="w-5 h-5 block dark:hidden"/>
+      </button>
     </nav>
   </div>
 </header>
+
+<script>
+  import { initThemeToggle } from '@shared/ui/themeToggle'
+
+  const button = document.getElementById('theme-toggle')
+  if (button instanceof HTMLElement) {
+    initThemeToggle(button)
+  }
+</script>
