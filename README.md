@@ -5,6 +5,7 @@
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Version"></a>
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/dt/meteor-icons" alt="Total Downloads"></a>
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
+  <a href="https://app.netlify.com/projects/meteoricons/deploys"><img src="https://api.netlify.com/api/v1/badges/ccb6b0e6-ec0d-4023-832f-03aeb044470f/deploy-status" alt="Netlify Status"></a>
 </p>
 
 <p align="center">
