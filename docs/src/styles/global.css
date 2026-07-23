@@ -132,7 +132,7 @@ body {
   }
 
   .section-content {
-    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6;
+    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6;
   }
 
   .icon-setting-group {
@@ -153,7 +153,7 @@ body {
   }
 
   .icon-preview {
-    @apply flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300 text-slate-900;
+    @apply flex flex-col gap-2 items-center justify-center sm:group-hover:-translate-y-4 transition duration-300 text-slate-900;
   }
 
   .icon-text {
@@ -161,15 +161,15 @@ body {
   }
 
   .icon-actions {
-    @apply inset-0.75 flex gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
+    @apply inset-0.75 sm:flex hidden gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
   }
 
   .icon-action {
-    @apply items-center justify-center py-3 transition h-auto;
+    @apply items-center justify-center py-3 transition h-auto w-full;
   }
 
   .text-hidden {
-    @apply text-[0px] gap-0
+    @apply sm:text-sm sm:gap-2 text-[0px] gap-0;
   }
 
   .icon-customize svg {
