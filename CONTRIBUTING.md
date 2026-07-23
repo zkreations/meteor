@@ -95,7 +95,9 @@ build/generate-preact.js   Preact components
 build/generate-vue.js      Vue components
 build/generate-solid.js    SolidJS components
 build/generate-svelte.js   Svelte components
+build/generate-hamlet.js    Hamlet components
 build/generate-readme.js   README.md for each framework package
+build/generate-packages.js  Generates package.json for each framework package
 ```
 
 Shared utilities live in `build/core/`.

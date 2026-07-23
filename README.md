@@ -1,9 +1,9 @@
 ![cover](./assets/cover.png)
 
 <p align="center">
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-teal" alt="License"></a>
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/v/meteor-icons" alt="Version"></a>
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/npm/dt/meteor-icons" alt="Total Downloads"></a>
-  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/meteor-icons" alt="License"></a>
   <a href="https://www.npmjs.com/package/meteor-icons"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
 </p>
 
@@ -56,6 +56,7 @@ The icon set is live, but the work is ongoing. A few directions that are activel
 | [`packages/vue`](./packages/vue) | [`@meteor-icons/vue`](https://www.npmjs.com/package/@meteor-icons/vue) |
 | [`packages/solid`](./packages/solid) | [`@meteor-icons/solid`](https://www.npmjs.com/package/@meteor-icons/solid) |
 | [`packages/svelte`](./packages/svelte) | [`@meteor-icons/svelte`](https://www.npmjs.com/package/@meteor-icons/svelte) |
+| [`packages/hamlet`](./packages/hamlet) | [`@meteor-icons/hamlet`](https://www.npmjs.com/package/@meteor-icons/hamlet) |
 
 ## Repository structure
 
@@ -69,6 +70,7 @@ packages/       Published npm packages
   vue/          Vue 3 components
   solid/        SolidJS components
   svelte/       Svelte components
+  hamlet/       Hamlet components
 build/          Code generation scripts
   core/         Shared utilities used by the generators
   generate-*.js One generator per package

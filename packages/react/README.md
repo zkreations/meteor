@@ -1,9 +1,9 @@
 ![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/react/assets/cover.png)
 
 <p align="center">
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-teal" alt="License"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/react"><img src="https://img.shields.io/npm/v/@meteor-icons/react" alt="Version"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/react"><img src="https://img.shields.io/npm/dt/@meteor-icons/react" alt="Total Downloads"></a>
-  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@meteor-icons/react" alt="License"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/react"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
 </p>
 

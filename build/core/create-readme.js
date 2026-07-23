@@ -457,9 +457,9 @@ function buildBadges(installPkg) {
   const npm = `https://www.npmjs.com/package/${installPkg}`
   const gh = 'https://github.com/zkreations/meteor/blob/main/LICENSE'
   return `<p align="center">
+  <a href="${gh}"><img src="https://img.shields.io/badge/license-MIT-teal" alt="License"></a>
   <a href="${npm}"><img src="https://img.shields.io/npm/v/${installPkg}" alt="Version"></a>
   <a href="${npm}"><img src="https://img.shields.io/npm/dt/${installPkg}" alt="Total Downloads"></a>
-  <a href="${gh}"><img src="https://img.shields.io/npm/l/${installPkg}" alt="License"></a>
   <a href="${npm}"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
 </p>`
 }

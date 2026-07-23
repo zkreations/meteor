@@ -1,9 +1,9 @@
 ![cover](https://raw.githubusercontent.com/zkreations/meteor/main/packages/hamlet/assets/cover.png)
 
 <p align="center">
+  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-teal" alt="License"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/hamlet"><img src="https://img.shields.io/npm/v/@meteor-icons/hamlet" alt="Version"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/hamlet"><img src="https://img.shields.io/npm/dt/@meteor-icons/hamlet" alt="Total Downloads"></a>
-  <a href="https://github.com/zkreations/meteor/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@meteor-icons/hamlet" alt="License"></a>
   <a href="https://www.npmjs.com/package/@meteor-icons/hamlet"><img src="https://img.shields.io/github/release-date/zkreations/meteor" alt="Last Release"></a>
 </p>
 
