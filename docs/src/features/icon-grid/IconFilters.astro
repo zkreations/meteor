@@ -52,7 +52,7 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
         {categories.map((category) => (
           <button type="button" data-category={category.name} data-dropdown-close class="dropdown-item" aria-current="false">
             <span class="truncate">{capitalize(category.name)}</span>
-            <span class="ml-auto text-sm text-slate-400 font-mono">
+            <span class="ml-auto text-sm text-on-surface-disabled font-mono">
               {category.count}
             </span>
           </button>
@@ -66,18 +66,18 @@ const categories = Array.from(categoriesMap.values()).sort((a, b) => a.name.loca
     data-icon-search
     type="text"
     placeholder={`Search ${total} icons`}
-    class="w-full text-slate-700 outline-none bg-transparent py-3"
+    class="w-full outline-none bg-transparent py-3"
     aria-label="Search icons"
     autocomplete="off"
     spellcheck="false"
     name="icon-search"
   />
 
-  <span class="pointer-events-none text-slate-400">
+  <span class="pointer-events-none text-on-surface-disabled">
     <Search minimal />
   </span>
 
-  <div class="relative select-none bg-slate-100 rounded-lg flex h-12">
+  <div class="relative select-none bg-surface-container rounded-lg flex h-12">
     <button class="btn" data-outside="settings" aria-label="Icon settings">
       <SlidersSimple minimal class="w-6 h-6" />
     </button>

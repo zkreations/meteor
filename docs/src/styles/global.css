@@ -3,10 +3,24 @@
 @theme {
   --color-brand: var(--color-teal-700);
   --color-brand-subtle: var(--color-teal-50);
-  --color-brand-border: var(--color-teal-300);
   --color-brand-active: var(--color-teal-500);
+
+  --color-surface: var(--color-white);
+  --color-surface-container: var(--color-slate-100);
+  --color-surface-container-high: var(--color-slate-200);
+  --color-inverse-surface: var(--color-slate-900);
+
+  --color-on-surface: var(--color-slate-900);
+  --color-on-surface-variant: var(--color-slate-600);
+  --color-on-surface-disabled: var(--color-slate-400);
+  --color-on-inverse-surface: var(--color-white);
+
+  --color-outline: var(--color-slate-200);
+
   --animate-shake: shake 1s ease-in-out infinite;
   --animate-float: float 2s ease-in-out infinite;
+
+  --default-transition-duration: 300ms;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -36,7 +50,7 @@
 }
 
 body {
-  @apply bg-white text-slate-600 overflow-x-hidden;
+  @apply bg-surface text-on-surface-variant overflow-x-hidden;
 }
 
 @layer components {
@@ -59,7 +73,7 @@ body {
   }
 
   .dropdown {
-    @apply absolute top-full bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
+    @apply absolute top-full bg-surface shadow-xl rounded-lg opacity-0 transition pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
   }
 
   .dropdown-visible {
@@ -67,7 +81,7 @@ body {
   }
 
   .dropdown-item {
-    @apply px-3 py-2 rounded-md flex items-center gap-2 w-full text-left text-slate-700 hover:bg-slate-100 transition-colors duration-200 cursor-pointer;
+    @apply px-3 py-2 rounded-md flex items-center gap-2 w-full text-left hover:bg-surface-container transition-colors cursor-pointer;
   }
 
   .dropdown-item-active {
@@ -75,7 +89,7 @@ body {
   }
 
   .modal {
-    @apply pointer-events-none opacity-0 transition-opacity duration-300 fixed inset-0 z-50 items-center justify-center bg-slate-900/50 p-4 flex;
+    @apply pointer-events-none opacity-0 transition-opacity fixed inset-0 z-50 items-center justify-center bg-inverse-surface/50 p-4 flex;
   }
 
   .modal-open {
@@ -83,7 +97,7 @@ body {
   }
 
   .modal-dialog {
-    @apply -translate-y-4 transition-transform duration-300 w-full max-w-xl rounded-lg bg-white md:p-7 p-5 shadow-xl flex flex-col gap-5;
+    @apply -translate-y-4 transition-transform w-full max-w-xl rounded-lg bg-surface md:p-7 p-5 shadow-xl flex flex-col gap-5;
   }
 
   .modal-dialog-open {
@@ -91,16 +105,16 @@ body {
   }
 
   .btn {
-    @apply inline-flex items-center gap-2 h-12 px-3 rounded-md whitespace-nowrap bg-slate-100 text-slate-700 cursor-pointer transition-colors duration-300 hover:bg-slate-200 focus:outline-none;
+    @apply inline-flex items-center gap-2 h-12 px-3 rounded-md whitespace-nowrap bg-surface-container cursor-pointer transition-colors hover:bg-surface-container-high focus:outline-none;
   }
 
   .icon-slider {
-    background: linear-gradient(to right, var(--color-brand-active) var(--progress), var(--color-slate-100) var(--progress));
+    background: linear-gradient(to right, var(--color-brand-active) var(--progress), var(--color-surface-container) var(--progress));
     @apply h-1 bg-transparent cursor-pointer appearance-none focus:outline-none rounded-full my-2;
   }
 
   .icon-slider::-webkit-slider-thumb {
-    @apply appearance-none w-5 h-5 rounded-full border-2 border-brand bg-white shadow-sm;
+    @apply appearance-none w-5 h-5 rounded-full border-2 border-brand bg-surface shadow-sm;
   }
 
   .icon-slider:focus::-webkit-slider-thumb {
@@ -108,7 +122,7 @@ body {
   }
 
   .icon-slider::-moz-range-thumb {
-    @apply w-4 h-4 rounded-full border-2 border-brand bg-white shadow-sm;
+    @apply w-4 h-4 rounded-full border-2 border-brand bg-surface shadow-sm;
   }
 
   .icon-slider:focus::-moz-range-thumb {
@@ -116,11 +130,11 @@ body {
   }
 
   .icon-filters {
-    @apply z-10 flex gap-4 items-center p-3 bg-white border border-slate-200 shadow-lg transition duration-300 focus-within:border-brand-active focus-within:ring-4 ring-brand-active/10 rounded-lg sticky top-2;
+    @apply z-10 flex gap-4 items-center p-3 bg-surface border border-outline shadow-lg transition focus-within:border-brand-active focus-within:ring-4 ring-brand-active/10 rounded-lg sticky top-2;
   }
 
   .size-chip {
-    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-slate-200 bg-white text-xs font-medium transition-colors duration-200 cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
+    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-outline bg-surface text-xs font-medium transition-colors cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
   }
 
   .size-chip-active {
@@ -140,7 +154,7 @@ body {
   }
 
   .icon-setting-label {
-    @apply text-sm font-medium text-slate-700;
+    @apply text-sm font-medium;
   }
 
   .icon-setting-row {
@@ -149,19 +163,19 @@ body {
 
   .icon-card {
     contain: layout style paint;
-    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-slate-200 text-center aspect-square transition hover:border-brand-active cursor-pointer relative;
+    @apply flex flex-col items-center justify-center gap-2 rounded-lg border border-outline text-center aspect-square transition hover:border-brand-active cursor-pointer relative;
   }
 
   .icon-preview {
-    @apply flex flex-col gap-2 items-center justify-center sm:group-hover:-translate-y-4 transition duration-300 text-slate-900;
+    @apply flex flex-col gap-2 items-center justify-center sm:group-hover:-translate-y-4 transition text-on-surface;
   }
 
   .icon-text {
-    @apply transition duration-300 text-slate-600;
+    @apply transition text-on-surface-variant;
   }
 
   .icon-actions {
-    @apply inset-0.75 sm:flex hidden gap-0.75 group-hover:opacity-100 opacity-0 transition duration-300 group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
+    @apply inset-0.75 sm:flex hidden gap-0.75 group-hover:opacity-100 opacity-0 transition group-hover:translate-y-0 translate-y-4 absolute group-hover:pointer-events-auto pointer-events-none top-auto;
   }
 
   .icon-action {
@@ -184,7 +198,7 @@ body {
   }
 
   .toast-item {
-    @apply transition duration-300 flex items-center gap-2.5 bg-slate-900 text-white px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
+    @apply transition flex items-center gap-2.5 bg-inverse-surface text-on-inverse-surface px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
   }
 
   .section-content {
@@ -205,13 +219,13 @@ body {
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-slate-200 rounded-full;
+    @apply bg-surface-container-high rounded-full;
   }
 
   @supports not (selector(::-webkit-scrollbar-thumb)) {
     .scrollbar {
       scrollbar-width: thin;
-      scrollbar-color: var(--color-slate-300) transparent;
+      scrollbar-color: var(--color-surface-container-high) transparent;
     }
   }
 }

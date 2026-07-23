@@ -15,20 +15,20 @@ import IconActions from '../icon-export/IconActions.astro'
 
   <div class="modal-dialog">
     <div class="flex items-center gap-3">
-      <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-slate-200">
-        <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12 icon-customize"></div>
+      <div class="flex md:h-20 md:w-20 w-14 h-14  shrink-0 items-center justify-center rounded-lg border border-outline">
+        <div data-modal-icon-preview aria-hidden="true" class="*:md:w-12 *:md:h-12 icon-customize text-on-surface"></div>
       </div>
 
       <div class="flex flex-col min-w-0 flex-1 items-start gap-1.5">
-        <button type="button" data-copy-name class="font-semibold text-slate-900 cursor-pointer hover:text-brand-active transition-colors duration-300" aria-label="Copy name" title="Copy name"></button>
-        <div class="flex items-center gap-1 *:text-sm *:cursor-pointer *:transition-colors *:duration-300">
+        <button type="button" data-copy-name class="font-semibold text-on-surface cursor-pointer hover:text-brand-active transition-colors" aria-label="Copy name" title="Copy name"></button>
+        <div class="flex items-center gap-1 *:text-sm *:cursor-pointer *:transition-colors">
           <button class="hover:text-brand-active" type="button" data-copy-component-name aria-label="Copy component name" title="Copy component name"></button>
           <span aria-hidden="true" class="sm:flex hidden">·</span>
           <button class="hover:text-brand-active sm:flex hidden" type="button" data-copy-html aria-label="Copy HTML" title="Copy HTML"></button>
         </div>
       </div>
 
-      <a href="#" data-modal-view-full-info class="ml-auto self-start text-slate-900 hover:text-brand-active transition-colors duration-300 flex items-center gap-1" aria-label="View full source code" title="View full info">
+      <a href="#" data-modal-view-full-info class="ml-auto self-start text-on-surface hover:text-brand-active transition-colors flex items-center gap-1" aria-label="View full source code" title="View full info">
         <FileSearch minimal class="w-7 h-7"/>
       </a>
     </div>

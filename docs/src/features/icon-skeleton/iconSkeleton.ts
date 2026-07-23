@@ -55,11 +55,11 @@ const SKELETON_CONFIG = {
   classes: {
     parent: 'opacity-0 transition-opacity duration-1000',
     parentVisible: 'opacity-100',
-    path: 'stroke-slate-900/40',
-    nonPath: 'stroke-teal-500/90',
-    handle: 'stroke-slate-900/40',
-    node: 'fill-slate-900',
-    control: 'fill-slate-100 stroke-slate-900/60',
+    path: 'stroke-on-surface/40',
+    nonPath: 'stroke-brand-active/90',
+    handle: 'stroke-on-surface/40',
+    node: 'fill-on-surface',
+    control: 'fill-surface-container stroke-on-surface/60',
   },
   scale: {
     anchorRadius: 0.018,

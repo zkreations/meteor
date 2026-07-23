@@ -42,8 +42,8 @@ const sortedGroups = Array.from(groupedIcons.entries()).sort(([a], [b]) =>
     <IconFilters total={icons.length} />
     {sortedGroups.map(([category, items]) => (
       <section data-section={category}>
-        <h2 class="mb-4 text-xl text-slate-900 font-semibold">
-          {capitalize(category)} <span data-section-count class="text-base font-normal font-mono text-slate-600">[{items.length}]</span>
+        <h2 class="mb-4 text-xl text-on-surface font-semibold">
+          {capitalize(category)} <span data-section-count class="text-base font-normal font-mono text-on-surface-variant">[{items.length}]</span>
         </h2>
 
         <div class="section-content">

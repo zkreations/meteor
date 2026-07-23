@@ -14,19 +14,19 @@ const componentName = toPascalCase(name)
 const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 ---
 
-<section class="border-t border-slate-200 pt-4 mt-10">
-  <h2 class="font-semibold text-slate-900 text-xl md:text-2xl mb-6">
+<section class="border-t border-outline pt-4 mt-10">
+  <h2 class="font-semibold text-on-surface text-xl md:text-2xl mb-6">
     Icon in action
   </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     <ExampleCard class="lg:col-span-2 lg:row-span-2">
       <div class="flex flex-col items-center text-center py-6">
 
-        <div class="icon-customize text-white w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-slate-900 flex items-center justify-center shadow-lg">
+        <div class="icon-customize text-on-inverse-surface w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-inverse-surface flex items-center justify-center shadow-lg">
           <IconComponent minimal class="w-16 h-16 md:w-20 md:h-20" />
         </div>
 
-        <h3 class="mt-5 text-lg font-semibold text-slate-900">
+        <h3 class="mt-5 text-lg font-semibold text-on-surface">
           {name}
         </h3>
 
@@ -35,24 +35,24 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
         </p>
 
         <div class="mt-5 flex items-end gap-4">
-          <div class="icon-customize flex flex-col items-center gap-1 text-slate-400">
+          <div class="icon-customize flex flex-col items-center gap-1 text-on-surface-disabled">
             <IconComponent minimal class="w-4 h-4" />
-            <span class="text-[10px] text-slate-400">16</span>
+            <span class="text-[10px] text-on-surface-disabled">16</span>
           </div>
 
           <div class="icon-customize flex flex-col items-center gap-1">
             <IconComponent minimal class="w-6 h-6" />
-            <span class="text-[10px] text-slate-400">24</span>
+            <span class="text-[10px] text-on-surface-disabled">24</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-1 text-slate-700">
+          <div class="icon-customize flex flex-col items-center gap-1">
             <IconComponent minimal class="w-10 h-10" />
-            <span class="text-[10px] text-slate-400">40</span>
+            <span class="text-[10px] text-on-surface-disabled">40</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-1 text-slate-900">
+          <div class="icon-customize flex flex-col items-center gap-1 text-on-surface">
             <IconComponent minimal class="w-16 h-16" />
-            <span class="text-[10px] text-slate-400">64</span>
+            <span class="text-[10px] text-on-surface-disabled">64</span>
           </div>
         </div>
 
@@ -61,17 +61,17 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 
     <ExampleCard>
       <div class="space-y-3">
-        <button class="icon-customize w-full flex items-center justify-center gap-2 bg-slate-900 text-white text-sm font-medium px-4 py-3 rounded-lg">
+        <button class="icon-customize w-full flex items-center justify-center gap-2 bg-inverse-surface text-on-inverse-surface text-sm font-medium px-4 py-3 rounded-lg">
           <IconComponent minimal class="w-6 h-6" />
           Create {name}
         </button>
 
-        <button class="icon-customize w-full flex items-center justify-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-4 py-3 rounded-lg">
+        <button class="icon-customize w-full flex items-center justify-center gap-2 border border-outline text-sm font-medium px-4 py-3 rounded-lg">
           <IconComponent minimal class="w-6 h-6" />
           Copy {name}
         </button>
 
-        <button class="icon-customize w-full flex items-center justify-center gap-2 text-sm font-medium px-4 py-3 rounded-lg hover:bg-slate-100">
+        <button class="icon-customize w-full flex items-center justify-center gap-2 text-sm font-medium px-4 py-3 rounded-lg bg-surface-container">
           <IconComponent minimal class="w-6 h-6" />
           View {name} details
         </button>
@@ -79,27 +79,27 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
     </ExampleCard>
 
     <ExampleCard>
-      <div class="flex border-b border-slate-200">
-        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-slate-400">
+      <div class="flex border-b border-outline">
+        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-on-surface-disabled">
           <MeteorIcons.Home minimal class="w-4 h-4" />
           Home
         </button>
 
-        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-slate-900 font-semibold border-b-2 border-slate-900 -mb-px">
+        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-on-surface font-semibold border-b-2 border-on-surface -mb-px">
           <IconComponent minimal class="w-4 h-4" />
           {name}
         </button>
 
-        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-slate-400">
+        <button class="icon-customize flex items-center gap-2 px-3 py-2 text-sm text-on-surface-disabled">
           <MeteorIcons.ShoppingBag minimal class="w-4 h-4" />
           Store
         </button>
       </div>
 
       <div class="mt-4 space-y-2">
-        <div class="h-3 bg-slate-100 rounded-full w-full"></div>
-        <div class="h-3 bg-slate-100 rounded-full w-3/5"></div>
-        <div class="h-3 bg-slate-100 rounded-full w-4/5"></div>
+        <div class="h-3 bg-surface-container rounded-full w-full"></div>
+        <div class="h-3 bg-surface-container rounded-full w-3/5"></div>
+        <div class="h-3 bg-surface-container rounded-full w-4/5"></div>
       </div>
     </ExampleCard>
 
@@ -110,7 +110,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           Dashboard
         </a>
 
-        <a class="icon-customize flex items-center gap-2 p-3 rounded-md bg-slate-900 text-white text-sm font-medium">
+        <a class="icon-customize flex items-center gap-2 p-3 rounded-md bg-inverse-surface text-on-inverse-surface text-sm font-medium">
           <IconComponent minimal class="w-5 h-5" />
           {name}
         </a>
@@ -124,31 +124,31 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 
     <ExampleCard>
       <div class="space-y-3">
-        <div class="icon-customize flex items-center gap-2 border border-slate-200 rounded-lg p-3 text-slate-400">
+        <div class="icon-customize flex items-center gap-2 border border-outline rounded-lg p-3 text-on-surface-disabled">
           <MeteorIcons.Search minimal class="w-5 h-5" />
           <input class="text-sm w-full outline-none" placeholder="Search icons..." />
         </div>
 
-        <div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-slate-100">
-          <div class="icon-customize w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-white">
+        <div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-surface-container">
+          <div class="icon-customize w-10 h-10 rounded bg-inverse-surface flex items-center justify-center text-on-inverse-surface">
             <IconComponent minimal class="w-5 h-5" />
           </div>
-          <span class="text-sm font-medium text-slate-900">{name}</span>
-          <span class="ml-auto text-xs text-slate-400">UI</span>
+          <span class="text-sm font-medium text-on-surface">{name}</span>
+          <span class="ml-auto text-xs text-on-surface-disabled">UI</span>
         </div>
       </div>
     </ExampleCard>
 
     <ExampleCard class="items-center text-center">
-      <div class="icon-customize w-20 h-20 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center">
+      <div class="icon-customize w-20 h-20 rounded-full bg-surface-container text-on-surface-disabled flex items-center justify-center">
         <IconComponent minimal class="w-10 h-10" />
       </div>
 
       <div>
-        <p class="font-medium text-slate-900 mt-2">
+        <p class="font-medium text-on-surface mt-2">
           No {name} found
         </p>
-        <p class="text-sm text-slate-400">
+        <p class="text-sm text-on-surface-disabled">
           Start by adding your first icon.
         </p>
       </div>
@@ -160,9 +160,9 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           <MeteorIcons.File minimal class="w-6 h-6" />
           <span class="text-sm flex-1">readme.md</span>
         </div>
-        <div class="icon-customize text-slate-900 flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-100">
+        <div class="icon-customize text-on-surface flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container">
           <IconComponent minimal class="w-6 h-6" />
-          <span class="text-sm text-slate-900 font-medium flex-1">{name}.tsx</span> <span class="text-xs text-slate-400">2 KB</span>
+          <span class="text-sm text-on-surface font-medium flex-1">{name}.tsx</span> <span class="text-xs text-on-surface-disabled">2 KB</span>
         </div>
       </div>
     </ExampleCard>
@@ -170,13 +170,13 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
     <ExampleCard class="lg:col-span-2">
       <div class="flex flex-col md:flex-row gap-6">
 
-        <div class="icon-customize text-white relative w-20 h-20 rounded-2xl bg-slate-900 flex items-center justify-center shrink-0 shadow-md overflow-hidden">
+        <div class="icon-customize text-on-inverse-surface relative w-20 h-20 rounded-2xl bg-inverse-surface flex items-center justify-center shrink-0 shadow-md overflow-hidden">
           <IconComponent minimal class="w-10 h-10 relative z-10" />
         </div>
 
         <div class="flex-1 space-y-3">
           <div>
-            <p class="font-semibold text-slate-900">
+            <p class="font-semibold text-on-surface">
               {title} icon system
             </p>
 
@@ -191,35 +191,35 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
     <ExampleCard class="lg:col-span-3">
       <div class="flex flex-col gap-6">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-spin text-slate-900" />
-            <span class="text-sm text-slate-400">Spin</span>
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
+            <IconComponent minimal class="w-10 h-10 animate-spin text-on-surface" />
+            <span class="text-sm text-on-surface-disabled">Spin</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
             <IconComponent minimal class="w-10 h-10 animate-bounce" />
-            <span class="text-sm text-slate-400">Bounce</span>
+            <span class="text-sm text-on-surface-disabled">Bounce</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-ping absolute opacity-25 text-slate-900" />
-            <IconComponent minimal class="w-10 h-10 text-slate-900" />
-            <span class="text-sm text-slate-400">Ping</span>
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
+            <IconComponent minimal class="w-10 h-10 animate-ping absolute opacity-25 text-on-surface" />
+            <IconComponent minimal class="w-10 h-10 text-on-surface" />
+            <span class="text-sm text-on-surface-disabled">Ping</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-shake text-slate-900" />
-            <span class="text-sm text-slate-400">Shake</span>
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
+            <IconComponent minimal class="w-10 h-10 animate-shake text-on-surface" />
+            <span class="text-sm text-on-surface-disabled">Shake</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-pulse text-slate-900" />
-            <span class="text-sm text-slate-400">Pulse</span>
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
+            <IconComponent minimal class="w-10 h-10 animate-pulse text-on-surface" />
+            <span class="text-sm text-on-surface-disabled">Pulse</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-float text-slate-900" />
-            <span class="text-sm text-slate-400">Float</span>
+          <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-surface-container">
+            <IconComponent minimal class="w-10 h-10 animate-float text-on-surface" />
+            <span class="text-sm text-on-surface-disabled">Float</span>
           </div>
 
         </div>

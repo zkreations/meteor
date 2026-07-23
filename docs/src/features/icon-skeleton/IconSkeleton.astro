@@ -19,11 +19,11 @@ const gridPath = createGridPath(23);
   <label class="block w-full h-full absolute inset-0 cursor-pointer pointer-events-auto">
     <span class="sr-only">Toggle icon skeleton mode</span>
     <input type="checkbox" class="sr-only peer"/>
-    <div class="render-zone w-full h-full relative transition-opacity duration-300 peer-checked:opacity-0 pointer-events-none"></div>
-    <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-slate-900 *:opacity-10 *:transition-opacity duration-300 peer-checked:*:opacity-100 *:w-full *:h-full icon-customize" aria-hidden="true">
+    <div class="render-zone w-full h-full relative transition-opacity peer-checked:opacity-0 pointer-events-none"></div>
+    <div class="source-slot w-full h-full stroke-1 absolute inset-0 text-on-surface *:opacity-10 *:transition-opacity peer-checked:*:opacity-100 *:w-full *:h-full icon-customize" aria-hidden="true">
       <slot />
     </div>
-    <svg class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-slate-600/10 pointer-events-none" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
+    <svg class="svg-skeleton-bg w-full h-full stroke-1 absolute inset-0 text-on-surface-variant/10 pointer-events-none" viewBox="0 0 240 240" fill="none" stroke="currentColor" stroke-width="1">
       <path d={gridPath}/>
     </svg>
   </label>

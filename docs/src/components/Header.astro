@@ -6,17 +6,17 @@ const githubUrl = 'https://github.com/zkreations/meteor';
 const twitterUrl = 'https://x.com/intent/tweet?text=Meteor%20Icons%20-%20Open%20source%20icon%20library&url=https://meteoricons.com';
 ---
 
-<header class="border-b border-slate-200">
+<header class="border-b border-outline">
   <div class="flex items-center justify-between py-6 wrapper">
     <a href="/" class="flex items-center gap-3" aria-label="Meteor Icons home">
-      <Meteor minimal class="w-8 h-8 text-slate-900"/>
-      <span class="rounded-md bg-slate-100 px-2 py-1 text-sm font-medium font-mono">{version}</span>
+      <Meteor minimal class="w-8 h-8 text-on-surface"/>
+      <span class="rounded-md bg-surface-container px-2 py-1 text-sm font-medium font-mono">{version}</span>
     </a>
     <nav class="flex items-center gap-4 text-sm">
-      <a href={githubUrl} target="_blank" rel="noreferrer" class="link-hover-slate" aria-label="GitHub repository">
+      <a href={githubUrl} target="_blank" rel="noreferrer" class="transition hover:text-brand-active" aria-label="GitHub repository">
         <Github minimal class="w-5 h-5"/>
       </a>
-      <a href={twitterUrl} target="_blank" rel="noreferrer" class="link-hover-slate" aria-label="Twitter share">
+      <a href={twitterUrl} target="_blank" rel="noreferrer" class="transition hover:text-brand-active" aria-label="Twitter share">
         <X minimal class="w-5 h-5"/>
       </a>
     </nav>

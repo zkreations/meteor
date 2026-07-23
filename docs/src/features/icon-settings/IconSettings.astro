@@ -4,15 +4,15 @@ import { Rotate } from '@meteor-icons/astro'
 
 <div class="p-5 space-y-4">
   <div class="flex justify-between items-center">
-    <div class="font-semibold text-slate-900">Settings</div>
+    <div class="font-semibold text-on-surface">Settings</div>
     <button data-reset-settings class="text-sm font-medium hover:text-brand-active cursor-pointer transition" aria-label="Customize icons">
       <Rotate minimal class="w-5 h-5" />
     </button>
   </div>
   <div class="icon-setting-group">
     <label class="icon-setting-label" for="icon-color-picker">Color</label>
-    <label class="flex gap-2 items-center rounded-lg bg-slate-100 p-2 cursor-pointer">
-      <div class="w-12 h-8 rounded-md overflow-hidden border border-slate-200 relative">
+    <label class="flex gap-2 items-center rounded-lg bg-surface-container p-2 cursor-pointer">
+      <div class="w-12 h-8 rounded-md overflow-hidden border border-outline relative">
         <input
           type="color"
           data-setting-color
@@ -29,7 +29,7 @@ import { Rotate } from '@meteor-icons/astro'
   <div class="icon-setting-group">
     <div class="icon-setting-row">
       <label class="icon-setting-label" for="icon-stroke-width">Stroke width</label>
-      <span data-stroke-value class="ml-auto text-sm text-slate-400 font-mono">2px</span>
+      <span data-stroke-value class="ml-auto text-sm text-on-surface-disabled font-mono">2px</span>
     </div>
     <input
       type="range"
@@ -46,7 +46,7 @@ import { Rotate } from '@meteor-icons/astro'
   <div class="icon-setting-group">
     <div class="icon-setting-row">
       <label class="icon-setting-label" for="icon-size">Size</label>
-      <span data-size-value class="ml-auto text-sm text-slate-400 font-mono">24px</span>
+      <span data-size-value class="ml-auto text-sm text-on-surface-disabled font-mono">24px</span>
     </div>
     <input
       type="range"
