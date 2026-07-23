@@ -1,5 +1,5 @@
 import { getIconSvgFromContainer } from '@shared/dom/iconRegistry'
-import { copyIconSvg, downloadIconPng, downloadIconSvg } from './IconClipboard'
+import { copyIconSvg, copyIconMinimalSvg, downloadIconPng, downloadIconSvg } from './IconClipboard'
 
 export interface IconActionTarget {
   svg: SVGElement | null
@@ -27,10 +27,11 @@ export function bindIconActionButtons(
     const trigger = e.target as HTMLElement
 
     const isCopy = trigger.closest('[data-action-copy-svg]')
+    const isMinimalCopy = trigger.closest('[data-action-copy-minimal]')
     const isDownloadPng = trigger.closest('[data-action-download-png]')
     const isDownloadSvg = trigger.closest('[data-action-download-svg]')
 
-    if (!isCopy && !isDownloadPng && !isDownloadSvg)
+    if (!isCopy && !isMinimalCopy && !isDownloadPng && !isDownloadSvg)
       return
 
     const { svg, name } = resolveTarget(trigger)
@@ -39,6 +40,9 @@ export function bindIconActionButtons(
 
     if (isCopy)
       copyIconSvg(svg, name)
+
+    if (isMinimalCopy)
+      copyIconMinimalSvg(svg, name)
 
     if (isDownloadSvg)
       downloadIconSvg(svg, name)

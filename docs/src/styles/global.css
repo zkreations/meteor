@@ -50,6 +50,10 @@
     @apply max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  .square {
+    @apply aspect-square w-full;
+  }
+
   .dropdown {
     @apply absolute top-full bg-white shadow-xl rounded-lg opacity-0 transition duration-200 pointer-events-none scale-95 -translate-y-1 transform-gpu origin-top;
   }
@@ -164,7 +168,7 @@
   }
 
   .icon-action {
-    @apply items-center justify-center py-3 w-full transition h-auto;
+    @apply items-center justify-center py-3 transition h-auto;
   }
 
   .text-hidden {

@@ -52,7 +52,35 @@ function getProcessedSvgString(
   return clone.outerHTML
 }
 
-// Copy SVG string to clipboard
+function getProcessedMinimalSvgString(
+  svg: SVGElement,
+  name: string,
+): string {
+  const clone = cloneSvg(svg)
+
+  clearAttributes(clone)
+
+  clone.setAttribute('viewBox', '0 0 24 24')
+  clone.setAttribute('class', `i i-${name}`)
+
+  return clone.outerHTML
+}
+
+// Copy Minimal SVG string to clipboard
+// @param svg SVG element to copy
+export async function copyIconMinimalSvg(svg: SVGElement, name: string) {
+  const svgStr = getProcessedMinimalSvgString(svg, name)
+
+  try {
+    await navigator.clipboard.writeText(svgStr)
+    showToast('Minimal SVG copied!')
+  }
+  catch {
+    showToast('Failed to copy Minimal SVG')
+  }
+}
+
+// Copy Full SVG string to clipboard
 // @param svg SVG element to copy
 export async function copyIconSvg(svg: SVGElement, name: string) {
   const config = getActiveConfig()

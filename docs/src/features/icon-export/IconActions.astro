@@ -1,5 +1,5 @@
 ---
-import { Download, Image, Copy } from '@meteor-icons/astro'
+import { Download, Image, Copy, Sparkles } from '@meteor-icons/astro'
 
 interface Props {
   variant?: 'compact' | 'full'
@@ -11,26 +11,32 @@ const { variant = 'full', size = 24 } = Astro.props
 
 {variant === 'compact' ? (
   <div class="icon-actions">
-    <button type="button" data-action-copy-svg class="btn icon-action" title="Copy SVG" tabindex="-1">
-      <Copy minimal class="w-5 h-5" />
+    <button type="button" data-action-copy-minimal class="btn icon-action square" title="Copy Minimal SVG" tabindex="-1">
+      <Sparkles minimal class="w-4 h-4" />
     </button>
-    <button type="button" data-action-download-png class="btn icon-action" title="Download PNG" tabindex="-1">
-      <Image minimal class="w-5 h-5" />
+    <button type="button" data-action-copy-svg class="btn icon-action square" title="Copy Full SVG" tabindex="-1">
+      <Copy minimal class="w-4 h-4" />
     </button>
-    <button type="button" data-action-download-svg class="btn icon-action" title="Download SVG" tabindex="-1">
-      <Download minimal class="w-5 h-5" />
+    <button type="button" data-action-download-png class="btn icon-action square" title="Download PNG" tabindex="-1">
+      <Image minimal class="w-4 h-4" />
+    </button>
+    <button type="button" data-action-download-svg class="btn icon-action square" title="Download SVG" tabindex="-1">
+      <Download minimal class="w-4 h-4" />
     </button>
   </div>
 ) : (
-  <>
-    <button type="button" data-action-copy-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Copy minimal class="sm:w-6 sm:h-6 w-5 h-5" /> Copy SVG
+  <div class="flex items-center gap-2 relative *:sm:text-sm *:sm:gap-2 *:text-hidden *:w-full">
+    <button type="button" data-action-copy-minimal class="btn icon-action">
+      <Sparkles minimal class="w-5 h-5" /> Copy Minimal SVG
     </button>
-    <button type="button" data-action-download-png class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Image minimal class="sm:w-6 sm:h-6 w-5 h-5" /> Download PNG
+    <button type="button" data-action-copy-svg class="btn icon-action">
+      <Copy minimal class="w-5 h-5" /> Copy Full SVG
     </button>
-    <button type="button" data-action-download-svg class="btn icon-action sm:text-sm sm:gap-2 text-hidden">
-      <Download minimal class="sm:w-6 sm:h-6 w-5 h-5" /> Download SVG
+    <button type="button" data-action-download-png class="btn icon-action">
+      <Image minimal class="w-5 h-5" /> PNG
     </button>
-  </>
+    <button type="button" data-action-download-svg class="btn icon-action">
+      <Download minimal class="w-5 h-5" /> SVG
+    </button>
+  </div>
 )}

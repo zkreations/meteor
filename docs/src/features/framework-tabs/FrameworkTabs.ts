@@ -5,20 +5,12 @@ export type FwKey = 'astro' | 'react' | 'preact' | 'vue' | 'solid' | 'svelte' | 
 
 export function snippet(name: string, fw: FwKey): string {
   const ComponentName = toPascalCase(name)
-  if (fw === 'astro')
-    return `import { ${ComponentName} } from '@meteor-icons/astro'\n\n<${ComponentName} size={24} />`
-  if (fw === 'react')
-    return `import { ${ComponentName} } from '@meteor-icons/react'\n\n<${ComponentName} size={24} />`
-  if (fw === 'preact')
-    return `import { ${ComponentName} } from '@meteor-icons/preact'\n\n<${ComponentName} size={24} />`
   if (fw === 'vue')
     return `import { ${ComponentName} } from '@meteor-icons/vue'\n\n<${ComponentName} size="24" />`
-  if (fw === 'svelte')
-    return `import { ${ComponentName} } from '@meteor-icons/svelte'\n\n<${ComponentName} size={24} />`
   if (fw === 'hamlet')
-    return `{{> Meteor.svg icon="${name}" size=24 }}`
+    return `import Meteor from '@meteor-icons/hamlet'\n\n{{> Meteor.svg icon="${name}" }}`
 
-  return `import { ${ComponentName} } from '@meteor-icons/solid'\n\n<${ComponentName} size={24} />`
+  return `import { ${ComponentName} } from '@meteor-icons/${fw}'\n\n<${ComponentName} size={24} />`
 }
 
 export function initTabsFramework(container: HTMLElement, initialName: string = '') {
