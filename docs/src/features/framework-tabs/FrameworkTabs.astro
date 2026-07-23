@@ -12,7 +12,7 @@ const { defaultFw = 'react', iconName, frameworks = ['Astro', 'React', 'Preact',
 ---
 
 <div data-framework-tabs-container class="bg-slate-100 rounded-lg sm:px-5 sm:pt-5 px-4 pt-4">
-  <div class="flex items-center gap-3 font-medium text-slate-500 border-b border-slate-200 mb-4">
+  <div class="flex items-center gap-3 font-medium border-b border-slate-200 mb-4">
     <div
       role="tablist"
       aria-label="Frameworks"
@@ -34,7 +34,7 @@ const { defaultFw = 'react', iconName, frameworks = ['Astro', 'React', 'Preact',
     <button
       type="button"
       data-copy-impl
-      class="pb-3 transition-colors duration-300 shrink-0 text-slate-400 hover:text-slate-700 cursor-pointer ml-auto"
+      class="pb-3 transition-colors duration-300 shrink-0 hover:text-slate-900 cursor-pointer ml-auto"
       aria-label="Copy code"
     >
       <Copy minimal class="w-5 h-5"/>
@@ -50,12 +50,12 @@ const { defaultFw = 'react', iconName, frameworks = ['Astro', 'React', 'Preact',
             role="tabpanel"
             data-impl-content
             data-impl-fw={fw}
-            class={`flex-1 font-mono text-slate-600 ${fw === defaultFw ? '' : 'hidden'}`}
+            class={`flex-1 font-mono ${fw === defaultFw ? '' : 'hidden'}`}
           >{snippet(iconName, fw)}</pre>
         )
       })
     ) : (
-      <pre data-impl-display class="flex-1 font-mono text-slate-600"></pre>
+      <pre data-impl-display class="flex-1 font-mono"></pre>
     )}
   </div>
 </div>

@@ -30,7 +30,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           {name}
         </h3>
 
-        <p class="mt-1 text-sm text-slate-500 max-w-sm">
+        <p class="mt-1 text-sm max-w-sm">
           A scalable icon designed to work from micro UI (16px) to hero branding (120px+).
         </p>
 
@@ -40,7 +40,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
             <span class="text-[10px] text-slate-400">16</span>
           </div>
 
-          <div class="icon-customize flex flex-col items-center gap-1 text-slate-500">
+          <div class="icon-customize flex flex-col items-center gap-1">
             <IconComponent minimal class="w-6 h-6" />
             <span class="text-[10px] text-slate-400">24</span>
           </div>
@@ -71,7 +71,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           Copy {name}
         </button>
 
-        <button class="icon-customize w-full flex items-center justify-center gap-2 text-slate-500 text-sm font-medium px-4 py-3 rounded-lg hover:bg-slate-100">
+        <button class="icon-customize w-full flex items-center justify-center gap-2 text-sm font-medium px-4 py-3 rounded-lg hover:bg-slate-100">
           <IconComponent minimal class="w-6 h-6" />
           View {name} details
         </button>
@@ -105,7 +105,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 
     <ExampleCard>
       <nav class="space-y-1">
-        <a class="icon-customize flex items-center gap-2 p-3 rounded-md text-sm text-slate-500">
+        <a class="icon-customize flex items-center gap-2 p-3 rounded-md text-sm">
           <MeteorIcons.Home minimal class="w-5 h-5" />
           Dashboard
         </a>
@@ -115,7 +115,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           {name}
         </a>
 
-        <a class="icon-customize flex items-center gap-2 p-3 rounded-md text-sm text-slate-500">
+        <a class="icon-customize flex items-center gap-2 p-3 rounded-md text-sm">
           <MeteorIcons.Gear minimal class="w-5 h-5" />
           Settings
         </a>
@@ -156,7 +156,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
 
     <ExampleCard>
       <div class="space-y-1">
-        <div class="icon-customize text-slate-500 flex items-center gap-3 px-3 py-2.5 rounded-lg">
+        <div class="icon-customize flex items-center gap-3 px-3 py-2.5 rounded-lg">
           <MeteorIcons.File minimal class="w-6 h-6" />
           <span class="text-sm flex-1">readme.md</span>
         </div>
@@ -180,7 +180,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
               {title} icon system
             </p>
 
-            <p class="text-slate-500 mt-1">
+            <p class="mt-1">
               A scalable icon designed for modern interfaces — from compact UI elements to high-impact visual identity.
             </p>
           </div>
@@ -192,7 +192,7 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
       <div class="flex flex-col gap-6">
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-spin" />
+            <IconComponent minimal class="w-10 h-10 animate-spin text-slate-900" />
             <span class="text-sm text-slate-400">Spin</span>
           </div>
 
@@ -202,23 +202,23 @@ const IconComponent = MeteorIcons[componentName as keyof typeof MeteorIcons]
           </div>
 
           <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-ping absolute opacity-25" />
-            <IconComponent minimal class="w-10 h-10 " />
+            <IconComponent minimal class="w-10 h-10 animate-ping absolute opacity-25 text-slate-900" />
+            <IconComponent minimal class="w-10 h-10 text-slate-900" />
             <span class="text-sm text-slate-400">Ping</span>
           </div>
 
           <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-shake" />
+            <IconComponent minimal class="w-10 h-10 animate-shake text-slate-900" />
             <span class="text-sm text-slate-400">Shake</span>
           </div>
 
           <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-pulse" />
+            <IconComponent minimal class="w-10 h-10 animate-pulse text-slate-900" />
             <span class="text-sm text-slate-400">Pulse</span>
           </div>
 
           <div class="icon-customize flex flex-col items-center gap-2 p-8 rounded-lg bg-slate-100">
-            <IconComponent minimal class="w-10 h-10 animate-float" />
+            <IconComponent minimal class="w-10 h-10 animate-float text-slate-900" />
             <span class="text-sm text-slate-400">Float</span>
           </div>
 

@@ -59,7 +59,7 @@ const SKELETON_CONFIG = {
     nonPath: 'stroke-teal-500/90',
     handle: 'stroke-slate-900/40',
     node: 'fill-slate-900',
-    control: 'fill-slate-100 stroke-slate-900/65',
+    control: 'fill-slate-100 stroke-slate-900/60',
   },
   scale: {
     anchorRadius: 0.018,

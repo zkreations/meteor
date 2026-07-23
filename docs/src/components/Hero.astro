@@ -20,10 +20,10 @@ const frameworks = [
   <div class="flex justify-between lg:flex-row flex-col items-center gap-10">
     <div class="flex flex-col lg:text-left text-center">
       <h1 class="text-2xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-slate-900">{heroTitle}</h1>
-      <p class="mt-4 leading-7 text-slate-600 md:text-lg text-balance">
+      <p class="mt-4 leading-7 md:text-lg text-balance">
         {heroDescription}
       </p>
-      <div class="mt-6 flex gap-4 flex-wrap justify-center lg:justify-start *:text-slate-500 *:hover:text-brand-active *:transition-colors *:duration-200">
+      <div class="mt-6 flex gap-4 flex-wrap justify-center lg:justify-start *:hover:text-brand-active *:transition-colors *:duration-200">
         {frameworks.map(([name, pkg, Icon]) => (
           <a
             href={`https://www.npmjs.com/package/@meteor-icons/${pkg}`}

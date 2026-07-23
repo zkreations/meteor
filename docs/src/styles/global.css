@@ -35,6 +35,10 @@
   @apply scrollbar-gutter-stable;
 }
 
+body {
+  @apply bg-white text-slate-600 overflow-x-hidden;
+}
+
 @layer components {
   .i {
     stroke-width: var(--i-stroke, 2);
@@ -71,7 +75,7 @@
   }
 
   .modal {
-    @apply pointer-events-none opacity-0 transition-opacity duration-300 fixed inset-0 z-50 items-center justify-center bg-slate-950/50 p-4 flex;
+    @apply pointer-events-none opacity-0 transition-opacity duration-300 fixed inset-0 z-50 items-center justify-center bg-slate-900/50 p-4 flex;
   }
 
   .modal-open {
@@ -116,7 +120,7 @@
   }
 
   .size-chip {
-    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-600 transition-colors duration-200 cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
+    @apply inline-flex items-center justify-center h-7 px-3 rounded-full border border-slate-200 bg-white text-xs font-medium transition-colors duration-200 cursor-pointer hover:border-brand-active hover:text-brand hover:bg-brand-subtle;
   }
 
   .size-chip-active {
@@ -149,11 +153,11 @@
   }
 
   .icon-preview {
-    @apply flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300;
+    @apply flex flex-col gap-2 items-center justify-center group-hover:-translate-y-4 transition duration-300 text-slate-900;
   }
 
   .icon-text {
-    @apply text-slate-500 transition duration-300;
+    @apply transition duration-300 text-slate-600;
   }
 
   .icon-actions {
@@ -180,7 +184,7 @@
   }
 
   .toast-item {
-    @apply transition duration-300 flex items-center gap-2.5 bg-zinc-900 text-white px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
+    @apply transition duration-300 flex items-center gap-2.5 bg-slate-900 text-white px-4 py-3 rounded-full shadow-lg whitespace-nowrap;
   }
 
   .section-content {
@@ -201,7 +205,7 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 rounded-full;
+    @apply bg-slate-200 rounded-full;
   }
 
   @supports not (selector(::-webkit-scrollbar-thumb)) {
