@@ -87,7 +87,7 @@ If you use minimal mode, you should add the following CSS to your styles for pro
 
 | Option | Description |
 | --- | --- |
-| `useMinimalSvgAttributes` | Generates SVGs with only the essential attributes (class, viewBox) |
+| `minimalSvgAttrs` | Generates SVGs with only the essential attributes (class, viewBox) |
 
 ### Example
 
@@ -111,15 +111,14 @@ Please note that if you use the `Meteor.include` partial, you **must** include t
 </b:defaultmarkups>
 ```
 
-If, instead, you are using the `Meteor.svg` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the `useMinimalSvgAttributes` option, you can enable it in your configuration like this:
+If, instead, you are using the `Meteor.svg` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the `minimalSvgAttrs` option, you can enable it in your configuration like this:
 
 ```js
 import Meteor from '@meteor-icons/hamlet'
 
 export default {
-  useMinimalSvgAttributes: true,
   plugins: [
-    Meteor()
+    Meteor({ minimalSvgAttrs: true })
   ]
 }
 ```

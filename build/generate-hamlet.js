@@ -17,7 +17,7 @@ function buildSvgPartialSource(iconNames, iconMap) {
     `<svg`,
     ` class="i i-{{icon}}{{#if class}} {{class}}{{/if}}"`,
     ` viewBox="0 0 24 24"`,
-    `{{#unless (or useMinimalSvgAttributes minimal)}}`,
+    `{{#unless (or Meteor.minimalSvgAttrs minimal)}}`,
     ` xmlns="http://www.w3.org/2000/svg"`,
     ` fill="none"`,
     ` stroke="{{#if color}}{{color}}{{else}}currentColor{{/if}}"`,
@@ -47,9 +47,12 @@ function buildIndexSource() {
 import { include } from './lib/include.js'
 import { svg } from './lib/svg.js'
 
-export default function hamletPlugin() {
+export default function hamletPlugin(options = {}) {
   return {
     namespace: 'Meteor',
+    context: {
+      minimalSvgAttrs: options.minimalSvgAttrs || false,
+    },
     partials: {
       includable,
       include,

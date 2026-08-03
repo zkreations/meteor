@@ -397,9 +397,8 @@ export default {
 import Meteor from '@meteor-icons/hamlet'
 
 export default {
-  useMinimalSvgAttributes: true,
   plugins: [
-    Meteor()
+    Meteor({ minimalSvgAttrs: true })
   ]
 }
 \`\`\``,
@@ -427,7 +426,7 @@ export default {
       { name: '`minimal`', description: 'Renders only essential SVG attributes (class and viewBox)' },
     ],
     options: [
-      { name: '`useMinimalSvgAttributes`', description: 'Generates SVGs with only the essential attributes (class, viewBox)' },
+      { name: '`minimalSvgAttrs`', description: 'Generates SVGs with only the essential attributes (class, viewBox)' },
     ],
     exampleSnippet: `\`\`\`handlebars
 {{> Meteor.includable}}
@@ -676,7 +675,7 @@ Please note that if you use the \`Meteor.include\` partial, you **must** include
 
 ${commonSnippet}
 
-If, instead, you are using the \`Meteor.svg\` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the \`useMinimalSvgAttributes\` option, you can enable it in your configuration like this:
+If, instead, you are using the \`Meteor.svg\` partial, you do not need to include anything else. You can use it directly in your template. If you want to use the \`minimalSvgAttrs\` option, you can enable it in your configuration like this:
 
 ${usageOptions}
 
