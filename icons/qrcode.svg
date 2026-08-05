@@ -1,0 +1,6 @@
+<svg class="i i-qrcode" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="5" height="5" x="3" y="3" rx="1"/>
+  <rect width="5" height="5" x="16" y="3" rx="1"/>
+  <rect width="5" height="5" x="3" y="16" rx="1"/>
+  <path d="M16 21h5m-5-5Zm-4 1v-3q0-2 2-2h3M3 12Zm9-9v5m0 13Zm8-5h1M8 12H7m14 0Z"/>
+</svg>
