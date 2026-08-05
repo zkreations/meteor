@@ -1,0 +1,25 @@
+{
+  "name": "barcode",
+  "title": "Barcode",
+  "categories": [
+    "security"
+  ],
+  "tags": [
+    "scanner",
+    "code",
+    "product",
+    "retail"
+  ],
+  "keywords": [
+    "inventory",
+    "commerce",
+    "scan",
+    "point of sale",
+    "inventory management",
+    "sku",
+    "ean",
+    "upc",
+    "product identification",
+    "checkout"
+  ]
+}
