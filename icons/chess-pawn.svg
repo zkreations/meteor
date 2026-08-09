@@ -1,0 +1,4 @@
+<svg class="i i-chess-pawn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="6" r="4"/>
+  <path d="m15 10 2 8M7 10h10M7 18l2-8m8 8q3 0 3 3v1H4v-1q0-3 3-3Z"/>
+</svg>
