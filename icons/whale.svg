@@ -1,3 +1,3 @@
 <svg class="i i-whale" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M15 22a7 7 0 007-7v-4H8q-2 0-2-2V5a3 3 0 013-3h2A1 1 0 011 2h2a3 3 0 013 3m0 2q-4 3-4 7a8 8 0 007 8m3-7Zm10-2a6 6 0 00-6 6q0 4-4 4H8l4-4m8-14q-3 0-3 3 0-3-3-3"/>
+  <path d="M15 22a7 7 0 007-7V11H8Q6 11 6 9V5A3 3 0 019 2h2A1 1 0 011 2H3A3 3 0 016 5M6 7q-4 3-4 8a7 7 0 007 7m3-7Zm10-2a6 6 0 00-6 6q0 4-4 4H8l4-4M20 5q-3 0-3 3 0-3-3-3"/>
 </svg>
