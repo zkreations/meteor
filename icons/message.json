@@ -8,10 +8,10 @@
     "text",
     "messaging",
     "message",
-    "chat",
-    "conversation"
+    "chat"
   ],
   "keywords": [
+    "conversation",
     "send message",
     "receive message",
     "conversation thread",
