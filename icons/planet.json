@@ -1,0 +1,22 @@
+{
+  "name": "planet",
+  "title": "Planet",
+  "categories": [
+    "astronomy",
+    "nature"
+  ],
+  "tags": [
+    "science",
+    "space",
+    "orbit",
+    "celestial"
+  ],
+  "keywords": [
+    "earth",
+    "mars",
+    "jupiter",
+    "saturn",
+    "solar system",
+    "planetary system"
+  ]
+}
