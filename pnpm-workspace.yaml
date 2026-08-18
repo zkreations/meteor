@@ -4,6 +4,10 @@ packages:
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
-minimumReleaseAge: 10080
+
+overrides:
+  semver: ^7.8.5
+
+minimumReleaseAge: 1440
 trustPolicy: no-downgrade
 blockExoticSubdeps: true
