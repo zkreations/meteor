@@ -50,7 +50,7 @@
     "@testing-library/react": "^16.3.2",
     "@testing-library/svelte": "^5.4.2",
     "@testing-library/vue": "^8.1.0",
-    "astro": "^7.2.2",
+    "astro": "^7.2.3",
     "cheerio": "^1.2.0",
     "eslint": "^10.8.1",
     "hamlet-builder": "^1.8.0",
@@ -59,12 +59,12 @@
     "preact": "^10.29.8",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "solid-js": "^1.9.14",
+    "solid-js": "^1.9.15",
     "svelte": "^5.56.9",
     "svg-sprite": "^2.0.4",
     "svgo": "^4.0.2",
     "vite-plugin-solid": "^2.11.14",
-    "vitest": "^4.1.10",
+    "vitest": "^4.1.11",
     "vue": "^3.5.41"
   }
 }
