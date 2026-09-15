@@ -1,0 +1,26 @@
+{
+  "name": "npm",
+  "title": "npm",
+  "categories": [
+    "brands",
+    "development"
+  ],
+  "tags": [
+    "javascript",
+    "node",
+    "packages",
+    "registry",
+    "package manager",
+    "software"
+  ],
+  "keywords": [
+    "node.js",
+    "javascript packages",
+    "package registry",
+    "dependencies",
+    "modules",
+    "package.json",
+    "npm install",
+    "npm registry"
+  ]
+}
