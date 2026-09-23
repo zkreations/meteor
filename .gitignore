@@ -6,6 +6,7 @@ implements
 lab
 *.html
 *.txt
+.codegraph
 
 # jekyll
 _site
