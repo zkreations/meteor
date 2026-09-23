@@ -1,0 +1,25 @@
+{
+  "name": "regex",
+  "title": "Regex",
+  "categories": [
+    "development"
+  ],
+  "tags": [
+    "code",
+    "pattern",
+    "matching",
+    "search",
+    "validation",
+    "parsing"
+  ],
+  "keywords": [
+    "pattern matching",
+    "text search",
+    "string matching",
+    "input validation",
+    "text parsing",
+    "string validation",
+    "regex pattern",
+    "search pattern"
+  ]
+}
