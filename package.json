@@ -50,7 +50,7 @@
     "@testing-library/react": "^16.3.3",
     "@testing-library/svelte": "^5.4.2",
     "@testing-library/vue": "^8.1.0",
-    "astro": "^7.3.4",
+    "astro": "^7.3.5",
     "cheerio": "^1.2.0",
     "eslint": "^10.11.0",
     "hamlet-builder": "^1.8.0",
